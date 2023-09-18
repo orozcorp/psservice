@@ -17,21 +17,30 @@ export default function Certificaciones({ t }) {
             <p className="text-2xl font-bold mb-8">{t("Hero6Text")}</p>
           </div>
           <div
-            className="flex flex-row flex-wrap mt-16 w-full gap-16 justify-between"
+            className="flex flex-row flex-wrap mt-16 w-full gap-8 justify-between"
             style={{ alignSelf: "end" }}
           >
-            <div className="flex flex-col flex-nowrap justify-center items-center">
-              <div className="text-5xl  font-bold">15</div>
+            <div
+              className="flex flex-col flex-nowrap justify-center items-center text-center"
+              style={{ maxWidth: "150px" }}
+            >
+              <div className="text-5xl  font-bold mb-4">15</div>
               <div className="text-lg font-bold">{t("CertNom")}</div>
               <div className="text-sm">{t("CertNomText")}</div>
             </div>
-            <div className="flex flex-col flex-nowrap justify-center items-center">
-              <div className="text-5xl  font-bold">4</div>
+            <div
+              className="flex flex-col flex-nowrap justify-center items-center text-center"
+              style={{ maxWidth: "150px" }}
+            >
+              <div className="text-5xl  font-bold mb-4">4</div>
               <div className="text-lg font-bold">{t("CertIso")}</div>
               <div className="text-sm">{t("CertIsoText")}</div>
             </div>
-            <div className="flex flex-col flex-nowrap justify-center items-center">
-              <div className="text-5xl  font-bold">+10</div>
+            <div
+              className="flex flex-col flex-nowrap justify-center items-center text-center"
+              style={{ maxWidth: "150px" }}
+            >
+              <div className="text-5xl  font-bold mb-4">+10</div>
               <div className="text-lg font-bold">{t("CertIso")}</div>
               <div className="text-sm">{t("CertIsoText2")}</div>
             </div>
