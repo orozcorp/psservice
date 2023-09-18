@@ -6,7 +6,7 @@ export default function Hero({ t }) {
       className="flex flex-row flex-wrap justify-center"
       style={{ width: "100vw", height: "60vh" }}
     >
-      <div className="flex flex-row flex-nowrap w-3/4 gap-16 items-center">
+      <div className="flex flex-row flex-wrap w-full p-10 md:p-0 md:w-3/4 gap-16 items-center">
         <Image
           src="https://psservicesavvy.s3.us-east-2.amazonaws.com/logosYLanding/LOGOPS.png"
           width={170}
@@ -16,7 +16,7 @@ export default function Hero({ t }) {
           alt="PS service"
         />
         <div className="max-w-2xl">
-          <h2 className="text-5xl text-[#324BA6] dark:text-white font-bold py-16">
+          <h2 className="text-3xl md:text-5xl text-[#324BA6] dark:text-white font-bold py-16">
             {t("Hero1")}
           </h2>
           <button className="py-2 px-4 bg-[#5D001D] text-white">
