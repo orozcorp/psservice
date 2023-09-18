@@ -6,8 +6,8 @@ export default function Clientes({ t }) {
       className="flex flex-row flex-wrap justify-center my-8"
       style={{ width: "100vw", minHeight: "60vh" }}
     >
-      <div className="flex flex-row flex-wrap w-3/4 md:justify-center justify-end items-center md:items-end  bg-[#155E75] dark:bg-inherit rounded-3xl">
-        <div className="w-full md:w-3/4 py-4 px-8 ">
+      <div className="flex flex-row flex-wrap w-3/4 md:w-[95%] md:justify-center justify-end items-center md:items-end  bg-[#155E75] dark:bg-inherit rounded-3xl">
+        <div className="w-full md:w-1/2 py-4 px-8 ">
           <h2 className="text-white dark:text-[#AEC8F8] text-3xl md:text-5xl font-bold">
             {t("Hero5")}
           </h2>

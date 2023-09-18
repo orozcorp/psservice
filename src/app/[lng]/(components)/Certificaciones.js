@@ -4,8 +4,8 @@ export default function Certificaciones({ t }) {
       className="flex flex-row flex-wrap justify-center items-center my-16  "
       style={{ width: "100vw", minHeight: "50vh" }}
     >
-      <div className="flex flex-col flex-nowrap w-3/4 gap-8 items-start justify-start bg-[#CCCCCC] dark:bg-gradient-to-r dark:from-[#10244A] dark:to-[#4D0519] rounded-xl p-2 md:p-8">
-        <div className="flex flex-row flex-wrap w-full gap-4 md:gap-8 items-center justify-center">
+      <div className="flex flex-col flex-nowrap w-3/4 md:w-[95%] gap-8 items-start justify-start bg-[#CCCCCC] dark:bg-gradient-to-r dark:from-[#10244A] dark:to-[#4D0519] rounded-xl p-2 md:p-8">
+        <div className="flex flex-row flex-wrap w-full gap-4 md:gap-8 items-center justify-start">
           <div className="flex flex-row flex-wrap justify-around items-stretch gap-4 w-60 ">
             <div className="h-24 w-24 border rounded my-4" />
             <div className="h-24 w-24 border rounded my-4" />

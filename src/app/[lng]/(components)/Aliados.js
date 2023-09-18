@@ -4,7 +4,7 @@ export default function Aliados({ t }) {
       className="flex flex-row flex-wrap justify-center"
       style={{ width: "100vw", minHeight: "60vh" }}
     >
-      <div className="flex flex-row flex-wrap w-3/4 gap-16 items-start justify-start">
+      <div className="flex flex-row flex-wrap w-3/4 md:w-[95%] gap-16 items-start justify-start">
         <div className="w-[300px] h-[25rem] border rounded" />
         <div className="flex-1 text-[#324BA6] dark:text-[#799FE6] flex flex-col flex-nowrap justify-start w-full">
           <div>
