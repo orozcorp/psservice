@@ -4,7 +4,7 @@ export default function Unete({ t }) {
       className="flex flex-row flex-wrap justify-center my-16  "
       style={{ width: "100vw", minHeight: "50vh" }}
     >
-      <div className="flex flex-row flex-wrap w-3/4 md:w-[95%] md:justify-center justify-end items-center md:items-end  bg-[#155E75] dark:bg-gradient-to-r dark:from-[#10244A] dark:to-[#4D0519] rounded-xl py-8 px-8">
+      <div className="flex flex-row flex-wrap w-full md:w-[95%] md:justify-center justify-end items-center md:items-end  bg-[#155E75] dark:bg-gradient-to-r dark:from-[#10244A] dark:to-[#4D0519] rounded-xl py-8 px-8">
         <div className="w-full md:w-[65%] py-4 px-8 ">
           <div className="text-[#AEC8F8] dark:text-[#799FE6] flex flex-col flex-nowrap justify-start w-full px-4 md:px-16">
             <div>
