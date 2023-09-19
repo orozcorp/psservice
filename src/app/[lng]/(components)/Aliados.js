@@ -26,8 +26,8 @@ export default function Aliados({ t }) {
       className="flex flex-row flex-wrap justify-center"
       style={{ width: "100vw", minHeight: "60vh" }}
     >
-      <div className="flex flex-row flex-wrap w-3/4 md:w-[95%] gap-8 items-start justify-start">
-        <div className="flex flex-row flex-wrap gap-4 w-96">
+      <div className="flex flex-row flex-wrap w-3/4 md:w-[95%] gap-4 items-start justify-start">
+        <div className="flex flex-row flex-wrap gap-4 w-[22rem]">
           <AC_Cisco width={60} height={60} />
           <AC_abb width={60} height={60} />
           <AC_Access width={60} height={60} />
