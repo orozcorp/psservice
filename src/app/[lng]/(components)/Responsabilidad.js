@@ -1,7 +1,7 @@
 export default function Responsabilidad({ t }) {
   return (
     <div
-      className="flex flex-row flex-wrap justify-center"
+      className="flex flex-row flex-wrap justify-center mb-16"
       style={{ width: "100vw", height: "60vh" }}
     >
       <div className="flex flex-row flex-wrap w-full p-10 md:p-0 md:w-3/4 gap-16 items-center justify-end ">
