@@ -78,9 +78,11 @@ export default function Soluciones({ t }) {
                 {t("Sol7Text")}
               </p>
             </div>
-            <button className="py-2 px-4 bg-[#5D001D] dark:bg-[#AEC8F8] text-white dark:text-[#324BA6] self-center rounded">
-              {t("Leer")}
-            </button>
+            <div className="h-48 w-48 flex flex-col flex-nowrap justify-center items-center ">
+              <button className="py-2 px-4 bg-[#5D001D] dark:bg-[#AEC8F8] text-white dark:text-[#324BA6] self-center rounded ">
+                {t("Leer")}
+              </button>
+            </div>
           </div>
         </div>
       </div>
