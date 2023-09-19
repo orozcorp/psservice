@@ -1,8 +1,12 @@
 "use client";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 const PowerLine = ({}) => {
   const { theme } = useTheme();
-  const color = theme === "dark" ? "#fff" : "#3f3f3f";
+  const [color, setColor] = useState("#3f3f3f");
+  useEffect(() => {
+    setColor(theme === "dark" ? "#fff" : "#3f3f3f");
+  }, [theme]);
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

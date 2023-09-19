@@ -1,4 +1,4 @@
-import PowerLine from "../../components/Atoms/PowerLine";
+import PowerLine from "../../components/SVG/PowerLine";
 
 export default function SomosIngenieria({ t }) {
   return (

@@ -52,7 +52,7 @@ export const NavbarBase = ({ t, lng }) => {
                     style={{
                       width: "20px",
                       height: "20px",
-                      color: "rgb(63 63 70)",
+                      color: "#fff",
                     }}
                     onClick={() => setShowMenu(!showMenu)}
                   />
@@ -66,7 +66,8 @@ export const NavbarBase = ({ t, lng }) => {
         <NavbarDisplayed
           showMenu={showMenu}
           setShowMenu={setShowMenu}
-          session={session}
+          t={t}
+          // session={session}
         />
       )}
     </>
