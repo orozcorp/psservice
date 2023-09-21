@@ -1,10 +1,10 @@
-import SOL_ENERGIA from "../../components/SVG/SOL_ENERGIA";
-import SOL_SOPORTE from "../../components/SVG/SOL_SOPORTE";
-import SOL_FAB from "../../components/SVG/SOL_FAB";
-import SOL_AIRE from "../../components/SVG/SOL_AIRE";
-import SOL_SALUD from "../../components/SVG/SOL_SALUD";
-import SOL_MONITOREO from "../../components/SVG/SOL_MONITOREO";
-import SOL_INFRA from "../../components/SVG/SOL_INFRA";
+// import SOL_ENERGIA from "../../components/SVG/SOL_ENERGIA";
+// import SOL_SOPORTE from "../../components/SVG/SOL_SOPORTE";
+// import SOL_FAB from "../../components/SVG/SOL_FAB";
+// import SOL_AIRE from "../../components/SVG/SOL_AIRE";
+// import SOL_SALUD from "../../components/SVG/SOL_SALUD";
+// import SOL_MONITOREO from "../../components/SVG/SOL_MONITOREO";
+// import SOL_INFRA from "../../components/SVG/SOL_INFRA";
 export default function Soluciones({ t }) {
   return (
     <div
@@ -19,7 +19,7 @@ export default function Soluciones({ t }) {
           <p className="text-2xl font-bold mb-8 text-white dark:text-[#AEC8F8]">
             {t("Hero4Sub")}
           </p>
-          <div className="flex flex-col md:flex-row flex-nowrap justify-center content-center md:justify-between items:center md:flex-wrap gap-8 w-full ">
+          {/* <div className="flex flex-col md:flex-row flex-nowrap justify-center content-center md:justify-between items:center md:flex-wrap gap-8 w-full ">
             <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
               <SOL_ENERGIA width="10rem" height="10rem" />
               <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
@@ -88,7 +88,7 @@ export default function Soluciones({ t }) {
                 {t("Leer")}
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
