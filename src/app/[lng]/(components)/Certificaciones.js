@@ -1,3 +1,7 @@
+import ISO_14001 from "../../components/SVG/ISO_14001";
+import ISO_9001_2015 from "../../components/SVG/ISO_9001_2015";
+import ISO_Mesa_trabajo from "../../components/SVG/ISO_Mesa_trabajo";
+import ISO_MESA_TRES from "../../components/SVG/ISO_MESA_TRES";
 export default function Certificaciones({ t }) {
   return (
     <div
@@ -6,11 +10,11 @@ export default function Certificaciones({ t }) {
     >
       <div className="flex flex-col flex-nowrap w-full md:w-[95%] gap-8 items-start justify-start bg-[#CCCCCC] dark:bg-gradient-to-r dark:from-[#10244A] dark:to-[#4D0519] rounded-xl p-2 md:p-8 pb-16">
         <div className="flex flex-row flex-wrap w-full gap-4 md:gap-8 items-center justify-start p-4 md:p-8">
-          <div className="flex flex-row flex-wrap justify-center md:justify-around items-center md:items-stretch gap-4 w-full md:w-60 self-center">
-            <div className="h-24 w-24 border rounded my-4" />
-            <div className="h-24 w-24 border rounded my-4" />
-            <div className="h-24 w-24 border rounded my-4" />
-            <div className="h-24 w-24 border rounded my-4" />
+          <div className="flex flex-row flex-wrap justify-center md:justify-around items-center md:items-stretch gap-4 w-full md:w-[22rem] self-center">
+            <ISO_14001 width="8rem" height="8rem" />
+            <ISO_9001_2015 width="8rem" height="8rem" />
+            <ISO_Mesa_trabajo width="8rem" height="8rem" />
+            <ISO_MESA_TRES width="8rem" height="8rem" />
           </div>
           <div className="text-[#324BA6] dark:text-[#799FE6] flex flex-col md:flex-row flex-nowrap md:flex-wrap justify-center items-center md:justify-start px-0 md:px-8 text-center md:text-left max-w-2xl ">
             <div className="flex flex-col flex-nowrap ">

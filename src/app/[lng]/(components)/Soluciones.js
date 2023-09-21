@@ -1,5 +1,10 @@
-import React from "react";
-
+import SOL_ENERGIA from "../../components/SVG/SOL_ENERGIA";
+import SOL_SOPORTE from "../../components/SVG/SOL_SOPORTE";
+import SOL_FAB from "../../components/SVG/SOL_FAB";
+import SOL_AIRE from "../../components/SVG/SOL_AIRE";
+import SOL_SALUD from "../../components/SVG/SOL_SALUD";
+import SOL_MONITOREO from "../../components/SVG/SOL_MONITOREO";
+import SOL_INFRA from "../../components/SVG/SOL_INFRA";
 export default function Soluciones({ t }) {
   return (
     <div
@@ -15,8 +20,8 @@ export default function Soluciones({ t }) {
             {t("Hero4Sub")}
           </p>
           <div className="flex flex-col md:flex-row flex-nowrap justify-center content-center md:justify-between items:center md:flex-wrap gap-8 w-full ">
-            <div className="flex flex-col flex-nowrap justify-center items-center w-full md:w-fit">
-              <div className="h-48 w-48 border " />
+            <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
+              <SOL_ENERGIA width="10rem" height="10rem" />
               <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
                 {t("Sol1Title")}
               </p>
@@ -24,8 +29,8 @@ export default function Soluciones({ t }) {
                 {t("Sol1Text")}
               </p>
             </div>
-            <div className="flex flex-col flex-nowrap justify-center items-center w-full md:w-fit">
-              <div className="h-48 w-48 border " />
+            <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
+              <SOL_SOPORTE width="10rem" height="10rem" />
               <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
                 {t("Sol2Title")}
               </p>
@@ -33,8 +38,8 @@ export default function Soluciones({ t }) {
                 {t("Sol2Text")}
               </p>
             </div>
-            <div className="flex flex-col flex-nowrap justify-center items-center w-full md:w-fit">
-              <div className="h-48 w-48 border " />
+            <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
+              <SOL_FAB width="10rem" height="10rem" />
               <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
                 {t("Sol3Title")}
               </p>
@@ -42,8 +47,8 @@ export default function Soluciones({ t }) {
                 {t("Sol3Text")}
               </p>
             </div>
-            <div className="flex flex-col flex-nowrap justify-center items-center w-full md:w-fit">
-              <div className="h-48 w-48 border " />
+            <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
+              <SOL_INFRA width="10rem" height="10rem" />
               <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
                 {t("Sol4Title")}
               </p>
@@ -51,8 +56,8 @@ export default function Soluciones({ t }) {
                 {t("Sol4Text")}
               </p>
             </div>
-            <div className="flex flex-col flex-nowrap justify-center items-center w-full md:w-fit">
-              <div className="h-48 w-48 border " />
+            <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
+              <SOL_MONITOREO width="10rem" height="10rem" />
               <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
                 {t("Sol5Title")}
               </p>
@@ -60,8 +65,8 @@ export default function Soluciones({ t }) {
                 {t("Sol5Text")}
               </p>
             </div>
-            <div className="flex flex-col flex-nowrap justify-center items-center w-full md:w-fit">
-              <div className="h-48 w-48 border " />
+            <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
+              <SOL_AIRE width="10rem" height="10rem" />
               <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
                 {t("Sol6Title")}
               </p>
@@ -69,8 +74,8 @@ export default function Soluciones({ t }) {
                 {t("Sol6Text")}
               </p>
             </div>
-            <div className="flex flex-col flex-nowrap justify-center items-center w-full md:w-fit">
-              <div className="h-48 w-48 border " />
+            <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
+              <SOL_SALUD width="10rem" height="10rem" />
               <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
                 {t("Sol7Title")}
               </p>
