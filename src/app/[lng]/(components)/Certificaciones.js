@@ -1,5 +1,5 @@
 import ISO_14001 from "../../components/SVG/ISO_14001";
-import ISO_9001_2015 from "../../components/SVG/ISO_9001_2015";
+import ISO9001 from "../../components/SVG/ISO9001";
 import ISO_Mesa_trabajo from "../../components/SVG/ISO_Mesa_trabajo";
 import ISO_MESA_TRES from "../../components/SVG/ISO_MESA_TRES";
 export default function Certificaciones({ t }) {
@@ -12,7 +12,7 @@ export default function Certificaciones({ t }) {
         <div className="flex flex-row flex-wrap w-full gap-4 md:gap-8 items-center justify-start p-4 md:p-8">
           <div className="flex flex-row flex-wrap justify-center md:justify-around items-center md:items-stretch gap-4 w-full md:w-[22rem] self-center">
             <ISO_14001 width="8rem" height="8rem" />
-            <ISO_9001_2015 width="8rem" height="8rem" />
+            <ISO9001 width="8rem" height="8rem" />
             <ISO_Mesa_trabajo width="8rem" height="8rem" />
             <ISO_MESA_TRES width="8rem" height="8rem" />
           </div>

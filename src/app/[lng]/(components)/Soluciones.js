@@ -1,7 +1,7 @@
 import SOL_ENERGIA from "../../components/SVG/SOL_ENERGIA";
 import SOL_SOPORTE from "../../components/SVG/SOL_SOPORTE";
 import SOL_FAB from "../../components/SVG/SOL_FAB";
-import SOL_AIRE from "../../components/SVG/SOL_AIRE";
+import SolAire from "../../components/SVG/SolAire";
 import SOL_SALUD from "../../components/SVG/SOL_SALUD";
 import SOL_MONITOREO from "../../components/SVG/SOL_MONITOREO";
 import SOL_INFRA from "../../components/SVG/SOL_INFRA";
@@ -66,7 +66,7 @@ export default function Soluciones({ t }) {
               </p>
             </div>
             <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
-              <SOL_AIRE width="10rem" height="10rem" />
+              <SolAire width="10rem" height="10rem" />
               <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
                 {t("Sol6Title")}
               </p>
