@@ -2,16 +2,17 @@ import Image from "next/image";
 
 export default function Hero({ t }) {
   return (
-    <div
-      className="flex flex-row flex-wrap justify-center"
-      style={{ width: "100vw", height: "60vh" }}
-    >
-      <div className="flex flex-row flex-wrap w-full p-10 md:p-0 md:w-3/4 gap-16 items-center">
+    <div className="flex justify-center items-center h-[60vh] w-[100vw]">
+      <div className="flex flex-row flex-wrap items-center w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2">
         <Image
           src="https://psservicesavvy.s3.us-east-2.amazonaws.com/logosYLanding/LOGOPS.png"
           width={170}
           height={60}
-          style={{ width: "170px", height: "60px" }}
+          style={{
+            width: "170px",
+            height: "60px",
+          }}
+          className="ml-0 md:ml-[-11rem]"
           loading="lazy"
           alt="PS service"
         />

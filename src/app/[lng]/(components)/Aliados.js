@@ -22,44 +22,48 @@ import AC_Fortinet from "../../components/SVG/AC_Fortinet";
 import AC_Dell from "../../components/SVG/AC_Dell";
 export default function Aliados({ t }) {
   return (
-    <div
-      className="flex flex-row flex-wrap justify-center"
-      style={{ width: "100vw", minHeight: "60vh" }}
-    >
-      <div className="flex flex-row flex-wrap w-3/4 md:w-[95%] gap-4 items-start justify-start">
-        <div className="flex flex-row flex-wrap gap-4 w-[22rem]">
-          <AC_Cisco width={60} height={60} />
-          <AC_abb width={60} height={60} />
-          <AC_Access width={60} height={60} />
-          <AC_Daikin width={60} height={60} />
-          <AC_XFusion width={60} height={60} />
-          <AC_VMware width={60} height={60} />
-          <AC_Vertiv width={60} height={60} />
-          <AC_Uniflair width={60} height={60} />
-          <AC_Staco width={60} height={60} />
-          <AC_Scheider width={60} height={60} />
-          <AC_Rittal width={60} height={60} />
-          <AC_Pure width={60} height={60} />
-          <AC_PSS width={60} height={60} />
-          <AC_Net width={60} height={60} />
-          <AC_Mesa width={60} height={60} />
-          <AC_Kohler width={60} height={60} />
-          <AC_Jonix width={60} height={60} />
-          <AC_Huawei width={60} height={60} />
-          <AC_HP width={60} height={60} />
-          <AC_Generac width={60} height={60} />
-          <AC_Fortinet width={60} height={60} />
-          <AC_Dell width={60} height={60} />
-        </div>
-        <div className="flex-1 text-[#324BA6] dark:text-[#799FE6] flex flex-col flex-nowrap justify-start">
-          <div>
-            <h2 className="text-5xl md:text-8xl   font-bold py-2">
-              {t("Hero7")}
-            </h2>
-            <p className="text-3xl md:text-5xl font-bold mb-8">
-              {t("Hero7Sub")}
-            </p>
-            <p className="text-lg md:text-2xl font-bold">{t("Hero7Text")}</p>
+    <div className="flex flex-col flex-nowrap w-full justify-center items-center">
+      <div
+        className="flex flex-row flex-wrap justify-center"
+        style={{ width: "95vw", minHeight: "60vh" }}
+      >
+        <div className="flex items-center w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2 ">
+          <div className="flex flex-row flex-wrap w-full justify-center items-start">
+            <div className="w-[330px] h-fit rounded ml-0 md:ml-[-20rem] flex flex-row flex-wrap justify-between items-baseline p-4 mt-[-1rem]">
+              <AC_Cisco width={60} height={60} />
+              <AC_abb width={60} height={60} />
+              <AC_Access width={60} height={60} />
+              <AC_Daikin width={60} height={60} />
+              <AC_XFusion width={60} height={60} />
+              <AC_VMware width={60} height={60} />
+              <AC_Vertiv width={60} height={60} />
+              <AC_Uniflair width={60} height={60} />
+              <AC_Staco width={60} height={60} />
+              <AC_Scheider width={60} height={60} />
+              <AC_Rittal width={60} height={60} />
+              <AC_Pure width={60} height={60} />
+              <AC_PSS width={60} height={60} />
+              <AC_Net width={60} height={60} />
+              <AC_Mesa width={60} height={60} />
+              <AC_Kohler width={60} height={60} />
+              <AC_Jonix width={60} height={60} />
+              <AC_Huawei width={60} height={60} />
+              <AC_HP width={60} height={60} />
+              <AC_Generac width={60} height={60} />
+              <AC_Fortinet width={60} height={60} />
+              <AC_Dell width={60} height={60} />
+            </div>
+            <div className="flex-1 text-[#324BA6] dark:text-[#799FE6] flex flex-col flex-nowrap justify-start">
+              <div>
+                <h2 className="text-3xl md:text-5xl   font-bold py-2">
+                  {t("Hero7")}
+                </h2>
+                <p className="text-xl md:text-3xl font-bold mb-8">
+                  {t("Hero7Sub")}
+                </p>
+                <p className="text-lg md:text-xl font-bold">{t("Hero7Text")}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
