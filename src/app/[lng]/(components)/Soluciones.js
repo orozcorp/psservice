@@ -7,7 +7,10 @@ import SOL_MONITOREO from "../../components/SVG/SOL_MONITOREO";
 import SOL_INFRA from "../../components/SVG/SOL_INFRA";
 export default function Soluciones({ t }) {
   return (
-    <div className="flex flex-col flex-nowrap w-full justify-center items-center">
+    <div
+      className="flex flex-col flex-nowrap w-full justify-center items-center"
+      id="Servicios"
+    >
       <div
         className="flex flex-row flex-wrap justify-center my-8 bg-[#155E75] dark:bg-inherit rounded-3xl py-8"
         style={{ width: "95vw", minHeight: "60vh" }}

@@ -22,7 +22,10 @@ import AC_Fortinet from "../../components/SVG/AC_Fortinet";
 import AC_Dell from "../../components/SVG/AC_Dell";
 export default function Aliados({ t }) {
   return (
-    <div className="flex flex-col flex-nowrap w-full justify-center items-center ">
+    <div
+      className="flex flex-col flex-nowrap w-full justify-center items-center "
+      id="Aliados"
+    >
       <div
         className="flex flex-col flex-nowrap justify-center items-center"
         style={{ width: "95vw", minHeight: "60vh" }}

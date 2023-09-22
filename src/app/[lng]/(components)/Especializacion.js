@@ -1,6 +1,9 @@
 export default function Especializacion({ t }) {
   return (
-    <div className="flex flex-col flex-nowrap w-full justify-center items-center">
+    <div
+      className="flex flex-col flex-nowrap w-full justify-center items-center"
+      id="Especializacion"
+    >
       <div
         className="flex flex-row flex-wrap justify-center"
         style={{ width: "95vw", minHeight: "60vh" }}

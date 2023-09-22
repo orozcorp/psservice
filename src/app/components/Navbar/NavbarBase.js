@@ -2,7 +2,7 @@
 import { useState } from "react";
 import useWindowSize from "../hooks/useWindowSize";
 import Link from "next/link";
-import router from "next/navigation";
+import { usePathname } from "next/navigation";
 import { AiOutlineMenu } from "react-icons/ai";
 import NavbarDisplayed from "./NavbarDisplayed";
 import { ThemeSwitcher } from "../ThemeSwitcher";
@@ -12,6 +12,8 @@ export const NavbarBase = ({ t, lng }) => {
   const size = useWindowSize();
   const width = size?.width ?? 0;
   const [showMenu, setShowMenu] = useState(false);
+  const pathname = usePathname();
+  console.log(pathname);
   return (
     <>
       <nav className="flex flex-row items-center justify-center bg-[#23283C] dark:bg-[#0A2473] ">
@@ -34,11 +36,13 @@ export const NavbarBase = ({ t, lng }) => {
           </div>
           {width > 1000 && (
             <div className="flex flex-row flex-wrap justify-end gap-8 items-center content-center text-white mr-4 w-full">
-              <Link href={`${lng}/Inicio`}>{t("Inicio")}</Link>
-              <Link href={`${lng}/Especialidades`}>{t("Especialidades")}</Link>
-              <Link href={`${lng}/Servicios`}>{t("Servicios")}</Link>
-              <Link href={`${lng}/Clientes`}>{t("Clientes")}</Link>
-              <Link href={`${lng}/Aliados`}>{t("Aliados")}</Link>
+              <Link href={`${lng}/`}>{t("Inicio")}</Link>
+              <Link href={`${lng}/#Especializacion`}>
+                {t("Especialidades")}
+              </Link>
+              <Link href={`${lng}/#Servicios`}>{t("Servicios")}</Link>
+              <Link href={`${lng}/#Clientes`}>{t("Clientes")}</Link>
+              <Link href={`${lng}/#Aliados`}>{t("Aliados")}</Link>
               <Link href={`${lng}/Bolsa`}>{t("Bolsa")}</Link>
 
               <ThemeSwitcher />

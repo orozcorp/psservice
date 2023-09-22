@@ -2,7 +2,10 @@ import React from "react";
 
 export default function Clientes({ t }) {
   return (
-    <div className="flex flex-col flex-nowrap w-full justify-center items-center">
+    <div
+      className="flex flex-col flex-nowrap w-full justify-center items-center"
+      id="Clientes"
+    >
       <div
         className="flex flex-row flex-wrap justify-center my-8 bg-[#155E75] dark:bg-inherit rounded-3xl"
         style={{ width: "95vw", minHeight: "60vh" }}
