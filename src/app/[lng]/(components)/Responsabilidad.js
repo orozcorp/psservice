@@ -6,7 +6,7 @@ export default function Responsabilidad({ t }) {
         style={{ width: "95vw", minHeight: "60vh" }}
       >
         <div className="flex items-center w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2 ">
-          <div className="w-full md:w-[850px] text-[#324BA6] dark:text-[#799FE6]">
+          <div className="w-full md:w-[850px] text-[#324BA6] dark:text-[#FFFFFF] text-justify">
             <h2 className="text-3xl md:text-5xl  font-bold py-2">
               {t("Hero9")}
             </h2>

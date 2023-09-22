@@ -8,7 +8,7 @@ export default function Especializacion({ t }) {
         <div className="flex items-center w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2">
           <div className="flex flex-row flex-wrap w-full justify-center md:justify-start">
             <div className="w-60 h-[25rem] border rounded ml-0 md:ml-[-19rem]" />
-            <div className="text-[#324BA6] dark:text-[#799FE6] flex flex-col md:flex-row flex-nowrap md:flex-wrap justify-center items-center md:justify-start px-0 md:px-16 text-left mt-16 md:mt-0 md:text-left mw-full max-w-2xl">
+            <div className="text-[#324BA6] dark:text-[#fff] flex flex-col md:flex-row flex-nowrap md:flex-wrap justify-center items-center md:justify-start px-0 md:px-16 text-left mt-16 md:mt-0 md:text-left mw-full max-w-2xl">
               <div>
                 <h2 className="text-3xl md:text-5xl  font-bold py-2">
                   {t("Hero3")}

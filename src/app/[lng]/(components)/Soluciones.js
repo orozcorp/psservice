@@ -15,74 +15,74 @@ export default function Soluciones({ t }) {
         <div className="flex items-center w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2   ">
           <div className="w-full  flex flex-col flex-nowrap ">
             <div className="w-full md:w-3/4 py-4  text-left md:text-justify">
-              <h2 className="w-full text-white dark:text-[#AEC8F8] text-3xl md:text-5xl font-bold">
+              <h2 className="w-full text-white dark:text-[#fff] text-3xl md:text-5xl font-bold">
                 {t("Hero4")}
               </h2>
-              <p className="text-2xl font-bold mb-8 text-white dark:text-[#AEC8F8]">
+              <p className="text-2xl font-bold mb-8 text-white dark:text-[#fff]">
                 {t("Hero4Sub")}
               </p>
             </div>
             <div className="flex flex-col md:flex-row flex-nowrap justify-center items-center content-center md:justify-between  md:flex-wrap gap-8 w-full xl:ml-24 2xl:ml-[-4rem] xl:min-w-[60vw] 2xl:min-w-full justify-self-center self-center place-self-center">
               <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48 ">
                 <SOL_ENERGIA width="10rem" height="10rem" />
-                <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
+                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol1Title")}
                 </p>
-                <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
+                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol1Text")}
                 </p>
               </div>
               <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
                 <SOL_SOPORTE width="10rem" height="10rem" />
-                <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
+                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol2Title")}
                 </p>
-                <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
+                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol2Text")}
                 </p>
               </div>
               <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
                 <SOL_FAB width="10rem" height="10rem" />
-                <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
+                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol3Title")}
                 </p>
-                <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
+                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol3Text")}
                 </p>
               </div>
               <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
                 <SOL_INFRA width="10rem" height="10rem" />
-                <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
+                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol4Title")}
                 </p>
-                <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
+                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol4Text")}
                 </p>
               </div>
               <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
                 <SOL_MONITOREO width="10rem" height="10rem" />
-                <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
+                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol5Title")}
                 </p>
-                <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
+                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol5Text")}
                 </p>
               </div>
               <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
                 <SolAire width="10rem" height="10rem" />
-                <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
+                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol6Title")}
                 </p>
-                <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
+                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol6Text")}
                 </p>
               </div>
               <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
                 <SOL_SALUD width="10rem" height="10rem" />
-                <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
+                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol7Title")}
                 </p>
-                <p className="text-white dark:text-[#AEC8F8] text-sm font-bold">
+                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol7Text")}
                 </p>
               </div>

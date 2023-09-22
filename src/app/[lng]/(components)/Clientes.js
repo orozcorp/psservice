@@ -9,10 +9,10 @@ export default function Clientes({ t }) {
       >
         <div className="flex items-center w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2   ">
           <div className="w-full py-4 ">
-            <h2 className="text-white dark:text-[#AEC8F8] text-3xl md:text-5xl font-bold">
+            <h2 className="text-white dark:text-[#FFF] text-3xl md:text-5xl font-bold">
               {t("Hero5")}
             </h2>
-            <p className="text-2xl font-bold my-4 text-white dark:text-[#AEC8F8]">
+            <p className="text-2xl font-bold my-4 text-white dark:text-[#FFF]">
               {t("Hero5Sub")}
             </p>
             <p className="text-lg font-bold text-white my-4">

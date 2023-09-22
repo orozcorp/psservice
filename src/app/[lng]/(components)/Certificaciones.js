@@ -17,7 +17,7 @@ export default function Certificaciones({ t }) {
               <ISO_Mesa_trabajo width="8rem" height="8rem" />
               <ISO_MESA_TRES width="8rem" height="8rem" />
             </div>
-            <div className="text-[#324BA6] dark:text-[#799FE6] flex-1 flex flex-col md:flex-row flex-nowrap md:flex-wrap justify-center items-start md:justify-start text-left md:text-left max-w-2xl ">
+            <div className="text-[#324BA6] dark:text-[#FFF] flex-1 flex flex-col md:flex-row flex-nowrap md:flex-wrap justify-center items-start md:justify-start text-left md:text-left max-w-2xl ">
               <div className="flex flex-col flex-nowrap ">
                 <h2 className="text-3xl md:text-5xl  font-bold pb-8">
                   {t("Hero6")}

@@ -22,49 +22,52 @@ import AC_Fortinet from "../../components/SVG/AC_Fortinet";
 import AC_Dell from "../../components/SVG/AC_Dell";
 export default function Aliados({ t }) {
   return (
-    <div className="flex flex-col flex-nowrap w-full justify-center items-center">
+    <div className="flex flex-col flex-nowrap w-full justify-center items-center ">
       <div
-        className="flex flex-row flex-wrap justify-center"
+        className="flex flex-col flex-nowrap justify-center items-center"
         style={{ width: "95vw", minHeight: "60vh" }}
       >
-        <div className="flex items-center w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2 ">
-          <div className="flex flex-row flex-wrap w-full justify-center items-start">
-            <div className="w-[330px] h-fit rounded ml-0 md:ml-[-20rem] flex flex-row flex-wrap justify-between items-baseline p-4 mt-[-1rem]">
-              <AC_Cisco width={60} height={60} />
-              <AC_abb width={60} height={60} />
-              <AC_Access width={60} height={60} />
-              <AC_Daikin width={60} height={60} />
-              <AC_XFusion width={60} height={60} />
-              <AC_VMware width={60} height={60} />
-              <AC_Vertiv width={60} height={60} />
-              <AC_Uniflair width={60} height={60} />
-              <AC_Staco width={60} height={60} />
-              <AC_Scheider width={60} height={60} />
-              <AC_Rittal width={60} height={60} />
-              <AC_Pure width={60} height={60} />
-              <AC_PSS width={60} height={60} />
-              <AC_Net width={60} height={60} />
-              <AC_Mesa width={60} height={60} />
-              <AC_Kohler width={60} height={60} />
-              <AC_Jonix width={60} height={60} />
-              <AC_Huawei width={60} height={60} />
-              <AC_HP width={60} height={60} />
-              <AC_Generac width={60} height={60} />
-              <AC_Fortinet width={60} height={60} />
-              <AC_Dell width={60} height={60} />
+        <div className="flex items-start w-full lg:p-0 lg:w-3/4 xl:w-1/2 ">
+          <div className="flex flex-row flex-wrap w-full justify-start md:justify-start ">
+            <div className="w-full md:w-[380px] rounded ml-0 md:ml-[-10rem] xl:ml-[-24rem] px-4 md:px-12">
+              <h2 className="text-5xl md:text-7xl font-bold py-2">
+                {t("Hero7")}
+              </h2>
+
+              <p className="text-2xl md:text-4xl font-bold mb-8">
+                {t("Hero7Sub")}
+              </p>
             </div>
-            <div className="flex-1 text-[#324BA6] dark:text-[#799FE6] flex flex-col flex-nowrap justify-start">
+            <div className="text-[#324BA6] flex-1 dark:text-[#FFFFFF] flex flex-col md:flex-row flex-nowrap md:flex-wrap justify-center items-center md:justify-start px-4 text-left mt-16 md:mt-0 md:text-left">
               <div>
-                <h2 className="text-3xl md:text-5xl   font-bold py-2">
-                  {t("Hero7")}
-                </h2>
-                <p className="text-xl md:text-3xl font-bold mb-8">
-                  {t("Hero7Sub")}
-                </p>
-                <p className="text-lg md:text-xl font-bold">{t("Hero7Text")}</p>
+                <p className="text-xl font-bold">{t("Hero7Text")}</p>
               </div>
             </div>
           </div>
+        </div>
+        <div className="w-full my-8 h-fit  gap-4 flex flex-col md:flex-row  flex-nowrap md:flex-wrap justify-center md:justify-between items-center md:items-baseline p-4">
+          <AC_Cisco width={200} height={200} />
+          <AC_abb width={200} height={200} />
+          <AC_Access width={200} height={200} />
+          <AC_Daikin width={200} height={200} />
+          <AC_XFusion width={200} height={200} />
+          <AC_VMware width={200} height={200} />
+          <AC_Vertiv width={200} height={200} />
+          <AC_Uniflair width={200} height={200} />
+          <AC_Staco width={200} height={200} />
+          <AC_Scheider width={200} height={200} />
+          <AC_Rittal width={200} height={200} />
+          <AC_Pure width={200} height={200} />
+          <AC_PSS width={200} height={200} />
+          <AC_Net width={200} height={200} />
+          <AC_Mesa width={200} height={200} />
+          <AC_Kohler width={200} height={200} />
+          <AC_Jonix width={200} height={200} />
+          <AC_Huawei width={200} height={200} />
+          <AC_HP width={200} height={200} />
+          <AC_Generac width={200} height={200} />
+          <AC_Fortinet width={200} height={200} />
+          <AC_Dell width={200} height={200} />
         </div>
       </div>
     </div>
