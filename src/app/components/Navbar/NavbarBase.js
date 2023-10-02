@@ -13,7 +13,6 @@ export const NavbarBase = ({ t, lng }) => {
   const width = size?.width ?? 0;
   const [showMenu, setShowMenu] = useState(false);
   const pathname = usePathname();
-  console.log(pathname);
   return (
     <>
       <nav className="flex flex-row items-center justify-center bg-[#23283C] dark:bg-[#0A2473] ">
