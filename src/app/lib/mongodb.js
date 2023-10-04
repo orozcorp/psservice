@@ -30,7 +30,6 @@ export async function connectToDatabase() {
 
   if (!cached.promise) {
     cached.promise = MongoClient.connect(MONGODB_URI).then((client) => {
-      console.log("MONGODB_DB", MONGODB_DB);
       return {
         client,
         db: client.db(MONGODB_DB),
