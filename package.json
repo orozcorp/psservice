@@ -9,13 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@auth/core": "^0.16.1",
+    "@auth/mongodb-adapter": "^2.0.1",
     "accept-language": "^3.0.18",
     "autoprefixer": "10.4.15",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "i18next": "^23.5.1",
     "i18next-resources-to-backend": "^1.1.4",
+    "mongodb": "^6.1.0",
     "next": "13.4.19",
+    "next-auth": "^4.23.2",
     "next-themes": "^0.2.1",
     "postcss": "8.4.29",
     "react": "18.2.0",
