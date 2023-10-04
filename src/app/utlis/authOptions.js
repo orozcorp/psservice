@@ -1,7 +1,7 @@
 import EmailProvider from "next-auth/providers/email";
 import { MongoDBAdapter } from "@next-auth/mongodb-adapter";
-import clientPromise from "@/lib/mongoPromise";
-import { connectToDatabase } from "@/lib/mongodb";
+import clientPromise from "../lib/mongoPromise";
+import { connectToDatabase } from "../lib/mongodb";
 
 export const authOptions = {
   providers: [
@@ -16,6 +16,9 @@ export const authOptions = {
     brandColor: "rgb(0,0,0)",
     logo: "https://orozcorp.s3.us-east-2.amazonaws.com/orozcorp/TECBOY+FACE.svg",
     buttonText: "#fff",
+  },
+  pages: {
+    signIn: "/auth/email-signin",
   },
   callbacks: {
     async signIn({ user }) {
