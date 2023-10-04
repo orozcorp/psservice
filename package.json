@@ -20,7 +20,7 @@
     "i18next": "^23.5.1",
     "i18next-resources-to-backend": "^1.1.4",
     "mongodb": "^6.1.0",
-    "next": "13.4.19",
+    "next": "^13.5.4",
     "next-auth": "^4.23.2",
     "next-themes": "^0.2.1",
     "node-fetch": "^3.3.2",

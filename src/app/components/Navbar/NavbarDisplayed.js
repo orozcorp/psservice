@@ -1,7 +1,14 @@
 "use client";
 import Link from "next/link";
 import { ThemeSwitcher } from "../ThemeSwitcher";
-export default function NavbarDisplayed({ t, lng, showMenu, setShowMenu }) {
+import { signOut } from "next-auth/react";
+export default function NavbarDisplayed({
+  t,
+  lng,
+  showMenu,
+  setShowMenu,
+  session,
+}) {
   return (
     <div className="h-screen bg-[#23283C] dark:bg-[#0A2473]">
       <div
@@ -30,9 +37,16 @@ export default function NavbarDisplayed({ t, lng, showMenu, setShowMenu }) {
         <div className=" text-white text-3xl">
           <Link href={`${lng}/Bolsa`}>{t("Bolsa")}</Link>
         </div>
-        <div className=" text-white text-3xl">
-          <Link href="/LogIn">{t("LogIn")}</Link>
-        </div>
+        {!session && (
+          <div className=" text-white text-3xl">
+            <Link href="/LogIn">{t("LogIn")}</Link>
+          </div>
+        )}
+        {session && (
+          <div className=" text-white text-3xl">
+            <button onClick={() => signOut()}>Log Out</button>
+          </div>
+        )}
       </div>
     </div>
   );

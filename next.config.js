@@ -52,10 +52,6 @@ const nextConfig = {
   },
   swcMinify: true,
   optimizeFonts: false,
-  env: {
-    BASE_URL: dev ? "http://localhost:3000/" : "https://www.orozcorp.live/",
-    DB_URI: process.env.DB_URI,
-  },
 };
 
 module.exports = nextConfig;

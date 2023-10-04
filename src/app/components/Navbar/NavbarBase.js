@@ -9,12 +9,14 @@ import { ThemeSwitcher } from "../ThemeSwitcher";
 import { rgbDataURL } from "../helpers/blur";
 import Image from "next/image";
 import { useTheme } from "next-themes";
+import { useSession, signOut } from "next-auth/react";
 export const NavbarBase = ({ t, lng }) => {
   const size = useWindowSize();
   const width = size?.width ?? 0;
   const [showMenu, setShowMenu] = useState(false);
   const pathname = usePathname();
   const { theme } = useTheme();
+  const { data: session, status } = useSession();
   return (
     <>
       <nav className="flex flex-row items-center justify-center bg-[#23283C] dark:bg-[#0A2473] ">
@@ -46,14 +48,26 @@ export const NavbarBase = ({ t, lng }) => {
               <Link href={`/${lng}/#Aliados`}>{t("Aliados")}</Link>
               <Link href={`/${lng}/Bolsa`}>{t("Bolsa")}</Link>
               <ThemeSwitcher />
-              <Link
-                href="/api/auth/signin"
-                className={`${
-                  theme === "dark" ? "text-[#F5C756]" : "text-[#23283C]"
-                }`}
-              >
-                Log In
-              </Link>
+              {!session && (
+                <Link
+                  href="/api/auth/signin"
+                  className={`${
+                    theme === "dark" ? "text-[#F5C756]" : "text-[#23283C]"
+                  }`}
+                >
+                  Log In
+                </Link>
+              )}
+              {session && (
+                <button
+                  className={`${
+                    theme === "dark" ? "text-[#F5C756]" : "text-[#23283C]"
+                  }`}
+                  onClick={() => signOut()}
+                >
+                  Log out
+                </button>
+              )}
             </div>
           )}
           {width < 1000 && (
@@ -79,7 +93,7 @@ export const NavbarBase = ({ t, lng }) => {
           showMenu={showMenu}
           setShowMenu={setShowMenu}
           t={t}
-          // session={session}
+          session={session}
         />
       )}
     </>

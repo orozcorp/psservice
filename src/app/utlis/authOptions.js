@@ -17,9 +17,6 @@ export const authOptions = {
     logo: "https://orozcorp.s3.us-east-2.amazonaws.com/orozcorp/TECBOY+FACE.svg",
     buttonText: "#fff",
   },
-  pages: {
-    signIn: "/auth/email-signin",
-  },
   callbacks: {
     async signIn({ user }) {
       const { db } = await connectToDatabase();
@@ -43,8 +40,6 @@ export const authOptions = {
         session.user.id = userInfo._id;
         session.user.name = `${userInfo.profile.name} ${userInfo.profile.lastName}`;
         session.user.photo = userInfo.profile.picture;
-        session.user.familias = userInfo.profile.familias || [];
-        session.user.minor = userInfo.profile.minor;
         return session;
       }
       return {};

@@ -11,6 +11,7 @@ export default async function getContext() {
     : cookies().get(
         dev ? "next-auth.session-token" : "__Secure-next-auth.session-token"
       )?.value;
+  console.log("from cookies");
   const { db } = await connectToDatabase();
   const userId = await db
     .collection("sessions")
