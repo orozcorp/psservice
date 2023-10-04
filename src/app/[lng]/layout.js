@@ -5,6 +5,7 @@ import { ThemeProvider } from "../providers/theme-provider";
 import { Navbar } from "../components/Navbar";
 import { Oxygen } from "next/font/google";
 import { Footer } from "../components/Footer";
+
 import NextAuthSessionProvider from "../providers/sessionProvider";
 const oxygen = Oxygen({
   subsets: ["latin"],
@@ -14,7 +15,7 @@ export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
 }
 
-export default function RootLayout({ children, params: { lng } }) {
+export default async function RootLayout({ children, params: { lng } }) {
   return (
     <html lang={lng} dir={dir(lng)}>
       <head />
