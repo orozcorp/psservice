@@ -43,7 +43,6 @@ export const NavbarBase = ({ t, lng }) => {
               <Link href={`${lng}/#Clientes`}>{t("Clientes")}</Link>
               <Link href={`${lng}/#Aliados`}>{t("Aliados")}</Link>
               <Link href={`${lng}/Bolsa`}>{t("Bolsa")}</Link>
-
               <ThemeSwitcher />
             </div>
           )}
