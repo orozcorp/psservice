@@ -20,7 +20,11 @@ export const ThemeSwitcher = () => {
       className={`w-fit rounded-md hover:scale-110 active:scale-100 duration-200 bg-[#23283C] text-white dark:bg-[#0A2473]`}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
-      {theme === "light" ? <BsMoon /> : <BsSun />}
+      {theme === "light" ? (
+        <BsMoon />
+      ) : (
+        <BsSun className="text-[#F5C756] font-bold w-6 h-6" />
+      )}
     </button>
   );
 };
