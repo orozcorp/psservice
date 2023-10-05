@@ -2,8 +2,8 @@ import Link from "next/link";
 import { AiOutlineExport } from "react-icons/ai";
 
 export default function ConocimientoSingle({ documento, lng }) {
-  const { name, nameSpanish, url } = documento;
-  const nombre = lng === "en" ? name : nameSpanish;
+  const { name, nameEnglish, url } = documento;
+  const nombre = lng === "en" ? nameEnglish : name;
   return (
     <li className=" font-bold flex flex-row flex-wrap gap-2 items-center my-2">
       <Link

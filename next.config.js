@@ -15,6 +15,7 @@ const nextConfig = {
       "res.cloudinary.com",
       "s3.amazonaws.com",
       "psservicesavvy.s3.us-east-2.amazonaws.com",
+      "psserviceimages.s3.us-east-2.amazonaws.com",
     ],
     unoptimized: false,
   },
