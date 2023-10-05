@@ -8,7 +8,6 @@ export const documents = gql`
   type Document {
     _id: ID!
     name: String!
-    nameEnglish: String!
     url: String!
     createdAt: Date!
     updatedAt: Date!
@@ -17,14 +16,12 @@ export const documents = gql`
   }
   input InputDocument {
     name: String!
-    nameEnglish: String!
     url: String!
     extension: String!
   }
   input InputDocumentUpdate {
     _id: ID!
     name: String!
-    nameEnglish: String!
     estatus: String!
     updatedAt: Date!
   }

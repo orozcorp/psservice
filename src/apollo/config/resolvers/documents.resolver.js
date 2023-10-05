@@ -29,7 +29,7 @@ export const documentsResolver = {
           code: 200,
           success: true,
           message: "Documento creado correctamente",
-          data: `Documento ${document.name} subido correctamente`,
+          data: `Documento ${document.name}.${document.extension} subido correctamente`,
         };
       } catch (error) {
         console.log(error);
