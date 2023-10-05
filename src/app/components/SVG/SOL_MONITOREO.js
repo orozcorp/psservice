@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 export default function SOL_MONITOREO({ width = 50, height = 50 }) {
   const { theme } = useTheme();
   const [color, setColor] = useState("#FFFFFF");
-  useEffect(() => {
-    setColor(theme === "dark" ? "#799FE6" : "#FFFFFF");
-  }, [theme]);
+  // useEffect(() => {
+  //   setColor(theme === "dark" ? "#799FE6" : "#FFFFFF");
+  // }, [theme]);
   return (
     <svg
       id="uuid-7ab98036-8755-4059-8d10-32e8455ab844"

@@ -7,7 +7,7 @@ export default function ISO_Mesa_trabajo({ width = 50, height = 50 }) {
   const [color, setColor] = useState("#324BA6");
 
   useEffect(() => {
-    setColor(theme === "dark" ? "#799FE6" : "#324BA6");
+    setColor(theme === "dark" ? "#FFFFFF" : "#324BA6");
   }, [theme]);
   return (
     <svg

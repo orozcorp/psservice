@@ -7,7 +7,7 @@ export default function ISO_9001_2015({ width = 50, height = 50 }) {
   const [color, setColor] = useState("#324BA6");
 
   useEffect(() => {
-    setColor(theme === "dark" ? "#799FE6" : "#324BA6");
+    setColor(theme === "dark" ? "#FFFFFF" : "#324BA6");
   }, [theme]);
   return (
     <svg

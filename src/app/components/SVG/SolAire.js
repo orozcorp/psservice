@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 export default function SolAire({ width = 50, height = 50 }) {
   const { theme } = useTheme();
   const [color, setColor] = useState("#FFFFFF");
-  useEffect(() => {
-    setColor(theme === "dark" ? "#799FE6" : "#FFFFFF");
-  }, [theme]);
+  // useEffect(() => {
+  //   setColor(theme === "dark" ? "#799FE6" : "#FFFFFF");
+  // }, [theme]);
   return (
     <svg
       id="uuid-47b56272-0c12-4714-a1f9-c63b65d38dbd"

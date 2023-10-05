@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 export default function SOL_SOPORTE({ width = 50, height = 50 }) {
   const { theme } = useTheme();
   const [color, setColor] = useState("#FFFFFF");
-  useEffect(() => {
-    setColor(theme === "dark" ? "#799FE6" : "#FFFFFF");
-  }, [theme]);
+  // useEffect(() => {
+  //   setColor(theme === "dark" ? "#799FE6" : "#FFFFFF");
+  // }, [theme]);
   return (
     <svg
       id="uuid-9e5d05bf-6498-436e-b62b-f716cf2a640e"

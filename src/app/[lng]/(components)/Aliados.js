@@ -21,6 +21,7 @@ import AC_Generac from "../../components/SVG/AC_Generac";
 import AC_Fortinet from "../../components/SVG/AC_Fortinet";
 import AC_Dell from "../../components/SVG/AC_Dell";
 import AC_Uptime from "../../components/SVG/AC_Uptime";
+import AC_Oracle from "../../components/SVG/AC_Oracle";
 export default function Aliados({ t }) {
   return (
     <div
@@ -73,6 +74,7 @@ export default function Aliados({ t }) {
           <AC_Pure width={200} height={200} />
           <AC_PSS width={200} height={200} />
           <AC_Uptime width={200} height={200} />
+          <AC_Oracle width={200} height={200} />
         </div>
       </div>
     </div>

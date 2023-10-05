@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 export default function SOL_SALUD({ width = 50, height = 50 }) {
   const { theme } = useTheme();
   const [color, setColor] = useState("#FFFFFF");
-  useEffect(() => {
-    setColor(theme === "dark" ? "#799FE6" : "#FFFFFF");
-  }, [theme]);
+  // useEffect(() => {
+  //   setColor(theme === "dark" ? "#799FE6" : "#FFFFFF");
+  // }, [theme]);
   return (
     <svg
       id="uuid-ae2bcfba-2a43-46c4-b43c-5dd33b9c2945"

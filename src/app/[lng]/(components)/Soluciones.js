@@ -27,7 +27,7 @@ export default function Soluciones({ t }) {
             </div>
             <div className="flex flex-col md:flex-row flex-nowrap justify-center items-center content-center md:justify-between  md:flex-wrap gap-8 w-full xl:ml-24 2xl:ml-[-4rem] xl:min-w-[60vw] 2xl:min-w-full justify-self-center self-center place-self-center">
               <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48 ">
-                <SOL_ENERGIA width="10rem" height="10rem" />
+                <SOL_ENERGIA width="100px" height="100px" />
                 <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol1Title")}
                 </p>
@@ -36,7 +36,7 @@ export default function Soluciones({ t }) {
                 </p>
               </div>
               <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
-                <SOL_SOPORTE width="10rem" height="10rem" />
+                <SOL_SOPORTE width="100px" height="100px" />
                 <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol2Title")}
                 </p>
@@ -45,7 +45,7 @@ export default function Soluciones({ t }) {
                 </p>
               </div>
               <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
-                <SOL_FAB width="10rem" height="10rem" />
+                <SOL_FAB width="100px" height="100px" />
                 <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol3Title")}
                 </p>
@@ -54,7 +54,7 @@ export default function Soluciones({ t }) {
                 </p>
               </div>
               <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
-                <SOL_INFRA width="10rem" height="10rem" />
+                <SOL_INFRA width="100px" height="100px" />
                 <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol4Title")}
                 </p>
@@ -63,7 +63,7 @@ export default function Soluciones({ t }) {
                 </p>
               </div>
               <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
-                <SOL_MONITOREO width="10rem" height="10rem" />
+                <SOL_MONITOREO width="100px" height="100px" />
                 <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol5Title")}
                 </p>
@@ -72,7 +72,7 @@ export default function Soluciones({ t }) {
                 </p>
               </div>
               <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
-                <SolAire width="10rem" height="10rem" />
+                <SolAire width="100px" height="100px" />
                 <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol6Title")}
                 </p>
@@ -81,7 +81,7 @@ export default function Soluciones({ t }) {
                 </p>
               </div>
               <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
-                <SOL_SALUD width="10rem" height="10rem" />
+                <SOL_SALUD width="100px" height="100px" />
                 <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
                   {t("Sol7Title")}
                 </p>

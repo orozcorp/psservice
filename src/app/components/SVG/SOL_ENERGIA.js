@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 export default function SOL_ENERGIA({ width = 50, height = 50 }) {
   const { theme } = useTheme();
   const [color, setColor] = useState("#FFFFFF");
-  useEffect(() => {
-    setColor(theme === "dark" ? "#799FE6" : "#FFFFFF");
-  }, [theme]);
+  // useEffect(() => {
+  //   setColor(theme === "dark" ? "#799FE6" : "#FFFFFF");
+  // }, [theme]);
   return (
     <svg
       id="uuid-753ad3bc-55cd-4b56-a913-eeb4d1a0b7b7"

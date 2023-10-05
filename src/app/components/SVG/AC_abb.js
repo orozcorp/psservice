@@ -7,7 +7,7 @@ const AC_abb = ({ width, height }) => {
   const [color, setColor] = useState("#324ba6");
 
   useEffect(() => {
-    setColor(theme === "dark" ? "#B7CEFA" : "#324ba6");
+    setColor(theme === "dark" ? "#FFFFFF" : "#324ba6");
   }, [theme]);
 
   return (
