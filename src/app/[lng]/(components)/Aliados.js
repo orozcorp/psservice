@@ -20,6 +20,7 @@ import AC_HP from "../../components/SVG/AC_HP";
 import AC_Generac from "../../components/SVG/AC_Generac";
 import AC_Fortinet from "../../components/SVG/AC_Fortinet";
 import AC_Dell from "../../components/SVG/AC_Dell";
+import AC_Uptime from "../../components/SVG/AC_Uptime";
 export default function Aliados({ t }) {
   return (
     <div
@@ -49,28 +50,29 @@ export default function Aliados({ t }) {
           </div>
         </div>
         <div className="w-full my-8 h-fit  gap-4 flex flex-col md:flex-row  flex-nowrap md:flex-wrap justify-center md:justify-between items-center md:items-baseline p-4">
-          <AC_Cisco width={200} height={200} />
-          <AC_abb width={200} height={200} />
-          <AC_Access width={200} height={200} />
-          <AC_Daikin width={200} height={200} />
-          <AC_XFusion width={200} height={200} />
-          <AC_VMware width={200} height={200} />
-          <AC_Vertiv width={200} height={200} />
-          <AC_Uniflair width={200} height={200} />
-          <AC_Staco width={200} height={200} />
           <AC_Scheider width={200} height={200} />
-          <AC_Rittal width={200} height={200} />
-          <AC_Pure width={200} height={200} />
-          <AC_PSS width={200} height={200} />
-          <AC_Net width={200} height={200} />
+          <AC_Staco width={200} height={200} />
+          <AC_Vertiv width={200} height={200} />
+          <AC_Daikin width={200} height={200} />
           <AC_Mesa width={200} height={200} />
           <AC_Kohler width={200} height={200} />
-          <AC_Jonix width={200} height={200} />
           <AC_Huawei width={200} height={200} />
+          <AC_VMware width={200} height={200} />
           <AC_HP width={200} height={200} />
-          <AC_Generac width={200} height={200} />
+          <AC_Jonix width={200} height={200} />
+          <AC_abb width={200} height={200} />
           <AC_Fortinet width={200} height={200} />
+          <AC_Rittal width={200} height={200} />
           <AC_Dell width={200} height={200} />
+          <AC_Net width={200} height={200} />
+          <AC_Cisco width={200} height={200} />
+          <AC_Uniflair width={200} height={200} />
+          <AC_Access width={200} height={200} />
+          <AC_XFusion width={200} height={200} />
+          <AC_Generac width={200} height={200} />
+          <AC_Pure width={200} height={200} />
+          <AC_PSS width={200} height={200} />
+          <AC_Uptime width={200} height={200} />
         </div>
       </div>
     </div>
