@@ -32,7 +32,6 @@ export default function UploadSide() {
   const [reset, setReset] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("running");
     setError("");
     setResult("");
     if (!url) return null;

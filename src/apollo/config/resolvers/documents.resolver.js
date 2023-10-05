@@ -1,3 +1,4 @@
+import { ObjectId } from "mongodb";
 export const documentsResolver = {
   Query: {
     getDocuments: async (root, args, { db }) => {
@@ -12,7 +13,7 @@ export const documentsResolver = {
     getLastDocument: async (root, args, { db }) => {
       const lastDocument = await db
         .collection("Documents")
-        .findOne({ estatus: "ACTIVO" }, { sort: { createdAt: -1 } });
+        .findOne({ estatus: "ACTIVO" }, { sort: { updatedAt: -1 } });
       return lastDocument;
     },
   },
@@ -67,11 +68,13 @@ export const documentsResolver = {
         };
       }
     },
-    deleteDocument: async (root, { _id }, { db }) => {
+    deleteDocument: async (root, { ids }, { db }) => {
       try {
+        const objectIds = ids.map((id) => new ObjectId(id));
+
         const deletedDocument = await db
           .collection("Documents")
-          .deleteOne({ _id });
+          .deleteMany({ _id: { $in: objectIds } });
         return {
           code: 200,
           success: true,

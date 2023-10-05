@@ -32,6 +32,6 @@ export const documents = gql`
   type Mutation {
     createDocument(document: InputDocument): GeneralResponse!
     updateDocument(document: InputDocumentUpdate): GeneralResponse!
-    deleteDocument(_id: ID!): GeneralResponse!
+    deleteDocument(ids: [ID!]): GeneralResponse!
   }
 `;
