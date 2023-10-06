@@ -2,7 +2,8 @@
 import { useState } from "react";
 import EspDataCenter from "./EspDataCenter";
 import EspSistemasElectricos from "./EspSistemasElectricos";
-
+import EspAire from "./EspAire";
+import EspMonitoreo from "./EspMonitoreo";
 export default function EspReactive({ objTrans }) {
   const { dataCenter, aireAcondicionado, sistemas, monitoreo, hero } = objTrans;
   const [active, setActive] = useState("");
@@ -21,7 +22,7 @@ export default function EspReactive({ objTrans }) {
           />
           {active !== "dataCenter" && (
             <div
-              className={`text-[#324BA6] text-left dark:text-[#fff] flex flex-col md:flex-row flex-nowrap md:flex-wrap justify-center items-center md:justify-start px-0 md:px-16  mt-16 md:mt-0  w-full max-w-2xl`}
+              className={`text-[#324BA6] text-left dark:text-[#fff] flex flex-col md:flex-row flex-nowrap md:flex-wrap justify-center items-center md:justify-start px-0 md:px-16  mt-16 md:mt-0  w-full max-w-3xl`}
             >
               {active === "" && (
                 <div>
@@ -33,10 +34,10 @@ export default function EspReactive({ objTrans }) {
                 </div>
               )}
               <div
-                className={`flex flex-row flex-wrap w-full justify-center  md:justify-start ${
-                  active === "SistemasElectricos"
-                    ? "duration-1000"
-                    : "mt-16 gap-16 duration-1000"
+                className={`flex flex-row flex-wrap w-full  gap-4 md:gap-8  ${
+                  active !== "dataCenter" || active !== ""
+                    ? "duration-1000 items-end"
+                    : "mt-16 gap-16 duration-1000 justify-center  md:justify-start"
                 } `}
                 style={{ alignSelf: "end" }}
               >
@@ -46,13 +47,25 @@ export default function EspReactive({ objTrans }) {
                   active={{ active, setActive }}
                 />
                 <div
-                  className={`flex flex-col flex-nowrap gap-2 ${
+                  className={`flex flex-col flex-nowrap gap-2  ${
                     active === "SistemasElectricos" &&
                     "ml-4 self-end duration-1000"
                   }`}
                 >
-                  <div className="h-20 w-60 border rounded" />
-                  <div className="h-20 w-60 border rounded" />
+                  {active !== "Monitoreo" && (
+                    <EspAire
+                      title={aireAcondicionado.title}
+                      text={aireAcondicionado.text}
+                      active={{ active, setActive }}
+                    />
+                  )}
+                  {active !== "AireAcondicionado" && (
+                    <EspMonitoreo
+                      title={monitoreo.title}
+                      text={monitoreo.text}
+                      active={{ active, setActive }}
+                    />
+                  )}
                 </div>
               </div>
             </div>
