@@ -49,7 +49,7 @@ export default function EspReactive({ objTrans }) {
                 <div
                   className={`flex flex-col flex-nowrap gap-2  ${
                     active === "SistemasElectricos" &&
-                    "ml-4 self-end duration-1000"
+                    "ml-0 lg:ml-4 self-end duration-1000"
                   }`}
                 >
                   {active !== "Monitoreo" && (
