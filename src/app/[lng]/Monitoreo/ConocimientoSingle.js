@@ -1,7 +1,7 @@
 export default function ConocimientoSingle({ servicio }) {
   const { icon: Icon, service } = servicio;
   return (
-    <li className="font-bold flex flex-row flex-wrap gap-2 items-center my-2">
+    <li className="font-bold flex flex-row flex-wrap gap-4 items-center my-2">
       {Icon ? (
         <Icon width={20} height={20} />
       ) : (

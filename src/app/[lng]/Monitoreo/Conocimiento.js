@@ -1,9 +1,9 @@
 import ConocimientoSingle from "./ConocimientoSingle";
-import IC_MON_01 from "../../components/SVG/IC_MON_01";
-import IC_MON_02 from "../../components/SVG/IC_MON_02";
-import IC_MON_03 from "../../components/SVG/IC_MON_03";
-import IC_MON_04 from "../../components/SVG/IC_MON_04";
-import IC_MON_05 from "../../components/SVG/IC_MON_05";
+import IC_MON_01 from "../../components/SVG/IC_MON/IC_MON_01";
+import IC_MON_02 from "../../components/SVG/IC_MON/IC_MON_02";
+import IC_MON_03 from "../../components/SVG/IC_MON/IC_MON_03";
+import IC_MON_04 from "../../components/SVG/IC_MON/IC_MON_04";
+import IC_MON_05 from "../../components/SVG/IC_MON/IC_MON_05";
 export default function Conocimiento({ t }) {
   const servicios = [
     {

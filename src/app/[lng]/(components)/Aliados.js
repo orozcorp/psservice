@@ -50,31 +50,31 @@ export default function Aliados({ t }) {
             </div>
           </div>
         </div>
-        <div className="w-full my-8 h-fit  gap-4 flex flex-col md:flex-row  flex-nowrap md:flex-wrap justify-center md:justify-between items-center md:items-baseline p-4">
-          <AC_Scheider width={200} height={200} />
-          <AC_Staco width={200} height={200} />
-          <AC_Vertiv width={200} height={200} />
-          <AC_Daikin width={200} height={200} />
-          <AC_Mesa width={200} height={200} />
-          <AC_Kohler width={200} height={200} />
-          <AC_Huawei width={200} height={200} />
-          <AC_VMware width={200} height={200} />
-          <AC_HP width={200} height={200} />
-          <AC_Jonix width={200} height={200} />
-          <AC_abb width={200} height={200} />
-          <AC_Fortinet width={200} height={200} />
-          <AC_Rittal width={200} height={200} />
-          <AC_Dell width={200} height={200} />
-          <AC_Net width={200} height={200} />
-          <AC_Cisco width={200} height={200} />
-          <AC_Uniflair width={200} height={200} />
-          <AC_Access width={200} height={200} />
-          <AC_XFusion width={200} height={200} />
-          <AC_Generac width={200} height={200} />
-          <AC_Pure width={200} height={200} />
-          <AC_PSS width={200} height={200} />
-          <AC_Uptime width={200} height={200} />
-          <AC_Oracle width={200} height={200} />
+        <div className="w-full my-8 h-fit  flex flex-col md:flex-row  flex-nowrap md:flex-wrap justify-center md:justify-between items-center md:items-baseline p-4">
+          <AC_Scheider width={200} height={100} />
+          <AC_Staco width={200} height={100} />
+          <AC_Vertiv width={200} height={100} />
+          <AC_Daikin width={200} height={100} />
+          <AC_Mesa width={200} height={100} />
+          <AC_Kohler width={200} height={100} />
+          <AC_Huawei width={200} height={100} />
+          <AC_VMware width={200} height={100} />
+          <AC_HP width={200} height={100} />
+          <AC_Jonix width={200} height={100} />
+          <AC_abb width={200} height={100} />
+          <AC_Fortinet width={200} height={100} />
+          <AC_Rittal width={200} height={100} />
+          <AC_Dell width={200} height={100} />
+          <AC_Net width={200} height={100} />
+          <AC_Cisco width={200} height={100} />
+          <AC_Uniflair width={200} height={100} />
+          <AC_Access width={200} height={100} />
+          <AC_XFusion width={200} height={100} />
+          <AC_Generac width={200} height={100} />
+          <AC_Pure width={200} height={100} />
+          <AC_PSS width={200} height={100} />
+          <AC_Uptime width={200} height={100} />
+          <AC_Oracle width={200} height={100} />
         </div>
       </div>
     </div>
