@@ -1,6 +1,3 @@
-// https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/DATACENTER.jpg
-// https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/AIRE_ACONDICIONADO.jpg
-
 import EspReactive from "./EspReactive";
 
 export default function Especializacion({ t }) {
