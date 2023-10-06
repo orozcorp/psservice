@@ -1,11 +1,12 @@
 import ConocimientoSingle from "./ConocimientoSingle";
+import DC_AC from "../../components/SVG/DC_AC";
 
 export default function Conocimiento({ t }) {
   const servicios = [
     {
       id: 1,
       service: t("S1"),
-      icon: "",
+      icon: DC_AC,
     },
     {
       id: 2,

@@ -1,10 +1,10 @@
-import SOL_ENERGIA from "../../components/SVG/SOL_ENERGIA";
-import SOL_SOPORTE from "../../components/SVG/SOL_SOPORTE";
-import SOL_FAB from "../../components/SVG/SOL_FAB";
-import SolAire from "../../components/SVG/SolAire";
-import SOL_SALUD from "../../components/SVG/SOL_SALUD";
-import SOL_MONITOREO from "../../components/SVG/SOL_MONITOREO";
-import SOL_INFRA from "../../components/SVG/SOL_INFRA";
+import SOL_ENERGIA from "../../components/SVG/SOL_Land/SOL_ENERGIA";
+import SOL_SOPORTE from "../../components/SVG/SOL_Land/SOL_SOPORTE";
+import SOL_FAB from "../../components/SVG/SOL_Land/SOL_FAB";
+import SolAire from "../../components/SVG/SOL_Land/SolAire";
+import SOL_SALUD from "../../components/SVG/SOL_Land/SOL_SALUD";
+import SOL_MONITOREO from "../../components/SVG/SOL_Land/SOL_MONITOREO";
+import SOL_INFRA from "../../components/SVG/SOL_Land/SOL_INFRA";
 export default function Soluciones({ t }) {
   return (
     <div

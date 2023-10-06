@@ -1,61 +1,71 @@
 import ConocimientoSingle from "./ConocimientoSingle";
-
+import IC_AC_01 from "../../components/SVG/IC_AC/IC_AC_01";
+import IC_AC_02 from "../../components/SVG/IC_AC/IC_AC_02";
+import IC_AC_03 from "../../components/SVG/IC_AC/IC_AC_03";
+import IC_AC_04 from "../../components/SVG/IC_AC/IC_AC_04";
+import IC_AC_05 from "../../components/SVG/IC_AC/IC_AC_05";
+import IC_AC_06 from "../../components/SVG/IC_AC/IC_AC_06";
+import IC_AC_07 from "../../components/SVG/IC_AC/IC_AC_07";
+import IC_AC_08 from "../../components/SVG/IC_AC/IC_AC_08";
+import IC_AC_09 from "../../components/SVG/IC_AC/IC_AC_09";
+import IC_AC_10 from "../../components/SVG/IC_AC/IC_AC_10";
+import IC_AC_11 from "../../components/SVG/IC_AC/IC_AC_11";
 export default function Conocimiento({ t }) {
   const servicios = [
     {
       id: 1,
       service: t("S1"),
-      icon: "",
+      icon: IC_AC_05,
     },
     {
       id: 2,
       service: t("S2"),
-      icon: "",
+      icon: IC_AC_04,
     },
     {
       id: 3,
       service: t("S3"),
-      icon: "",
+      icon: IC_AC_02,
     },
     {
       id: 4,
       service: t("S4"),
-      icon: "",
+      icon: IC_AC_03,
     },
     {
       id: 5,
       service: t("S5"),
-      icon: "",
+      icon: IC_AC_07,
     },
     {
       id: 6,
       service: t("S6"),
-      icon: "",
+      icon: IC_AC_06,
     },
     {
       id: 7,
       service: t("S7"),
-      icon: "",
+      icon: IC_AC_09,
     },
     {
       id: 8,
       service: t("S8"),
-      icon: "",
+      icon: IC_AC_10,
     },
     {
       id: 9,
       service: t("S9"),
-      icon: "",
+      icon: IC_AC_08,
     },
     {
       id: 10,
       service: t("S10"),
-      icon: "",
+      icon: IC_AC_01,
     },
     {
       id: 11,
       service: t("S11"),
-      icon: "",
+      icon: IC_AC_11,
     },
   ];
   return (

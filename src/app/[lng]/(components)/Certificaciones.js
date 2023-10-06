@@ -1,7 +1,7 @@
-import ISO_14001 from "../../components/SVG/ISO_14001";
-import ISO9001 from "../../components/SVG/ISO9001";
-import ISO_Mesa_trabajo from "../../components/SVG/ISO_Mesa_trabajo";
-import ISO_MESA_TRES from "../../components/SVG/ISO_MESA_TRES";
+import ISO_14001 from "../../components/SVG/Certificaciones/ISO_14001";
+import ISO9001 from "../../components/SVG/Certificaciones/ISO9001";
+import ISO_Mesa_trabajo from "../../components/SVG/Certificaciones/ISO_Mesa_trabajo";
+import ISO_MESA_TRES from "../../components/SVG/Certificaciones/ISO_MESA_TRES";
 export default function Certificaciones({ t }) {
   return (
     <div className="flex flex-col flex-nowrap w-full justify-center items-center">
