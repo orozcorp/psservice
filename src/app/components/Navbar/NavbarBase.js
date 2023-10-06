@@ -52,7 +52,7 @@ export const NavbarBase = ({ t, lng }) => {
                 <Link
                   href="/api/auth/signin"
                   className={`${
-                    theme === "dark" ? "text-[#F5C756]" : "text-[#23283C]"
+                    theme === "dark" ? "text-[#F5C756]" : "text-[#ffffff]"
                   }`}
                 >
                   Log In
@@ -61,7 +61,7 @@ export const NavbarBase = ({ t, lng }) => {
               {session && (
                 <button
                   className={`${
-                    theme === "dark" ? "text-[#F5C756]" : "text-[#23283C]"
+                    theme === "dark" ? "text-[#F5C756]" : "text-[#ffffff]"
                   }`}
                   onClick={() => signOut()}
                 >
