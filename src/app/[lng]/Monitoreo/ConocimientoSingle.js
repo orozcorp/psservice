@@ -1,11 +1,9 @@
-import Image from "next/image";
-
 export default function ConocimientoSingle({ servicio }) {
-  const { icon, service } = servicio;
+  const { icon: Icon, service } = servicio;
   return (
-    <li className=" font-bold flex flex-row flex-wrap gap-2 items-center my-2">
-      {icon ? (
-        <Image src={icon} height={46} width={46} alt="service" />
+    <li className="font-bold flex flex-row flex-wrap gap-2 items-center my-2">
+      {Icon ? (
+        <Icon width={20} height={20} />
       ) : (
         <div className="w-[46px] h-[46px] border" />
       )}
