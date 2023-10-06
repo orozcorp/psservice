@@ -4,7 +4,7 @@ export default function Hero3({ t }) {
       <div className="w-[95%] flex justify-center items-end border rounded-xl py-4 min-h-[60vh]">
         <div className="flex flex-row flex-wrap items-center w-full p-6  lg:p-0 mx-[-4rem] lg:w-3/4 xl:w-1/2">
           <div className="max-w-2xl">
-            <h2 className="text-3xl md:text-5xl text-[#324BA6] dark:text-white font-bold pt-16 pb-4">
+            <h2 className="text-3xl lg:text-5xl text-[#324BA6] dark:text-white font-bold pt-16 pb-4">
               {t("Hero4")}
             </h2>
             <p className="text-xl font-bold py-4">{t("Hero4Sub")}</p>

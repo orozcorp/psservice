@@ -9,7 +9,7 @@ export default function Unete({ t }) {
           <div className="w-full py-4 ">
             <div className="text-[#AEC8F8] dark:text-[#FFFFFF] flex flex-col flex-nowrap justify-start w-full">
               <div>
-                <h2 className="text-3xl md:text-5xl  font-bold py-2">
+                <h2 className="text-3xl lg:text-5xl  font-bold py-2">
                   {t("Hero8")}
                 </h2>
                 <p className="text-lg font-bold mb-8">{t("Hero8Sub")}</p>

@@ -18,6 +18,7 @@ export default function Clientes({ t }) {
               alt="Background"
               layout="fill"
               objectFit="cover"
+              objectPosition="left"
               quality={100}
             />
           </div>
@@ -29,7 +30,7 @@ export default function Clientes({ t }) {
           style={{ zIndex: 1 }}
         >
           <div className="w-full py-4">
-            <h2 className="text-white dark:text-[#FFF] text-3xl md:text-5xl font-bold">
+            <h2 className="text-white dark:text-[#FFF] text-3xl lg:text-5xl font-bold">
               {t("Hero5")}
             </h2>
             <p className="text-2xl font-bold my-4 text-white dark:text-[#FFF]">

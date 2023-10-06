@@ -59,7 +59,7 @@ export const FooterBase = async ({ t, lng }) => {
           </div>
         </div>
       </footer>
-      <div className="flex flex-col md:flex-row flex-nowrap md:flex-wrap w-full justify-around py-4 bg-[#1A4693] text-white p-8 gap-4">
+      <div className="flex flex-col lg:flex-row flex-nowrap lg:flex-wrap w-full justify-around py-4 bg-[#1A4693] text-white p-8 gap-4">
         <div>
           PS Service, México {today.getFullYear()}, Todos los derechos
           reservados

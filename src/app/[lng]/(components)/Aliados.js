@@ -33,24 +33,24 @@ export default function Aliados({ t }) {
         style={{ width: "95vw", minHeight: "60vh" }}
       >
         <div className="flex items-start w-full lg:p-0 lg:w-3/4 xl:w-1/2 ">
-          <div className="flex flex-row flex-wrap w-full justify-start md:justify-start ">
-            <div className="w-full md:w-[380px] rounded ml-0 md:ml-[-10rem] xl:ml-[-24rem] px-4 md:px-12">
-              <h2 className="text-5xl md:text-7xl font-bold py-2">
+          <div className="flex flex-row flex-wrap w-full justify-start lg:justify-start ">
+            <div className="w-full lg:w-[380px] rounded ml-0 lg:ml-[-10rem] xl:ml-[-24rem] px-4 lg:px-12">
+              <h2 className="text-5xl lg:text-7xl font-bold py-2">
                 {t("Hero7")}
               </h2>
 
-              <p className="text-2xl md:text-4xl font-bold mb-8">
+              <p className="text-2xl lg:text-4xl font-bold mb-8">
                 {t("Hero7Sub")}
               </p>
             </div>
-            <div className="text-[#324BA6] flex-1 dark:text-[#FFFFFF] flex flex-col md:flex-row flex-nowrap md:flex-wrap justify-center items-center md:justify-start px-4 text-left mt-16 md:mt-0 md:text-left">
+            <div className="text-[#324BA6] flex-1 dark:text-[#FFFFFF] flex flex-col lg:flex-row flex-nowrap lg:flex-wrap justify-center items-center lg:justify-start px-4 text-left mt-16 lg:mt-0 lg:text-left">
               <div>
                 <p className="text-xl font-bold">{t("Hero7Text")}</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="w-full my-8 h-fit  flex flex-col md:flex-row  flex-nowrap md:flex-wrap justify-center md:justify-between items-center md:items-baseline p-4">
+        <div className="w-full my-8 h-fit  flex flex-col lg:flex-row  flex-nowrap lg:flex-wrap justify-center lg:justify-between items-center lg:items-baseline p-4">
           <AC_Scheider width={200} height={100} />
           <AC_Staco width={200} height={100} />
           <AC_Vertiv width={200} height={100} />

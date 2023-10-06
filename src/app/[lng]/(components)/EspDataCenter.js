@@ -10,7 +10,7 @@ export default function EspDataCenter({ title, text, active }) {
         ${
           activo
             ? "relative w-full items-start pl-10 duration-1000"
-            : "relative w-60 ml-0 md:ml-[-19rem] items-center"
+            : "relative w-60 ml-0 lg:ml-[-19rem] items-center"
         }
        h-[26rem]  rounded flex flex-col flex-nowrap justify-end`}
       onClick={() => {

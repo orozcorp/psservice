@@ -10,22 +10,22 @@ export default function Certificaciones({ t }) {
         style={{ width: "95vw", minHeight: "40vh" }}
       >
         <div className="flex items-center w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2">
-          <div className="flex flex-row flex-wrap w-full justify-center md:justify-start">
-            <div className="w-[330px] h-fit rounded ml-0 md:ml-[-20rem] flex flex-row flex-wrap justify-around items-baseline pb-8">
+          <div className="flex flex-row flex-wrap w-full justify-center lg:justify-start">
+            <div className="w-[330px] h-fit rounded ml-0 lg:ml-[-20rem] flex flex-row flex-wrap justify-around items-baseline pb-8">
               <ISO_14001 width="8rem" height="8rem" />
               <ISO9001 width="8rem" height="8rem" />
               <ISO_Mesa_trabajo width="8rem" height="8rem" />
               <ISO_MESA_TRES width="8rem" height="8rem" />
             </div>
-            <div className="text-[#324BA6] dark:text-[#FFF] flex-1 flex flex-col md:flex-row flex-nowrap md:flex-wrap justify-center items-start md:justify-start text-left md:text-left max-w-2xl ">
+            <div className="text-[#324BA6] dark:text-[#FFF] flex-1 flex flex-col lg:flex-row flex-nowrap lg:flex-wrap justify-center items-start lg:justify-start text-left lg:text-left max-w-2xl ">
               <div className="flex flex-col flex-nowrap ">
-                <h2 className="text-3xl md:text-5xl  font-bold pb-8">
+                <h2 className="text-3xl lg:text-5xl  font-bold pb-8">
                   {t("Hero6")}
                 </h2>
                 <p className="text-xl font-bold mb-8">{t("Hero6Text")}</p>
               </div>
               <div
-                className="flex flex-col md:flex-row flex-nowrap md:flex-wrap w-full justify-center items-center md:items-start md:justify-between"
+                className="flex flex-col lg:flex-row flex-nowrap lg:flex-wrap w-full justify-center items-center lg:items-start lg:justify-between"
                 style={{ alignSelf: "end" }}
               >
                 <div
