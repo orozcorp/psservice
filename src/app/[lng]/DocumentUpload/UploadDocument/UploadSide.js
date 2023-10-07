@@ -94,7 +94,7 @@ export default function UploadSide() {
             className={`mt-8  ${
               disabled
                 ? "bg-[#9C9A9A] text-white"
-                : "bg-[#EBEAEA] text-[#324BA6]"
+                : "bg-[#EBEAEA] text-[#0A2473]"
             }  hover:bg-[#9C9A9A] focus:ring-4 focus:ring-blue-300 font-bold rounded-lg text-sm px-5 py-2.5 mr-2 mb-2`}
           >
             Subir un documento
@@ -103,14 +103,14 @@ export default function UploadSide() {
         </form>
         <Link
           href="/en/DocumentUpload/PublishedDocuments"
-          className="mt-8 bg-[#EBEAEA] text-[#324BA6] hover:bg-[#9C9A9A] focus:ring-4 focus:ring-blue-300 font-bold rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 text-center"
+          className="mt-8 bg-[#EBEAEA] text-[#0A2473] hover:bg-[#9C9A9A] focus:ring-4 focus:ring-blue-300 font-bold rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 text-center"
         >
           Documentos publicados
           <AiOutlineBars className="inline-block ml-6 w-6 h-6 text-white bg-[#324BA6] rounded" />
         </Link>
         <button
           onClick={signOut}
-          className="mt-8 bg-[#EBEAEA] text-[#324BA6] hover:bg-[#9C9A9A] focus:ring-4 focus:ring-blue-300 font-bold rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
+          className="mt-8 bg-[#EBEAEA] text-[#0A2473] hover:bg-[#9C9A9A] focus:ring-4 focus:ring-blue-300 font-bold rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
         >
           Salir de administrador
           <FiLogOut className="inline-block ml-6 w-6 h-6 text-white bg-[#A63232] rounded mx-4 " />

@@ -23,7 +23,7 @@ export default async function RootLayout({ children, params: { lng } }) {
         <NextAuthSessionProvider>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <main
-              className={`${oxygen.className} relative flex flex-col flex-nowrap min-h-screen dark:bg-gradient-to-r dark:from-[#1E3F88] dark:to-[#0F2044]`}
+              className={`${oxygen.className} relative flex flex-col flex-nowrap min-h-screen bg-[#F4F4F5] dark:bg-gradient-to-r dark:from-[#1E3F88] dark:to-[#0F2044]`}
             >
               <Navbar lng={lng} />
               <div style={{ flex: 1 }}>{children}</div>

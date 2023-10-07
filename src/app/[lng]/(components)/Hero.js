@@ -28,10 +28,10 @@ export default function Hero({ t }) {
         alt="PS service"
       />
       <div className="max-w-2xl">
-        <h2 className="text-3xl lg:text-5xl text-[#324BA6] dark:text-white font-bold py-16">
+        <h2 className="text-3xl lg:text-5xl text-[#002772] dark:text-white font-bold py-16">
           {t("Hero1")}
         </h2>
-        <button className="py-2 px-4 bg-[#5D001D] text-white">
+        <button className="py-2 px-4 bg-[#5D001D] text-white rounded-lg">
           {t("Experto")}
         </button>
       </div>

@@ -5,7 +5,7 @@ export default function Conocimiento({ t, documentos, lng }) {
     <>
       <div className="flex justify-center items-start w-[95vw]">
         <div className="flex flex-row flex-wrap items-center w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2 justify-center">
-          <div className="w-full max-w-2xl text-[#324BA6] dark:text-[#FFFFFF] px-4 py-6 mb-4 flex flex-col flex-nowrap justify-center items-center">
+          <div className="w-full max-w-2xl text-[#0A2473] dark:text-[#FFFFFF] px-4 py-6 mb-4 flex flex-col flex-nowrap justify-center items-center">
             <h2 className="font-bold text-3xl lg:text-5xl">
               {t("Documentos")}
             </h2>
@@ -18,9 +18,10 @@ export default function Conocimiento({ t, documentos, lng }) {
           </div>
         </div>
       </div>
+
       <div className="flex justify-center items-start w-[95vw]">
-        <div className="flex flex-row flex-wrap justify-start items-start w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2 dark:bg-gradient-to-r dark:from-[#F8D3AE] dark:to-[#DDDDDD] rounded-3xl">
-          <div className="w-full max-w-2xl text-[#324BA6] dark:text-[#0A2473] px-4 py-6 flex flex-col flex-nowrap justify-start items-start">
+        <div className="flex flex-row flex-wrap justify-start items-start w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2 bg-gradient-to-b from-[#C0D6D5] to-[#DEDEDE]  dark:bg-gradient-to-r dark:from-[#F8D3AE] dark:to-[#DDDDDD] rounded-3xl">
+          <div className="w-full max-w-2xl text-[#0A2473] dark:text-[#0A2473] px-20 py-12 flex flex-col flex-nowrap justify-start items-start">
             <ul className="grid grid-cols-2 h-fit items-start gap-4">
               {documentos.map((documento) => (
                 <ConocimientoSingle

@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 
 export default function ISO_MESA_TRES({ width = 50, height = 50 }) {
   const { theme } = useTheme();
-  const [color, setColor] = useState("#324BA6");
+  const [color, setColor] = useState("#0A2473");
 
   useEffect(() => {
-    setColor(theme === "dark" ? "#FFFFFF" : "#324BA6");
+    setColor(theme === "dark" ? "#FFFFFF" : "#0A2473");
   }, [theme]);
   return (
     <svg

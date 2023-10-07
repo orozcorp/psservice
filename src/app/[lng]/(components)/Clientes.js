@@ -26,20 +26,14 @@ export default function Clientes({ t }) {
 
         {/* Content */}
         <div
-          className="relative flex items-end mb-10 w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2"
+          className="relative flex items-end mb-10 w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2 text-white"
           style={{ zIndex: 1 }}
         >
           <div className="w-full py-4">
-            <h2 className="text-white dark:text-[#FFF] text-3xl lg:text-5xl font-bold">
-              {t("Hero5")}
-            </h2>
-            <p className="text-2xl font-bold my-4 text-white dark:text-[#FFF]">
-              {t("Hero5Sub")}
-            </p>
-            <p className="text-lg font-bold text-white my-4">
-              {t("Hero5Text")}
-            </p>
-            <button className="py-2 px-4 bg-[#5D001D] text-white self-center rounded">
+            <h2 className=" text-3xl lg:text-5xl font-bold">{t("Hero5")}</h2>
+            <p className="text-2xl font-bold my-4  ">{t("Hero5Sub")}</p>
+            <p className="text-lg font-bold  my-4">{t("Hero5Text")}</p>
+            <button className="py-2 px-4 bg-[#5D001D]  self-center rounded">
               {t("MasCasos")}
             </button>
           </div>

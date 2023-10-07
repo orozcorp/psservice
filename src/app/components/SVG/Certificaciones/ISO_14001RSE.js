@@ -2,12 +2,12 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
-export default function ISO_14001({ width = 50, height = 50 }) {
+export default function ISO_14001RSE({ width = 50, height = 50 }) {
   const { theme } = useTheme();
-  const [color, setColor] = useState("#0A2473");
+  const [color, setColor] = useState("#FFFFFF");
 
   useEffect(() => {
-    setColor(theme === "dark" ? "#FFFFFF" : "#0A2473");
+    setColor(theme === "dark" ? "#FFFFFF" : "#FFFFFF");
   }, [theme]);
   return (
     <svg

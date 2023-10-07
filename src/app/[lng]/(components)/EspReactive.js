@@ -22,7 +22,7 @@ export default function EspReactive({ objTrans }) {
           />
           {active !== "dataCenter" && (
             <div
-              className={`text-[#324BA6] text-left dark:text-[#fff] flex flex-col-reverse lg:flex-row flex-nowrap lg:flex-wrap justify-center items-center lg:justify-start px-0 lg:px-16  mt-4 lg:mt-0  w-full max-w-3xl`}
+              className={`text-[#0A2473] text-left dark:text-[#fff] flex flex-col-reverse lg:flex-row flex-nowrap lg:flex-wrap justify-center items-center lg:justify-start px-0 lg:px-16  mt-4 lg:mt-0  w-full max-w-3xl`}
             >
               {active === "" && (
                 <div className="mb-20 lg:mb-0">

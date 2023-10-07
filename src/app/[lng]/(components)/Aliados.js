@@ -34,16 +34,16 @@ export default function Aliados({ t }) {
       >
         <div className="flex items-start w-full lg:p-0 lg:w-3/4 xl:w-1/2 ">
           <div className="flex flex-row flex-wrap w-full justify-start lg:justify-start ">
-            <div className="w-full lg:w-[380px] rounded ml-0 lg:ml-[-10rem] xl:ml-[-24rem] px-4 lg:px-12">
-              <h2 className="text-5xl lg:text-7xl font-bold py-2">
+            <div className="w-full lg:w-[380px] rounded ml-0 lg:ml-[-10rem] xl:ml-[-24rem] px-4 lg:px-12 text-[#0A2473] dark:text-inherit">
+              <h2 className="text-3xl lg:text-5xl font-bold py-2 ">
                 {t("Hero7")}
               </h2>
 
-              <p className="text-2xl lg:text-4xl font-bold mb-8">
+              <p className="text-xl lg:text-2xl font-bold mb-8">
                 {t("Hero7Sub")}
               </p>
             </div>
-            <div className="text-[#324BA6] flex-1 dark:text-[#FFFFFF] flex flex-col lg:flex-row flex-nowrap lg:flex-wrap justify-center items-center lg:justify-start px-4 text-left mt-16 lg:mt-0 lg:text-left">
+            <div className="text-[#0A2473] flex-1 dark:text-[#FFFFFF] flex flex-col lg:flex-row flex-nowrap lg:flex-wrap justify-center items-center lg:justify-start px-4 text-left mt-16 lg:mt-0 lg:text-left">
               <div>
                 <p className="text-xl font-bold">{t("Hero7Text")}</p>
               </div>

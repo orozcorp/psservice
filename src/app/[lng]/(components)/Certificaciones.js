@@ -6,7 +6,7 @@ export default function Certificaciones({ t }) {
   return (
     <div className="flex flex-col flex-nowrap w-full justify-center items-center">
       <div
-        className="flex flex-row flex-wrap justify-center items-center my-8  bg-[#CCCCCC] dark:bg-gradient-to-r dark:from-[#10244A] dark:to-[#4D0519] rounded-3xl py-8"
+        className="flex flex-row flex-wrap justify-center items-center my-8  bg-gradient-to-b from-[#C0D6D5] to-[#DEDEDE] dark:bg-gradient-to-r dark:from-[#10244A] dark:to-[#4D0519] rounded-3xl py-8"
         style={{ width: "95vw", minHeight: "40vh" }}
       >
         <div className="flex items-center w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2">
@@ -17,7 +17,7 @@ export default function Certificaciones({ t }) {
               <ISO_Mesa_trabajo width="8rem" height="8rem" />
               <ISO_MESA_TRES width="8rem" height="8rem" />
             </div>
-            <div className="text-[#324BA6] dark:text-[#FFF] flex-1 flex flex-col lg:flex-row flex-nowrap lg:flex-wrap justify-center items-start lg:justify-start text-left lg:text-left max-w-2xl ">
+            <div className="text-[#0A2473] dark:text-[#FFF] flex-1 flex flex-col lg:flex-row flex-nowrap lg:flex-wrap justify-center items-start lg:justify-start text-left lg:text-left max-w-2xl ">
               <div className="flex flex-col flex-nowrap ">
                 <h2 className="text-3xl lg:text-5xl  font-bold pb-8">
                   {t("Hero6")}
