@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import HeroBgImage from "./HeroBgImage";
 export default function Hero({ t }) {
   return (
     <div
@@ -8,14 +8,7 @@ export default function Hero({ t }) {
     >
       {/* Background Image */}
       <div className="absolute inset-0 z-[-1] overflow-hidden">
-        <Image
-          src="https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/HERO1.jpg"
-          alt="Background"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="right"
-          quality={100}
-        />
+        <HeroBgImage />
       </div>
 
       {/* Content */}

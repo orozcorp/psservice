@@ -29,10 +29,18 @@ export const FooterBase = async ({ t, lng }) => {
                   href="Infraestructura"
                   text={t("Infraestructura")}
                 />
-                <FooterLinks lng={lng} href="Sistemas" text={t("Sistemas")} />
-                <FooterLinks lng={lng} href="Monitoreo" text={t("Monitoreo")} />
+                <FooterLinks lng={lng} href="/Energia" text={t("Sistemas")} />
+                <FooterLinks
+                  lng={lng}
+                  href="/Monitoreo"
+                  text={t("Monitoreo")}
+                />
                 <FooterLinks lng={lng} href="Soporte" text={t("Soporte")} />
-                <FooterLinks lng={lng} href="Aire" text={t("Aire")} />
+                <FooterLinks
+                  lng={lng}
+                  href="/AiresAcondicionados"
+                  text={t("Aire")}
+                />
                 <FooterLinks
                   lng={lng}
                   href="Fabricacion"
@@ -50,10 +58,10 @@ export const FooterBase = async ({ t, lng }) => {
                   href="Certificaciones"
                   text={t("Certificaciones")}
                 />
-                <FooterLinks lng={lng} href="Aliados" text={t("Aliados")} />
-                <FooterLinks lng={lng} href="RSE" text={t("RSE")} />
+                <FooterLinks lng={lng} href="/#Aliados" text={t("Aliados")} />
+                <FooterLinks lng={lng} href="/RSE" text={t("RSE")} />
                 <FooterLinks lng={lng} href="Soporte" text={t("Soporte")} />
-                <FooterLinks lng={lng} href="Bolsa" text={t("Bolsa")} />
+                <FooterLinks lng={lng} href="/Bolsa" text={t("Bolsa")} />
               </ul>
             </div>
           </div>
