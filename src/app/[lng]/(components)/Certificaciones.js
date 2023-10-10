@@ -25,7 +25,7 @@ export default function Certificaciones({ t }) {
                 <p className="text-xl font-bold mb-8">{t("Hero6Text")}</p>
               </div>
               <div
-                className="flex flex-col lg:flex-row flex-nowrap lg:flex-wrap w-full justify-center items-center py-8 md:py-0 md:items-start  lg:justify-between"
+                className="flex flex-col lg:flex-row flex-nowrap lg:flex-wrap w-full justify-center items-center py-8 md:py-0 md:items-start px-4 md:px-0 lg:justify-between"
                 style={{ alignSelf: "end" }}
               >
                 <div
