@@ -5,17 +5,62 @@ import SolAire from "../../components/SVG/SOL_Land/SolAire";
 import SOL_SALUD from "../../components/SVG/SOL_Land/SOL_SALUD";
 import SOL_MONITOREO from "../../components/SVG/SOL_Land/SOL_MONITOREO";
 import SOL_INFRA from "../../components/SVG/SOL_Land/SOL_INFRA";
+import SolucionSingle from "./SolucionSingle";
 export default function Soluciones({ t }) {
+  const Soluciones = [
+    {
+      id: 0,
+      Icon: SOL_ENERGIA,
+      title: t("Sol1Title"),
+      text: t("Sol1Text"),
+    },
+    {
+      id: 1,
+      Icon: SOL_SOPORTE,
+      title: t("Sol2Title"),
+      text: t("Sol2Text"),
+    },
+    {
+      id: 2,
+      Icon: SOL_FAB,
+      title: t("Sol3Title"),
+      text: t("Sol3Text"),
+    },
+    {
+      id: 3,
+      Icon: SOL_INFRA,
+      title: t("Sol4Title"),
+      text: t("Sol4Text"),
+    },
+    {
+      id: 4,
+      Icon: SOL_MONITOREO,
+      title: t("Sol5Title"),
+      text: t("Sol5Text"),
+    },
+    {
+      id: 5,
+      Icon: SolAire,
+      title: t("Sol6Title"),
+      text: t("Sol6Text"),
+    },
+    {
+      id: 6,
+      Icon: SOL_SALUD,
+      title: t("Sol7Title"),
+      text: t("Sol7Text"),
+    },
+  ];
   return (
     <div
       className="flex flex-col flex-nowrap w-full justify-center items-center"
       id="Servicios"
     >
       <div
-        className="flex flex-row flex-wrap justify-end my-8 bg-[#155E75] dark:bg-inherit rounded-3xl py-8 "
+        className="flex flex-row flex-wrap justify-center md:justify-end my-8 bg-[#155E75] dark:bg-inherit rounded-3xl py-8 "
         style={{ width: "95vw", minHeight: "60vh" }}
       >
-        <div className="flex items-center w-[73vw]   ">
+        <div className="flex items-center justify-center md:justify-start w-full md:w-[73vw]   ">
           <div className="w-[90%]  flex flex-col flex-nowrap ">
             <div className="w-full lg:w-3/4 py-4  text-left lg:text-justify ">
               <h2 className="w-full text-white dark:text-[#fff] text-3xl lg:text-5xl font-bold">
@@ -25,70 +70,10 @@ export default function Soluciones({ t }) {
                 {t("Hero4Sub")}
               </p>
             </div>
-            <div className="flex flex-col lg:flex-row flex-nowrap justify-center items-center content-center lg:justify-between  lg:flex-wrap gap-8 w-full justify-self-center self-center place-self-center ">
-              <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48 ">
-                <SOL_ENERGIA width="100px" height="100px" />
-                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
-                  {t("Sol1Title")}
-                </p>
-                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
-                  {t("Sol1Text")}
-                </p>
-              </div>
-              <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
-                <SOL_SOPORTE width="100px" height="100px" />
-                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
-                  {t("Sol2Title")}
-                </p>
-                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
-                  {t("Sol2Text")}
-                </p>
-              </div>
-              <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
-                <SOL_FAB width="100px" height="100px" />
-                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
-                  {t("Sol3Title")}
-                </p>
-                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
-                  {t("Sol3Text")}
-                </p>
-              </div>
-              <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
-                <SOL_INFRA width="100px" height="100px" />
-                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
-                  {t("Sol4Title")}
-                </p>
-                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
-                  {t("Sol4Text")}
-                </p>
-              </div>
-              <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
-                <SOL_MONITOREO width="100px" height="100px" />
-                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
-                  {t("Sol5Title")}
-                </p>
-                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
-                  {t("Sol5Text")}
-                </p>
-              </div>
-              <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
-                <SolAire width="100px" height="100px" />
-                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
-                  {t("Sol6Title")}
-                </p>
-                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
-                  {t("Sol6Text")}
-                </p>
-              </div>
-              <div className="flex flex-col flex-nowrap justify-center items-center w-48 h-48">
-                <SOL_SALUD width="100px" height="100px" />
-                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
-                  {t("Sol7Title")}
-                </p>
-                <p className="text-white dark:text-[#FFFFFF] text-sm font-bold">
-                  {t("Sol7Text")}
-                </p>
-              </div>
+            <div className="grid grid-cols-2 md:flex md:flex-row flex-nowrap justify-center items-center content-center lg:justify-between lg:flex-wrap gap-4 md:gap-8 w-full justify-self-center self-center place-self-center">
+              {Soluciones.map((solucion, index) => (
+                <SolucionSingle key={index} {...solucion} />
+              ))}
               <div className="h-48 w-48 flex flex-col flex-nowrap justify-center items-center ">
                 <button className="py-2 px-4 bg-[#5D001D] dark:bg-[#AEC8F8] text-white dark:text-[#0A2473] self-center rounded ">
                   {t("Leer")}

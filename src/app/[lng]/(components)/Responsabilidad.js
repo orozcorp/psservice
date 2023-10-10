@@ -2,8 +2,8 @@ import RSEImages from "./RSEImages";
 
 export default function Responsabilidad({ t }) {
   return (
-    <div className="flex flex-col flex-nowrap w-full justify-center items-center ">
-      <div className="flex flex-row flex-wrap justify-start items-center min-h-[60vh] w-[95vw]   gap-2 ">
+    <div className="flex flex-col flex-nowrap w-full justify-center items-center mb-12">
+      <div className="flex flex-row flex-wrap justify-center md:justify-start items-center min-h-[60vh] w-[95vw]   gap-2 ">
         <RSEImages />
         <div className="flex flex-row flex-wrap items-center w-[73vw]">
           <div className="w-full max-w-2xl text-[#0A2473] dark:text-[#fff]">

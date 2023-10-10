@@ -2,7 +2,7 @@ import HeroBgImage from "./HeroBgImage";
 export default function Hero({ t }) {
   return (
     <div
-      className="relative flex justify-end items-center min-h-[60vh] w-[100vw]"
+      className="relative flex justify-center md:justify-end items-center min-h-[60vh] w-[100vw]"
       style={{ zIndex: 1 }}
     >
       {/* Background Image */}
@@ -12,7 +12,7 @@ export default function Hero({ t }) {
 
       {/* Content */}
 
-      <div className="flex flex-col flex-nowrap justify-center items-start w-[75vw]">
+      <div className="flex flex-col flex-nowrap justify-center items-start w-[90vw] md:w-[75vw] ">
         <h2 className="text-3xl lg:text-5xl text-[#002772] dark:text-white font-bold py-16">
           {t("Hero1")}
         </h2>

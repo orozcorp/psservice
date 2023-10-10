@@ -32,16 +32,16 @@ export default function Aliados({ t }) {
         className="flex flex-col flex-nowrap justify-center items-center"
         style={{ width: "95vw", minHeight: "60vh" }}
       >
-        <div className="flex items-center w-full  lg:flex-row  ">
-          <div className="w-[22vw]  text-[#0A2473] dark:text-inherit flex flex-col flex-nowrap items-center ">
-            <h2 className="text-3xl lg:text-5xl font-bold py-2 ">
+        <div className="flex flex-col md:flex-row items-center w-full  lg:flex-row  ">
+          <div className="w-full md:w-[22vw]  text-[#0A2473] dark:text-inherit flex flex-col flex-nowrap items-center ">
+            <h2 className="text-5xl lg:text-5xl font-bold py-2 ">
               {t("Hero7")}
             </h2>
-            <p className="text-xl lg:text-2xl font-bold mb-8">
+            <p className="text-2xl lg:text-2xl font-bold mb-8">
               {t("Hero7Sub")}
             </p>
           </div>
-          <div className="text-[#0A2473] flex-1 dark:text-[#FFFFFF] flex flex-col lg:flex-row flex-nowrap lg:flex-wrap justify-center items-center lg:justify-start text-left mt-16 lg:mt-0 lg:text-left">
+          <div className="text-[#0A2473] flex-1 dark:text-[#FFFFFF] flex flex-col lg:flex-row flex-nowrap lg:flex-wrap justify-center items-center lg:justify-start text-center md:text-left mt-4 px-4 md:px-0 lg:mt-0 lg:text-left">
             <div>
               <p className="text-xl font-bold">{t("Hero7Text")}</p>
             </div>
