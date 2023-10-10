@@ -1,9 +1,8 @@
-import Image from "next/image";
 import HeroBgImage from "./HeroBgImage";
 export default function Hero({ t }) {
   return (
     <div
-      className="relative flex justify-center items-center min-h-[60vh] w-[100vw]"
+      className="relative flex justify-end items-center min-h-[60vh] w-[100vw]"
       style={{ zIndex: 1 }}
     >
       {/* Background Image */}
@@ -12,15 +11,8 @@ export default function Hero({ t }) {
       </div>
 
       {/* Content */}
-      <Image
-        src="https://psservicesavvy.s3.us-east-2.amazonaws.com/logosYLanding/LOGOPS.png"
-        width={170}
-        height={60}
-        className="ml-0 lg:ml-[-11rem]"
-        loading="lazy"
-        alt="PS service"
-      />
-      <div className="max-w-2xl">
+
+      <div className="flex flex-col flex-nowrap justify-center items-start w-[75vw]">
         <h2 className="text-3xl lg:text-5xl text-[#002772] dark:text-white font-bold py-16">
           {t("Hero1")}
         </h2>

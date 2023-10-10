@@ -32,8 +32,8 @@ export default function Aliados({ t }) {
         className="flex flex-col flex-nowrap justify-center items-center"
         style={{ width: "95vw", minHeight: "60vh" }}
       >
-        <div className="flex items-start w-full lg:flex-row  ">
-          <div className="w-full lg:w-[340px] px-4 lg:px-12 text-[#0A2473] dark:text-inherit">
+        <div className="flex items-center w-full  lg:flex-row  ">
+          <div className="w-[22vw]  text-[#0A2473] dark:text-inherit flex flex-col flex-nowrap items-center ">
             <h2 className="text-3xl lg:text-5xl font-bold py-2 ">
               {t("Hero7")}
             </h2>
@@ -41,37 +41,39 @@ export default function Aliados({ t }) {
               {t("Hero7Sub")}
             </p>
           </div>
-          <div className="text-[#0A2473] flex-1 dark:text-[#FFFFFF] flex flex-col lg:flex-row flex-nowrap lg:flex-wrap justify-center items-center lg:justify-start px-4 text-left mt-16 lg:mt-0 lg:text-left">
+          <div className="text-[#0A2473] flex-1 dark:text-[#FFFFFF] flex flex-col lg:flex-row flex-nowrap lg:flex-wrap justify-center items-center lg:justify-start text-left mt-16 lg:mt-0 lg:text-left">
             <div>
               <p className="text-xl font-bold">{t("Hero7Text")}</p>
             </div>
           </div>
         </div>
-        <div className="w-full my-8 h-fit  gap-4 p-4 grid grid-cols-2  lg:grid-cols-4">
-          <AC_Scheider width={120} height={60} />
-          <AC_Staco width={120} height={60} />
-          <AC_Vertiv width={120} height={60} />
-          <AC_Daikin width={120} height={60} />
-          <AC_Mesa width={120} height={60} />
-          <AC_Kohler width={120} height={60} />
-          <AC_Huawei width={120} height={60} />
-          <AC_VMware width={120} height={60} />
-          <AC_HP width={120} height={60} />
-          <AC_Jonix width={120} height={60} />
-          <AC_abb width={120} height={60} />
-          <AC_Fortinet width={120} height={60} />
-          <AC_Rittal width={120} height={60} />
-          <AC_Dell width={120} height={60} />
-          <AC_Net width={120} height={60} />
-          <AC_Cisco width={120} height={60} />
-          <AC_Uniflair width={120} height={60} />
-          <AC_Access width={120} height={60} />
-          <AC_XFusion width={120} height={60} />
-          <AC_Generac width={120} height={60} />
-          <AC_Pure width={120} height={60} />
-          <AC_PSS width={120} height={60} />
-          <AC_Uptime width={120} height={60} />
-          <AC_Oracle width={120} height={60} />
+        <div className="flex w-[90%]  justify-center items-center my-8">
+          <div className="mx-auto w-full gap-4 p-4 grid grid-cols-2 lg:grid-cols-4 items-center justify-center">
+            <AC_Scheider width={120} height={60} />
+            <AC_Staco width={120} height={60} />
+            <AC_Vertiv width={120} height={60} />
+            <AC_Daikin width={120} height={60} />
+            <AC_Mesa width={120} height={60} />
+            <AC_Kohler width={120} height={60} />
+            <AC_Huawei width={120} height={60} />
+            <AC_VMware width={120} height={60} />
+            <AC_HP width={120} height={60} />
+            <AC_Jonix width={120} height={60} />
+            <AC_abb width={120} height={60} />
+            <AC_Fortinet width={120} height={60} />
+            <AC_Rittal width={120} height={60} />
+            <AC_Dell width={120} height={60} />
+            <AC_Net width={120} height={60} />
+            <AC_Cisco width={120} height={60} />
+            <AC_Uniflair width={120} height={60} />
+            <AC_Access width={120} height={60} />
+            <AC_XFusion width={120} height={60} />
+            <AC_Generac width={120} height={60} />
+            <AC_Pure width={120} height={60} />
+            <AC_PSS width={120} height={60} />
+            <AC_Uptime width={120} height={60} />
+            <AC_Oracle width={120} height={60} />
+          </div>
         </div>
       </div>
     </div>

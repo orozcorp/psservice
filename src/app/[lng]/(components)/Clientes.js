@@ -7,7 +7,7 @@ export default function Clientes({ t }) {
       id="Clientes"
     >
       <div
-        className="relative flex flex-row flex-wrap justify-center my-8 bg-[#155E75] dark:bg-inherit rounded-3xl"
+        className="relative flex flex-row flex-wrap justify-end my-8 bg-[#155E75] dark:bg-inherit rounded-3xl "
         style={{ width: "95vw", minHeight: "60vh" }}
       >
         {/* Background Image Wrapper */}
@@ -25,7 +25,7 @@ export default function Clientes({ t }) {
 
         {/* Content */}
         <div
-          className="relative flex items-end mb-10 w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2 text-white"
+          className="relative flex items-end mb-10  w-[73vw] text-white "
           style={{ zIndex: 1 }}
         >
           <div className="w-full py-4">

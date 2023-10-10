@@ -6,12 +6,12 @@ export default function Certificaciones({ t }) {
   return (
     <div className="flex flex-col flex-nowrap w-full justify-center items-center">
       <div
-        className="flex flex-row flex-wrap justify-center items-center my-8  bg-gradient-to-b from-[#C0D6D5] to-[#DEDEDE] dark:bg-gradient-to-r dark:from-[#10244A] dark:to-[#4D0519] rounded-3xl py-8"
+        className="flex flex-row flex-wrap justify-center items-center my-8  bg-gradient-to-b from-[#C0D6D5] to-[#DEDEDE] dark:bg-gradient-to-r dark:from-[#10244A] dark:to-[#4D0519] rounded-3xl py-8 "
         style={{ width: "95vw", minHeight: "40vh" }}
       >
-        <div className="flex items-center w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2">
-          <div className="flex flex-row flex-wrap w-full justify-center lg:justify-start">
-            <div className="w-[330px] h-fit rounded ml-0 lg:ml-[-20rem] flex flex-row flex-wrap justify-around items-baseline pb-8">
+        <div className="flex items-center w-full ">
+          <div className="flex flex-row flex-wrap w-full justify-center lg:justify-start ">
+            <div className="w-[23vw] h-fit rounded flex flex-row flex-wrap justify-around  items-center pb-8 ">
               <ISO_14001 width="8rem" height="8rem" />
               <ISO9001 width="8rem" height="8rem" />
               <ISO_Mesa_trabajo width="8rem" height="8rem" />
