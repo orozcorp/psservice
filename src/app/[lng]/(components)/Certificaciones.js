@@ -30,7 +30,7 @@ export default function Certificaciones({ t }) {
               >
                 <div
                   className="flex flex-col flex-nowrap justify-center items-center text-center"
-                  style={{ minWidth: "150px" }}
+                  style={{ width: "200px" }}
                 >
                   <div className="text-5xl  font-bold mb-4">15</div>
                   <div className="text-lg font-bold">{t("CertNom")}</div>
@@ -38,7 +38,7 @@ export default function Certificaciones({ t }) {
                 </div>
                 <div
                   className="flex flex-col flex-nowrap justify-center items-center text-center"
-                  style={{ minWidth: "150px" }}
+                  style={{ width: "200px" }}
                 >
                   <div className="text-5xl  font-bold mb-4">4</div>
                   <div className="text-lg font-bold">{t("CertIso")}</div>
@@ -46,7 +46,7 @@ export default function Certificaciones({ t }) {
                 </div>
                 <div
                   className="flex flex-col flex-nowrap justify-center items-center text-center"
-                  style={{ minWidth: "150px" }}
+                  style={{ width: "200px" }}
                 >
                   <div className="text-5xl  font-bold mb-4">+10</div>
                   <div className="text-lg font-bold">{t("CertIso")}</div>

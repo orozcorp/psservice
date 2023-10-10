@@ -21,8 +21,7 @@ export default function HeroBgImage() {
       src={color}
       alt="Background"
       layout="fill"
-      objectFit="cover"
-      objectPosition="right"
+      className="object-cover object-right"
       quality={100}
     />
   );

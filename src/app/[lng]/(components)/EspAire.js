@@ -8,7 +8,7 @@ export default function EspAire({ title, text, active }) {
     <div
       className={`relative ${
         activo ? "h-[26rem] duration-1000" : "h-20"
-      } w-60  rounded flex flex-col flex-nowrap items-start justify-end`}
+      } w-[33vw]  rounded flex flex-col flex-nowrap items-start justify-end`}
       onClick={() => {
         if (activeState == "AireAcondicionado") {
           setActive("");
@@ -24,9 +24,8 @@ export default function EspAire({ title, text, active }) {
             src="https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/AIRE_REAL.jpg"
             alt="Background"
             layout="fill"
-            objectFit="cover"
-            objectPosition="right"
             quality={100}
+            className="object-cover object-right"
           />
         </div>
       </div>

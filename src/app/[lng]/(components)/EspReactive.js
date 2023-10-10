@@ -9,12 +9,8 @@ export default function EspReactive({ objTrans }) {
   const [active, setActive] = useState("");
   return (
     <>
-      <div
-        className={`flex items-center w-full p-10 lg:p-0 ${
-          active === "dataCenter" ? "" : "lg:w-3/4 xl:w-1/2"
-        }`}
-      >
-        <div className="flex flex-row flex-wrap w-full justify-start lg:justify-start ">
+      <div className={`flex items-center w-full p-10 lg:p-0  `}>
+        <div className="flex flex-row flex-wrap w-full justify-start lg:justify-start">
           <EspDataCenter
             title={dataCenter.title}
             text={dataCenter.text}
@@ -22,7 +18,7 @@ export default function EspReactive({ objTrans }) {
           />
           {active !== "dataCenter" && (
             <div
-              className={`text-[#0A2473] text-left dark:text-[#fff] flex flex-col-reverse lg:flex-row flex-nowrap lg:flex-wrap justify-center items-center lg:justify-start px-0 lg:px-16  mt-4 lg:mt-0  w-full max-w-3xl`}
+              className={`text-[#0A2473] text-left dark:text-[#fff] flex flex-col-reverse lg:flex-row flex-nowrap lg:flex-wrap justify-center items-center lg:justify-start px-0 lg:px-8 mt-4 lg:mt-0  w-[75vw] `}
             >
               {active === "" && (
                 <div className="mb-20 lg:mb-0">

@@ -30,7 +30,7 @@ export default function Especializacion({ t }) {
       id="Especializacion"
     >
       <div
-        className="flex flex-row flex-wrap justify-center"
+        className="flex flex-row flex-wrap justify-center "
         style={{ width: "95vw", minHeight: "60vh" }}
       >
         <EspReactive objTrans={objTrans} />

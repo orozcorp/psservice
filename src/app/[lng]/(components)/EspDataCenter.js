@@ -10,7 +10,7 @@ export default function EspDataCenter({ title, text, active }) {
         ${
           activo
             ? "relative w-full items-start pl-10 duration-1000"
-            : "relative w-60 ml-0 lg:ml-[-19rem] items-center"
+            : "relative w-[20vw]  items-center"
         }
        h-[26rem]  rounded flex flex-col flex-nowrap justify-end`}
       onClick={() => {
@@ -28,9 +28,8 @@ export default function EspDataCenter({ title, text, active }) {
             src="https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/inicio_datacenter.jpg"
             alt="Background"
             layout="fill"
-            objectFit="cover"
-            objectPosition="left"
             quality={100}
+            className="object-cover object-left"
           />
         </div>
       </div>
