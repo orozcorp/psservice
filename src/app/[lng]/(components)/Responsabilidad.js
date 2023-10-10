@@ -6,7 +6,7 @@ export default function Responsabilidad({ t }) {
       <div className="flex flex-row flex-wrap justify-center md:justify-start items-center min-h-[60vh] w-[95vw]   gap-2 ">
         <RSEImages />
         <div className="flex flex-row flex-wrap items-center w-[73vw]">
-          <div className="w-full max-w-2xl text-[#0A2473] dark:text-[#fff]">
+          <div className="w-full  text-[#0A2473] dark:text-[#fff]">
             <h2 className="text-3xl lg:text-5xl  font-bold py-2">
               {t("Hero9")}
             </h2>
