@@ -5,7 +5,6 @@ export default function Hero3({ t }) {
     <div className="relative flex justify-center items-center min-h-[80vh] w-[100vw]">
       {/* Background Image Wrapper */}
 
-      {/* Content */}
       <div className="relative z-0 w-[95%] flex justify-center items-end  rounded-xl py-4 min-h-[60vh]">
         <div className="absolute inset-0 rounded overflow-hidden">
           <div className="absolute inset-0">
@@ -15,8 +14,9 @@ export default function Hero3({ t }) {
             />
           </div>
         </div>
-        <div className="z-10 flex flex-row flex-wrap items-center w-full p-6 lg:p-0 mx-[-4rem] lg:w-3/4 xl:w-1/2 text-white">
-          <div className="max-w-2xl">
+        {/* Content */}
+        <div className="relative z-10 flex flex-row flex-wrap justify-end items-center w-full text-white">
+          <div className="flex flex-col flex-nowrap justify-center items-start w-[90vw] md:w-[73vw]  ">
             <h2 className="text-3xl lg:text-5xl font-bold pt-16 pb-4">
               {t("Hero4")}
             </h2>
