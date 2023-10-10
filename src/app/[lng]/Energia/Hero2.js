@@ -14,8 +14,8 @@ export default function Hero2({ t }) {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-row flex-wrap items-center w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2">
-        <div className="max-w-2xl">
+      <div className="relative z-10 flex flex-row flex-wrap justify-end items-center w-full ">
+        <div className="flex flex-col flex-nowrap justify-center items-start w-[90vw] md:w-[75vw] ">
           <h2 className="text-3xl lg:text-5xl text-[#0A2473] dark:text-white font-bold py-16">
             {t("Hero3")}
           </h2>

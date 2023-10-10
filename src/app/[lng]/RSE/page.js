@@ -23,7 +23,6 @@ export default async function RSE({ params: { lng } }) {
     query: QUERY,
   });
   const documentos = query?.getDocuments || [];
-  // const documentos = [];
   return (
     <div className="w-full mb-96">
       <Hero t={t} />

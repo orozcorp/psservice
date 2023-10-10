@@ -18,7 +18,7 @@ export default function Hero2({ t }) {
 
       {/* Content */}
       <ISO_14001RSE width={300} height={200} />
-      <div className="max-w-2xl">
+      <div className="flex flex-col flex-nowrap justify-center items-start w-[90vw] md:w-[75vw] ">
         <h2 className="text-3xl lg:text-5xl text-[#002772] dark:text-white font-bold py-16">
           {t("Hero1")}
         </h2>
