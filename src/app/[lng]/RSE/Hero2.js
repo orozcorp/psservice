@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Hero2({ t }) {
   return (
     <div
-      className="relative flex justify-start items-center min-h-[60vh] w-[100vw]"
+      className="relative flex flex-col md:flex-row flex-nowrap md:flex-wrap  justify-start items-center min-h-[60vh] w-[100vw py-10 md:py-0 "
       style={{ zIndex: 1 }}
     >
       {/* Background Image */}
@@ -18,7 +18,7 @@ export default function Hero2({ t }) {
 
       {/* Content */}
       <ISO_14001RSE width={300} height={200} />
-      <div className="flex flex-col flex-nowrap justify-center items-start w-[90vw] md:w-[75vw] ">
+      <div className="flex flex-col flex-nowrap justify-center items-center md:items-start w-[90vw] md:w-[75vw] my-10 md:my-0">
         <h2 className="text-3xl lg:text-5xl text-[#002772] dark:text-white font-bold py-16">
           {t("Hero1")}
         </h2>

@@ -16,7 +16,6 @@ export default function ChangingImage({
   useEffect(() => {
     setColor(theme === "dark" ? darkImg : lightImg);
   }, [darkImg, lightImg, theme]);
-  console.log(color);
   return (
     <Image
       src={color}
