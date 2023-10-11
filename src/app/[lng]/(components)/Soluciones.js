@@ -9,46 +9,54 @@ import SolucionSingle from "./SolucionSingle";
 export default function Soluciones({ t }) {
   const Soluciones = [
     {
-      id: 0,
-      Icon: SOL_ENERGIA,
-      title: t("Sol1Title"),
-      text: t("Sol1Text"),
-    },
-    {
-      id: 1,
-      Icon: SOL_SOPORTE,
-      title: t("Sol2Title"),
-      text: t("Sol2Text"),
-    },
-    {
-      id: 2,
-      Icon: SOL_FAB,
-      title: t("Sol3Title"),
-      text: t("Sol3Text"),
-    },
-    {
       id: 3,
       Icon: SOL_INFRA,
       title: t("Sol4Title"),
       text: t("Sol4Text"),
+      link: "/TecnologiaDeInformacion",
     },
     {
-      id: 4,
-      Icon: SOL_MONITOREO,
-      title: t("Sol5Title"),
-      text: t("Sol5Text"),
+      id: 0,
+      Icon: SOL_ENERGIA,
+      title: t("Sol1Title"),
+      text: t("Sol1Text"),
+      link: "/Energia",
     },
     {
       id: 5,
       Icon: SolAire,
       title: t("Sol6Title"),
       text: t("Sol6Text"),
+      link: "/AiresAcondicionados",
     },
+    {
+      id: 4,
+      Icon: SOL_MONITOREO,
+      title: t("Sol5Title"),
+      text: t("Sol5Text"),
+      link: "/Monitoreo",
+    },
+    {
+      id: 2,
+      Icon: SOL_FAB,
+      title: t("Sol3Title"),
+      text: t("Sol3Text"),
+      link: "/Fabricacion",
+    },
+    {
+      id: 1,
+      Icon: SOL_SOPORTE,
+      title: t("Sol2Title"),
+      text: t("Sol2Text"),
+      link: "/Soporte",
+    },
+
     {
       id: 6,
       Icon: SOL_SALUD,
       title: t("Sol7Title"),
       text: t("Sol7Text"),
+      link: "/TecnologiaMedica",
     },
   ];
   return (

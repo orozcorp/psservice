@@ -1,9 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function EspDataCenter({ title, text, active }) {
   const { active: activeState, setActive } = active;
   const activo = activeState == "dataCenter";
-
   return (
     <div
       className={`
@@ -12,7 +12,7 @@ export default function EspDataCenter({ title, text, active }) {
             ? "relative w-full items-start pl-10 duration-1000"
             : "relative w-full md:w-[20vw]  items-center"
         }
-       h-[26rem]  rounded flex flex-col flex-nowrap justify-end`}
+       h-[26rem]  rounded flex flex-col flex-nowrap justify-end pb-8`}
       onClick={() => {
         if (activeState == "dataCenter") {
           setActive("");
@@ -35,9 +35,19 @@ export default function EspDataCenter({ title, text, active }) {
       </div>
 
       {/* Content */}
-      <div className="relative z-10">
+      <div className="relative z-10 text-white">
         <div className="font-bold mb-4 text-lg">{title}</div>
-        {activo && <div className="mb-4 text-sm">{text}</div>}
+        {activo && (
+          <>
+            <div className="mb-4 text-sm">{text}</div>
+            <Link
+              className="border rounded bg-[#155E75] border-[#155E75] text-white px-6 py-2"
+              href="/DataCenter"
+            >
+              Ver más
+            </Link>
+          </>
+        )}
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 export default function EspAire({ title, text, active }) {
   const { active: activeState, setActive } = active;
   const activo = activeState == "AireAcondicionado";
@@ -8,7 +8,7 @@ export default function EspAire({ title, text, active }) {
     <div
       className={`relative ${
         activo ? "h-[26rem] duration-1000" : "h-20"
-      } w-full md:w-[33vw]  rounded flex flex-col flex-nowrap items-start justify-end`}
+      } w-full md:w-[33vw]  rounded flex flex-col flex-nowrap items-center justify-end text-white pb-4`}
       onClick={() => {
         if (activeState == "AireAcondicionado") {
           setActive("");
@@ -33,7 +33,17 @@ export default function EspAire({ title, text, active }) {
       {/* Content */}
       <div className="relative z-10">
         <div className="font-bold mb-4 text-lg ml-4">{title}</div>
-        {activo && <div className="ml-4 mb-4 text-sm">{text}</div>}
+        {activo && (
+          <>
+            <div className="mb-4 text-sm">{text}</div>
+            <Link
+              className="border rounded bg-[#155E75] border-[#155E75] text-white px-6 py-2"
+              href="/DataCenter"
+            >
+              Ver más
+            </Link>
+          </>
+        )}
       </div>
     </div>
   );
