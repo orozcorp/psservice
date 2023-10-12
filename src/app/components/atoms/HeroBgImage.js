@@ -14,7 +14,7 @@ export default function HeroBgImage({ lightImg, darkImg }) {
     <Image
       src={color}
       alt="Background"
-      layout="fill"
+      fill
       className="object-cover object-right"
       quality={100}
     />

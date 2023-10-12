@@ -20,7 +20,7 @@ export default function HeroBgImage() {
     <Image
       src={color}
       alt="Background"
-      layout="fill"
+      fill
       className="object-cover object-right"
       quality={100}
     />

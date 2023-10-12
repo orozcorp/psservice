@@ -27,7 +27,7 @@ export default function EspDataCenter({ title, text, active }) {
           <Image
             src="https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/inicio_datacenter.jpg"
             alt="Background"
-            layout="fill"
+            fill
             quality={100}
             className="object-cover object-left"
           />

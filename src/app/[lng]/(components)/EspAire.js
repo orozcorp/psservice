@@ -23,7 +23,7 @@ export default function EspAire({ title, text, active }) {
           <Image
             src="https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/AIRE_REAL.jpg"
             alt="Background"
-            layout="fill"
+            fill
             quality={100}
             className="object-cover object-right"
           />

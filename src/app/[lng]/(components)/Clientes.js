@@ -16,7 +16,7 @@ export default function Clientes({ t }) {
             <Image
               src="https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/HERO2.jpg"
               alt="Background"
-              layout="fill"
+              fill
               className="object-cover object-left"
               quality={100}
             />
