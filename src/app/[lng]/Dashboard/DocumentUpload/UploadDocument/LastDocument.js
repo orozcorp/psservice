@@ -1,4 +1,4 @@
-import { format_date } from "../../../lib/helpers/formatters";
+import { format_date } from "../../../../lib/helpers/formatters";
 export default function LastDocument({ lastDocument }) {
   const { name, createdAt, extension, estatus } = lastDocument;
   return (
