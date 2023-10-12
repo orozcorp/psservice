@@ -1,9 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
 import DocumentRow from "./DocumentRow";
-import { format_date } from "../../../lib/helpers/formatters";
+import { format_date } from "../../../../lib/helpers/formatters";
 import { AiOutlineDelete } from "react-icons/ai";
-import { postData, getData } from "../../../lib/helpers/getData";
+import { postData, getData } from "../../../../lib/helpers/getData";
 const QUERY = `
 query GetDocuments {
   getDocuments {

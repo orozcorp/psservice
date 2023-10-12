@@ -49,7 +49,7 @@ export default async function Fabricacion({ params: { lng } }) {
           src="https://psserviceimages.s3.us-east-2.amazonaws.com/OTHER/MONITOREO/HERO_LIGHT.jpg"
           alt="Background"
           fill
-          className="object-cover object-right"
+          className="object-cover object-center"
           quality={100}
         />
       </div>

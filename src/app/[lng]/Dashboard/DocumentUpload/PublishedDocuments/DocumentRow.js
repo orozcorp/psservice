@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { format_date } from "../../../lib/helpers/formatters";
+import { format_date } from "../../../../lib/helpers/formatters";
 
 export default function DocumentRow({
   document,

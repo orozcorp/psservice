@@ -1,4 +1,4 @@
-import { getData } from "../../../lib/helpers/getData";
+import { getData } from "../../../../lib/helpers/getData";
 import UploadSide from "./UploadSide";
 import LastDocument from "./LastDocument";
 const QUERY = `

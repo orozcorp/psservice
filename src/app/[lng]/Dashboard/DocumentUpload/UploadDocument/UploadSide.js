@@ -1,13 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
-import Upload from "../../../components/atoms/Upload";
+import Upload from "../../../../components/atoms/Upload";
 import { AiOutlineCloudUpload, AiOutlineBars } from "react-icons/ai";
 import { FiLogOut } from "react-icons/fi";
 import Link from "next/link";
 import { signOut } from "next-auth/react";
-import { postData } from "../../../lib/helpers/getData";
-import Alert from "../../../components/atoms/Alert";
-import AlertCat from "../../../components/atoms/AlertCat";
+import { postData } from "../../../../lib/helpers/getData";
+import Alert from "../../../../components/atoms/Alert";
+import AlertCat from "../../../../components/atoms/AlertCat";
 const MUTATION = `
   mutation CreateDocument($document: InputDocument) {
     createDocument(document: $document) {

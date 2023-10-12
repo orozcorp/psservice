@@ -1,6 +1,6 @@
 import React from "react";
 import UploadSide from "../UploadDocument/UploadSide";
-import { getData } from "../../../lib/helpers/getData";
+import { getData } from "../../../../lib/helpers/getData";
 import DocumentTable from "./DocumentTable";
 const QUERY = `
 query GetDocuments {
