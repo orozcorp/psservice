@@ -2,7 +2,7 @@ import HeroBgImage from "../../components/atoms/HeroBgImage";
 
 export default function Hero3({ t }) {
   return (
-    <div className="relative flex justify-center items-center min-h-[80vh] w-[100vw]">
+    <div className="relative flex justify-center items-center  w-[100vw]">
       {/* Background Image Wrapper */}
 
       <div className="relative z-0 w-[95%] flex justify-center items-end  rounded-xl py-4 min-h-[60vh]">

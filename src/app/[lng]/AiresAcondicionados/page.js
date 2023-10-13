@@ -8,7 +8,7 @@ import Hero3 from "./Hero3";
 export default async function DataCenter({ params: { lng } }) {
   const { t } = await useTranslation(lng, "Aire");
   return (
-    <div className="w-full mb-4">
+    <div className="w-full">
       <Hero t={t} />
       <Somos t={t} />
       <Hero2 t={t} />

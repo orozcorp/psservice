@@ -6,6 +6,7 @@ import SOL_SALUD from "../../components/SVG/SOL_Land/SOL_SALUD";
 import SOL_MONITOREO from "../../components/SVG/SOL_Land/SOL_MONITOREO";
 import SOL_INFRA from "../../components/SVG/SOL_Land/SOL_INFRA";
 import SolucionSingle from "./SolucionSingle";
+import Link from "next/link";
 export default function Soluciones({ t }) {
   const Soluciones = [
     {
@@ -83,9 +84,12 @@ export default function Soluciones({ t }) {
                 <SolucionSingle key={index} {...solucion} />
               ))}
               <div className="h-48 w-48 flex flex-col flex-nowrap justify-center items-center ">
-                <button className="py-2 px-4 bg-[#5D001D] dark:bg-[#AEC8F8] text-white dark:text-[#0A2473] self-center rounded ">
+                <Link
+                  href="/Soporte"
+                  className="py-2 px-4 bg-[#5D001D] dark:bg-[#AEC8F8] text-white dark:text-[#0A2473] self-center rounded "
+                >
                   {t("Leer")}
-                </button>
+                </Link>
               </div>
             </div>
           </div>

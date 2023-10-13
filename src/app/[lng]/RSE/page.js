@@ -24,7 +24,7 @@ export default async function RSE({ params: { lng } }) {
   });
   const documentos = query?.getDocuments || [];
   return (
-    <div className="w-full mb-96">
+    <div className="w-full">
       <Hero t={t} />
       <Somos t={t} />
       <Hero2 t={t} />

@@ -2,6 +2,7 @@ import ISO_14001 from "../../components/SVG/Certificaciones/ISO_14001";
 import ISO9001 from "../../components/SVG/Certificaciones/ISO9001";
 import ISO_Mesa_trabajo from "../../components/SVG/Certificaciones/ISO_Mesa_trabajo";
 import ISO_MESA_TRES from "../../components/SVG/Certificaciones/ISO_MESA_TRES";
+import CertificacionesSingle from "./CertificacionesSingle";
 export default function Certificaciones({ t }) {
   return (
     <div className="flex flex-col flex-nowrap w-full justify-center items-center">
@@ -32,7 +33,7 @@ export default function Certificaciones({ t }) {
                   className="flex flex-col flex-nowrap justify-center items-center text-center"
                   style={{ width: "200px" }}
                 >
-                  <div className="text-5xl  font-bold mb-4">15</div>
+                  <CertificacionesSingle endCount={15} />
                   <div className="text-lg font-bold">{t("CertNom")}</div>
                   <div className="text-sm">{t("CertNomText")}</div>
                 </div>
@@ -40,7 +41,7 @@ export default function Certificaciones({ t }) {
                   className="flex flex-col flex-nowrap justify-center items-center text-center"
                   style={{ width: "200px" }}
                 >
-                  <div className="text-5xl  font-bold mb-4">4</div>
+                  <CertificacionesSingle endCount={4} />
                   <div className="text-lg font-bold">{t("CertIso")}</div>
                   <div className="text-sm">{t("CertIsoText")}</div>
                 </div>
@@ -48,7 +49,7 @@ export default function Certificaciones({ t }) {
                   className="flex flex-col flex-nowrap justify-center items-center text-center"
                   style={{ width: "200px" }}
                 >
-                  <div className="text-5xl  font-bold mb-4">+10</div>
+                  <CertificacionesSingle endCount={10} prefix="+" />
                   <div className="text-lg font-bold">{t("CertIso")}</div>
                   <div className="text-sm">{t("CertIsoText2")}</div>
                 </div>

@@ -33,7 +33,7 @@ export default async function Fabricacion({ params: { lng } }) {
     },
   ];
   return (
-    <div className="w-full mb-4">
+    <div className="w-full">
       <Hero t={t} />
       <Somos t={t} />
       <div className="flex flex-col md:flex-row flex-nowrap md:flex-wrap w-full mb-16">
