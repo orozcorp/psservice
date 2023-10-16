@@ -37,6 +37,11 @@ export default function NavbarDisplayed({
         <div className=" text-white text-3xl">
           <Link href={`${lng}/Bolsa`}>{t("Bolsa")}</Link>
         </div>
+        {session && (
+          <div className=" text-white text-3xl">
+            <Link href={`${lng}/Dashboard`}>{t("Dashboard")}</Link>
+          </div>
+        )}
         {!session && (
           <div className=" text-white text-3xl">
             <Link href="/LogIn">{t("LogIn")}</Link>

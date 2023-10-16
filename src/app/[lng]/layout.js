@@ -5,7 +5,6 @@ import { ThemeProvider } from "../providers/theme-provider";
 import { Navbar } from "../components/Navbar";
 import { Oxygen } from "next/font/google";
 import { Footer } from "../components/Footer";
-
 import NextAuthSessionProvider from "../providers/sessionProvider";
 const oxygen = Oxygen({
   subsets: ["latin"],

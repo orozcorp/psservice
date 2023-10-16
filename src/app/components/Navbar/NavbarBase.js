@@ -17,6 +17,8 @@ export const NavbarBase = ({ t, lng }) => {
   const pathname = usePathname();
   const { theme } = useTheme();
   const { data: session, status } = useSession();
+  const path = pathname.split("/")[2];
+  console.log(path);
   return (
     <>
       <nav className="flex flex-row items-center justify-center bg-[#23283C] dark:bg-[#0A2473] ">
@@ -38,15 +40,40 @@ export const NavbarBase = ({ t, lng }) => {
             </div>
           </div>
           {width > 1000 && (
-            <div className="flex flex-row flex-wrap justify-end gap-8 items-center content-center text-white mr-4 w-full">
-              <Link href={`/${lng}/`}>{t("Inicio")}</Link>
+            <div className="flex flex-row flex-wrap justify-end gap-8 items-start content-center text-white mr-4 w-full">
+              <Link
+                href={`/${lng}/`}
+                className={`${
+                  path == undefined && "border-0 border-b-2 border-white pb-2"
+                }`}
+              >
+                {t("Inicio")}
+              </Link>
               <Link href={`/${lng}/#Especializacion`}>
                 {t("Especialidades")}
               </Link>
               <Link href={`/${lng}/#Servicios`}>{t("Servicios")}</Link>
               <Link href={`/${lng}/#Clientes`}>{t("Clientes")}</Link>
               <Link href={`/${lng}/#Aliados`}>{t("Aliados")}</Link>
-              <Link href={`/${lng}/Bolsa`}>{t("Bolsa")}</Link>
+              <Link
+                href={`/${lng}/Bolsa`}
+                className={`${
+                  path == "Bolsa" && "border-0 border-b-2 border-white pb-2"
+                }`}
+              >
+                {t("Bolsa")}
+              </Link>
+              {session && (
+                <Link
+                  href={`/${lng}/Dashboard`}
+                  className={`${
+                    path == "Dashboard" &&
+                    "border-0 border-b-2 border-white pb-2"
+                  }`}
+                >
+                  {t("Dashboard")}
+                </Link>
+              )}
               <ThemeSwitcher />
               {!session && (
                 <Link
