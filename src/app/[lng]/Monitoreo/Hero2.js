@@ -8,7 +8,7 @@ export default function Hero2({ t }) {
         <div className="absolute inset-0">
           <HeroBgImage
             lightImg="https://psserviceimages.s3.us-east-2.amazonaws.com/OTHER/MONITOREO/HERO2_LIGHT.jpg"
-            darkImg="https://psserviceimages.s3.us-east-2.amazonaws.com/OTHER/MONITOREO/HERO2_DARK.jpg"
+            darkImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/MONITOREO/HERO2.jpg"
           />
         </div>
       </div>

@@ -14,7 +14,7 @@ export default function Clientes({ t }) {
         <div className="absolute inset-0 rounded-3xl overflow-hidden">
           <div className="absolute inset-0">
             <Image
-              src="https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/HERO2.jpg"
+              src="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/CLIENTES.jpg"
               alt="Background"
               fill
               className="object-cover object-left"

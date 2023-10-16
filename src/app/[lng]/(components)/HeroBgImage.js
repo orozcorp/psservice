@@ -12,7 +12,7 @@ export default function HeroBgImage() {
   useEffect(() => {
     setColor(
       theme === "dark"
-        ? "https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/HERO1.jpg"
+        ? "https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/HERO.jpg"
         : "https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/inicio_LM_herojpgV7.jpg"
     );
   }, [theme]);

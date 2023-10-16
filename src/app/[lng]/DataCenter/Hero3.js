@@ -11,7 +11,7 @@ export default function Hero3({ t }) {
           <div className="absolute inset-0">
             <HeroBgImage
               lightImg="https://psserviceimages.s3.us-east-2.amazonaws.com/OTHER/AIRES/CLIENTES_LIGHT.jpg"
-              darkImg="https://psserviceimages.s3.us-east-2.amazonaws.com/OTHER/AIRES/CLIENTES_DARK.jpg"
+              darkImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/DATACENTER/COOLING.jpg"
             />
           </div>
         </div>
