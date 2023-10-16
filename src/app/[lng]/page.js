@@ -8,6 +8,7 @@ import Certificaciones from "./(components)/Certificaciones";
 import Aliados from "./(components)/Aliados";
 import Unete from "./(components)/Unete";
 import Responsabilidad from "./(components)/Responsabilidad";
+import Contacto from "./(components)/Contacto";
 export default async function Page({ params: { lng } }) {
   const { t } = await useTranslation(lng, "Landing");
   return (
@@ -19,6 +20,7 @@ export default async function Page({ params: { lng } }) {
       <Clientes t={t} />
       <Certificaciones t={t} />
       <Aliados t={t} />
+      <Contacto t={t} />
       <Unete t={t} />
       <Responsabilidad t={t} />
     </div>
