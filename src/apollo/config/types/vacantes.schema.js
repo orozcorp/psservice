@@ -33,6 +33,7 @@ export const vacantes = gql`
   }
   input CandidatoInput {
     nombre: String!
+    telefono: String!
     email: String!
     cv: String!
   }

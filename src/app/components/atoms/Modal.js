@@ -4,7 +4,7 @@ export default function Modal({ title, children, display, setDisplay }) {
     <div
       tabIndex="-1"
       aria-hidden="true"
-      className={`fixed inset-0 z-50 flex items-center justify-center `}
+      className={`fixed inset-0 z-50 flex items-center justify-center top-[20vh] left-[25vw]  `}
       style={{ display: display }}
     >
       <div className="relative w-3/4 max-w-2xl max-h-full drop-shadow-2xl shadow-2xl bg-white rounded-lg  overflow-y-auto">

@@ -96,7 +96,7 @@ export default function Upload({
   return (
     <div style={{ width: "320px", margin: "6px" }}>
       <label
-        className="block mb-2 font-medium text-gray-900 text-2xl "
+        className="block mb-2 font-medium text-gray-900 "
         htmlFor="file_input"
       >
         {title}
