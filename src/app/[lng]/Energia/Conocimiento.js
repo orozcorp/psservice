@@ -66,6 +66,11 @@ export default function Conocimiento({ t }) {
       icon: IC_EN_10,
     },
     {
+      id: 15,
+      service: t("S15"),
+      icon: IC_EN_14,
+    },
+    {
       id: 11,
       service: t("S11"),
       icon: IC_EN_11,

@@ -22,7 +22,7 @@ export default function ContactoForm() {
           onChange={(e) => setForm({ ...form, name: e.target.value })}
         />
         <label
-          for="name"
+          htmlFor="name"
           className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
         >
           Nombre
@@ -40,7 +40,7 @@ export default function ContactoForm() {
           onChange={(e) => setForm({ ...form, email: e.target.value })}
         />
         <label
-          for="email"
+          htmlFor="email"
           className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
         >
           Email
@@ -58,7 +58,7 @@ export default function ContactoForm() {
           onChange={(e) => setForm({ ...form, tel: e.target.value })}
         />
         <label
-          for="tel"
+          htmlFor="tel"
           className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
         >
           Teléfono

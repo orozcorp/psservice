@@ -6,7 +6,7 @@ import Conocimiento from "./Conocimiento";
 import Contacta from "./Contacta";
 import Hero3 from "./Hero3";
 export default async function DataCenter({ params: { lng } }) {
-  const { t } = await useTranslation(lng, "Energia");
+  const { t } = await useTranslation(lng, "Monitoreo");
   return (
     <div className="w-full">
       <Hero t={t} />

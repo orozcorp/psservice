@@ -18,7 +18,6 @@ export const NavbarBase = ({ t, lng }) => {
   const { theme } = useTheme();
   const { data: session, status } = useSession();
   const path = pathname.split("/")[2];
-  console.log(path);
   return (
     <>
       <nav className="flex flex-row items-center justify-center bg-[#23283C] dark:bg-[#0A2473] ">
