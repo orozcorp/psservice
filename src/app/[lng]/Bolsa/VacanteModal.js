@@ -31,7 +31,9 @@ export default function VacanteModal({ display, setDisplay, vacanteActive }) {
             setApply={setApply}
           />
         ),
-        thankyou: () => <VacanteThankYou setDisplay={setDisplay} />,
+        thankyou: () => (
+          <VacanteThankYou setDisplay={setDisplay} setApply={setApply} />
+        ),
       }[apply]?.()}
     </Modal>
   );
