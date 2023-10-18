@@ -12,16 +12,18 @@ export default function Hero({ t }) {
       </div>
 
       {/* Content */}
-      <div className=" flex flex-row flex-wrap justify-center items-center p-8 w-[9vw] md:w-[24vw]">
-        <PSLogo width="200px" height="168px" />
-      </div>
-      <div className="flex flex-col flex-nowrap justify-center items-start w-[90vw] md:w-[75vw] ">
-        <h2 className="text-3xl lg:text-5xl text-[#002772] dark:text-white font-bold py-16 max-w-2xl">
-          {t("Hero1")}
-        </h2>
-        <button className="py-2 px-4 bg-[#5D001D] text-white rounded-lg">
-          {t("Experto")}
-        </button>
+      <div className="relative z-10 flex flex-row flex-wrap justify-end items-center w-full my-8">
+        <div className=" flex flex-row flex-wrap justify-center items-center p-8 w-full md:w-[24vw]">
+          <PSLogo width="200px" height="168px" />
+        </div>
+        <div className="flex flex-col flex-nowrap justify-center items-start w-[90vw] md:w-[75vw] ">
+          <h2 className="text-3xl lg:text-5xl text-[#002772] dark:text-white font-bold py-16 max-w-2xl">
+            {t("Hero1")}
+          </h2>
+          <button className="py-2 px-4 bg-[#5D001D] text-white rounded-lg">
+            {t("Experto")}
+          </button>
+        </div>
       </div>
     </div>
   );

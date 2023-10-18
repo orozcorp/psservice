@@ -66,12 +66,12 @@ export default function Soluciones({ t }) {
       id="Servicios"
     >
       <div
-        className="flex flex-row flex-wrap justify-center md:justify-end my-8 bg-[#155E75] dark:bg-inherit rounded-3xl py-8 "
-        style={{ width: "95vw", minHeight: "60vh" }}
+        className="flex flex-row flex-wrap justify-center md:justify-end my-8 bg-[#155E75] dark:bg-inherit rounded-3xl py-8  w-[95vw] "
+        style={{ minHeight: "60vh" }}
       >
-        <div className="flex items-center justify-center md:justify-start w-full md:w-[73vw]   ">
+        <div className="flex items-center justify-center md:justify-start w-full md:w-[73vw]">
           <div className="w-[90%]  flex flex-col flex-nowrap ">
-            <div className="w-full lg:w-3/4 py-4  text-left lg:text-justify ">
+            <div className="w-full lg:w-3/4 py-4  text-left lg:text-justify  p-6 lg:p-0">
               <h2 className="w-full text-white dark:text-[#fff] text-3xl lg:text-5xl font-bold">
                 {t("Hero4")}
               </h2>

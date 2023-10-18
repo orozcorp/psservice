@@ -3,8 +3,9 @@ import { useState } from "react";
 import Modal from "../../components/atoms/Modal";
 import VacanteData from "./VacanteData";
 import VacanteForm from "./VacanteForm";
+import VacanteThankYou from "./VacanteThankYou";
 export default function VacanteModal({ display, setDisplay, vacanteActive }) {
-  const [apply, setApply] = useState(false);
+  const [apply, setApply] = useState("info");
 
   if (!vacanteActive?._id) {
     return;
@@ -15,19 +16,23 @@ export default function VacanteModal({ display, setDisplay, vacanteActive }) {
       setDisplay={setDisplay}
       title={vacanteActive?.nombreVacante}
     >
-      {apply ? (
-        <VacanteForm
-          setDisplay={setDisplay}
-          vacanteActive={vacanteActive}
-          setApply={setApply}
-        />
-      ) : (
-        <VacanteData
-          apply={apply}
-          setApply={setApply}
-          vacanteActive={vacanteActive}
-        />
-      )}
+      {{
+        info: () => (
+          <VacanteData
+            apply={apply}
+            setApply={setApply}
+            vacanteActive={vacanteActive}
+          />
+        ),
+        candidate: () => (
+          <VacanteForm
+            setDisplay={setDisplay}
+            vacanteActive={vacanteActive}
+            setApply={setApply}
+          />
+        ),
+        thankyou: () => <VacanteThankYou setDisplay={setDisplay} />,
+      }[apply]?.()}
     </Modal>
   );
 }

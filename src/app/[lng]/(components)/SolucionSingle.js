@@ -14,7 +14,7 @@ export default function SolucionSingle({ Icon, title, text, link }) {
       }}
     >
       <div
-        className="flex flex-col flex-nowrap justify-center items-center w-48 h-48"
+        className="flex flex-col flex-nowrap justify-center items-center w-32 md:w-48 h-48"
         onClick={() => router.push(link)}
       >
         <Icon width="100px" height="100px" />

@@ -17,34 +17,34 @@ export default function NavbarDisplayed({
       >
         <ThemeSwitcher />
         <div className=" text-white text-3xl">
-          <Link href={`${lng}/Inicio`}>{t("Inicio")}</Link>
+          <Link href={`/${lng}`}>{t("Inicio")}</Link>
         </div>
         <div className=" text-white text-3xl">
-          <Link href={`${lng}/Especialidades`}>{t("Especialidades")}</Link>
+          <Link href={`/${lng}/#Especializacion`}>{t("Especialidades")}</Link>
         </div>
         <div className=" text-white text-3xl">
-          <Link href={`${lng}/Servicios`}>{t("Servicios")}</Link>
+          <Link href={`/${lng}/#Servicios`}>{t("Servicios")}</Link>
         </div>
         <div className=" text-white text-3xl">
-          <Link href={`${lng}/Clientes`}>{t("Clientes")}</Link>
+          <Link href={`/${lng}/#Clientes`}>{t("Clientes")}</Link>
         </div>
         <div className=" text-white text-3xl">
-          <Link href={`${lng}/Aliados`}>{t("Aliados")}</Link>
+          <Link href={`/${lng}/#Aliados`}>{t("Aliados")}</Link>
         </div>
         <div className=" text-white text-3xl">
-          <Link href={`${lng}/RSE`}>{t("RSE")}</Link>
+          <Link href={`/${lng}/RSE`}>{t("RSE")}</Link>
         </div>
         <div className=" text-white text-3xl">
-          <Link href={`${lng}/Bolsa`}>{t("Bolsa")}</Link>
+          <Link href={`/${lng}/Bolsa`}>{t("Bolsa")}</Link>
         </div>
         {session && (
           <div className=" text-white text-3xl">
-            <Link href={`${lng}/Dashboard`}>{t("Dashboard")}</Link>
+            <Link href={`/${lng}/Dashboard`}>{t("Dashboard")}</Link>
           </div>
         )}
         {!session && (
           <div className=" text-white text-3xl">
-            <Link href="/LogIn">{t("LogIn")}</Link>
+            <Link href="/api/auth/signin">{t("LogIn")}</Link>
           </div>
         )}
         {session && (

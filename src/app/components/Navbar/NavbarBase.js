@@ -54,6 +54,7 @@ export const NavbarBase = ({ t, lng }) => {
               <Link href={`/${lng}/#Servicios`}>{t("Servicios")}</Link>
               <Link href={`/${lng}/#Clientes`}>{t("Clientes")}</Link>
               <Link href={`/${lng}/#Aliados`}>{t("Aliados")}</Link>
+              <Link href={`/${lng}/RSE`}>{t("RSE")}</Link>
               <Link
                 href={`/${lng}/Bolsa`}
                 className={`${
@@ -119,6 +120,7 @@ export const NavbarBase = ({ t, lng }) => {
           showMenu={showMenu}
           setShowMenu={setShowMenu}
           t={t}
+          lng={lng}
           session={session}
         />
       )}
