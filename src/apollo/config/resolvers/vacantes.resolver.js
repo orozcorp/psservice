@@ -105,7 +105,7 @@ export const vacantesResolver = {
           { _id: new ObjectId(id) },
           {
             $push: {
-              candidatos: candidato.insertedId,
+              candidatos: { _id: candidato.insertedId, ...input },
             },
             $inc: {
               numeroCandidatos: 1,
