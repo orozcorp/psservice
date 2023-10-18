@@ -12,7 +12,7 @@ export default function Certificaciones({ t }) {
       >
         <div className="flex items-center w-full">
           <div className="flex flex-col-reverse md:flex-row flex-wrap w-full justify-center lg:justify-start ">
-            <div className="w-full md:w-[23vw]  mt-8 md:my-0  h-fit rounded flex flex-row flex-wrap justify-around  items-center pb-8 ">
+            <div className="w-full md:w-[23vw]  mt-8 md:my-0  h-fit rounded flex flex-row flex-wrap justify-around  items-center pb-8  gap-4">
               <ISO_14001 width="8rem" height="8rem" />
               <ISO9001 width="8rem" height="8rem" />
               <ISO_Mesa_trabajo width="8rem" height="8rem" />
