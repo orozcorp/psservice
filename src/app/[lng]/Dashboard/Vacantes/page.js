@@ -14,13 +14,13 @@ export default function Vacantes() {
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 ">
             <tr>
               <th scope="col" className="px-6 py-3">
-                Titulo
+                Nombre
               </th>
               <th scope="col" className="px-6 py-3">
                 Descripcion
               </th>
               <th scope="col" className="px-6 py-3">
-                Ubicación
+                Zona de Trabajo
               </th>
               <th scope="col" className="px-6 py-3">
                 # Candidatos

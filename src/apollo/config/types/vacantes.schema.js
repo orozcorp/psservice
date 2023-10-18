@@ -41,9 +41,9 @@ export const vacantes = gql`
     obtenerVacante(id: ID!): Vacante
   }
   type Mutation {
-    crearVacante(input: VacanteInput): Vacante
-    actualizarVacante(id: ID!, input: VacanteInput): Vacante
-    eliminarVacante(id: ID!): GeneralResponse
-    crearCandidato(id: ID!, input: CandidatoInput): Candidato
+    crearVacante(input: VacanteInput): GeneralResponse!
+    actualizarVacante(id: ID!, input: VacanteInput): GeneralResponse!
+    eliminarVacante(id: ID!): GeneralResponse!
+    crearCandidato(id: ID!, input: CandidatoInput): GeneralResponse!
   }
 `;
