@@ -18,8 +18,8 @@ export default function Hero({ t }) {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-row flex-wrap justify-end items-center w-full ">
-        <div className=" flex flex-row flex-wrap justify-center items-center p-8 w-[9vw] md:w-[24vw]">
+      <div className="relative z-10 flex flex-row flex-wrap justify-end items-center w-full my-8">
+        <div className=" flex flex-row flex-wrap justify-center items-center p-8 w-full md:w-[24vw]">
           <PSLogo width="200px" height="168px" />
         </div>
         <div className="flex flex-col flex-nowrap justify-center items-start w-[90vw] md:w-[75vw] ">
