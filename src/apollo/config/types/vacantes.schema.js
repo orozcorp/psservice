@@ -1,7 +1,7 @@
 import { gql } from "@apollo/client";
 export const vacantes = gql`
   type Vacante {
-    id: ID!
+    _id: ID!
     nombreVacante: String!
     sueldo: Float!
     descripcion: String!
@@ -15,7 +15,7 @@ export const vacantes = gql`
     estatus: String!
   }
   type Candidato {
-    id: ID!
+    _id: ID!
     nombre: String!
     email: String!
     telefono: String!
@@ -25,11 +25,11 @@ export const vacantes = gql`
   input VacanteInput {
     nombreVacante: String!
     sueldo: Float!
+    horario: String!
+    zonaDeTrabajo: String!
     descripcion: String!
     conocimientos: String!
     funciones: String!
-    horario: String!
-    zonaDeTrabajo: String!
   }
   input CandidatoInput {
     nombre: String!
