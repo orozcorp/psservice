@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { format_date, format_qty } from "../../../lib/helpers/formatters";
 export default function VacanteRow({ vacante }) {
   const {
@@ -11,7 +12,9 @@ export default function VacanteRow({ vacante }) {
   } = vacante;
   return (
     <tr className="text-center border-b ">
-      <td className="px-6 py-4">{nombreVacante}</td>
+      <td className="px-6 py-4">
+        <Link href={`/Dashboard/Vacantes/${vacante._id}`}>{nombreVacante}</Link>
+      </td>
       <td className="px-6 py-4">{descripcion}</td>
       <td className="px-6 py-4">{zonaDeTrabajo}</td>
       <td className="px-6 py-4">{format_qty(numeroCandidatos)}</td>
