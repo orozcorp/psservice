@@ -14,6 +14,12 @@ export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
 }
 
+export const metadata = {
+  title: "PS Services",
+  description: "PS Services",
+  keywords: "test, test2",
+};
+
 export default async function RootLayout({ children, params: { lng } }) {
   return (
     <html lang={lng} dir={dir(lng)}>
