@@ -1,56 +1,64 @@
 import ConocimientoSingle from "./ConocimientoSingle";
-
+import Almacenamiento from "../../components/SVG/DataCenter/Almacenamiento";
+import Redes from "../../components/SVG/DataCenter/Redes";
+import SwitchesRouters from "../../components/SVG/DataCenter/SwitchesRouters";
+import DesempenoRendimiento from "../../components/SVG/DataCenter/DesempenoRendimiento";
+import Hiperconvergencia from "../../components/SVG/DataCenter/Hiperconvergencia";
+import Gabinetes from "../../components/SVG/DataCenter/Gabinetes";
+import Procesamiento from "../../components/SVG/DataCenter/Procesamiento";
+import Microcentro from "../../components/SVG/DataCenter/Microcentro";
+import Migracion from "../../components/SVG/DataCenter/Migracion";
 export default function Conocimiento({ t }) {
   const servicios = [
     {
       id: 1,
       service: t("S1"),
-      icon: "",
+      Icon: Microcentro,
     },
     {
       id: 2,
       service: t("S2"),
-      icon: "",
+      Icon: Almacenamiento,
     },
     {
       id: 3,
       service: t("S3"),
-      icon: "",
+      Icon: DesempenoRendimiento,
     },
     {
       id: 4,
       service: t("S4"),
-      icon: "",
+      Icon: Procesamiento,
     },
     {
       id: 5,
       service: t("S5"),
-      icon: "",
+      Icon: Redes,
     },
     {
       id: 6,
       service: t("S6"),
-      icon: "",
+      Icon: Migracion,
     },
     {
       id: 7,
       service: t("S7"),
-      icon: "",
+      Icon: SwitchesRouters,
     },
     {
       id: 8,
       service: t("S8"),
-      icon: "",
+      Icon: Hiperconvergencia,
     },
     {
       id: 9,
       service: t("S9"),
-      icon: "",
+      Icon: Gabinetes,
     },
     {
       id: 10,
       service: t("S10"),
-      icon: "",
+      Icon: Almacenamiento,
     },
   ];
   return (
