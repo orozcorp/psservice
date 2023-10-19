@@ -25,6 +25,12 @@ export const documents = gql`
     estatus: String!
     updatedAt: Date!
   }
+  input Contact {
+    name: String!
+    email: String!
+    phone: String!
+    message: String!
+  }
   type Query {
     getDocuments: [Document]
     getLastDocument: Document
@@ -33,5 +39,6 @@ export const documents = gql`
     createDocument(document: InputDocument): GeneralResponse!
     updateDocument(document: InputDocumentUpdate): GeneralResponse!
     deleteDocument(ids: [ID!]): GeneralResponse!
+    contact(contact: Contact): GeneralResponse!
   }
 `;
