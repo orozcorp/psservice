@@ -16,7 +16,7 @@ export default function BackgroundImage() {
 
   return (
     <Image
-      src="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/SISTEMAS/SE_midImage.jpg"
+      src="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/Hero.jpg"
       alt="Background"
       fill
       className="object-cover object-right"
