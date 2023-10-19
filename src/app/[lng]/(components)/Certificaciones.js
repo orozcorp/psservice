@@ -11,8 +11,8 @@ export default function Certificaciones({ t }) {
         style={{ width: "95vw", minHeight: "40vh" }}
       >
         <div className="flex items-center w-full">
-          <div className="flex flex-col-reverse md:flex-row flex-wrap w-full justify-center lg:justify-start ">
-            <div className="w-full md:w-[23vw]  mt-8 md:my-0  h-fit rounded flex flex-row flex-wrap justify-around  items-center pb-8  gap-4">
+          <div className="flex flex-col-reverse lg:flex-row flex-wrap w-full justify-center lg:justify-start ">
+            <div className="w-full lg:w-[23vw]  mt-8 lg:my-0  h-fit rounded flex flex-row flex-wrap justify-around  items-center pb-8  gap-4">
               <ISO_14001 width="8rem" height="8rem" />
               <ISO9001 width="8rem" height="8rem" />
               <ISO_Mesa_trabajo width="8rem" height="8rem" />
@@ -26,7 +26,7 @@ export default function Certificaciones({ t }) {
                 <p className="text-xl font-bold mb-8">{t("Hero6Text")}</p>
               </div>
               <div
-                className="flex flex-col lg:flex-row flex-nowrap lg:flex-wrap w-full justify-center items-center py-8 md:py-0 md:items-start px-4 md:px-0 lg:justify-between"
+                className="flex flex-col lg:flex-row flex-nowrap lg:flex-wrap w-full justify-center items-center py-8 lg:py-0 lg:items-start px-4 lg:px-0 lg:justify-between"
                 style={{ alignSelf: "end" }}
               >
                 <div

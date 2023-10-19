@@ -16,7 +16,7 @@ export default function Hero3({ t }) {
         </div>
         {/* Content */}
         <div className="relative z-10 flex flex-row flex-wrap justify-end items-center w-full text-white">
-          <div className="flex flex-col flex-nowrap justify-center items-start w-[90vw] md:w-[73vw]  ">
+          <div className="flex flex-col flex-nowrap justify-center items-start w-[90vw] lg:w-[73vw]  ">
             <h2 className="text-3xl lg:text-5xl font-bold pt-16 pb-4">
               {t("Hero4")}
             </h2>

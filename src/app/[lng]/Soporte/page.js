@@ -36,13 +36,13 @@ export default async function Fabricacion({ params: { lng } }) {
     <div className="w-full">
       <Hero t={t} />
       <Somos t={t} />
-      <div className="flex flex-col md:flex-row flex-nowrap md:flex-wrap w-full mb-16">
+      <div className="flex flex-col lg:flex-row flex-nowrap lg:flex-wrap w-full mb-16">
         {solucionesData.map((solucion, index) => (
           <Soluciones key={index} {...solucion} />
         ))}
       </div>
       <div
-        className="relative flex justify-center md:justify-end items-center min-h-[60vh] w-[100vw]"
+        className="relative flex justify-center lg:justify-end items-center min-h-[60vh] w-[100vw]"
         style={{ zIndex: 1 }}
       >
         <Image

@@ -8,7 +8,7 @@ export default function EspAire({ title, text, active }) {
     <div
       className={`relative ${
         activo ? "h-[26rem] duration-1000" : "h-20"
-      } w-full md:w-[33vw]  rounded flex flex-col flex-nowrap items-center justify-end text-white pb-4`}
+      } w-full lg:w-[33vw]  rounded flex flex-col flex-nowrap items-center justify-end text-white pb-4`}
       onClick={() => {
         if (activeState == "AireAcondicionado") {
           setActive("");

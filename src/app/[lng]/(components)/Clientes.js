@@ -25,7 +25,7 @@ export default function Clientes({ t }) {
 
         {/* Content */}
         <div
-          className="relative flex items-end mb-10 w-[90%] md:w-[73vw] text-white "
+          className="relative flex items-end mb-10 w-[90%] lg:w-[73vw] text-white "
           style={{ zIndex: 1 }}
         >
           <div className="w-full py-4">
