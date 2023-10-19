@@ -9,11 +9,12 @@ import Aliados from "./(components)/Aliados";
 import Unete from "./(components)/Unete";
 import Responsabilidad from "./(components)/Responsabilidad";
 import Contacto from "./(components)/Contacto";
-
+import WAClick from "./(components)/WAClick";
 export default async function Page({ params: { lng } }) {
   const { t } = await useTranslation(lng, "Landing");
   return (
     <div className="w-full">
+      <WAClick />
       <Hero t={t} />
       <SomosIngenieria t={t} />
       <Especializacion t={t} />

@@ -1,6 +1,7 @@
-import { format_date, format_money } from "../../../../lib/helpers/formatters";
+import { format_date } from "../../../../lib/helpers/formatters";
 import { getData } from "../../../../lib/helpers/getData";
 import Link from "next/link";
+import VacanteData from "./VacanteData";
 const QUERY = `
   query ObtenerVacante($obtenerVacanteId: ID!) {
     obtenerVacante(id: $obtenerVacanteId) {
@@ -36,46 +37,7 @@ export default async function Vacante({ params }) {
   const vacante = query?.obtenerVacante || [];
   return (
     <div className="w-full">
-      <h1 className="text-2xl font-bold">
-        Nombre de Vacante: {vacante.nombreVacante}
-      </h1>
-      <div className="flex flex-row flex-wrap gap-4 my-4 w-full justify-between">
-        <p>
-          <b>Fecha creacion: </b>
-          {format_date(vacante.creado)}
-        </p>
-        <p>
-          <b>Estatus: </b>
-          {vacante.estatus}
-        </p>
-        <p>
-          <b># de Candidatos:</b> {vacante.numeroCandidatos}
-        </p>
-        <p>
-          <b>Sueldo: </b>
-          {format_money(vacante.sueldo)}
-        </p>
-        <p>
-          <b>Zona de trabajo:</b> {vacante.zonaDeTrabajo}
-        </p>
-        <p>
-          <b>Horario:</b> {vacante.horario}
-        </p>
-      </div>
-      <div className="flex flex-row flex-wrap gap-8 justify-between w-full">
-        <div className="my-4 max-w-md">
-          <b>Descripcion</b>
-          <p>{vacante.descripcion}</p>
-        </div>
-        <div className="my-4 max-w-md">
-          <b>Conocimientos</b>
-          <p>{vacante.conocimientos}</p>
-        </div>
-        <div className="my-4 max-w-md">
-          <b>Funciones</b>
-          <p>{vacante.funciones}</p>
-        </div>
-      </div>
+      <VacanteData vacante={vacante} />
       <div className="mt-8 relative overflow-x-auto shadow-md sm:rounded-lg">
         <table className="w-full text-sm text-left text-gray-500 ">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 ">
@@ -105,7 +67,12 @@ export default async function Vacante({ params }) {
                 <td className="px-6 py-3">{val.email}</td>
                 <td className="px-6 py-3">{val.telefono}</td>
                 <td className="px-6 py-3">
-                  <Link href={val.cv}>CV</Link>
+                  <Link
+                    href={val.cv}
+                    className="bg-blue-100 text-blue-800  font-bold mr-2 px-2.5 py-0.5 rounded "
+                  >
+                    CV
+                  </Link>
                 </td>
               </tr>
             ))}
