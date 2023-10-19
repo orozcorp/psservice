@@ -29,11 +29,7 @@ export const FooterBase = async ({ t, lng }) => {
                   href="Infraestructura"
                   text={t("Infraestructura")}
                 />
-                <FooterLinks
-                  lng={lng}
-                  href="TecnologiaMedica"
-                  text={t("Sistemas")}
-                />
+                <FooterLinks lng={lng} href="DataCenter" text={t("Sistemas")} />
                 <FooterLinks lng={lng} href="Monitoreo" text={t("Monitoreo")} />
                 <FooterLinks lng={lng} href="Soporte" text={t("Soporte")} />
                 <FooterLinks

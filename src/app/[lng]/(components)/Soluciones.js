@@ -14,7 +14,7 @@ export default function Soluciones({ t }) {
       Icon: SOL_INFRA,
       title: t("Sol4Title"),
       text: t("Sol4Text"),
-      link: "/TecnologiaDeInformacion",
+      link: "/DataCenter",
     },
     {
       id: 0,
