@@ -6,8 +6,7 @@ export default function Hero({ t }) {
       className="relative flex justify-center md:justify-end items-center min-h-[60vh] w-[100vw]"
       style={{ zIndex: 1 }}
     >
-      {/* Background Image */}
-      <div className="absolute inset-0 z-[-1] overflow-hidden">
+      <div className="absolute inset-0 z-[-1] overflow-hidden ">
         <HeroBgImage />
       </div>
 

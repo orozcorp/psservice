@@ -9,6 +9,7 @@ import Aliados from "./(components)/Aliados";
 import Unete from "./(components)/Unete";
 import Responsabilidad from "./(components)/Responsabilidad";
 import Contacto from "./(components)/Contacto";
+
 export default async function Page({ params: { lng } }) {
   const { t } = await useTranslation(lng, "Landing");
   return (

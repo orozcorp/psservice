@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const path = require("path");
+const withVideos = require("next-videos");
+
 const dev = process.env.NODE_ENV !== "production";
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   webpack: (config) => {
     config.resolve.alias["@"] = path.resolve(__dirname);
     return config;
@@ -55,4 +57,4 @@ const nextConfig = {
   optimizeFonts: false,
 };
 
-module.exports = nextConfig;
+module.exports = withVideos(nextConfig);

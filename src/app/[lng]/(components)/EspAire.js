@@ -21,7 +21,7 @@ export default function EspAire({ title, text, active }) {
       <div className="absolute inset-0 rounded overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/AIRE_REAL.jpg"
+            src="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/especialidades_AC.jpg"
             alt="Background"
             fill
             quality={100}

@@ -25,7 +25,7 @@ export default function EspDataCenter({ title, text, active }) {
       <div className="absolute inset-0 rounded overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/DATACENTER.jpg"
+            src="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/DATACENTER/Hero.jpg"
             alt="Background"
             fill
             quality={100}

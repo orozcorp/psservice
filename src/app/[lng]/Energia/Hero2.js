@@ -7,8 +7,8 @@ export default function Hero2({ t }) {
       <div className="absolute inset-0  overflow-hidden">
         <div className="absolute inset-0">
           <HeroBgImage
-            lightImg="https://psserviceimages.s3.us-east-2.amazonaws.com/OTHER/SISTEMAS/HERO2_LIGHT.jpg"
-            darkImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/SISTEMAS/HERO2.jpg"
+            lightImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/SISTEMAS/SE_midImage.jpg"
+            darkImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/SISTEMAS/SE_midImage.jpg"
           />
         </div>
       </div>
