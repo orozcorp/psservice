@@ -26,14 +26,16 @@ export const NavbarBase = ({ t, lng }) => {
             <div className="flex bg-opacity-0">
               <div className="ml-6 flex space-x-8 bg-opacity-0">
                 <div className="flex flex-row flex-wrap items-center justify-center gap-4">
-                  <Image
-                    src="https://psservicesavvy.s3.us-east-2.amazonaws.com/logosYLanding/LOGOPS.png"
-                    width={170}
-                    height={60}
-                    blurDataURL={rgbDataURL(0, 0, 0)}
-                    loading="lazy"
-                    alt="PS service"
-                  />
+                  <Link href="/" passHref>
+                    <Image
+                      src="https://psservicesavvy.s3.us-east-2.amazonaws.com/logosYLanding/LOGOPS.png"
+                      width={170}
+                      height={60}
+                      blurDataURL={rgbDataURL(0, 0, 0)}
+                      loading="lazy"
+                      alt="PS service"
+                    />
+                  </Link>
                 </div>
               </div>
             </div>

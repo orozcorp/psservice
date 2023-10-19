@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Unete({ t }) {
   return (
     <div className="flex flex-col flex-nowrap w-full justify-center items-center">
@@ -14,9 +15,12 @@ export default function Unete({ t }) {
                 </h2>
                 <p className="text-lg font-bold mb-8">{t("Hero8Sub")}</p>
                 <p className="text-lg font-bold mb-8">{t("Hero8Text")}</p>
-                <button className="border border-white dark:border-[#799FE6] text-[#AEC8F8]  py-2 px-20 rounded dark:text-[#799FE6]">
+                <Link
+                  href="/Bolsa"
+                  className="border border-white dark:border-[#799FE6] text-[#AEC8F8]  py-2 px-20 rounded dark:text-[#799FE6]"
+                >
                   {t("QuieroSer")}
-                </button>
+                </Link>
               </div>
             </div>
           </div>
