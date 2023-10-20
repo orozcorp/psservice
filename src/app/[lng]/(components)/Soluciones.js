@@ -79,18 +79,18 @@ export default function Soluciones({ t }) {
                 {t("Hero4Sub")}
               </p>
             </div>
-            <div className="grid grid-cols-2 lg:flex lg:flex-row flex-nowrap justify-center items-center content-center lg:justify-between lg:flex-wrap gap-4 lg:gap-8 w-full justify-self-center self-center place-self-center">
+            <div className="grid grid-cols-2 lg:flex lg:flex-row flex-nowrap justify-center items-center content-center lg:justify-around lg:flex-wrap gap-4 lg:gap-8 w-full justify-self-center self-center place-self-center">
               {Soluciones.map((solucion, index) => (
                 <SolucionSingle key={index} {...solucion} />
               ))}
-              <div className="h-48 w-48 flex flex-col flex-nowrap justify-center items-center ">
+              {/* <div className="h-48 w-48 flex flex-col flex-nowrap justify-center items-center ">
                 <Link
                   href="/Soporte"
                   className="py-2 px-4 bg-[#5D001D] dark:bg-[#AEC8F8] text-white dark:text-[#0A2473] self-center rounded "
                 >
                   {t("Leer")}
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
