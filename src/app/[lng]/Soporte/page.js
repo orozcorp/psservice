@@ -8,6 +8,7 @@ import Icon2 from "../../components/SVG/TecnologiaMed/Icon2";
 import Icon3 from "../../components/SVG/TecnologiaMed/Icon3";
 import Image from "next/image";
 import Contacta from "./Contacta";
+import Contacto from "../(components)/Contacto";
 export default async function Fabricacion({ params: { lng } }) {
   const { t } = await useTranslation(lng, "Soporte");
   const solucionesData = [
@@ -54,7 +55,8 @@ export default async function Fabricacion({ params: { lng } }) {
           quality={100}
         />
       </div>
-      <Contacta t={t} />
+      {/* <Contacta t={t} /> */}
+      <Contacto t={t} />
     </div>
   );
 }
