@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import HBgVideo from "./HBgVideo";
-export default function BackgroundImage() {
+export default function BackgroundImage({ image, video }) {
   const [isClient, setIsClient] = useState(false);
 
   const { theme } = useTheme();
@@ -12,11 +12,11 @@ export default function BackgroundImage() {
   }, []);
   if (!isClient) return null;
 
-  if (!theme || theme === "light") return <HBgVideo />;
+  if (!theme || theme === "light") return <HBgVideo video={video} />;
 
   return (
     <Image
-      src="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/Hero.jpg"
+      src={image}
       alt="Background"
       fill
       className="object-cover object-right"

@@ -1,10 +1,10 @@
 import ReactPlayer from "react-player";
 
-export default function HBgVideo() {
+export default function HBgVideo({ video }) {
   return (
     <div className=" inset-0 flex items-center justify-center z-[-1] overflow-hidden">
       <ReactPlayer
-        url="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/hero2.mp4"
+        url={video}
         playing
         loop
         muted

@@ -8,7 +8,10 @@ export default function Hero({ t }) {
       style={{ zIndex: 1 }}
     >
       <div className="absolute inset-0 z-[-1] overflow-hidden ">
-        <HeroBgImage />
+        <HeroBgImage
+          image="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/Hero.jpg"
+          video="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/hero2.mp4"
+        />
       </div>
 
       {/* Content */}

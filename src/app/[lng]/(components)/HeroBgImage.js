@@ -2,10 +2,10 @@
 
 import BackgroundImage from "./HBgImage";
 
-export default function HeroBgImage() {
+export default function HeroBgImage({ image, video }) {
   return (
     <>
-      <BackgroundImage />
+      <BackgroundImage image={image} video={video} />
     </>
   );
 }
