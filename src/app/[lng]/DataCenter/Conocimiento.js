@@ -8,6 +8,8 @@ import Gabinetes from "../../components/SVG/DataCenter/Gabinetes";
 import Procesamiento from "../../components/SVG/DataCenter/Procesamiento";
 import Microcentro from "../../components/SVG/DataCenter/Microcentro";
 import Migracion from "../../components/SVG/DataCenter/Migracion";
+import Link from "next/link";
+import Virtualizacion from "../../components/SVG/DataCenter/Virtualizacion";
 export default function Conocimiento({ t }) {
   const servicios = [
     {
@@ -58,7 +60,7 @@ export default function Conocimiento({ t }) {
     {
       id: 10,
       service: t("S10"),
-      Icon: Almacenamiento,
+      Icon: Virtualizacion,
     },
   ];
   return (
@@ -68,14 +70,17 @@ export default function Conocimiento({ t }) {
           {/* <h2 className="text-2xl font-bold">{t("Conocimiento")}</h2>
           <p>{t("ConocimientoText")}</p> */}
           <h2 className="mt-4 text-2xl font-bold">{t("Servicios")}</h2>
-          <ul className="grid grid-cols-2 h-[200px] mt-4">
+          <ul className="grid grid-cols-2 h-[200px] mt-4  mb-16">
             {servicios.map((servicio) => (
               <ConocimientoSingle servicio={servicio} key={servicio.id} />
             ))}
           </ul>
-          <button className="mt-8 px-6 rounded py-2 bg-[#324BA6] text-white">
-            {t("Descarga")}
-          </button>
+          <Link
+            href="/"
+            className="mt-8 focus:outline-none text-white bg-[#5D001D] hover:bg-red-900 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
+          >
+            Descargar catálogo
+          </Link>
         </div>
       </div>
     </div>

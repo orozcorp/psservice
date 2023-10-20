@@ -10,6 +10,7 @@ import IC_AC_08 from "../../components/SVG/IC_AC/IC_AC_08";
 import IC_AC_09 from "../../components/SVG/IC_AC/IC_AC_09";
 import IC_AC_10 from "../../components/SVG/IC_AC/IC_AC_10";
 import IC_AC_11 from "../../components/SVG/IC_AC/IC_AC_11";
+import Link from "next/link";
 export default function Conocimiento({ t }) {
   const servicios = [
     {
@@ -74,11 +75,17 @@ export default function Conocimiento({ t }) {
         <div className="w-full   text-[#0A2473] dark:text-[#0A2473] px-4 lg:px-16 py-12">
           <h2 className="text-2xl font-bold">{t("Conocimiento")}</h2>
           <p>{t("ConocimientoText")}</p>
-          <ul className=" h-full mt-4">
+          <ul className=" h-full mt-4 mb-16">
             {servicios.map((servicio) => (
               <ConocimientoSingle servicio={servicio} key={servicio.id} />
             ))}
           </ul>
+          <Link
+            href="/"
+            className="mt-8 focus:outline-none text-white bg-[#5D001D] hover:bg-red-900 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
+          >
+            Descargar catálogo
+          </Link>
         </div>
       </div>
     </div>
