@@ -42,7 +42,11 @@ export const FooterBase = async ({ t, lng }) => {
                   href="Fabricacion"
                   text={t("Fabricacion")}
                 />
-                <FooterLinks lng={lng} href="DataCenter" text={t("Data")} />
+                <FooterLinks
+                  lng={lng}
+                  href="TecnologiaMedica"
+                  text={t("Data")}
+                />
               </ul>
             </div>
             <div className="flex flex-col flex-nowrap max-w-xs">
