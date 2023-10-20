@@ -10,8 +10,8 @@ export default function Hero2({ t }) {
       {/* Background Image */}
       <div className="absolute inset-0 z-[-1] overflow-hidden">
         <HeroBgImage
-          lightImg="https://psserviceimages.s3.us-east-2.amazonaws.com/OTHER/RSE/AdobeStock_489679479_Preview.jpg"
-          darkImg="https://psserviceimages.s3.us-east-2.amazonaws.com/OTHER/RSE/AdobeStock_489679479_Preview.jpg"
+          lightImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/ESR/ESR_midimage.jpg"
+          darkImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/ESR/ESR_midimage.jpg"
         />
       </div>
 

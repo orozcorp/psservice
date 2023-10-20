@@ -11,8 +11,8 @@ export default function Hero({ t }) {
       <div className="absolute inset-0 rounded overflow-hidden">
         <div className="absolute inset-0">
           <HeroBgImage
-            lightImg="https://psserviceimages.s3.us-east-2.amazonaws.com/OTHER/RSE/HERO_DARK.jpg"
-            darkImg="https://psserviceimages.s3.us-east-2.amazonaws.com/OTHER/RSE/HERO_DARK.jpg"
+            lightImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/ESR/Hero.jpg"
+            darkImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/ESR/Hero.jpg"
           />
         </div>
       </div>

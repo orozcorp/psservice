@@ -7,7 +7,7 @@ export default function Apoyo({ width, height }) {
   const [color, setColor] = useState("#324ba6");
 
   useEffect(() => {
-    setColor(theme === "dark" ? "#324BA6" : "#324ba6");
+    setColor(theme === "dark" ? "#FFFFFF" : "#324ba6");
   }, [theme]);
   return (
     <svg

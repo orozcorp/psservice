@@ -7,7 +7,7 @@ export default function EspMonitoreo({ title, text, active }) {
     <div
       className={`${
         activo ? "h-[26rem] duration-1000" : "h-20"
-      } w-full lg:w-[33vw] border rounded flex flex-col flex-nowrap items-center justify-end pb-4`}
+      } w-full lg:w-[33vw] border rounded flex flex-col flex-nowrap items-center justify-end pb-4 bg-[#5D001D] text-white`}
       onClick={() => {
         if (activeState == "Monitoreo") {
           setActive("");
