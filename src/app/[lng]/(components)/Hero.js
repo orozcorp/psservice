@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Hero({ t }) {
   return (
     <div
-      className="relative flex justify-center lg:justify-end items-center min-h-[60vh] w-[100vw]"
+      className="relative flex justify-center lg:justify-end items-center  w-[100vw] "
       style={{ zIndex: 1 }}
     >
       <div className="absolute inset-0 z-[-1] overflow-hidden ">

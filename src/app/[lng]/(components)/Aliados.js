@@ -32,9 +32,9 @@ export default function Aliados({ t }) {
         className="flex flex-col flex-nowrap justify-center items-center"
         style={{ width: "95vw", minHeight: "60vh" }}
       >
-        <div className="flex flex-col lg:flex-row items-center w-full  lg:flex-row  ">
-          <div className="w-full lg:w-[22vw]  text-[#0A2473] dark:text-inherit flex flex-col flex-nowrap items-center ">
-            <h2 className="text-5xl lg:text-5xl font-bold py-2 ">
+        <div className="flex flex-colitems-center w-full  lg:flex-row  ">
+          <div className="w-full lg:w-[22vw]  text-[#0A2473] dark:text-inherit flex flex-col flex-nowrap items-center justify-end ">
+            <h2 className="text-5xl lg:text-5xl font-bold py-2">
               {t("Hero7")}
             </h2>
             <p className="text-2xl lg:text-2xl font-bold mb-8">

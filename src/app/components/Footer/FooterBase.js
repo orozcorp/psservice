@@ -22,7 +22,7 @@ export const FooterBase = async ({ t, lng }) => {
             </div>
             <div className="flex flex-col flex-nowrap max-w-xs">
               <p className="my-8 text-xl">{t("Servicios")}</p>
-              <ul className="mx-4">
+              <ul>
                 <FooterLinks lng={lng} href="Energia" text={t("Energia")} />
                 <FooterLinks
                   lng={lng}
@@ -47,7 +47,7 @@ export const FooterBase = async ({ t, lng }) => {
             </div>
             <div className="flex flex-col flex-nowrap max-w-xs">
               <p className="my-8 text-xl">{t("Recursos")}</p>
-              <ul className="mx-4">
+              <ul>
                 <FooterLinksId lng={lng} href="Clientes" text={t("Clientes")} />
                 <FooterLinksId
                   lng={lng}
@@ -56,14 +56,14 @@ export const FooterBase = async ({ t, lng }) => {
                 />
                 <FooterLinksId lng={lng} href="Aliados" text={t("Aliados")} />
                 <FooterLinks lng={lng} href="RSE" text={t("RSE")} />
-                <FooterLinks lng={lng} href="Soporte" text={t("Soporte")} />
+
                 <FooterLinks lng={lng} href="Bolsa" text={t("Bolsa")} />
               </ul>
             </div>
           </div>
         </div>
       </footer>
-      <div className="flex flex-col lg:flex-row flex-nowrap lg:flex-wrap w-full justify-around py-4 bg-[#1A4693] text-white p-8 gap-4">
+      <div className="flex flex-col lg:flex-row flex-nowrap lg:flex-wrap w-full justify-around py-4 bg-[#1A4693] text-white p-8 gap-4 text-xs">
         <div>
           PS Service, México {today.getFullYear()}, Todos los derechos
           reservados

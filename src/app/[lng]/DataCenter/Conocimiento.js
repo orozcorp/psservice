@@ -68,12 +68,12 @@ export default function Conocimiento({ t }) {
           {/* <h2 className="text-2xl font-bold">{t("Conocimiento")}</h2>
           <p>{t("ConocimientoText")}</p> */}
           <h2 className="mt-4 text-2xl font-bold">{t("Servicios")}</h2>
-          <ul className="grid grid-cols-2 h-[250px] mt-4">
+          <ul className="grid grid-cols-2 h-[200px] mt-4">
             {servicios.map((servicio) => (
               <ConocimientoSingle servicio={servicio} key={servicio.id} />
             ))}
           </ul>
-          <button className="mt-16 px-6 rounded py-2 bg-[#324BA6] text-white">
+          <button className="mt-8 px-6 rounded py-2 bg-[#324BA6] text-white">
             {t("Descarga")}
           </button>
         </div>

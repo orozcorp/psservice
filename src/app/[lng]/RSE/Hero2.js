@@ -1,4 +1,4 @@
-import ISO_14001RSE from "../../components/SVG/Certificaciones/ISO_14001RSE";
+import ISO from "../../components/SVG/Certificaciones/ISO";
 import HeroBgImage from "../../components/atoms/HeroBgImage";
 
 export default function Hero2({ t }) {
@@ -16,14 +16,11 @@ export default function Hero2({ t }) {
       </div>
 
       {/* Content */}
-      <ISO_14001RSE width={300} height={200} />
+      <ISO width={300} height={200} />
       <div className="flex flex-col flex-nowrap justify-center items-center lg:items-start w-[90vw] lg:w-[75vw] my-10 lg:my-0">
         <h2 className="text-3xl lg:text-5xl text-[#002772] dark:text-white font-bold py-16 text-shadow ">
           {t("Hero1")}
         </h2>
-        <button className="py-2 px-4 bg-[#5D001D] text-white rounded-lg">
-          {t("Experto")}
-        </button>
       </div>
     </div>
   );

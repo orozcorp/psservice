@@ -23,7 +23,7 @@ export default async function Page({ params: { lng } }) {
       <Certificaciones t={t} />
       <Aliados t={t} />
       <Contacto t={t} />
-      <Unete t={t} />
+      {/* <Unete t={t} /> */}
       <Responsabilidad t={t} />
     </div>
   );
