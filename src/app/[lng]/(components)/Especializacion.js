@@ -4,7 +4,7 @@ export default function Especializacion({ t }) {
   const objTrans = {
     dataCenter: {
       title: t("Esp_datacenter") || "",
-      text: t("Esp_datacenter_text") || "",
+      text: t("Esp_datacenter_txt") || "",
     },
     aireAcondicionado: {
       title: t("Esp_aire") || "",
