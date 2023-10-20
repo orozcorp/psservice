@@ -46,7 +46,7 @@ export default async function Fabricacion({ params: { lng } }) {
         style={{ zIndex: 1 }}
       >
         <Image
-          src="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/FABRICACION/HERO2.jpg"
+          src="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/FABRICACION/fabricacion_mid.jpg"
           alt="Background"
           fill
           className="object-cover object-right"

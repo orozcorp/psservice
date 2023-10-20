@@ -1,6 +1,5 @@
 import ISO_14001RSE from "../../components/SVG/Certificaciones/ISO_14001RSE";
 import HeroBgImage from "../../components/atoms/HeroBgImage";
-import Image from "next/image";
 
 export default function Hero2({ t }) {
   return (
@@ -11,8 +10,8 @@ export default function Hero2({ t }) {
       {/* Background Image */}
       <div className="absolute inset-0 z-[-1] overflow-hidden">
         <HeroBgImage
-          lightImg="https://psserviceimages.s3.us-east-2.amazonaws.com/OTHER/RSE/HERO2_DARK.jpg"
-          darkImg="https://psserviceimages.s3.us-east-2.amazonaws.com/OTHER/RSE/HERO2_DARK.jpg"
+          lightImg="https://psserviceimages.s3.us-east-2.amazonaws.com/OTHER/RSE/AdobeStock_489679479_Preview.jpg"
+          darkImg="https://psserviceimages.s3.us-east-2.amazonaws.com/OTHER/RSE/AdobeStock_489679479_Preview.jpg"
         />
       </div>
 
