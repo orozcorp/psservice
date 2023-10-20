@@ -17,7 +17,7 @@ export default function Hero({ t }) {
           <PSLogo width="200px" height="168px" />
         </div>
         <div className="flex flex-col flex-nowrap justify-center items-start w-[90vw] lg:w-[75vw] ">
-          <h2 className="text-3xl lg:text-5xl text-[#002772] dark:text-white font-bold py-16 max-w-2xl text-shadow">
+          <h2 className="text-3xl lg:text-5xl text-[#002772] dark:text-white font-bold py-16 max-w-2xl text-shadow whitespace-preline uppercase">
             {t("Hero1")}
           </h2>
           <Link

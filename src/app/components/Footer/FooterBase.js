@@ -6,7 +6,7 @@ export const FooterBase = async ({ t, lng }) => {
   const today = new Date();
   return (
     <>
-      <footer className="flex flex-row flex-wrap w-full justify-center items-center bg-[#3F3F3F] dark:bg-[#4C051A] py-4 text-white">
+      <footer className="flex flex-row flex-wrap w-full justify-center items-center bg-[#3F3F3F] dark:bg-[#4C051A] py-4 text-white text-xs">
         <div className="flex flex-col flex-nowrap w-3/4">
           <div className="flex flex-row flex-wrap  gap-16">
             <div className="flex flex-col flex-nowrap max-w-xs">
@@ -16,12 +16,12 @@ export const FooterBase = async ({ t, lng }) => {
                 height={114}
                 alt="logo"
               />
-              <p className="my-8 text-2xl">{t("Contacto")}</p>
-              <p className="my-2 text-lg">{t("Frase")}</p>
+              <p className="my-8 text-xl">{t("Contacto")}</p>
+              <p className="my-2 ">{t("Frase")}</p>
               <p>(52) 55 5919 2181 atencion_clientes@psservice.com.mx</p>
             </div>
             <div className="flex flex-col flex-nowrap max-w-xs">
-              <p className="my-8 text-2xl">{t("Servicios")}</p>
+              <p className="my-8 text-xl">{t("Servicios")}</p>
               <ul className="mx-4">
                 <FooterLinks lng={lng} href="Energia" text={t("Energia")} />
                 <FooterLinks
@@ -46,7 +46,7 @@ export const FooterBase = async ({ t, lng }) => {
               </ul>
             </div>
             <div className="flex flex-col flex-nowrap max-w-xs">
-              <p className="my-8 text-2xl">{t("Recursos")}</p>
+              <p className="my-8 text-xl">{t("Recursos")}</p>
               <ul className="mx-4">
                 <FooterLinksId lng={lng} href="Clientes" text={t("Clientes")} />
                 <FooterLinksId

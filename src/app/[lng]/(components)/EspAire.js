@@ -38,7 +38,7 @@ export default function EspAire({ title, text, active }) {
             <div className="mb-4 text-sm">{text}</div>
             <Link
               className="border rounded bg-[#155E75] border-[#155E75] text-white px-6 py-2"
-              href="/DataCenter"
+              href="/AiresAcondicionados"
             >
               Ver más
             </Link>

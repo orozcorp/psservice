@@ -10,7 +10,7 @@ export default function Hero3({ t }) {
         <div className="absolute inset-0 rounded overflow-hidden">
           <div className="absolute inset-0">
             <HeroBgImage
-              lightImg="https://psserviceimages.s3.us-east-2.amazonaws.com/OTHER/AIRES/CLIENTES_LIGHT.jpg"
+              lightImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/clientes.jpg"
               darkImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/clientes.jpg"
             />
           </div>

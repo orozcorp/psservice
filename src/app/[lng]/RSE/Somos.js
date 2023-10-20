@@ -2,7 +2,7 @@ import ChangingImage from "../../components/atoms/ChangingImage";
 export default function Somos({ t }) {
   return (
     <>
-      <div className="flex flex-col lg:flex-row flex-nowrap lg:flex-wrap w-full justify-center items-center  my-10 lg:my-0 ">
+      <div className="flex flex-col lg:flex-row flex-nowrap lg:flex-wrap w-full justify-center items-center  my-10 lg:my-0 my-8">
         <ChangingImage
           width={300}
           height={200}

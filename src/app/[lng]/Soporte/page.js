@@ -2,6 +2,7 @@ import { useTranslation } from "../../i18n";
 import Hero from "./Hero";
 import Somos from "./Somos";
 import Soluciones from "./Soluciones";
+import SolucionesPoints from "./SolucionesPoints";
 import Icon1 from "../../components/SVG/TecnologiaMed/Icon1";
 import Icon2 from "../../components/SVG/TecnologiaMed/Icon2";
 import Icon3 from "../../components/SVG/TecnologiaMed/Icon3";
@@ -36,10 +37,10 @@ export default async function Fabricacion({ params: { lng } }) {
     <div className="w-full">
       <Hero t={t} />
       <Somos t={t} />
-      <div className="flex flex-col lg:flex-row flex-nowrap lg:flex-wrap w-full mb-16">
-        {solucionesData.map((solucion, index) => (
-          <Soluciones key={index} {...solucion} />
-        ))}
+      <div className="flex flex-col lg:flex-row flex-nowrap lg:flex-wrap w-full mb-16 items-center justify-center">
+        <SolucionesPoints {...solucionesData[0]} />
+        <Soluciones {...solucionesData[1]} />
+        <Soluciones {...solucionesData[2]} />
       </div>
       <div
         className="relative flex justify-center lg:justify-end items-center min-h-[60vh] w-[100vw]"
