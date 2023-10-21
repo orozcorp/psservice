@@ -19,7 +19,7 @@ export default function EspMonitoreo({ title, text, active }) {
       <div className="font-bold mb-4 text-lg ">{title}</div>
       {activo && (
         <>
-          <div className="mb-4 text-sm">{text}</div>
+          <div className="mb-4 text-sm px-8">{text}</div>
           <Link
             className=" rounded bg-[#155E75] border-[#155E75] text-white px-6 py-2"
             href="/Monitoreo"
