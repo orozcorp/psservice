@@ -34,6 +34,7 @@ export const NavbarBase = ({ t, lng }) => {
                       blurDataURL={rgbDataURL(0, 0, 0)}
                       loading="lazy"
                       alt="PS service"
+                      className="animate-pulse"
                     />
                   </Link>
                 </div>
