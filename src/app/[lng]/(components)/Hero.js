@@ -1,5 +1,6 @@
 import HeroBgImage from "./HeroBgImage";
 import PSLogo from "../../components/SVG/Logos/PSLogo";
+
 import Link from "next/link";
 export default function Hero({ t }) {
   return (
@@ -17,7 +18,7 @@ export default function Hero({ t }) {
       {/* Content */}
       <div className="relative z-10 flex flex-row flex-wrap justify-end items-center w-full my-8">
         <div className=" flex flex-row flex-wrap justify-center items-center p-8 w-full lg:w-[24vw]">
-          <PSLogo width="200px" height="168px" />
+          <PSLogo />
         </div>
         <div className="flex flex-col flex-nowrap justify-center items-start w-[90vw] lg:w-[75vw] ">
           <h2 className="text-3xl lg:text-5xl text-[#002772] dark:text-white font-bold py-16 max-w-2xl text-shadow whitespace-preline uppercase">
