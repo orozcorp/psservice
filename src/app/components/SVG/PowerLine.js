@@ -2,24 +2,21 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-const PowerLine = ({}) => {
+
+const PowerLine = () => {
   const { theme } = useTheme();
   const [color, setColor] = useState("#3f3f3f");
 
   useEffect(() => {
     setColor(theme === "dark" ? "#fff" : "#3f3f3f");
   }, [theme]);
-  const { ref, inView } = useInView({
-    triggerOnce: true, // Change this to false if you want to trigger again whenever it comes in view
-  });
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1932"
-      height="112"
+      width="100%"
+      height="10vh"
       viewBox="0 0 1932 112"
-      ref={ref}
     >
       {/* Main horizontal line */}
       <path
@@ -42,7 +39,7 @@ const PowerLine = ({}) => {
         strokeWidth="3"
         initial={{ x: 0 }}
         animate={{ x: ["0%", "85%", "0%"] }}
-        transition={{ duration: 3, loop: Infinity }}
+        transition={{ duration: 10, repeat: Infinity, repeatType: "reverse" }}
       />
     </svg>
   );
