@@ -5,7 +5,7 @@ export default function Hero3({ t }) {
     <div className="relative flex justify-center items-center  w-[100vw] my-8 ">
       {/* Background Image Wrapper */}
 
-      <div className="relative z-0 w-[95%] flex justify-center items-end  rounded-xl py-4 min-h-[60vh]">
+      <div className="relative z-0 w-[95%] flex justify-center items-end  rounded-xl py-4 min-h-[30vh]">
         <div className="absolute inset-0 rounded overflow-hidden">
           <div className="absolute inset-0">
             <HeroBgImage

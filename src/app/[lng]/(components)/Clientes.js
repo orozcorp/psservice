@@ -8,7 +8,7 @@ export default function Clientes({ t }) {
     >
       <div
         className="relative flex flex-row flex-wrap justify-end my-8 bg-[#155E75] dark:bg-inherit rounded-3xl "
-        style={{ width: "95vw", minHeight: "60vh" }}
+        style={{ width: "95vw", minHeight: "30vh" }}
       >
         {/* Background Image Wrapper */}
         <div className="absolute inset-0 rounded-3xl overflow-hidden">

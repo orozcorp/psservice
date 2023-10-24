@@ -21,13 +21,14 @@ export default function Contacto({ t }) {
             {t("ContactoBtnEmergencia")}
             <AiFillPhone className="inline-block ml-2 rotate-90 w-6 h-6" />
           </Link>
-          <button
-            type="button"
+          <Link
+            href="https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/CV+PS+Service+2023_C.pdf"
+            target="_blank"
             className="flex flex-row flex-wrap gap-4 min-w-[16rem] justify-between items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
             {t("ContactoCatalogo")}
             <AiOutlineMenu className="inline-block ml-2 w-6 h-6" />
-          </button>
+          </Link>
         </div>
       </div>
     </div>

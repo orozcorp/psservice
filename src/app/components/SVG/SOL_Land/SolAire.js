@@ -3,7 +3,6 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 export default function SolAire({ width = 50, height = 50 }) {
-  const { theme } = useTheme();
   const [color, setColor] = useState("#FFFFFF");
   // useEffect(() => {
   //   setColor(theme === "dark" ? "#799FE6" : "#FFFFFF");

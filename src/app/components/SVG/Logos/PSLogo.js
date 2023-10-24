@@ -3,14 +3,16 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import useWindowSize from "../../hooks/useWindowSize";
-export default function PSLogo() {
+export default function PSLogo({ overrideLight }) {
   const { theme } = useTheme();
   const [color, setColor] = useState("#112756");
   const size = useWindowSize();
   const width = size?.width ?? 0;
   useEffect(() => {
-    setColor(theme === "dark" ? "#FFFFFF" : "#112756");
-  }, [theme]);
+    setColor(
+      theme === "dark" ? "#FFFFFF" : overrideLight ? overrideLight : "#112756"
+    );
+  }, [overrideLight, theme]);
   return (
     <motion.div
       initial={{ scale: 0, opacity: 0.3 }}

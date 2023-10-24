@@ -10,13 +10,13 @@ export default function Certificaciones({ t }) {
       >
         <div className="flex items-center w-full">
           <div className="flex flex-col-reverse lg:flex-row flex-wrap w-full justify-center lg:justify-start ">
-            <div className="w-full lg:w-[23vw]  mt-8 lg:my-0  h-fit rounded flex flex-col flex-nowrap justify-around  items-center pb-8  gap-4">
+            <div className="w-full lg:w-[23vw]  mt-8 lg:my-0  h-fit rounded flex flex-col flex-nowrap justify-around  items-center pb-8  gap-4 px-4">
               <ISO width="10rem" height="10rem" />
-              <div className="text-[8px] whitespace-pre-line mt-8 text-center dark:text-white">
+              <div className="text-[12px] whitespace-pre-line mt-8 text-center dark:text-white">
                 {t("ISOTxt")}
               </div>
             </div>
-            <div className="text-[#0A2473] dark:text-[#FFF] flex-1 flex flex-col lg:flex-row flex-nowrap lg:flex-wrap justify-center items-center text-center lg:items-start lg:justify-start  lg:text-left max-w-2xl  ">
+            <div className="text-[#0A2473] dark:text-[#FFF] w-full flex-1 flex flex-col lg:flex-row flex-nowrap lg:flex-wrap justify-center items-center text-center lg:items-center lg:justify-center   lg:text-center px-8  ">
               <div className="flex flex-col flex-nowrap ">
                 <h2 className="text-3xl lg:text-5xl  font-bold pb-8">
                   {t("Hero6")}

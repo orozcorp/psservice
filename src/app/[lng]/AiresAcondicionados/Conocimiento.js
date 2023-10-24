@@ -81,7 +81,8 @@ export default function Conocimiento({ t }) {
             ))}
           </ul>
           <Link
-            href="/"
+            href="https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/CV+PS+Service+2023_C.pdf"
+            target="_blank"
             className="mt-8 focus:outline-none text-white bg-[#5D001D] hover:bg-red-900 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
           >
             Descargar catálogo

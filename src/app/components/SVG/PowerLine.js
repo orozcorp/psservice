@@ -14,6 +14,7 @@ const PowerLine = ({}) => {
       width="1932"
       height="112"
       viewBox="0 0 1932 112"
+      className="animate-pulse"
     >
       <defs>
         <clipPath id="clip-path">
