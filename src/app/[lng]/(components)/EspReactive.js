@@ -4,6 +4,7 @@ import EspDataCenter from "./EspDataCenter";
 import EspSistemasElectricos from "./EspSistemasElectricos";
 import EspAire from "./EspAire";
 import EspMonitoreo from "./EspMonitoreo";
+
 export default function EspReactive({ objTrans }) {
   const { dataCenter, aireAcondicionado, sistemas, monitoreo, hero } = objTrans;
   const [active, setActive] = useState("");
@@ -16,6 +17,7 @@ export default function EspReactive({ objTrans }) {
             text={dataCenter.text}
             active={{ active, setActive }}
           />
+
           {active !== "dataCenter" && (
             <div
               className={`text-[#0A2473] text-left dark:text-[#fff] flex flex-col-reverse lg:flex-row flex-nowrap lg:flex-wrap justify-center items-center lg:justify-start px-0 lg:px-8 mt-4 lg:mt-0 w-full lg:w-[75vw] `}
@@ -42,6 +44,7 @@ export default function EspReactive({ objTrans }) {
                   text={sistemas.text}
                   active={{ active, setActive }}
                 />
+
                 <div
                   className={`flex flex-col flex-nowrap gap-4  w-full lg:w-auto ${
                     active === "SistemasElectricos" &&

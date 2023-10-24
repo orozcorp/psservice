@@ -2960,7 +2960,7 @@ fraction.js@^4.2.0:
   resolved "https://registry.npmjs.org/fraction.js/-/fraction.js-4.3.7.tgz"
   integrity sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==
 
-framer-motion@^10.16.4:
+framer-motion@^10.16.2, framer-motion@^10.16.4:
   version "10.16.4"
   resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-10.16.4.tgz"
   integrity sha512-p9V9nGomS3m6/CALXqv6nFGMuFOxbWsmaOrdmhyQimMIlLl3LC7h7l86wge/Js/8cRu5ktutS/zlzgR7eBOtFA==
@@ -4295,6 +4295,13 @@ react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-magic-motion@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/react-magic-motion/-/react-magic-motion-1.0.7.tgz#bcfeeb6a852f4a721d84706b308e628446ad07d3"
+  integrity sha512-6mZnn0hH1RYHGz395nL2F5P7iljy6tEYXo/LNpxcJMjvEIaFwQlnzox6wvwksUTqNsHme/svn6Aunvb5FmEW1A==
+  dependencies:
+    framer-motion "^10.16.2"
 
 react-player@^2.13.0:
   version "2.13.0"
