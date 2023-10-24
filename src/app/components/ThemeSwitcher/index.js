@@ -17,6 +17,7 @@ export const ThemeSwitcher = () => {
 
   return (
     <button
+      aria-label="Toggle Dark Mode"
       className={`w-fit rounded-md hover:scale-110 active:scale-100 duration-200 bg-[#23283C] text-white dark:bg-[#0A2473]`}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
