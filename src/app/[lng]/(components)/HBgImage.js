@@ -1,8 +1,10 @@
 "use client";
+
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import HBgVideo from "./HBgVideo";
+import dynamic from "next/dynamic";
+const HBgVideo = dynamic(() => import("./HBgVideo"));
 export default function BackgroundImage({ image, video }) {
   const [isClient, setIsClient] = useState(false);
 

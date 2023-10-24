@@ -1,6 +1,6 @@
 "use client";
-
-import BackgroundImage from "./HBgImage";
+import dynamic from "next/dynamic";
+const BackgroundImage = dynamic(() => import("./HBgImage"));
 
 export default function HeroBgImage({ image, video }) {
   return (

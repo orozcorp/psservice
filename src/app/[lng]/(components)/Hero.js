@@ -1,5 +1,7 @@
-import HeroBgImage from "./HeroBgImage";
 import PSLogo from "../../components/SVG/Logos/PSLogo";
+
+import dynamic from "next/dynamic";
+const HeroBgImage = dynamic(() => import("./HeroBgImage"));
 
 import Link from "next/link";
 export default function Hero({ t }) {
