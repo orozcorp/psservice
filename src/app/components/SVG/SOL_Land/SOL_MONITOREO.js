@@ -5,79 +5,124 @@ import { useEffect, useState } from "react";
 export default function SOL_MONITOREO({ width = 50, height = 50 }) {
   const { theme } = useTheme();
   const [color, setColor] = useState("#FFFFFF");
-  // useEffect(() => {
-  //   setColor(theme === "dark" ? "#799FE6" : "#FFFFFF");
-  // }, [theme]);
+
+  useEffect(() => {
+    setColor(theme === "dark" ? "#799FE6" : "#FFFFFF");
+  }, [theme]);
+
   return (
     <>
       <svg
+        version="1.1"
         id="uuid-7ab98036-8755-4059-8d10-32e8455ab844"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 110.58 110.58"
+        x="0px"
+        y="0px"
+        viewBox="0 0 110.6 110.6"
+        style={{ enableBackground: "new 0 0 110.6 110.6" }}
         width={width}
         height={height}
-        className="border border-red-500"
       >
-        <defs>
-          <style>{`.uuid-1a7d3dee-afca-485b-bdf2-bcca1ef66d9e{stroke:${color};stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;}.uuid-1a7d3dee-afca-485b-bdf2-bcca1ef66d9e,.uuid-b74dd8ce-7e18-4887-b862-2f35e73805ac{fill:none;}.uuid-b74dd8ce-7e18-4887-b862-2f35e73805ac{stroke-width:0px;}`}</style>
-        </defs>
         <path
-          className="uuid-1a7d3dee-afca-485b-bdf2-bcca1ef66d9e"
-          d="m43.44,8.71c-18.06-.92-33.44,12.98-34.36,31.03-.92,18.06,12.98,33.44,31.03,34.36,18.06.92,33.44-12.98,34.36-31.03.92-18.06-12.98-33.44-31.03-34.36Zm23.81,33.99c-.72,14.07-12.7,24.9-26.77,24.18-14.07-.72-24.9-12.7-24.18-26.77.72-14.07,12.7-24.9,26.77-24.18,14.07.72,24.9,12.7,24.18,26.77Z"
+          style={{
+            fill: "none",
+            stroke: color,
+            strokeWidth: 3,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+          }}
+          d="M43.4,8.7c-18.1-0.9-33.4,13-34.4,31c-0.9,18.1,13,33.4,31,34.4c18.1,0.9,33.4-13,34.4-31
+	C75.4,25,61.5,9.6,43.4,8.7z M67.2,42.7c-0.7,14.1-12.7,24.9-26.8,24.2c-14.1-0.7-24.9-12.7-24.2-26.8S29,15.2,43.1,15.9
+	C57.1,16.6,68,28.6,67.2,42.7z"
         />
         <polyline
-          className="uuid-1a7d3dee-afca-485b-bdf2-bcca1ef66d9e"
-          points="68.08 61.96 75.65 70.53 69.12 76.43 61.55 67.86"
+          style={{
+            fill: "none",
+            stroke: color,
+            strokeWidth: 3,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+          }}
+          points="68.1,62 75.7,70.5 69.1,76.4 61.5,67.9 "
         />
         <rect
-          className="uuid-1a7d3dee-afca-485b-bdf2-bcca1ef66d9e"
-          x="76.72"
-          y="69.67"
-          width="11.15"
-          height="29.57"
-          transform="translate(-35.39 76.94) rotate(-42.09)"
+          x="76.7"
+          y="69.7"
+          transform="matrix(0.7421 -0.6703 0.6703 0.7421 -35.3842 76.9397)"
+          style={{
+            fill: "none",
+            stroke: color,
+            strokeWidth: 3,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+          }}
+          width="11.2"
+          height="29.6"
         />
         <line
-          className="uuid-1a7d3dee-afca-485b-bdf2-bcca1ef66d9e"
-          x1="26.52"
+          style={{
+            fill: "none",
+            stroke: color,
+            strokeWidth: 3,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+          }}
+          x1="26.5"
           y1="50"
-          x2="26.52"
-          y2="45.74"
+          x2="26.5"
+          y2="45.7"
         />
         <line
-          className="uuid-1a7d3dee-afca-485b-bdf2-bcca1ef66d9e"
-          x1="39.61"
+          style={{
+            fill: "none",
+            stroke: color,
+            strokeWidth: 3,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+          }}
+          x1="39.6"
           y1="50"
-          x2="39.61"
-          y2="42.19"
+          x2="39.6"
+          y2="42.2"
         />
         <line
-          className="uuid-1a7d3dee-afca-485b-bdf2-bcca1ef66d9e"
-          x1="33.06"
+          style={{
+            fill: "none",
+            stroke: color,
+            strokeWidth: 3,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+          }}
+          x1="33.1"
           y1="50"
-          x2="33.06"
-          y2="42.19"
+          x2="33.1"
+          y2="42.2"
         />
         <line
-          className="uuid-1a7d3dee-afca-485b-bdf2-bcca1ef66d9e"
-          x1="46.15"
+          style={{
+            fill: "none",
+            stroke: color,
+            strokeWidth: 3,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+          }}
+          x1="46.2"
           y1="50"
-          x2="46.15"
-          y2="33.97"
+          x2="46.2"
+          y2="34"
         />
         <line
-          className="uuid-1a7d3dee-afca-485b-bdf2-bcca1ef66d9e"
+          style={{
+            fill: "none",
+            stroke: color,
+            strokeWidth: 3,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+          }}
           x1="52.7"
           y1="50"
           x2="52.7"
-          y2="27.98"
-        />
-        <rect
-          className="uuid-b74dd8ce-7e18-4887-b862-2f35e73805ac"
-          x=".34"
-          y="-1.53"
-          width="110"
-          height="112"
+          y2="28"
         />
       </svg>
     </>

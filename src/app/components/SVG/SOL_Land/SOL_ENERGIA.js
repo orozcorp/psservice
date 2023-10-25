@@ -42,8 +42,8 @@ export default function SOL_ENERGIA({ width = 50, height = 50 }) {
         className="uuid-29a1850b-9b84-4ec0-b6bf-ce769437602a"
         x="-.5"
         y="-1.03"
-        width="110"
-        height="112"
+        width={width}
+        height={height}
       />
     </svg>
   );

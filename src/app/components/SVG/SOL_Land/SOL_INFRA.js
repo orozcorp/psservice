@@ -128,8 +128,8 @@ export default function SOL_INFRA({ width = 50, height = 50 }) {
         className="uuid-2ee8d67d-da44-45cb-8374-3fee0f8c0d90"
         x="1.69"
         y="-.88"
-        width="110"
-        height="112"
+        width={width}
+        height={height}
       />
     </svg>
   );
