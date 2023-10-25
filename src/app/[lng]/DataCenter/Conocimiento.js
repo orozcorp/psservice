@@ -64,13 +64,11 @@ export default function Conocimiento({ t }) {
     },
   ];
   return (
-    <div className="flex justify-center items-center min-h-[60vh] w-[100vw] mt-16">
+    <div className="flex justify-center items-center  w-[100vw] mt-16">
       <div className="flex flex-row mx-4 lg:mx-0 flex-wrap items-center w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2 bg-gradient-to-b from-[#C0D6D5] to-[#DEDEDE]  dark:bg-gradient-to-r dark:from-[#F8D3AE] dark:to-[#DDDDDD]  rounded-3xl">
-        <div className="w-full   text-[#0A2473] dark:text-[#0A2473] px-4 lg:px-8 py-4">
-          {/* <h2 className="text-2xl font-bold">{t("Conocimiento")}</h2>
-          <p>{t("ConocimientoText")}</p> */}
+        <div className="w-full   text-[#0A2473] dark:text-[#0A2473] px-4 lg:px-8 py-6">
           <h2 className="mt-4 text-2xl font-bold">{t("Servicios")}</h2>
-          <ul className="grid grid-cols-2 h-[200px] mt-4  mb-16">
+          <ul className="grid grid-cols-2  mt-4  mb-16">
             {servicios.map((servicio) => (
               <ConocimientoSingle servicio={servicio} key={servicio.id} />
             ))}
@@ -78,7 +76,7 @@ export default function Conocimiento({ t }) {
           <Link
             href="https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/CV+PS+Service+2023_C.pdf"
             target="_blank"
-            className="mt-8 focus:outline-none text-white bg-[#5D001D] hover:bg-red-900 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
+            className="mt-8 focus:outline-none text-white bg-[#5D001D] hover:bg-red-900 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2"
           >
             Descargar catálogo
           </Link>
