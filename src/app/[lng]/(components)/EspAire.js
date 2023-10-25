@@ -32,12 +32,12 @@ export default function EspAire({ title, text, active }) {
 
       {/* Content */}
       <div className="relative z-10">
-        <div className="font-bold mb-4 text-lg ml-4">{title}</div>
+        <div className="font-bold mb-4 text-lg ml-8">{title}</div>
         {activo && (
           <>
             <div className="mb-4 text-sm px-8">{text}</div>
             <Link
-              className="border rounded bg-[#155E75] border-[#155E75] text-white px-6 py-2"
+              className="border rounded bg-[#155E75] border-[#155E75] text-white px-6 py-2 mx-8"
               href="/AiresAcondicionados"
             >
               Ver más

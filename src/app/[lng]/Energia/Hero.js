@@ -1,5 +1,5 @@
 import PSLogo from "../../components/SVG/Logos/PSLogo";
-import HeroBgImage from "../(components)/HeroBgImage";
+import HeroBgImage from "../../components/atoms/HeroBgImage";
 import Link from "next/link";
 export default function Hero({ t }) {
   return (
@@ -11,8 +11,8 @@ export default function Hero({ t }) {
       <div className="absolute inset-0 rounded overflow-hidden">
         <div className="absolute inset-0">
           <HeroBgImage
-            image="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/SISTEMAS/Hero.jpg"
-            video="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/SISTEMAS/datacenter+light.mp4"
+            darkImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/SISTEMAS/Hero.jpg"
+            lightImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/SISTEMAS/Hero2.jpg"
           />
         </div>
       </div>
