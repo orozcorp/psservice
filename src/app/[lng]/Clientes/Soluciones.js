@@ -14,7 +14,7 @@ export default function Soluciones({ bgImage, title, points }) {
       />
       <div
         className="p-4 z-50 font-bold"
-        style={{ backgroundColor: "rgba(39, 39, 42, 0.3)" }}
+        style={{ backgroundColor: "rgba(39, 39, 42, 0.6)" }}
       >
         <div className="my-8">{title}</div>
         <div>{points}</div>
