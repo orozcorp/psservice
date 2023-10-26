@@ -7,6 +7,9 @@ export default function Somos({ t }) {
           <Textura />
           <div className="flex-1 flex justify-center items-center min-h-[40vh] w-[75vw] z-50">
             <div className="flex items-center w-full z-50">
+              <div className="bg-gradient-to-r from-[#1E69B4] to-[#154B24] p-4 w-[75%] rounded-lg mb-4 text-white">
+                {t("greenbox")}
+              </div>
               <div className="w-full max-w-2xl text-[#0A2473] dark:text-[#fff] z-50">
                 <h2 className="text-3xl lg:text-5xl font-bold py-2 z-50">
                   {t("Hero2")}
