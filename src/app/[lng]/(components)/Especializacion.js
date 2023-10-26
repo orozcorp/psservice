@@ -1,5 +1,5 @@
 import EspReactive from "./EspReactive";
-
+import Textura from "./Textura";
 export default function Especializacion({ t }) {
   const objTrans = {
     dataCenter: {
@@ -26,11 +26,17 @@ export default function Especializacion({ t }) {
   };
   return (
     <div
-      className="flex flex-col flex-nowrap w-full justify-center items-center"
+      className="relative flex flex-col flex-nowrap w-full justify-center items-center"
       id="Especializacion"
     >
       <div
-        className="flex flex-row flex-wrap justify-center "
+        className="absolute top-0 left-0 bottom-0 z-10"
+        style={{ width: "300px" }}
+      >
+        <Textura />
+      </div>
+      <div
+        className="relative flex flex-row flex-wrap justify-center"
         style={{ width: "95vw", minHeight: "60vh" }}
       >
         <EspReactive objTrans={objTrans} />

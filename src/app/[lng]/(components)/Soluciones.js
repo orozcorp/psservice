@@ -6,7 +6,7 @@ import SOL_SALUD from "../../components/SVG/SOL_Land/SOL_SALUD";
 import SOL_MONITOREO from "../../components/SVG/SOL_Land/SOL_MONITOREO";
 import SOL_INFRA from "../../components/SVG/SOL_Land/SOL_INFRA";
 import SolucionSingle from "./SolucionSingle";
-import Link from "next/link";
+import Textura from "./Textura";
 export default function Soluciones({ t }) {
   const Soluciones = [
     {
@@ -62,13 +62,20 @@ export default function Soluciones({ t }) {
   ];
   return (
     <div
-      className="flex flex-col flex-nowrap w-full justify-center items-center"
+      className="relative flex flex-col flex-nowrap w-full justify-center items-center"
       id="Servicios"
     >
       <div
-        className="flex flex-row flex-wrap justify-center lg:justify-end my-8 bg-[#155E75] dark:bg-inherit rounded-3xl py-8  w-[95vw] "
+        className="relative flex flex-row flex-wrap justify-center lg:justify-end my-8 bg-[#155E75] dark:bg-inherit rounded-3xl py-8 w-[95vw]"
         style={{ minHeight: "60vh" }}
       >
+        <div
+          className="absolute top-0 left-0 bottom-0 z-10  ]"
+          style={{ width: "300px" }}
+        >
+          <Textura />
+        </div>
+
         <div className="flex items-center justify-center lg:justify-start w-full lg:w-[73vw]">
           <div className="w-[90%]  flex flex-col flex-nowrap ">
             <div className="w-full lg:w-3/4 py-4  text-left lg:text-justify  p-6 lg:p-0">

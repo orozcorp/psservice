@@ -14,7 +14,7 @@ const PowerLine = ({}) => {
       width="1932"
       height="112"
       viewBox="0 0 1932 112"
-      className="animate-pulse"
+      className="animate-pulse z-50"
     >
       <defs>
         <clipPath id="clip-path">
@@ -40,7 +40,12 @@ const PowerLine = ({}) => {
           />
         </clipPath>
       </defs>
-      <g id="Group_87" data-name="Group 87" clipPath="url(#clip-path)">
+      <g
+        id="Group_87"
+        data-name="Group 87"
+        clipPath="url(#clip-path)"
+        className="z-50"
+      >
         <g id="Group_86" data-name="Group 86">
           <g id="Group_85" data-name="Group 85" clipPath="url(#clip-path)">
             <path

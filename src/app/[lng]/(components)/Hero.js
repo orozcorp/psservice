@@ -7,10 +7,10 @@ import Link from "next/link";
 export default function Hero({ t }) {
   return (
     <div
-      className="relative flex justify-center lg:justify-end items-center  w-[100vw] "
+      className="relative flex justify-center lg:justify-end items-center  w-[100vw] z-50"
       style={{ zIndex: 1 }}
     >
-      <div className="absolute inset-0 z-[-1] overflow-hidden ">
+      <div className="absolute inset-0 z-10 overflow-hidden">
         <HeroBgImage
           image="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/Hero.jpg"
           video="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/hero2.mp4"

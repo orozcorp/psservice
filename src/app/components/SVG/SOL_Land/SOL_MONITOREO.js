@@ -7,7 +7,7 @@ export default function SOL_MONITOREO({ width = 50, height = 50 }) {
   const [color, setColor] = useState("#FFFFFF");
 
   useEffect(() => {
-    setColor(theme === "dark" ? "#799FE6" : "#FFFFFF");
+    setColor(theme === "dark" ? "#FFFFFF" : "#FFFFFF");
   }, [theme]);
 
   return (

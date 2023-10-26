@@ -6,7 +6,7 @@ export default function SOL_SALUD({ width = 50, height = 50 }) {
   const { theme } = useTheme();
   const [color, setColor] = useState("#FFFFFF");
   useEffect(() => {
-    setColor(theme === "dark" ? "#799FE6" : "#FFFFFF");
+    setColor(theme === "dark" ? "#FFFFFF" : "#FFFFFF");
   }, [theme]);
   return (
     <svg
