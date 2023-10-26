@@ -14,6 +14,9 @@ export default function Contacto({ t }) {
           <ContactoForm />
         </div>
         <div className="flex flex-col flex-nowrap flex-1 justify-center items-center gap-4">
+          <h2 className="text-justify font-bold text-2xl max-w-md">
+            {t("ContactoOperamos")}
+          </h2>
           <Link
             href="tel:+525549927328"
             className="flex flex-row flex-wrap gap-4 min-w-[16rem] justify-between items-center focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
