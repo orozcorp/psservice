@@ -2,7 +2,7 @@ import HeroBgImage from "../../components/atoms/HeroBgImage";
 
 export default function Hero2({ t }) {
   return (
-    <div className="relative flex justify-center items-center min-h-[60vh] w-[100vw]">
+    <div className="relative flex justify-center items-center min-h-[60vh] w-[100vw] z-50">
       {/* Background Image Wrapper */}
       <div className="absolute inset-0  overflow-hidden">
         <div className="absolute inset-0">
