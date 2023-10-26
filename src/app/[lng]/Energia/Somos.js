@@ -6,7 +6,7 @@ export default function Somos({ t }) {
         <div className="flex flex-row flex-wrap z-50">
           <Textura />
           <div className="flex-1 flex justify-center items-center min-h-[40vh] w-[75vw] z-50">
-            <div className="flex items-center w-full z-50">
+            <div className="flex flex-col justify-start items-start w-full z-50">
               <div className="bg-gradient-to-r from-[#1E69B4] to-[#154B24] p-4 w-[75%] rounded-lg mb-4 text-white">
                 {t("greenbox")}
               </div>
@@ -15,9 +15,7 @@ export default function Somos({ t }) {
                   {t("Hero2")}
                 </h2>
                 <p className="text-2xl font-bold mb-8">{t("Hero2sub")}</p>
-                <p className="text-lg font-bold whitespace-pre-line">
-                  {t("HeroText")}
-                </p>
+                <p className="text-lg font-bold">{t("HeroText")}</p>
               </div>
             </div>
           </div>
