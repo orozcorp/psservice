@@ -10,6 +10,7 @@ import Microcentro from "../../components/SVG/DataCenter/Microcentro";
 import Migracion from "../../components/SVG/DataCenter/Migracion";
 import Link from "next/link";
 import Virtualizacion from "../../components/SVG/DataCenter/Virtualizacion";
+import Textura from "../(components)/Textura";
 export default function Conocimiento({ t }) {
   const servicios = [
     {
@@ -64,7 +65,13 @@ export default function Conocimiento({ t }) {
     },
   ];
   return (
-    <div className="flex justify-center items-center  w-[100vw] mt-16">
+    <div className="relative flex justify-center items-center  w-[100vw] mt-16">
+      <div
+        className="absolute top-0 left-0 bottom-0 z-10  ]"
+        style={{ width: "300px" }}
+      >
+        <Textura />
+      </div>
       <div className="flex flex-row mx-4 lg:mx-0 flex-wrap items-center w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2 bg-gradient-to-b from-[#C0D6D5] to-[#DEDEDE]  dark:bg-gradient-to-r dark:from-[#F8D3AE] dark:to-[#DDDDDD]  rounded-3xl">
         <div className="w-full   text-[#0A2473] dark:text-[#0A2473] px-4 lg:px-8 py-6">
           <h2 className="mt-4 text-2xl font-bold">{t("Servicios")}</h2>

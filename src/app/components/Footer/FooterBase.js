@@ -6,7 +6,7 @@ export const FooterBase = async ({ t, lng }) => {
   const today = new Date();
   return (
     <>
-      <footer className="flex flex-row flex-wrap w-full justify-center items-center bg-[#3F3F3F] dark:bg-[#4C051A] py-4 text-white text-sm">
+      <footer className="flex flex-row flex-wrap w-full justify-center items-center bg-[#3F3F3F] dark:bg-[#4C051A] py-4 text-white text-sm z-50">
         <div className="flex flex-col flex-nowrap w-3/4">
           <div className="flex flex-row flex-wrap  justify-between gap-16">
             <div className="flex flex-col flex-nowrap max-w-xs">
