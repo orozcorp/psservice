@@ -75,7 +75,6 @@ export default function Soluciones({ t }) {
         >
           <Textura />
         </div>
-
         <div className="flex items-center justify-center lg:justify-start w-full lg:w-[73vw]">
           <div className="w-[90%]  flex flex-col flex-nowrap ">
             <div className="w-full lg:w-3/4 py-4  text-left lg:text-justify  p-6 lg:p-0">

@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Hero({ t }) {
   return (
     <div
-      className="relative flex justify-center lg:justify-end items-center  w-[100vw] z-50"
+      className="relative flex justify-center lg:justify-end items-center  w-[100vw] "
       style={{ zIndex: 1 }}
     >
       <div className="absolute inset-0 z-10 overflow-hidden">

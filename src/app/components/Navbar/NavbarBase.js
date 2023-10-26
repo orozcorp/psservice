@@ -15,9 +15,16 @@ export const NavbarBase = ({ t, lng }) => {
   const width = size?.width ?? 0;
   const [showMenu, setShowMenu] = useState(false);
   const pathname = usePathname();
+  const [showEspecialidadesDropdown, setShowEspecialidadesDropdown] =
+    useState(false);
+  const [showServiciosDropdown, setShowServiciosDropdown] = useState(false);
   const { theme } = useTheme();
   const { data: session, status } = useSession();
   const path = pathname.split("/")[2];
+  const setAllFalse = () => {
+    setShowEspecialidadesDropdown(false);
+    setShowServiciosDropdown(false);
+  };
   return (
     <>
       <nav className="flex flex-row items-center justify-center bg-[#23283C] dark:bg-[#0A2473] ">
@@ -50,10 +57,64 @@ export const NavbarBase = ({ t, lng }) => {
               >
                 {t("Inicio")}
               </Link>
-              <Link href={`/${lng}/#Especializacion`}>
-                {t("Especialidades")}
-              </Link>
-              <Link href={`/${lng}/#Servicios`}>{t("Servicios")}</Link>
+
+              <div className="relative inline-block text-left">
+                <button
+                  onClick={() => {
+                    setShowEspecialidadesDropdown(!showEspecialidadesDropdown);
+                    setShowServiciosDropdown(false);
+                  }}
+                >
+                  {t("Especialidades")}
+                </button>
+                {showEspecialidadesDropdown && (
+                  <div className="absolute left-0 mt-2 p-4 w-56 rounded-md shadow-lg bg-white text-[#0A2473] z-50 flex flex-col gap-2">
+                    <Link onClick={setAllFalse} href={`/${lng}/DataCenter`}>
+                      {t("Sistemas")}
+                    </Link>
+                    <Link onClick={setAllFalse} href={`/${lng}/Energia`}>
+                      {t("Energia")}
+                    </Link>
+                    <Link
+                      onClick={setAllFalse}
+                      href={`/${lng}/AiresAcondicionados`}
+                    >
+                      {t("Aire")}
+                    </Link>
+                    <Link onClick={setAllFalse} href={`/${lng}/Monitoreo`}>
+                      {t("Monitoreo")}
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              <div className="relative inline-block text-left">
+                <button
+                  onClick={() => {
+                    setShowEspecialidadesDropdown(false);
+                    setShowServiciosDropdown(!showServiciosDropdown);
+                  }}
+                >
+                  {t("Servicios")}
+                </button>
+                {showServiciosDropdown && (
+                  <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white text-[#0A2473] p-4 z-50 flex flex-col gap-2">
+                    <Link onClick={setAllFalse} href={`/${lng}/Soporte`}>
+                      {t("Soporte")}
+                    </Link>
+                    <Link onClick={setAllFalse} href={`/${lng}/Fabricacion`}>
+                      {t("Fabricacion")}
+                    </Link>
+                    <Link
+                      onClick={setAllFalse}
+                      href={`/${lng}/TecnologiaMedica`}
+                    >
+                      {t("Data")}
+                    </Link>
+                  </div>
+                )}
+              </div>
+
               <Link href={`/${lng}/#Clientes`}>{t("Clientes")}</Link>
               <Link href={`/${lng}/#Aliados`}>{t("Aliados")}</Link>
               <Link href={`/${lng}/RSE`}>{t("RSE")}</Link>

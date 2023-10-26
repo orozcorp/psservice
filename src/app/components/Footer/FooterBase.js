@@ -24,11 +24,6 @@ export const FooterBase = async ({ t, lng }) => {
               <p className="my-8 text-xl">{t("Servicios")}</p>
               <ul>
                 <FooterLinks lng={lng} href="Energia" text={t("Energia")} />
-                <FooterLinks
-                  lng={lng}
-                  href="Infraestructura"
-                  text={t("Infraestructura")}
-                />
                 <FooterLinks lng={lng} href="DataCenter" text={t("Sistemas")} />
                 <FooterLinks lng={lng} href="Monitoreo" text={t("Monitoreo")} />
                 <FooterLinks lng={lng} href="Soporte" text={t("Soporte")} />
