@@ -2,13 +2,15 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
-export default function ISO_14001({ width = 50, height = 50 }) {
+export default function ISO_14001({ width = 50, height = 50, overrideLight }) {
   const { theme } = useTheme();
   const [color, setColor] = useState("#0A2473");
 
   useEffect(() => {
-    setColor(theme === "dark" ? "#FFFFFF" : "#0A2473");
-  }, [theme]);
+    setColor(
+      theme === "dark" ? "#FFFFFF" : overrideLight ? overrideLight : "#0A2473"
+    );
+  }, [theme, overrideLight]);
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
