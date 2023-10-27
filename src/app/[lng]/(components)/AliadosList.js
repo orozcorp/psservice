@@ -29,6 +29,31 @@ export default function AliadosList() {
   const { ref, inView } = useInView({
     triggerOnce: true, // Change this to false if you want to trigger again whenever it comes in view
   });
+  const components = [
+    AC_abb,
+    AC_Access,
+    AC_Daikin,
+    AC_XFusion,
+    AC_VMware,
+    AC_Vertiv,
+    AC_Uniflair,
+    AC_Staco,
+    AC_Scheider,
+    AC_Rittal,
+    AC_Pure,
+    AC_PSS,
+    AC_Net,
+    AC_Mesa,
+    AC_Kohler,
+    AC_Jonix,
+    AC_Huawei,
+    AC_HP,
+    AC_Generac,
+    AC_Fortinet,
+    AC_Dell,
+    AC_Uptime,
+    AC_Oracle,
+  ];
   return (
     <motion.div
       ref={ref}
@@ -40,32 +65,13 @@ export default function AliadosList() {
         damping: 20,
         duration: 2,
       }}
-      className="mx-auto w-full gap-4 p-4 grid grid-cols-2 lg:grid-cols-4 items-center justify-center"
+      className="w-full grid grid-cols-4 grid-rows-6 gap-4 mt-8"
     >
-      <AC_Scheider width={120} height={60} />
-      <AC_Staco width={120} height={60} />
-      <AC_Vertiv width={120} height={60} />
-      <AC_Daikin width={120} height={60} />
-      <AC_Mesa width={120} height={60} />
-      <AC_Kohler width={120} height={60} />
-      <AC_Huawei width={120} height={60} />
-      <AC_VMware width={120} height={60} />
-      <AC_HP width={120} height={60} />
-      <AC_Jonix width={120} height={60} />
-      <AC_abb width={120} height={60} />
-      <AC_Fortinet width={120} height={60} />
-      <AC_Rittal width={120} height={60} />
-      <AC_Dell width={120} height={60} />
-      <AC_Net width={120} height={60} />
-      <AC_Cisco width={120} height={60} />
-      <AC_Uniflair width={120} height={60} />
-      <AC_Access width={120} height={60} />
-      <AC_XFusion width={120} height={60} />
-      <AC_Generac width={120} height={60} />
-      <AC_Pure width={120} height={60} />
-      <AC_PSS width={120} height={60} />
-      <AC_Uptime width={120} height={60} />
-      <AC_Oracle width={120} height={60} />
+      {components.map((Component, index) => (
+        <div key={index} className="flex-1">
+          <Component width="100%" height={60} />
+        </div>
+      ))}
     </motion.div>
   );
 }

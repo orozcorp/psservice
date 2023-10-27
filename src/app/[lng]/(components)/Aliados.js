@@ -20,9 +20,8 @@ export default function Aliados({ t }) {
             </div>
           </div>
         </div>
-        <div className="flex w-[90%]  justify-center items-center my-8">
-          <AliadosList />
-        </div>
+
+        <AliadosList />
       </div>
     </div>
   );

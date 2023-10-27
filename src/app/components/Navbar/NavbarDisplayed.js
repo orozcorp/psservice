@@ -26,7 +26,7 @@ export default function NavbarDisplayed({
           <Link href={`/${lng}/#Servicios`}>{t("Servicios")}</Link>
         </div>
         <div className=" text-white text-3xl">
-          <Link href={`/${lng}/#Clientes`}>{t("Clientes")}</Link>
+          <Link href={`/${lng}/Clientes`}>{t("Clientes")}</Link>
         </div>
         <div className=" text-white text-3xl">
           <Link href={`/${lng}/#Aliados`}>{t("Aliados")}</Link>

@@ -27,7 +27,9 @@ export default function EspReactive({ objTrans }) {
                   <h2 className="text-3xl lg:text-5xl  font-bold py-2">
                     {hero.title}
                   </h2>
-                  <p className="text-2xl font-bold mb-8">{hero.subtitle}</p>
+                  <p className="text-2xl font-bold mb-8 uppercase">
+                    {hero.subtitle}
+                  </p>
                   <p className="text-lg font-bold">{hero.text}</p>
                 </div>
               )}

@@ -47,7 +47,7 @@ export const FooterBase = async ({ t, lng }) => {
             <div className="flex flex-col flex-nowrap max-w-xs">
               <p className="my-8 text-xl">{t("Recursos")}</p>
               <ul>
-                <FooterLinksId lng={lng} href="Clientes" text={t("Clientes")} />
+                <FooterLinks lng={lng} href="Clientes" text={t("Clientes")} />
                 <FooterLinksId
                   lng={lng}
                   href="Certificaciones"

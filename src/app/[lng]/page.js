@@ -11,6 +11,7 @@ const Unete = dynamic(() => import("./(components)/Unete"));
 const Responsabilidad = dynamic(() => import("./(components)/Responsabilidad"));
 const Contacto = dynamic(() => import("./(components)/Contacto"));
 import WAClick from "./(components)/WAClick";
+import PowerLine from "../components/SVG/PowerLine";
 export default async function Page({ params: { lng } }) {
   const { t } = await useTranslation(lng, "Landing");
   return (
@@ -18,6 +19,7 @@ export default async function Page({ params: { lng } }) {
       <WAClick />
       <Hero t={t} />
       <SomosIngenieria t={t} />
+      <PowerLine />
       <Especializacion t={t} />
       <Soluciones t={t} />
       <Clientes t={t} />

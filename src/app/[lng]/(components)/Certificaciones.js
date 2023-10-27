@@ -12,7 +12,7 @@ export default function Certificaciones({ t }) {
           <div className="flex flex-col-reverse lg:flex-row flex-wrap w-full justify-center lg:justify-start ">
             <div className="w-full lg:w-[23vw]  mt-8 lg:my-0  h-fit rounded flex flex-col flex-nowrap justify-around  items-center pb-8  gap-4 px-4">
               <ISO width="10rem" height="10rem" />
-              <div className="text-[12px] whitespace-pre-line mt-8 text-center dark:text-white">
+              <div className="text-[12px] whitespace-pre-line mt-8 text-left leading-5  dark:text-white">
                 {t("ISOTxt")}
               </div>
             </div>

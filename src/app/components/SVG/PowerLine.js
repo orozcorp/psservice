@@ -13,7 +13,6 @@ const PowerLine = ({}) => {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       width="1932"
       height="112"
-      viewBox="0 0 1932 112"
       className="animate-pulse z-50"
     >
       <defs>
@@ -21,7 +20,7 @@ const PowerLine = ({}) => {
           <rect
             id="Rectangle_129"
             data-name="Rectangle 129"
-            width="1932"
+            width="2000"
             height="112"
             fill="none"
             stroke="#3f3f3f"
