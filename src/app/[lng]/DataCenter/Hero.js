@@ -13,6 +13,7 @@ export default function Hero({ t }) {
           <HeroBgImage
             image="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/DATACENTER/Hero.jpg"
             video="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/DATACENTER/datacenter+light.mp4"
+            imageMovil="https://psserviceimages.s3.us-east-2.amazonaws.com/mobile/data_mobile.jpg"
           />
         </div>
       </div>

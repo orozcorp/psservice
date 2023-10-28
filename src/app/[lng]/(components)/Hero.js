@@ -14,6 +14,7 @@ export default function Hero({ t }) {
         <HeroBgImage
           image="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/Hero.jpg"
           video="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/hero2.mp4"
+          imageMovil="https://psserviceimages.s3.us-east-2.amazonaws.com/mobile/datacenter_dark_mobile.jpg"
         />
       </div>
 

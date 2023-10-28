@@ -3,13 +3,27 @@
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-export default function HeroBgImage({ lightImg, darkImg }) {
+import useWindowSize from "../hooks/useWindowSize";
+
+export default function HeroBgImage({
+  lightImg,
+  darkImg,
+  lightMovilImg,
+  darkMovilImg,
+}) {
   const { theme } = useTheme();
   const [color, setColor] = useState(lightImg);
+  const size = useWindowSize();
+  const width = size?.width ?? 0;
 
   useEffect(() => {
-    setColor(theme === "dark" ? darkImg : lightImg);
-  }, [darkImg, lightImg, theme]);
+    if (width <= 768) {
+      setColor(theme === "dark" ? darkMovilImg : lightMovilImg);
+    } else {
+      setColor(theme === "dark" ? darkImg : lightImg);
+    }
+  }, [darkImg, lightImg, darkMovilImg, lightMovilImg, theme, width]);
+
   return (
     <Image
       src={color}

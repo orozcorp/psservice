@@ -8,6 +8,7 @@ import Icon3 from "../../components/SVG/TecnologiaMed/Icon3";
 import Image from "next/image";
 import Contacta from "./Contacta";
 import Contacto from "../(components)/Contacto";
+import ImageChg from "../../components/atoms/ImageChg";
 export default async function Fabricacion({ params: { lng } }) {
   const { t } = await useTranslation(lng, "TecnologiaMedica");
   const solucionesData = [
@@ -46,12 +47,9 @@ export default async function Fabricacion({ params: { lng } }) {
         className="relative flex justify-center lg:justify-end items-center min-h-[60vh] w-[100vw]"
         style={{ zIndex: 1 }}
       >
-        <Image
-          src="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/TEC+MEDICA/mid+content.jpg"
-          alt="Background"
-          fill
-          className="object-cover object-right"
-          quality={100}
+        <ImageChg
+          imgMovil="https://psserviceimages.s3.us-east-2.amazonaws.com/mobile/tecMed_MID_mobile.jpg"
+          img="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/TEC+MEDICA/mid+content.jpg"
         />
       </div>
       {/* <Contacta t={t} /> */}

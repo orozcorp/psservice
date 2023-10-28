@@ -4,10 +4,14 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import dynamic from "next/dynamic";
+import useWindowSize from "../../components/hooks/useWindowSize";
 const HBgVideo = dynamic(() => import("./HBgVideo"));
-export default function BackgroundImage({ image, video }) {
-  const [isClient, setIsClient] = useState(false);
 
+export default function BackgroundImage({ image, video, imageMovil }) {
+  const size = useWindowSize();
+  const width = size?.width ?? 0;
+  const [isClient, setIsClient] = useState(false);
+  const finalImage = imageMovil && width < 1000 ? imageMovil : image;
   const { theme } = useTheme();
   useEffect(() => {
     setIsClient(true);
@@ -18,7 +22,7 @@ export default function BackgroundImage({ image, video }) {
 
   return (
     <Image
-      src={image}
+      src={finalImage}
       alt="Background"
       fill
       className="object-cover object-right z-40"

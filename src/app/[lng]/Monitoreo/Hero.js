@@ -13,6 +13,8 @@ export default function Hero({ t }) {
           <HeroBgImage
             lightImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/MONITOREO/Hero.jpg"
             darkImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/MONITOREO/Hero.jpg"
+            darkMovilImg="https://psserviceimages.s3.us-east-2.amazonaws.com/mobile/monitoreo_mobile.jpg"
+            lightMovilImg="https://psserviceimages.s3.us-east-2.amazonaws.com/mobile/monitoreo_mobile.jpg"
           />
         </div>
       </div>
