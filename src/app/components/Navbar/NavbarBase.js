@@ -68,7 +68,7 @@ export const NavbarBase = ({ t, lng }) => {
                   {t("Especialidades")}
                 </button>
                 {showEspecialidadesDropdown && (
-                  <div className="absolute left-0 mt-2 p-4 w-56 rounded-md shadow-lg bg-white text-[#0A2473] z-50 flex flex-col gap-2">
+                  <div className="absolute left-0 mt-2 p-4 w-56 rounded-md shadow-lg bg-white text-[#0A2473] z-40 flex flex-col gap-2">
                     <Link onClick={setAllFalse} href={`/${lng}/DataCenter`}>
                       {t("Sistemas")}
                     </Link>
@@ -98,7 +98,7 @@ export const NavbarBase = ({ t, lng }) => {
                   {t("Servicios")}
                 </button>
                 {showServiciosDropdown && (
-                  <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white text-[#0A2473] p-4 z-50 flex flex-col gap-2">
+                  <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white text-[#0A2473] p-4 z-40 flex flex-col gap-2">
                     <Link onClick={setAllFalse} href={`/${lng}/Soporte`}>
                       {t("Soporte")}
                     </Link>

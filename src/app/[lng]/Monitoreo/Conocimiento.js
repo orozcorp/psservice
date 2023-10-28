@@ -42,8 +42,8 @@ export default function Conocimiento({ t }) {
       >
         <Textura />
       </div>
-      <div className="flex flex-row mx-4 lg:mx-0 flex-wrap items-center w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2 bg-gradient-to-b from-[#C0D6D5] to-[#DEDEDE]  dark:bg-gradient-to-r dark:from-[#F8D3AE] dark:to-[#DDDDDD]  rounded-3xl">
-        <div className="w-full   text-[#0A2473] dark:text-[#0A2473] px-4 lg:px-16 py-12">
+      <div className="flex flex-row mx-4 lg:mx-0 flex-wrap items-center w-full p-4lg:p-0 lg:w-3/4 xl:w-1/2 bg-gradient-to-b from-[#C0D6D5] to-[#DEDEDE]  dark:bg-gradient-to-r dark:from-[#F8D3AE] dark:to-[#DDDDDD]  rounded-3xl">
+        <div className="w-full   text-[#0A2473] dark:text-[#0A2473] px-4 lg:px-16 py-6">
           <h2 className="text-2xl font-bold">{t("Conocimiento")}</h2>
           <p>{t("ConocimientoText")}</p>
           <ul className=" h-full mt-4  mb-16">

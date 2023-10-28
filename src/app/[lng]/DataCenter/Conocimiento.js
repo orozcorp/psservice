@@ -65,17 +65,17 @@ export default function Conocimiento({ t }) {
     },
   ];
   return (
-    <div className="relative flex justify-center items-center  w-[100vw] mt-16">
+    <div className="relative flex justify-center items-center  w-[100vw] mt-16 ">
       <div
-        className="absolute top-0 left-0 bottom-0 z-10  ]"
+        className="absolute top-0 left-0 bottom-0"
         style={{ width: "300px" }}
       >
         <Textura />
       </div>
-      <div className="flex flex-row mx-4 lg:mx-0 flex-wrap items-center w-full p-10 lg:p-0 lg:w-3/4 xl:w-1/2 bg-gradient-to-b from-[#C0D6D5] to-[#DEDEDE]  dark:bg-gradient-to-r dark:from-[#F8D3AE] dark:to-[#DDDDDD]  rounded-3xl">
-        <div className="w-full   text-[#0A2473] dark:text-[#0A2473] px-4 lg:px-8 py-6">
+      <div className="z-40 flex flex-row mx-4 lg:mx-0 flex-wrap items-center w-full p-4 lg:p-0 lg:w-3/4 xl:w-1/2 bg-gradient-to-b from-[#C0D6D5] to-[#DEDEDE]  dark:bg-gradient-to-r dark:from-[#F8D3AE] dark:to-[#DDDDDD]  rounded-3xl">
+        <div className="w-full   text-[#0A2473] dark:text-[#0A2473] px-4 lg:px-8 py-2">
           <h2 className="mt-4 text-2xl font-bold">{t("Servicios")}</h2>
-          <ul className="grid grid-cols-2  mt-4  mb-16">
+          <ul className=" h-full mt-4 mb-16">
             {servicios.map((servicio) => (
               <ConocimientoSingle servicio={servicio} key={servicio.id} />
             ))}

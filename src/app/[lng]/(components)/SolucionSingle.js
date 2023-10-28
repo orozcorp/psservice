@@ -1,7 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
-export default function SolucionSingle({ Icon, title, text, link }) {
+import Image from "next/image";
+export default function SolucionSingle({ image, title, text, link }) {
   const router = useRouter();
   return (
     <motion.button
@@ -14,10 +15,10 @@ export default function SolucionSingle({ Icon, title, text, link }) {
       }}
     >
       <div
-        className="flex flex-col flex-nowrap justify-center items-center w-32 lg:w-48 h-48"
+        className="flex flex-col flex-nowrap justify-center items-center w-32 lg:w-48 "
         onClick={() => router.push(link)}
       >
-        <Icon width="100px" height="100px" />
+        <Image src={image} width={80} height={80} alt={title} />
         <p className="text-white dark:text-[#FFFFFF] text-lg my-4 font-bold">
           {title}
         </p>

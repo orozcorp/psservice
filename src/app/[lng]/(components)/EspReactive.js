@@ -10,7 +10,7 @@ export default function EspReactive({ objTrans }) {
   const [active, setActive] = useState("");
   return (
     <>
-      <div className={`flex items-center w-full p-10 lg:p-0 z-50 `}>
+      <div className={`flex items-center w-full p-10 lg:p-0 z-40 `}>
         <div className="flex flex-col lg:flex-row flex-nowrap lg:flex-wrap  w-full justify-start lg:justify-start">
           <EspDataCenter
             title={dataCenter.title}

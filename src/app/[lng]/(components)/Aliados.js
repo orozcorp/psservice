@@ -16,7 +16,7 @@ export default function Aliados({ t }) {
           </div>
           <div className="text-[#0A2473] flex-1 dark:text-[#FFFFFF] flex flex-col lg:flex-row flex-nowrap lg:flex-wrap justify-center items-center lg:justify-start text-center lg:text-left mt-4 px-4 lg:px-0 lg:mt-0 lg:text-left">
             <div>
-              <p className="text-xl font-bold">{t("Hero7Text")}</p>
+              <p className="text-2xl font-bold">{t("Hero7Text")}</p>
             </div>
           </div>
         </div>

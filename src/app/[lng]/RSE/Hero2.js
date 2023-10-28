@@ -18,7 +18,7 @@ export default function Hero2({ t }) {
       {/* Content */}
       <ISO width={300} height={200} overrideLight="#FFFFFF" />
       <div className="flex flex-col flex-nowrap justify-center items-center lg:items-start w-[90vw] lg:w-[75vw] my-10 lg:my-0">
-        <h2 className="text-3xl lg:text-5xl text-white font-bold py-16 text-shadow ">
+        <h2 className="text-3xl lg:text-5xl text-white font-bold py-16 text-shadow max-w-sm lg:max-w-none">
           {t("Hero1")}
         </h2>
       </div>

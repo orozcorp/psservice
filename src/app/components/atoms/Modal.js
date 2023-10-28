@@ -4,15 +4,17 @@ export default function Modal({ title, children, display, setDisplay }) {
     <div
       tabIndex="-1"
       aria-hidden="true"
-      className={`fixed inset-0 z-50 flex items-center justify-center top-[20vh] left-[25vw]  `}
+      className={`fixed inset-0 z-50 flex items-center justify-center top-[5vh] left-[5vw] lg:left-[25vw] lg:w-full  `}
       style={{ display: display }}
     >
-      <div className="relative w-3/4 max-w-2xl max-h-full drop-shadow-2xl shadow-2xl bg-white rounded-lg  overflow-y-auto">
-        <div className="flex items-start justify-between p-4 border-b rounded-t ">
-          <h3 className="text-xl font-semibold text-gray-900 ">{title}</h3>
+      <div className="relative w-3/4 max-w-2xl max-h-full drop-shadow-2xl shadow-2xl bg-white rounded-lg  overflow-y-auto z-50 ">
+        <div className="flex items-start justify-between p-4 border-b rounded-t z-50 ">
+          <h3 className="text-xl font-semibold text-gray-900 bg-white ">
+            <div className="bg-white">{title}</div>
+          </h3>
           <button
             type="button"
-            className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center "
+            className="text-gray-400 bg-transparent z-50  hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center "
             onClick={() => setDisplay("none")}
           >
             <svg

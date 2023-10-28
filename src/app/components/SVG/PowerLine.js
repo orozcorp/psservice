@@ -13,7 +13,7 @@ const PowerLine = ({}) => {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       width="1932"
       height="112"
-      className="animate-pulse z-50"
+      className="animate-pulse z-40"
     >
       <defs>
         <clipPath id="clip-path">
@@ -43,7 +43,7 @@ const PowerLine = ({}) => {
         id="Group_87"
         data-name="Group 87"
         clipPath="url(#clip-path)"
-        className="z-50"
+        className="z-40"
       >
         <g id="Group_86" data-name="Group 86">
           <g id="Group_85" data-name="Group 85" clipPath="url(#clip-path)">

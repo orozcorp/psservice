@@ -17,34 +17,70 @@ export default function NavbarDisplayed({
       >
         <ThemeSwitcher />
         <div className=" text-white text-3xl">
-          <Link href={`/${lng}`}>{t("Inicio")}</Link>
+          <Link onClick={() => setShowMenu(!showMenu)} href={`/${lng}`}>
+            {t("Inicio")}
+          </Link>
         </div>
         <div className=" text-white text-3xl">
-          <Link href={`/${lng}/#Especializacion`}>{t("Especialidades")}</Link>
+          <Link
+            onClick={() => setShowMenu(!showMenu)}
+            href={`/${lng}/#Especializacion`}
+          >
+            {t("Especialidades")}
+          </Link>
         </div>
         <div className=" text-white text-3xl">
-          <Link href={`/${lng}/#Servicios`}>{t("Servicios")}</Link>
+          <Link
+            onClick={() => setShowMenu(!showMenu)}
+            href={`/${lng}/#Servicios`}
+          >
+            {t("Servicios")}
+          </Link>
         </div>
         <div className=" text-white text-3xl">
-          <Link href={`/${lng}/Clientes`}>{t("Clientes")}</Link>
+          <Link
+            onClick={() => setShowMenu(!showMenu)}
+            href={`/${lng}/Clientes`}
+          >
+            {t("Clientes")}
+          </Link>
         </div>
         <div className=" text-white text-3xl">
-          <Link href={`/${lng}/#Aliados`}>{t("Aliados")}</Link>
+          <Link
+            onClick={() => setShowMenu(!showMenu)}
+            href={`/${lng}/#Aliados`}
+          >
+            {t("Aliados")}
+          </Link>
         </div>
         <div className=" text-white text-3xl">
-          <Link href={`/${lng}/RSE`}>{t("RSE")}</Link>
+          <Link onClick={() => setShowMenu(!showMenu)} href={`/${lng}/RSE`}>
+            {t("RSE")}
+          </Link>
         </div>
         <div className=" text-white text-3xl">
-          <Link href={`/${lng}/Bolsa`}>{t("Bolsa")}</Link>
+          <Link onClick={() => setShowMenu(!showMenu)} href={`/${lng}/Bolsa`}>
+            {t("Bolsa")}
+          </Link>
         </div>
         {session && (
           <div className=" text-white text-3xl">
-            <Link href={`/${lng}/Dashboard`}>{t("Dashboard")}</Link>
+            <Link
+              onClick={() => setShowMenu(!showMenu)}
+              href={`/${lng}/Dashboard`}
+            >
+              {t("Dashboard")}
+            </Link>
           </div>
         )}
         {!session && (
           <div className=" text-white text-3xl">
-            <Link href="/api/auth/signin">{t("LogIn")}</Link>
+            <Link
+              onClick={() => setShowMenu(!showMenu)}
+              href="/api/auth/signin"
+            >
+              {t("LogIn")}
+            </Link>
           </div>
         )}
         {session && (

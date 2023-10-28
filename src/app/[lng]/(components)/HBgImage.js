@@ -21,7 +21,7 @@ export default function BackgroundImage({ image, video }) {
       src={image}
       alt="Background"
       fill
-      className="object-cover object-right z-50"
+      className="object-cover object-right z-40"
       quality={100}
     />
   );

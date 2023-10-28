@@ -2,7 +2,7 @@ import React from "react";
 
 export default function VacanteData({ apply, setApply, vacanteActive }) {
   return (
-    <div className="text-gray-900 flex flex-col flex-nowrap gap-2">
+    <div className="text-gray-900 flex flex-col flex-nowrap gap-2 bg-white">
       <div>
         <div className="font-bold">Descripcion</div>
         <div>{vacanteActive?.descripcion}</div>
