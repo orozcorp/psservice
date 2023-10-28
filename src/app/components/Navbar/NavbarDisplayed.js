@@ -17,6 +17,7 @@ export default function NavbarDisplayed({
   const setAllFalse = () => {
     setShowEspecialidadesDropdown(false);
     setShowServiciosDropdown(false);
+    setShowMenu(!showMenu);
   };
   return (
     <div className="h-screen bg-[#23283C] dark:bg-[#0A2473]">
