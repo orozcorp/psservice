@@ -92,7 +92,7 @@ export default function NavbarDisplayed({
             onClick={setAllFalse}
             href={`/${lng}/SoporteDeSistemasDeMisionCritica`}
           >
-            {t("Servicios")}
+            {t("Soporte")}
           </Link>
         </div>
 

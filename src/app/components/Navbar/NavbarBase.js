@@ -116,7 +116,7 @@ export const NavbarBase = ({ t, lng, i18n }) => {
               <Link
                 href={`/${lng}/ClientesSatiSoporteDeSistemasDeMisionCriticasfechosPsService`}
               >
-                {t("Servicios")}
+                {t("Soporte")}
               </Link>
               <Link href={`/${lng}/ClientesSatisfechosPsService`}>
                 {t("Clientes")}
