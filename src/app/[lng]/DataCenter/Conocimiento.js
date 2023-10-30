@@ -67,7 +67,7 @@ export default function Conocimiento({ t }) {
   return (
     <div className="relative flex justify-center items-center  w-[100vw] mt-16 ">
       <div
-        className="absolute top-0 left-0 bottom-0"
+        className="absolute top-0 left-0 bottom-0 z-0"
         style={{ width: "300px" }}
       >
         <Textura />

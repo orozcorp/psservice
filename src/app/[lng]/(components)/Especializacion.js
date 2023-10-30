@@ -30,13 +30,13 @@ export default function Especializacion({ t }) {
       id="Especializacion"
     >
       <div
-        className="absolute top-0 left-0 bottom-0 z-10"
+        className="absolute top-0 left-0 bottom-0 z-0"
         style={{ width: "300px" }}
       >
         <Textura />
       </div>
       <div
-        className="relative flex flex-row flex-wrap justify-center"
+        className="relative flex flex-row flex-wrap justify-center z-40"
         style={{ width: "95vw", minHeight: "60vh" }}
       >
         <EspReactive objTrans={objTrans} />

@@ -4,7 +4,7 @@ export default function SomosIngenieria({ t }) {
     <>
       <div className="relative">
         <div className="relative flex flex-col flex-nowrap w-full justify-center items-center lg:items-end z-40">
-          <div className="flex flex-row flex-wrap z-40">
+          <div className="flex flex-row flex-wrap z-0">
             <Textura />
             <div className="flex-1 flex justify-center items-center min-h-[40vh] w-[75vw] z-40">
               <div className="flex items-center w-full z-40">

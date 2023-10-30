@@ -66,7 +66,7 @@ export default function Soluciones({ t }) {
       id="Servicios"
     >
       <div
-        className="absolute top-0 left-0 bottom-0 z-0  ]"
+        className="absolute top-0 left-0 bottom-0 z-0  "
         style={{ width: "300px" }}
       >
         <Textura />
