@@ -2,7 +2,7 @@
 import { useState } from "react";
 import useWindowSize from "../hooks/useWindowSize";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { AiOutlineMenu } from "react-icons/ai";
 import NavbarDisplayed from "./NavbarDisplayed";
 import { ThemeSwitcher } from "../ThemeSwitcher";
@@ -10,7 +10,7 @@ import { rgbDataURL } from "../helpers/blur";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import { useSession, signOut } from "next-auth/react";
-export const NavbarBase = ({ t, lng }) => {
+export const NavbarBase = ({ t, lng, i18n }) => {
   const size = useWindowSize();
   const width = size?.width ?? 0;
   const [showMenu, setShowMenu] = useState(false);
@@ -25,6 +25,13 @@ export const NavbarBase = ({ t, lng }) => {
     setShowEspecialidadesDropdown(false);
     setShowServiciosDropdown(false);
   };
+  const router = useRouter();
+  const langToChange = lng === "es" ? "en" : "es";
+  const changeLanguage = async () => {
+    const newPathname = pathname.replace(`/${lng}`, `/${langToChange}`);
+    router.push(newPathname);
+  };
+
   return (
     <>
       <nav className="flex flex-row items-center justify-center bg-[#23283C] dark:bg-[#0A2473] ">
@@ -87,7 +94,6 @@ export const NavbarBase = ({ t, lng }) => {
                   </div>
                 )}
               </div>
-
               <div className="relative inline-block text-left">
                 <button
                   onClick={() => {
@@ -114,7 +120,6 @@ export const NavbarBase = ({ t, lng }) => {
                   </div>
                 )}
               </div>
-
               <Link href={`/${lng}/Clientes`}>{t("Clientes")}</Link>
               <Link href={`/${lng}/#Aliados`}>{t("Aliados")}</Link>
               <Link href={`/${lng}/RSE`}>{t("RSE")}</Link>
@@ -126,6 +131,9 @@ export const NavbarBase = ({ t, lng }) => {
               >
                 {t("Bolsa")}
               </Link>
+              <button onClick={changeLanguage} className="uppercase">
+                {langToChange}
+              </button>
               {session && (
                 <Link
                   href={`/${lng}/Dashboard`}
@@ -185,6 +193,8 @@ export const NavbarBase = ({ t, lng }) => {
           t={t}
           lng={lng}
           session={session}
+          changeLanguage={changeLanguage}
+          langToChange={langToChange}
         />
       )}
     </>

@@ -1,5 +1,5 @@
 import HeroBgImage from "../../components/atoms/HeroBgImage";
-
+import Link from "next/link";
 export default function Hero3({ t }) {
   return (
     <div className="relative flex justify-center items-center  w-[100vw]  my-8">
@@ -24,9 +24,12 @@ export default function Hero3({ t }) {
             </h2>
             <p className="text-xl font-bold py-4">{t("Hero4Sub")}</p>
             <p className="text-md font-bold">{t("Hero4Text")}</p>
-            <button className="py-2 px-4 mt-8 bg-[#5D001D] text-white">
+            <Link
+              className="py-2 px-4 mt-8 bg-[#5D001D] text-white"
+              href="/Clientes"
+            >
               {t("MasCasos")}
-            </button>
+            </Link>
           </div>
         </div>
       </div>

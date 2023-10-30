@@ -10,6 +10,8 @@ export default function NavbarDisplayed({
   showMenu,
   setShowMenu,
   session,
+  langToChange,
+  changeLanguage,
 }) {
   const [showEspecialidadesDropdown, setShowEspecialidadesDropdown] =
     useState(false);
@@ -118,6 +120,9 @@ export default function NavbarDisplayed({
             {t("Bolsa")}
           </Link>
         </div>
+        <button onClick={changeLanguage} className="uppercase">
+          {langToChange}
+        </button>
         {session && (
           <div className=" text-white text-3xl">
             <Link

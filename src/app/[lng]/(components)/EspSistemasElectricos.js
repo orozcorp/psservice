@@ -8,7 +8,7 @@ export default function EspSistemasElectricos({ title, text, active }) {
     <div
       className={`${
         activo ? "h-[26rem]" : "h-44"
-      } w-full lg:w-[33vw] border rounded bg-[#155E75] border-[#155E75] text-white flex flex-col flex-nowrap items-center justify-end pb-8`}
+      } w-full lg:w-[33vw] border rounded bg-[#155E75] border-[#155E75] text-white flex flex-col flex-nowrap items-center justify-center `}
       onClick={() => {
         if (activeState == "SistemasElectricos") {
           setActive("");
