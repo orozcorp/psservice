@@ -14,7 +14,21 @@ export default function Textura() {
     setShouldRender(true);
   }, []);
 
-  if (!shouldRender || !theme || theme === "light") return <></>;
+  if (!shouldRender) return <></>;
+  if (!theme || theme === "light")
+    return (
+      <div
+        className="absolute top-0 left-0 bottom-[-20px] z-0"
+        style={{ width: "300px" }}
+      >
+        <Image
+          src="https://psserviceimages.s3.us-east-2.amazonaws.com/textura_gris.svg"
+          alt="Textura"
+          fill
+          className="object-center object-cover animate-pulse"
+        />
+      </div>
+    );
   if (width < 1000) return <></>;
   return (
     <div
