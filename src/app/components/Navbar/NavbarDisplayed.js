@@ -72,6 +72,18 @@ export default function NavbarDisplayed({
               >
                 {t("Monitoreo")}
               </Link>
+              <Link
+                onClick={setAllFalse}
+                href={`/${lng}/FabricacionDeGabinetesYComponentes`}
+              >
+                {t("Fabricacion")}
+              </Link>
+              <Link
+                onClick={setAllFalse}
+                href={`/${lng}/ImplementacionDeTecnologiaMedica`}
+              >
+                {t("Data")}
+              </Link>
             </div>
           )}
         </div>
@@ -99,18 +111,6 @@ export default function NavbarDisplayed({
                 href={`/${lng}/SoporteDeSistemasDeMisionCritica`}
               >
                 {t("Soporte")}
-              </Link>
-              <Link
-                onClick={setAllFalse}
-                href={`/${lng}/FabricacionDeGabinetesYComponentes`}
-              >
-                {t("Fabricacion")}
-              </Link>
-              <Link
-                onClick={setAllFalse}
-                href={`/${lng}/ImplementacionDeTecnologiaMedica`}
-              >
-                {t("Data")}
               </Link>
             </div>
           )}

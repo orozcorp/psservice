@@ -100,6 +100,18 @@ export const NavbarBase = ({ t, lng, i18n }) => {
                     >
                       {t("Monitoreo")}
                     </Link>
+                    <Link
+                      onClick={setAllFalse}
+                      href={`/${lng}/FabricacionDeGabinetesYComponentes`}
+                    >
+                      {t("Fabricacion")}
+                    </Link>
+                    <Link
+                      onClick={setAllFalse}
+                      href={`/${lng}/ImplementacionDeTecnologiaMedica`}
+                    >
+                      {t("Data")}
+                    </Link>
                   </div>
                 )}
               </div>
@@ -119,18 +131,6 @@ export const NavbarBase = ({ t, lng, i18n }) => {
                       href={`/${lng}/SoporteDeSistemasDeMisionCritica`}
                     >
                       {t("Soporte")}
-                    </Link>
-                    <Link
-                      onClick={setAllFalse}
-                      href={`/${lng}/FabricacionDeGabinetesYComponentes`}
-                    >
-                      {t("Fabricacion")}
-                    </Link>
-                    <Link
-                      onClick={setAllFalse}
-                      href={`/${lng}/ImplementacionDeTecnologiaMedica`}
-                    >
-                      {t("Data")}
                     </Link>
                   </div>
                 )}
