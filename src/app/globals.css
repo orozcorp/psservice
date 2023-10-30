@@ -82,3 +82,15 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+
+/* pdf-viewer.css */
+.react-pdf__Page__textContent,
+.react-pdf__Page__annotations {
+  display: none;
+}
+
+.react-pdf__Page {
+  margin: 0 auto;
+  padding: 0;
+}

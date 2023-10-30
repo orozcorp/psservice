@@ -23,23 +23,39 @@ export const FooterBase = async ({ t, lng }) => {
             <div className="flex flex-col flex-nowrap max-w-xs">
               <p className="my-8 text-xl">{t("Servicios")}</p>
               <ul>
-                <FooterLinks lng={lng} href="Energia" text={t("Energia")} />
-                <FooterLinks lng={lng} href="DataCenter" text={t("Sistemas")} />
-                <FooterLinks lng={lng} href="Monitoreo" text={t("Monitoreo")} />
-                <FooterLinks lng={lng} href="Soporte" text={t("Soporte")} />
                 <FooterLinks
                   lng={lng}
-                  href="AiresAcondicionados"
+                  href="IngenieriaEnSistemasElectricos"
+                  text={t("Energia")}
+                />
+                <FooterLinks
+                  lng={lng}
+                  href="ImplementacionDeDataCenter"
+                  text={t("Sistemas")}
+                />
+                <FooterLinks
+                  lng={lng}
+                  href="MonitoreoYControlDeSeguridad"
+                  text={t("Monitoreo")}
+                />
+                <FooterLinks
+                  lng={lng}
+                  href="SoporteDeSistemasDeMisionCritica"
+                  text={t("Soporte")}
+                />
+                <FooterLinks
+                  lng={lng}
+                  href="AireAcondicionadoDePrecision"
                   text={t("Aire")}
                 />
                 <FooterLinks
                   lng={lng}
-                  href="Fabricacion"
+                  href="FabricacionDeGabinetesYComponentes"
                   text={t("Fabricacion")}
                 />
                 <FooterLinks
                   lng={lng}
-                  href="TecnologiaMedica"
+                  href="ImplementacionDeTecnologiaMedica"
                   text={t("Data")}
                 />
               </ul>
@@ -47,16 +63,28 @@ export const FooterBase = async ({ t, lng }) => {
             <div className="flex flex-col flex-nowrap max-w-xs">
               <p className="my-8 text-xl">{t("Recursos")}</p>
               <ul>
-                <FooterLinks lng={lng} href="Clientes" text={t("Clientes")} />
+                <FooterLinks
+                  lng={lng}
+                  href="ClientesSatisfechosPsService"
+                  text={t("Clientes")}
+                />
                 <FooterLinksId
                   lng={lng}
                   href="Certificaciones"
                   text={t("Certificaciones")}
                 />
                 <FooterLinksId lng={lng} href="Aliados" text={t("Aliados")} />
-                <FooterLinks lng={lng} href="RSE" text={t("RSE")} />
+                <FooterLinks
+                  lng={lng}
+                  href="EmpresaSocialmenteResponsable"
+                  text={t("RSE")}
+                />
 
-                <FooterLinks lng={lng} href="Bolsa" text={t("Bolsa")} />
+                <FooterLinks
+                  lng={lng}
+                  href="BolsaDeTrabajo"
+                  text={t("Bolsa")}
+                />
               </ul>
             </div>
           </div>
@@ -67,8 +95,10 @@ export const FooterBase = async ({ t, lng }) => {
           PS Service, México {today.getFullYear()}, Todos los derechos
           reservados
         </div>
-        <Link href={`${lng}/AvisoDePrivacidad`}>{t("Aviso")}</Link>
-        <Link href={`${lng}/TerminosYCondiciones`}>{t("Terminos")}</Link>
+        <Link href={`${lng}/AvisoDePrivacidadPsService`}>{t("Aviso")}</Link>
+        <Link href={`${lng}/TerminosYCondicionesDeNavegacion`}>
+          {t("Terminos")}
+        </Link>
       </div>
     </>
   );

@@ -7,6 +7,7 @@ const nextConfig = {
   reactStrictMode: false,
   webpack: (config) => {
     config.resolve.alias["@"] = path.resolve(__dirname);
+    config.resolve.alias.canvas = false;
     return config;
   },
   images: {
