@@ -16,7 +16,7 @@ export default function Unete({ t }) {
                 <p className="text-lg font-bold mb-8">{t("Hero8Sub")}</p>
                 <p className="text-lg font-bold mb-8">{t("Hero8Text")}</p>
                 <Link
-                  href="/Bolsa"
+                  href="/BolsaDeTrabajo"
                   className="border border-white dark:border-[#799FE6] text-[#AEC8F8]  py-2 px-20 rounded dark:text-[#799FE6]"
                 >
                   {t("QuieroSer")}

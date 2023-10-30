@@ -28,7 +28,7 @@ export default function Hero3({ t }) {
             <p className="text-md font-bold text-shadow ">{t("Hero4Text")}</p>
             <Link
               className="py-2 px-4 mt-8 bg-[#5D001D] text-white"
-              href="/Clientes"
+              href="/ClientesSatisfechosPsService"
             >
               {t("MasCasos")}
             </Link>

@@ -23,7 +23,7 @@ export default function EspSistemasElectricos({ title, text, active }) {
           <div className="mb-4 text-sm px-6">{text}</div>
           <Link
             className="border rounded bg-white border-white text-[#155E75] px-6 py-2"
-            href="/Energia"
+            href="/IngenieriaEnSistemasElectricos"
           >
             Ver más
           </Link>

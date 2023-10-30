@@ -42,7 +42,7 @@ export default function EspDataCenter({ title, text, active }) {
             <div className="mb-4 text-sm">{text}</div>
             <Link
               className="border rounded bg-[#155E75] border-[#155E75] text-white px-6 py-2"
-              href="/DataCenter"
+              href="/ImplementacionDeDataCenter"
             >
               Ver más
             </Link>

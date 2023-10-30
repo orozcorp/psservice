@@ -27,7 +27,7 @@ export default function Clientes({ t }) {
             </p>
             <p className="text-md font-bold text-shadow">{t("Hero5Text")}</p>
             <Link
-              href="/Clientes"
+              href="/ClientesSatisfechosPsService"
               className="py-2 px-4 mt-8 bg-[#5D001D] text-white"
             >
               {t("MasCasos")}

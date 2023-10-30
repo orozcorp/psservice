@@ -8,7 +8,7 @@ export default function Soluciones({ t }) {
         "https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/svgInicio/Infraestructura+TI.png",
       title: t("Sol4Title"),
       text: t("Sol4Text"),
-      link: "/DataCenter",
+      link: "/ImplementacionDeDataCenter",
     },
     {
       id: 0,
@@ -16,7 +16,7 @@ export default function Soluciones({ t }) {
         "https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/svgInicio/energia.png",
       title: t("Sol1Title"),
       text: t("Sol1Text"),
-      link: "/Energia",
+      link: "/IngenieriaEnSistemasElectricos",
     },
     {
       id: 5,
@@ -24,7 +24,7 @@ export default function Soluciones({ t }) {
         "https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/svgInicio/AC.png",
       title: t("Sol6Title"),
       text: t("Sol6Text"),
-      link: "/AiresAcondicionados",
+      link: "/AireAcondicionadosDePrecision",
     },
     {
       id: 4,
@@ -32,7 +32,7 @@ export default function Soluciones({ t }) {
         "https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/svgInicio/monitoreo.png",
       title: t("Sol5Title"),
       text: t("Sol5Text"),
-      link: "/Monitoreo",
+      link: "/MonitoreoYControlDeSeguridad",
     },
     {
       id: 2,
@@ -40,7 +40,7 @@ export default function Soluciones({ t }) {
         "https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/svgInicio/Fabricacion.png",
       title: t("Sol3Title"),
       text: t("Sol3Text"),
-      link: "/Fabricacion",
+      link: "/FabricacionDeGabinetesYComponentes",
     },
     {
       id: 1,
@@ -48,7 +48,7 @@ export default function Soluciones({ t }) {
         "https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/svgInicio/soporte+copia+2.png",
       title: t("Sol2Title"),
       text: t("Sol2Text"),
-      link: "/Soporte",
+      link: "/SoporteDeSistemasDeMisionCritica",
     },
 
     {
@@ -57,7 +57,7 @@ export default function Soluciones({ t }) {
         "https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/svgInicio/medica.png",
       title: t("Sol7Title"),
       text: t("Sol7Text"),
-      link: "/TecnologiaMedica",
+      link: "/ImplementacionDeTecnologiaMedica",
     },
   ];
   return (

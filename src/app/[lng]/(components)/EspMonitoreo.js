@@ -22,7 +22,7 @@ export default function EspMonitoreo({ title, text, active }) {
           <div className="mb-4 text-sm px-8">{text}</div>
           <Link
             className=" rounded bg-[#155E75] border-[#155E75] text-white px-6 py-2"
-            href="/Monitoreo"
+            href="/MonitoreoYControlDeSeguridad"
           >
             Ver más
           </Link>

@@ -48,16 +48,28 @@ export default function NavbarDisplayed({
           </button>
           {showEspecialidadesDropdown && (
             <div className="mt-2 p-4   text-white flex flex-col gap-2 w-full justify-center items-start">
-              <Link onClick={setAllFalse} href={`/${lng}/DataCenter`}>
+              <Link
+                onClick={setAllFalse}
+                href={`/${lng}/ImplementacionDeDataCenter`}
+              >
                 {t("Sistemas")}
               </Link>
-              <Link onClick={setAllFalse} href={`/${lng}/Energia`}>
+              <Link
+                onClick={setAllFalse}
+                href={`/${lng}/IngenieriaEnSistemasElectricos`}
+              >
                 {t("Energia")}
               </Link>
-              <Link onClick={setAllFalse} href={`/${lng}/AiresAcondicionados`}>
+              <Link
+                onClick={setAllFalse}
+                href={`/${lng}/AireAcondicionadosDePrecision`}
+              >
                 {t("Aire")}
               </Link>
-              <Link onClick={setAllFalse} href={`/${lng}/Monitoreo`}>
+              <Link
+                onClick={setAllFalse}
+                href={`/${lng}/MonitoreoYControlDeSeguridad`}
+              >
                 {t("Monitoreo")}
               </Link>
             </div>
@@ -82,13 +94,22 @@ export default function NavbarDisplayed({
           </button>
           {showServiciosDropdown && (
             <div className="mt-2 p-4 text-left  text-white flex flex-col gap-2 w-full justify-center items-start">
-              <Link onClick={setAllFalse} href={`/${lng}/Soporte`}>
+              <Link
+                onClick={setAllFalse}
+                href={`/${lng}/SoporteDeSistemasDeMisionCritica`}
+              >
                 {t("Soporte")}
               </Link>
-              <Link onClick={setAllFalse} href={`/${lng}/Fabricacion`}>
+              <Link
+                onClick={setAllFalse}
+                href={`/${lng}/FabricacionDeGabinetesYComponentes`}
+              >
                 {t("Fabricacion")}
               </Link>
-              <Link onClick={setAllFalse} href={`/${lng}/TecnologiaMedica`}>
+              <Link
+                onClick={setAllFalse}
+                href={`/${lng}/ImplementacionDeTecnologiaMedica`}
+              >
                 {t("Data")}
               </Link>
             </div>
@@ -97,7 +118,7 @@ export default function NavbarDisplayed({
         <div className=" text-white text-3xl">
           <Link
             onClick={() => setShowMenu(!showMenu)}
-            href={`/${lng}/Clientes`}
+            href={`/${lng}/ClientesSatisfechosPsService`}
           >
             {t("Clientes")}
           </Link>
@@ -111,12 +132,18 @@ export default function NavbarDisplayed({
           </Link>
         </div>
         <div className=" text-white text-3xl">
-          <Link onClick={() => setShowMenu(!showMenu)} href={`/${lng}/RSE`}>
+          <Link
+            onClick={() => setShowMenu(!showMenu)}
+            href={`/${lng}/EmpresaSocialmenteResponsable`}
+          >
             {t("RSE")}
           </Link>
         </div>
         <div className=" text-white text-3xl">
-          <Link onClick={() => setShowMenu(!showMenu)} href={`/${lng}/Bolsa`}>
+          <Link
+            onClick={() => setShowMenu(!showMenu)}
+            href={`/${lng}/BolsaDeTrabajo`}
+          >
             {t("Bolsa")}
           </Link>
         </div>

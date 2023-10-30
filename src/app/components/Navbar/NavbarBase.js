@@ -76,19 +76,28 @@ export const NavbarBase = ({ t, lng, i18n }) => {
                 </button>
                 {showEspecialidadesDropdown && (
                   <div className="absolute left-0 mt-2 p-4 w-56 rounded-md shadow-lg bg-white text-[#0A2473] z-40 flex flex-col gap-2">
-                    <Link onClick={setAllFalse} href={`/${lng}/DataCenter`}>
+                    <Link
+                      onClick={setAllFalse}
+                      href={`/${lng}/ImplementacionDeDataCenter`}
+                    >
                       {t("Sistemas")}
                     </Link>
-                    <Link onClick={setAllFalse} href={`/${lng}/Energia`}>
+                    <Link
+                      onClick={setAllFalse}
+                      href={`/${lng}/IngenieriaEnSistemasElectricos`}
+                    >
                       {t("Energia")}
                     </Link>
                     <Link
                       onClick={setAllFalse}
-                      href={`/${lng}/AiresAcondicionados`}
+                      href={`/${lng}/AireAcondicionadosDePrecision`}
                     >
                       {t("Aire")}
                     </Link>
-                    <Link onClick={setAllFalse} href={`/${lng}/Monitoreo`}>
+                    <Link
+                      onClick={setAllFalse}
+                      href={`/${lng}/MonitoreoYControlDeSeguridad`}
+                    >
                       {t("Monitoreo")}
                     </Link>
                   </div>
@@ -105,26 +114,36 @@ export const NavbarBase = ({ t, lng, i18n }) => {
                 </button>
                 {showServiciosDropdown && (
                   <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white text-[#0A2473] p-4 z-40 flex flex-col gap-2">
-                    <Link onClick={setAllFalse} href={`/${lng}/Soporte`}>
+                    <Link
+                      onClick={setAllFalse}
+                      href={`/${lng}/SoporteDeSistemasDeMisionCritica`}
+                    >
                       {t("Soporte")}
                     </Link>
-                    <Link onClick={setAllFalse} href={`/${lng}/Fabricacion`}>
+                    <Link
+                      onClick={setAllFalse}
+                      href={`/${lng}/FabricacionDeGabinetesYComponentes`}
+                    >
                       {t("Fabricacion")}
                     </Link>
                     <Link
                       onClick={setAllFalse}
-                      href={`/${lng}/TecnologiaMedica`}
+                      href={`/${lng}/ImplementacionDeTecnologiaMedica`}
                     >
                       {t("Data")}
                     </Link>
                   </div>
                 )}
               </div>
-              <Link href={`/${lng}/Clientes`}>{t("Clientes")}</Link>
+              <Link href={`/${lng}/ClientesSatisfechosPsService`}>
+                {t("Clientes")}
+              </Link>
               <Link href={`/${lng}/#Aliados`}>{t("Aliados")}</Link>
-              <Link href={`/${lng}/RSE`}>{t("RSE")}</Link>
+              <Link href={`/${lng}/EmpresaSocialmenteResponsable`}>
+                {t("RSE")}
+              </Link>
               <Link
-                href={`/${lng}/Bolsa`}
+                href={`/${lng}/BolsaDeTrabajo`}
                 className={`${
                   path == "Bolsa" && "border-0 border-b-2 border-white pb-2"
                 }`}
