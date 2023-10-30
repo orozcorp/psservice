@@ -15,10 +15,9 @@ export default function NavbarDisplayed({
 }) {
   const [showEspecialidadesDropdown, setShowEspecialidadesDropdown] =
     useState(false);
-  const [showServiciosDropdown, setShowServiciosDropdown] = useState(false);
   const setAllFalse = () => {
     setShowEspecialidadesDropdown(false);
-    setShowServiciosDropdown(false);
+
     setShowMenu(!showMenu);
   };
   return (
@@ -36,7 +35,6 @@ export default function NavbarDisplayed({
             className="flex flex-row flex-wrap gap-4 justify-center items-center"
             onClick={() => {
               setShowEspecialidadesDropdown(!showEspecialidadesDropdown);
-              setShowServiciosDropdown(false);
             }}
           >
             {t("Especialidades")}
@@ -88,33 +86,16 @@ export default function NavbarDisplayed({
           )}
         </div>
 
-        {/* Servicios Dropdown */}
-        <div className="text-left text-3xl text-white flex flex-col flex-nowrap justify-start items-start">
-          <button
-            className="flex flex-row flex-wrap gap-4 justify-center items-center"
-            onClick={() => {
-              setShowEspecialidadesDropdown(false);
-              setShowServiciosDropdown(!showServiciosDropdown);
-            }}
+        <div className=" text-white text-3xl">
+          {" "}
+          <Link
+            onClick={setAllFalse}
+            href={`/${lng}/SoporteDeSistemasDeMisionCritica`}
           >
             {t("Servicios")}
-            {showServiciosDropdown ? (
-              <AiFillCaretUp className="inline-block" />
-            ) : (
-              <AiFillCaretDown className="inline-block" />
-            )}
-          </button>
-          {showServiciosDropdown && (
-            <div className="mt-2 p-4 text-left  text-white flex flex-col gap-2 w-full justify-center items-start">
-              <Link
-                onClick={setAllFalse}
-                href={`/${lng}/SoporteDeSistemasDeMisionCritica`}
-              >
-                {t("Soporte")}
-              </Link>
-            </div>
-          )}
+          </Link>
         </div>
+
         <div className=" text-white text-3xl">
           <Link
             onClick={() => setShowMenu(!showMenu)}

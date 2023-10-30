@@ -17,13 +17,11 @@ export const NavbarBase = ({ t, lng, i18n }) => {
   const pathname = usePathname();
   const [showEspecialidadesDropdown, setShowEspecialidadesDropdown] =
     useState(false);
-  const [showServiciosDropdown, setShowServiciosDropdown] = useState(false);
   const { theme } = useTheme();
   const { data: session, status } = useSession();
   const path = pathname.split("/")[2];
   const setAllFalse = () => {
     setShowEspecialidadesDropdown(false);
-    setShowServiciosDropdown(false);
   };
   const router = useRouter();
   const langToChange = lng === "es" ? "en" : "es";
@@ -69,7 +67,6 @@ export const NavbarBase = ({ t, lng, i18n }) => {
                 <button
                   onClick={() => {
                     setShowEspecialidadesDropdown(!showEspecialidadesDropdown);
-                    setShowServiciosDropdown(false);
                   }}
                 >
                   {t("Especialidades")}
@@ -115,26 +112,12 @@ export const NavbarBase = ({ t, lng, i18n }) => {
                   </div>
                 )}
               </div>
-              <div className="relative inline-block text-left">
-                <button
-                  onClick={() => {
-                    setShowEspecialidadesDropdown(false);
-                    setShowServiciosDropdown(!showServiciosDropdown);
-                  }}
-                >
-                  {t("Servicios")}
-                </button>
-                {showServiciosDropdown && (
-                  <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white text-[#0A2473] p-4 z-40 flex flex-col gap-2">
-                    <Link
-                      onClick={setAllFalse}
-                      href={`/${lng}/SoporteDeSistemasDeMisionCritica`}
-                    >
-                      {t("Soporte")}
-                    </Link>
-                  </div>
-                )}
-              </div>
+
+              <Link
+                href={`/${lng}/ClientesSatiSoporteDeSistemasDeMisionCriticasfechosPsService`}
+              >
+                {t("Servicios")}
+              </Link>
               <Link href={`/${lng}/ClientesSatisfechosPsService`}>
                 {t("Clientes")}
               </Link>
