@@ -78,10 +78,10 @@ export default function Soluciones({ t }) {
         <div className="flex items-center justify-center lg:justify-start w-full lg:w-[73vw]">
           <div className="w-[90%]  flex flex-col flex-nowrap ">
             <div className="w-full lg:w-3/4 py-4  text-left lg:text-justify  p-6 lg:p-0">
-              <h2 className="w-full text-white dark:text-[#fff] text-3xl lg:text-5xl font-bold">
+              <h2 className="w-full text-white  text-3xl lg:text-5xl font-bold">
                 {t("Hero4")}
               </h2>
-              <p className="text-2xl font-bold mb-8 text-white dark:text-[#fff]">
+              <p className="text-2xl font-bold mb-8 text-white ">
                 {t("Hero4Sub")}
               </p>
             </div>
