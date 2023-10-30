@@ -19,11 +19,13 @@ export default function Clientes({ t }) {
         </div>
         <div className="relative z-10 flex flex-row flex-wrap justify-end items-center w-full text-white">
           <div className="flex flex-col flex-nowrap justify-center items-start w-[90vw] lg:w-[73vw]  ">
-            <h2 className="text-3xl lg:text-5xl font-bold pt-16 pb-4">
+            <h2 className="text-3xl lg:text-5xl font-bold pt-16 text-shadow">
               {t("Hero5")}
             </h2>
-            <p className="text-xl font-bold py-4">{t("Hero5Sub")}</p>
-            <p className="text-md font-bold">{t("Hero5Text")}</p>
+            <p className="text-xl font-bold pb-4 text-shadow">
+              {t("Hero5Sub")}
+            </p>
+            <p className="text-md font-bold text-shadow">{t("Hero5Text")}</p>
             <Link
               href="/Clientes"
               className="py-2 px-4 mt-8 bg-[#5D001D] text-white"

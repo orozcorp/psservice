@@ -19,11 +19,13 @@ export default function Hero3({ t }) {
         </div>
         <div className="relative z-10 flex flex-row flex-wrap justify-end items-center w-full text-white">
           <div className="flex flex-col flex-nowrap justify-center items-start w-[90vw] lg:w-[73vw]  ">
-            <h2 className="text-3xl lg:text-5xl font-bold pt-16 pb-4">
+            <h2 className="text-3xl lg:text-5xl font-bold pt-16 text-shadow">
               {t("Hero4")}
             </h2>
-            <p className="text-xl font-bold py-4">{t("Hero4Sub")}</p>
-            <p className="text-md font-bold">{t("Hero4Text")}</p>
+            <p className="text-xl font-bold pb-4 text-shadow">
+              {t("Hero4Sub")}
+            </p>
+            <p className="text-md font-bold text-shadow">{t("Hero4Text")}</p>
             <Link
               className="py-2 px-4 mt-8 bg-[#5D001D] text-white"
               href="/Clientes"

@@ -14,6 +14,7 @@ export default function Hero({ t }) {
             image="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/DATACENTER/Hero.jpg"
             video="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/DATACENTER/datacenter+light.mp4"
             imageMovil="https://psserviceimages.s3.us-east-2.amazonaws.com/mobile/data_mobile.jpg"
+            videoMovil="https://psserviceimages.s3.us-east-2.amazonaws.com/mobile/Datacenter_light.mp4"
           />
         </div>
       </div>
@@ -24,7 +25,7 @@ export default function Hero({ t }) {
           <PSLogo width="200px" height="168px" />
         </div>
         <div className="flex flex-col flex-nowrap justify-center items-start w-[90vw] lg:w-[75vw] ">
-          <h2 className="text-3xl lg:text-5xl text-[#0A2473] dark:text-white font-bold py-16">
+          <h2 className="text-3xl lg:text-5xl text-[#0A2473] dark:text-white font-bold py-16 max-w-xl">
             {t("Hero1")}
           </h2>
           <Link

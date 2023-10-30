@@ -72,8 +72,8 @@ export default function Conocimiento({ t }) {
       >
         <Textura />
       </div>
-      <div className="z-40 flex flex-row mx-4 lg:mx-0 flex-wrap items-center w-full p-4 lg:p-0 lg:w-3/4 xl:w-1/2 bg-gradient-to-b from-[#C0D6D5] to-[#DEDEDE]  dark:bg-gradient-to-r dark:from-[#F8D3AE] dark:to-[#DDDDDD]  rounded-3xl">
-        <div className="w-full   text-[#0A2473] dark:text-[#0A2473] px-4 lg:px-8 py-2">
+      <div className="z-40 flex flex-row mx-4 lg:mx-0 flex-wrap items-center w-full p-4 lg:p-0 lg:w-3/4 xl:w-1/2 bg-gradient-to-b from-[#C0D6D5] to-[#DEDEDE]  dark:bg-gradient-to-r dark:from-[#F8D3AE] dark:to-[#DDDDDD]  rounded-3xl my-4">
+        <div className="w-full   text-[#0A2473] dark:text-[#0A2473] px-4 lg:px-8 py-6">
           <h2 className="mt-4 text-2xl font-bold">{t("Servicios")}</h2>
           <ul className=" h-full mt-4 mb-16">
             {servicios.map((servicio) => (

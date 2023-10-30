@@ -1,10 +1,12 @@
+"use client";
 import ReactPlayer from "react-player";
 
-export default function HBgVideo({ video }) {
+export default function HBgVideo({ video, videoMovil, isMovil }) {
+  const finalVideo = videoMovil && isMovil ? videoMovil : video;
   return (
     <div className=" inset-0 flex items-center justify-center z-[-1] overflow-hidden">
       <ReactPlayer
-        url={video}
+        url={finalVideo}
         playing
         loop
         muted
