@@ -16,8 +16,8 @@ export async function generateStaticParams() {
 
 export const metadata = {
   title: "PS Services",
-  description: "PS Services",
-  keywords: "test, test2",
+  description:
+    "Somos una firma líder de ingeniería en México, especializada en la implementación de sistemas de misión crítica, optimización de infraestructuras tecnológicas y soluciones innovadoras para impulsar tu negocio. Comprometidos con la eficiencia y la seguridad",
 };
 
 export default async function RootLayout({ children, params: { lng } }) {
