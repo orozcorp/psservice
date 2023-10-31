@@ -113,9 +113,7 @@ export const NavbarBase = ({ t, lng, i18n }) => {
                 )}
               </div>
 
-              <Link
-                href={`/${lng}/ClientesSatiSoporteDeSistemasDeMisionCriticasfechosPsService`}
-              >
+              <Link href={`/${lng}/SoporteDeSistemasDeMisionCritica`}>
                 {t("Soporte")}
               </Link>
               <Link href={`/${lng}/ClientesSatisfechosPsService`}>
