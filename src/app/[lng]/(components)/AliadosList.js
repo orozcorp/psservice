@@ -30,7 +30,7 @@ export default function AliadosList() {
     triggerOnce: true, // Change this to false if you want to trigger again whenever it comes in view
   });
   const components = [
-    AC_abb,
+    AC_Scheider,
     AC_Access,
     AC_Daikin,
     AC_XFusion,
@@ -38,7 +38,7 @@ export default function AliadosList() {
     AC_Vertiv,
     AC_Uniflair,
     AC_Staco,
-    AC_Scheider,
+    AC_abb,
     AC_Rittal,
     AC_Pure,
     AC_PSS,
