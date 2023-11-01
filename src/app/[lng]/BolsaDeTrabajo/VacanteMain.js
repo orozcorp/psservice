@@ -22,10 +22,10 @@ export default function VacanteMain({ t, vacantes }) {
         {/* Content */}
         <div className="relative z-10 flex flex-row flex-wrap justify-end items-center w-full my-8">
           <div className="flex flex-col flex-nowrap justify-center items-start w-[90vw] lg:w-[75vw] ">
-            <h2 className="text-xl lg:text-2xl text-[#002772] dark:text-white font-bold py-4 max-w-2xl text-shadow ">
+            <h2 className="text-xl lg:text-2xl text-white font-bold py-4 max-w-2xl text-shadow ">
               {t("Vacante1")}
             </h2>
-            <div className="text-shadow ">{t("VacanteElige")}</div>
+            <div className="text-shadow text-white">{t("VacanteElige")}</div>
             <VacanteList vacantes={vacantes} />
           </div>
         </div>
