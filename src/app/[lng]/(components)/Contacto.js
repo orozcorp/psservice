@@ -17,13 +17,13 @@ export default function Contacto({ t }) {
           <h2 className="text-center lg:text-left font-bold text-2xl max-w-sm p-6">
             {t("ContactoOperamos")}
           </h2>
-          <Link
+          <a
             href="tel:+525549927328"
             className="flex flex-row flex-wrap gap-4 min-w-[16rem] justify-between items-center focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
           >
             {t("ContactoBtnEmergencia")}
             <AiFillPhone className="inline-block ml-2 rotate-90 w-6 h-6" />
-          </Link>
+          </a>
           <Link
             href="https://psserviceimages.s3.us-east-2.amazonaws.com/Landing/CV+PS+Service+2023_C.pdf"
             target="_blank"
