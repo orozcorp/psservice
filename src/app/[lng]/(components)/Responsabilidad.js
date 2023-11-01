@@ -5,7 +5,7 @@ export default function Responsabilidad({ t }) {
     <div className="flex flex-col flex-nowrap w-full justify-center items-center mb-12">
       <div className="flex flex-row flex-wrap justify-center  lg:justify-start items-center py-20 w-[95vw]   gap-2 ">
         <RSEImages />
-        <div className="flex flex-row flex-wrap items-center md:flex-1">
+        <div className="flex flex-row flex-wrap items-center md:flex-1 px-4 lg:px-0">
           <div className="w-full  text-[#0A2473] dark:text-[#fff]">
             <h2 className="text-3xl lg:text-5xl  font-bold py-2">
               {t("Hero9")}

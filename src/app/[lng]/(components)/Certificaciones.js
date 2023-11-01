@@ -48,7 +48,7 @@ export default function Certificaciones({ t }) {
                   style={{ width: "200px" }}
                 >
                   <CertificacionesSingle endCount={10} prefix="+" />
-                  <div className="text-lg font-bold">{t("CertIso")}</div>
+                  <div className="text-lg font-bold">{t("CertIso2")}</div>
                   <div className="text-sm">{t("CertIsoText2")}</div>
                 </div>
               </div>
