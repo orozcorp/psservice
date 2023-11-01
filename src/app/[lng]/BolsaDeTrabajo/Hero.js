@@ -10,8 +10,8 @@ export default function Hero({ t }) {
       <div className="absolute inset-0  overflow-hidden">
         <div className="absolute inset-0">
           <HeroBgImage
-            lightImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/RECLUTAMIENTO/HERO.jpg"
-            darkImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/RECLUTAMIENTO/HERO.jpg"
+            lightImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/RECLUTAMIENTO/HeroV2.jpg"
+            darkImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/RECLUTAMIENTO/HeroV2.jpg"
             darkMovilImg="https://psserviceimages.s3.us-east-2.amazonaws.com/mobile/RH_mobile.jpg"
             lightMovilImg="https://psserviceimages.s3.us-east-2.amazonaws.com/mobile/RH_mobile.jpg"
           />
