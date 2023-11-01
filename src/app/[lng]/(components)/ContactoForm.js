@@ -12,6 +12,8 @@ const MUTATION = `
     }
   }
 `;
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 export default function ContactoForm() {
   const initial = {
     name: "",
@@ -26,6 +28,7 @@ export default function ContactoForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    if (!emailPattern.test(form.email)) return setError("Email inválido");
     try {
       const contact = await postData({
         query: MUTATION,
