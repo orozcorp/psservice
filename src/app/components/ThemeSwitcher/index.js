@@ -22,7 +22,7 @@ export const ThemeSwitcher = () => {
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       {theme === "light" ? (
-        <BsMoon />
+        <BsMoon className="text-[#F5C756] font-bold w-6 h-6" />
       ) : (
         <BsSun className="text-[#F5C756] font-bold w-6 h-6" />
       )}
