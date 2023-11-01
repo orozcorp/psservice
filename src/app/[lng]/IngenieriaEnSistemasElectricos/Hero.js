@@ -12,9 +12,9 @@ export default function Hero({ t }) {
         <div className="absolute inset-0">
           <HeroBgImage
             darkImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/SISTEMAS/Hero.jpg"
-            lightImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/SISTEMAS/Hero2.jpg"
+            lightImg="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/SISTEMAS/Hero.jpg"
             darkMovilImg="https://psserviceimages.s3.us-east-2.amazonaws.com/mobile/SE_dark.jpg"
-            lightMovilImg="https://psserviceimages.s3.us-east-2.amazonaws.com/mobile/SE_light.jpg"
+            lightMovilImg="https://psserviceimages.s3.us-east-2.amazonaws.com/mobile/SE_dark.jpg"
           />
         </div>
       </div>
