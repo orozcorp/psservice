@@ -45,7 +45,7 @@ export const FooterBase = async ({ t, lng }) => {
                 />
                 <FooterLinks
                   lng={lng}
-                  href="AireAcondicionadoDePrecision"
+                  href="AireAcondicionadosDePrecision"
                   text={t("Aire")}
                 />
                 <FooterLinks

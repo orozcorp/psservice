@@ -3,7 +3,10 @@ import ISO from "../../components/SVG/Certificaciones/ISO";
 import CertificacionesSingle from "./CertificacionesSingle";
 export default function Certificaciones({ t }) {
   return (
-    <div className="flex flex-col flex-nowrap w-full justify-center items-center">
+    <div
+      className="flex flex-col flex-nowrap w-full justify-center items-center"
+      id="Certificaciones"
+    >
       <div
         className="flex flex-row flex-wrap justify-center items-center my-8  bg-gradient-to-b from-[#C0D6D5] to-[#DEDEDE] dark:bg-gradient-to-r dark:from-[#10244A] dark:to-[#4D0519] rounded-3xl py-8 "
         style={{ width: "95vw", minHeight: "40vh" }}
