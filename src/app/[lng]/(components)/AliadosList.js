@@ -43,6 +43,7 @@ export default function AliadosList() {
     AC_Pure,
     AC_PSS,
     AC_Net,
+    AC_Cisco,
     AC_Mesa,
     AC_Kohler,
     AC_Jonix,
@@ -65,7 +66,7 @@ export default function AliadosList() {
         damping: 20,
         duration: 2,
       }}
-      className="w-full grid grid-cols-4 grid-rows-6 gap-4 mt-8"
+      className="w-full grid grid-cols-6 grid-rows-4 gap-4 mt-8"
     >
       {components.map((Component, index) => (
         <div key={index} className="flex-1">
