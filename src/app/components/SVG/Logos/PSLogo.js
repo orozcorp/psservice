@@ -15,10 +15,11 @@ export default function PSLogo({ overrideLight }) {
   }, [overrideLight, theme]);
   return (
     <motion.div
-      initial={{ scale: 0, opacity: 0.3 }}
-      animate={{ scale: 1, opacity: 1 }}
+      // initial={{ scale: 0, opacity: 0.3 }}
+      // animate={{ scale: 1, opacity: 1 }}
       whileHover={{ scale: 1.3 }}
       whileTap={{ scale: 0.9 }}
+      className="animate-pulse"
       transition={{
         type: "tween",
         stiffness: 260,
