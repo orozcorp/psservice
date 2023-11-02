@@ -29,7 +29,7 @@ export default function Textura() {
         />
       </div>
     );
-  if (width < 650) return <></>;
+  if (width < 400) return <></>;
   return (
     <div
       className="absolute top-0 left-0 bottom-[-20px] z-0"
