@@ -15,6 +15,7 @@ export default function Textura() {
   }, []);
 
   if (!shouldRender) return <></>;
+  if (width < 1000) return <></>;
   if (!theme || theme === "light")
     return (
       <div
@@ -29,7 +30,7 @@ export default function Textura() {
         />
       </div>
     );
-  if (width < 1000) return <></>;
+  
   return (
     <div
       className="absolute top-0 left-0 bottom-[-20px] z-0"
