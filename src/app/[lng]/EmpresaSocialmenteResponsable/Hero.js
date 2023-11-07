@@ -29,7 +29,7 @@ export default function Hero({ t }) {
             {t("Hero1")}
           </h2>
           <Link
-            href="https://wa.me/521522371267243?text=Hola%quisiera%20hablar%20con%20un%20experto"
+            href="https://wa.me/522371267243?text=Hola%quisiera%20hablar%20con%20un%20experto"
             className="py-2 px-4 bg-[#5D001D] text-white rounded-lg"
           >
             {t("Experto")}
