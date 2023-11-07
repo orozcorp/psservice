@@ -16,7 +16,7 @@ export default function Terminos() {
     <div className="flex flex-col flex-nowrap justify-center items-center">
       <div className="flex flex-col flex-nowrap justify-center items-center w-[90%]">
         <Document
-          file="https://psserviceimages.s3.us-east-2.amazonaws.com/LEGAL-Terminos+y+Condiciones+POWER+copy.pdf"
+          file="https://psserviceimages.s3.us-east-2.amazonaws.com/LEGAL-Terminos+y+Condiciones+POWER+.pdf"
           onLoadSuccess={onDocumentLoadSuccess}
         >
           <Page pageNumber={pageNumber} />
