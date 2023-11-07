@@ -22,16 +22,16 @@ query ObtenerVacantes {
 `;
 
 export default async function Reclutamiento({ params: { lng } }) {
-  // const { t } = await useTranslation(lng, "Bolsa");
-  // const query = await getData({
-  //   query: QUERY,
-  // });
-  // const vacantes = query?.obtenerVacantes || [];
+  const { t } = await useTranslation(lng, "Bolsa");
+  const query = await getData({
+    query: QUERY,
+  });
+  const vacantes = query?.obtenerVacantes || [];
   return (
     <div className="w-full">
-      {/* <Hero t={t} />
+      <Hero t={t} />
       <Somos t={t} />
-      <VacanteMain t={t} vacantes={vacantes} /> */}
+      <VacanteMain t={t} vacantes={vacantes} />
     </div>
   );
 }

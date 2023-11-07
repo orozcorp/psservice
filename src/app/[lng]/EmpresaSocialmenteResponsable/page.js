@@ -18,18 +18,18 @@ query GetDocuments {
 }
 `;
 export default async function RSE({ params: { lng } }) {
-  // const { t } = await useTranslation(lng, "RSE");
-  // const query = await getData({
-  //   query: QUERY,
-  // });
-  // const documentos = query?.getDocuments || [];
+  const { t } = await useTranslation(lng, "RSE");
+  const query = await getData({
+    query: QUERY,
+  });
+  const documentos = query?.getDocuments || [];
   return (
     <div className="w-full">
-      {/* <Hero t={t} />
+      <Hero t={t} />
       <Somos t={t} />
       <Hero2 t={t} />
       <Respetamos t={t} />
-      <Conocimiento t={t} lng={lng} documentos={documentos} /> */}
+      <Conocimiento t={t} lng={lng} documentos={documentos} />
     </div>
   );
 }
