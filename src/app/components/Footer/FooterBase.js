@@ -95,10 +95,8 @@ export const FooterBase = async ({ t, lng }) => {
           PS Service, México {today.getFullYear()}, Todos los derechos
           reservados
         </div>
-        <Link href={`${lng}/AvisoDePrivacidadPsService`}>{t("Aviso")}</Link>
-        <Link href={`${lng}/TerminosYCondicionesDeNavegacion`}>
-          {t("Terminos")}
-        </Link>
+        <Link href={`/AvisoDePrivacidadPsService`}>{t("Aviso")}</Link>
+        <Link href={`/TerminosYCondicionesDeNavegacion`}>{t("Terminos")}</Link>
       </div>
     </>
   );
