@@ -1,18 +1,31 @@
 export async function getData({ query, variables }, refetch = false) {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_ROOT_URL}/api/graphql`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
+  try {
+    const bodyContent = JSON.stringify({
       query,
       variables,
       refetch,
-    }),
-    cache: "no-store",
-  });
-  const { data } = await res.json();
-  return data;
+    });
+
+    const res = await fetch(`${process.env.NEXT_PUBLIC_ROOT_URL}/api/graphql`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: bodyContent,
+      cache: "no-store",
+    });
+
+    if (!res.ok) {
+      throw new Error(`HTTP error! Status: ${res.status}`);
+    }
+
+    const { data } = await res.json();
+    return data;
+  } catch (error) {
+    console.error("Fetching data failed:", error);
+    // Handle the error as needed
+    return null; // Or your preferred error handling
+  }
 }
 
 export async function postData({ query, variables }) {
