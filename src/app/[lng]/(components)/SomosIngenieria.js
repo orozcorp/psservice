@@ -1,4 +1,5 @@
 import Textura from "./Textura";
+
 export default function SomosIngenieria({ t }) {
   return (
     <>
