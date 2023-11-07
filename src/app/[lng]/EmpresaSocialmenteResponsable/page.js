@@ -25,11 +25,11 @@ export default async function RSE({ params: { lng } }) {
   // const documentos = query?.getDocuments || [];
   return (
     <div className="w-full">
-      <Hero t={t} />
+      {/* <Hero t={t} />
       <Somos t={t} />
       <Hero2 t={t} />
       <Respetamos t={t} />
-      {/* <Conocimiento t={t} lng={lng} documentos={documentos} /> */}
+      <Conocimiento t={t} lng={lng} documentos={documentos} /> */}
     </div>
   );
 }
