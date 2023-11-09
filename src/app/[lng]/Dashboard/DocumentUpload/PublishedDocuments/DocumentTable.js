@@ -71,7 +71,7 @@ export default function DocumentTable({ initialDocuments }) {
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 ">
             <tr>
               <th scope="col" className="px-6 py-3">
-                Selecciona para borrar
+                <AiOutlineDelete className="w-6 h-6" />
               </th>
               <th scope="col" className="px-6 py-3">
                 <div
