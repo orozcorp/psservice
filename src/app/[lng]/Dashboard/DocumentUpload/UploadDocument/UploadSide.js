@@ -102,7 +102,7 @@ export default function UploadSide() {
           </button>
         </form>
         <Link
-          href="/en/DocumentUpload/PublishedDocuments"
+          href="/en/Dashboard/DocumentUpload/PublishedDocuments"
           className="mt-8 bg-[#EBEAEA] text-[#0A2473] hover:bg-[#9C9A9A] focus:ring-4 focus:ring-blue-300 font-bold rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 text-center"
         >
           Documentos publicados
