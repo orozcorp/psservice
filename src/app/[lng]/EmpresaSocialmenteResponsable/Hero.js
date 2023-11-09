@@ -28,12 +28,12 @@ export default function Hero({ t }) {
           <h2 className="text-3xl lg:text-5xl text-white font-bold py-16 max-w-2xl text-shadow ">
             {t("Hero1")}
           </h2>
-          <Link
+          {/* <Link
             href="https://wa.me/522371267243?text=Hola%quisiera%20hablar%20con%20un%20experto"
             className="py-2 px-4 bg-[#5D001D] text-white rounded-lg"
           >
             {t("Experto")}
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

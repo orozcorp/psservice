@@ -19,7 +19,7 @@ export default async function layout({ children }) {
                   className="text-gray-900 dark:text-white hover:underline"
                   aria-current="page"
                 >
-                  Subir Documentos
+                  ESR
                 </Link>
               </li>
               <li>
