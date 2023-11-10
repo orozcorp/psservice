@@ -5,11 +5,17 @@ import { fallbackLng, languages, cookieName } from "./app/i18n/settings";
 acceptLanguage.languages(languages);
 
 export const config = {
-  // matcher: "/:lng*",
-  matcher: ["/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js).*)"],
+  matcher: [
+    "/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js|sitemap.xml).*)",
+  ],
 };
 
 export function middleware(req) {
+  // Check if the request is for the sitemap and return NextResponse.next() if it is
+  if (req.nextUrl.pathname === "/sitemap.xml") {
+    return NextResponse.next();
+  }
+
   let lng;
   if (req.cookies.has(cookieName))
     lng = acceptLanguage.get(req.cookies.get(cookieName).value);
