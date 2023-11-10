@@ -25,7 +25,7 @@ export default async function RootLayout({ children, params: { lng = "es" } }) {
   return (
     <html lang={lng} dir={dir(lng)}>
       <head />
-      <Script strategy="afterInteractive" id="gtm-script">
+      {/* <Script strategy="afterInteractive" id="gtm-script">
         {`
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -33,7 +33,25 @@ export default async function RootLayout({ children, params: { lng = "es" } }) {
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','G-VL85Y4PMKP');
           `}
-      </Script>
+      </Script> */}
+      <Script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?
+      id=G-VL85Y4PMKP`}
+      ></Script>
+      <Script
+        id="google-analytics"
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-VL85Y4PMKP');
+        `,
+        }}
+      ></Script>
+
       <body>
         <NextAuthSessionProvider>
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
