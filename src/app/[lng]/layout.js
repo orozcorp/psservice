@@ -25,7 +25,7 @@ export default async function RootLayout({ children, params: { lng } }) {
   return (
     <html lang={lng} dir={dir(lng)}>
       <head />
-      <Script strategy="lazyOnload" id="gtm-script">
+      <Script strategy="afterInteractive" id="gtm-script">
         {`
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
