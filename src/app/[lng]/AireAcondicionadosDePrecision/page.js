@@ -1,11 +1,12 @@
 import { useTranslation } from "../../i18n";
-import Hero from "./Hero";
-import Somos from "./Somos";
-import Hero2 from "./Hero2";
-import Conocimiento from "./Conocimiento";
-import Contacta from "./Contacta";
-import Contacto from "../(components)/Contacto";
-import Hero3 from "./Hero3";
+import dynamic from "next/dynamic";
+const Hero = dynamic(() => import("./Hero"));
+const Somos = dynamic(() => import("./Somos"));
+const Hero2 = dynamic(() => import("./Hero2"));
+const Hero3 = dynamic(() => import("./Hero3"));
+const Conocimiento = dynamic(() => import("./Conocimiento"));
+const Contacto = dynamic(() => import("../(components)/Contacto"));
+
 export default async function DataCenter({ params: { lng } }) {
   const { t } = await useTranslation(lng, "Aire");
   return (

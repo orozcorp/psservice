@@ -32,6 +32,7 @@ export default function BackgroundImage({
       src={finalImage}
       alt="Background"
       fill
+      priority
       className="object-cover object-right z-40"
       quality={100}
     />

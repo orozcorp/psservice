@@ -1,6 +1,8 @@
-import Hero from "./Hero";
-import Somos from "./Somos";
-import VacanteMain from "./VacanteMain";
+import dynamic from "next/dynamic";
+const Hero = dynamic(() => import("./Hero"));
+const Somos = dynamic(() => import("./Somos"));
+const VacanteMain = dynamic(() => import("./VacanteMain"));
+
 import { useTranslation } from "../../i18n";
 import { getData } from "../../lib/helpers/getData";
 

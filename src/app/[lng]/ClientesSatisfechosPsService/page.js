@@ -1,9 +1,9 @@
 import { useTranslation } from "../../i18n";
-import Hero from "./Hero";
-import Somos from "./Somos";
-import Soluciones from "./Soluciones";
+const Hero = dynamic(() => import("./Hero"));
+const Somos = dynamic(() => import("./Somos"));
+const Soluciones = dynamic(() => import("./Soluciones"));
+const Contacto = dynamic(() => import("../(components)/Contacto"));
 
-import Contacto from "../(components)/Contacto";
 export default async function Fabricacion({ params: { lng } }) {
   const { t } = await useTranslation(lng, "Clientes");
   const solucionesData = [

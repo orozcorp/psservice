@@ -1,9 +1,9 @@
 import { useTranslation } from "../../i18n";
-import Hero from "./Hero";
-import Somos from "./Somos";
-import Hero2 from "./Hero2";
-import Respetamos from "./Respetamos";
-import Conocimiento from "./Conocimiento";
+const Hero = dynamic(() => import("./Hero"));
+const Somos = dynamic(() => import("./Somos"));
+const Hero2 = dynamic(() => import("./Hero2"));
+const Conocimiento = dynamic(() => import("./Conocimiento"));
+const Respetamos = dynamic(() => import("./Respetamos"));
 import { getData } from "../../lib/helpers/getData";
 const QUERY = `
 query GetDocuments {

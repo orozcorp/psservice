@@ -12,7 +12,7 @@ const oxygen = Oxygen({
   weight: ["300", "400", "700"],
 });
 export async function generateStaticParams() {
-  return languages.map((lng) => ({ lng }));
+  return languages.map((lng) => ({ lng: lng || "es" }));
 }
 
 export const metadata = {
@@ -21,7 +21,7 @@ export const metadata = {
     "Somos una firma líder de ingeniería en México, especializada en la implementación de sistemas de misión crítica, optimización de infraestructuras tecnológicas y soluciones innovadoras para impulsar tu negocio. Comprometidos con la eficiencia y la seguridad",
 };
 
-export default async function RootLayout({ children, params: { lng } }) {
+export default async function RootLayout({ children, params: { lng = "es" } }) {
   return (
     <html lang={lng} dir={dir(lng)}>
       <head />

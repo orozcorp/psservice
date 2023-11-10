@@ -29,6 +29,7 @@ export default function HeroBgImage({
       src={color}
       alt="Background"
       fill
+      priority
       className="object-cover object-center"
       quality={100}
     />
