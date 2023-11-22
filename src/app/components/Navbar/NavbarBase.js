@@ -53,7 +53,6 @@ export const NavbarBase = ({ t, lng, i18n }) => {
             </div>
           </div>
 
-
           {width > 1000 && (
             <div className="flex flex-row flex-wrap justify-end gap-8 items-start content-center text-white mr-4 w-full">
               <Link
@@ -65,12 +64,14 @@ export const NavbarBase = ({ t, lng, i18n }) => {
                 {t("Inicio")}
               </Link>
 
-              <div className="relative inline-block text-left">
+              <div
+                className="relative inline-block text-left"
+                onMouseLeave={() => setShowEspecialidadesDropdown(false)}
+              >
                 <button
                   onClick={() => {
                     setShowEspecialidadesDropdown(!showEspecialidadesDropdown);
                   }}
-                  onMouseLeave={() => setShowEspecialidadesDropdown(false)}
                 >
                   {t("Especialidades")}
                 </button>
