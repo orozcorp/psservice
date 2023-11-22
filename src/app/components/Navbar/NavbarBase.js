@@ -68,6 +68,7 @@ export const NavbarBase = ({ t, lng, i18n }) => {
                   onClick={() => {
                     setShowEspecialidadesDropdown(!showEspecialidadesDropdown);
                   }}
+                  onMouseLeave={() => setShowEspecialidadesDropdown(false)}
                 >
                   {t("Especialidades")}
                 </button>
