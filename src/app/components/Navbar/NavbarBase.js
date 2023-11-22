@@ -64,10 +64,7 @@ export const NavbarBase = ({ t, lng, i18n }) => {
                 {t("Inicio")}
               </Link>
 
-              <div
-                className="relative inline-block text-left"
-                onMouseLeave={() => setShowEspecialidadesDropdown(false)}
-              >
+              <div className="relative inline-block text-left">
                 <button
                   onClick={() => {
                     setShowEspecialidadesDropdown(!showEspecialidadesDropdown);
@@ -76,7 +73,10 @@ export const NavbarBase = ({ t, lng, i18n }) => {
                   {t("Especialidades")}
                 </button>
                 {showEspecialidadesDropdown && (
-                  <div className="absolute left-0 mt-2 p-4 w-56 rounded-md shadow-lg bg-white text-[#0A2473] z-40 flex flex-col gap-2">
+                  <div
+                    className="absolute left-0 mt-2 p-4 w-56 rounded-md shadow-lg bg-white text-[#0A2473] z-40 flex flex-col gap-2"
+                    onMouseLeave={() => setShowEspecialidadesDropdown(false)}
+                  >
                     <Link
                       onClick={setAllFalse}
                       href={`/${lng}/ImplementacionDeDataCenter`}
