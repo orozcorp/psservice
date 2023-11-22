@@ -34,7 +34,7 @@ export default function Certificaciones({ t }) {
                   className="flex flex-col flex-nowrap justify-center items-center text-center"
                   style={{ width: "200px" }}
                 >
-                  <CertificacionesSingle endCount={15} />
+                  <CertificacionesSingle endCount={16} />
                   <div className="text-lg font-bold">{t("CertNom")}</div>
                   <div className="text-sm">{t("CertNomText")}</div>
                 </div>
