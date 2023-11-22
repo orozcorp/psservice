@@ -1,4 +1,5 @@
 import { useTranslation } from "../../i18n";
+import dynamic from "next/dynamic";
 const Hero = dynamic(() => import("./Hero"));
 const Somos = dynamic(() => import("./Somos"));
 const Hero2 = dynamic(() => import("./Hero2"));
