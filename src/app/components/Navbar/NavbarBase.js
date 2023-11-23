@@ -40,7 +40,7 @@ export const NavbarBase = ({ t, lng, i18n }) => {
                 <div className="flex flex-row flex-wrap items-center justify-center gap-4">
                   <Link href="/" passHref>
                     <Image
-                      src="https://psservicesavvy.s3.us-east-2.amazonaws.com/logosYLanding/LOGOPS.png"
+                      src="https://psserviceimages.s3.us-east-2.amazonaws.com/logo_menu.svg"
                       width={170}
                       height={60}
                       blurDataURL={rgbDataURL(0, 0, 0)}
