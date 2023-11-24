@@ -15,11 +15,21 @@ export async function generateStaticParams() {
   return languages.map((lng) => ({ lng: lng || "es" }));
 }
 
-export const metadata = {
-  title: "PS Services",
-  description:
-    "Somos una firma líder de ingeniería en México, especializada en la implementación de sistemas de misión crítica, optimización de infraestructuras tecnológicas y soluciones innovadoras para impulsar tu negocio. Comprometidos con la eficiencia y la seguridad",
-};
+export async function generateMetadata({ params }) {
+  const lng = params.lng;
+  if (lng === "en") {
+    return {
+      title: "PS Services, engineering firm",
+      description:
+        "We are a leading engineering firm in Mexico, specialized in the implementation of mission-critical systems, optimization of technological infrastructures and innovative solutions to boost your business. Committed to efficiency and safety",
+    };
+  }
+  return {
+    title: "PS Services, firma de ingeniería",
+    description:
+      "Somos una firma líder de ingeniería en México, especializada en la implementación de sistemas de misión crítica, optimización de infraestructuras tecnológicas y soluciones innovadoras para impulsar tu negocio. Comprometidos con la eficiencia y la seguridad",
+  };
+}
 
 export default async function RootLayout({ children, params: { lng = "es" } }) {
   return (
