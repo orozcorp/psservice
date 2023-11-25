@@ -5,12 +5,26 @@ export async function generateMetadata({ params }) {
       title: "PS Services clients",
       description:
         "25 years of experience and innovation support us. Our clients are the best proof of this.",
+      alternates: {
+        canonical: "https://www.psservice.com.mx/ClientesSatisfechosPsService",
+        languages: {
+          en: "https://www.psservice.com.mx/ClientesSatisfechosPsService/en",
+          es: "https://www.psservice.com.mx/ClientesSatisfechosPsService/es",
+        },
+      },
     };
   }
   return {
     title: "PS Services, nuestros clientes",
     description:
       "25 años de experiencia e innovación nos respaldan. Nuestros clientes son la mejor prueba de ello.",
+    alternates: {
+      canonical: "https://www.psservice.com.mx/ClientesSatisfechosPsService",
+      languages: {
+        en: "https://www.psservice.com.mx/ClientesSatisfechosPsService/en",
+        es: "https://www.psservice.com.mx/ClientesSatisfechosPsService/es",
+      },
+    },
   };
 }
 

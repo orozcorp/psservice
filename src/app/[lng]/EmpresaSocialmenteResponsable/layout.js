@@ -5,12 +5,26 @@ export async function generateMetadata({ params }) {
       title: "Socially Responsible Company",
       description:
         "Committed to corporate social responsibility in Mexico, we promote sustainable practices and contribute to the development of our communities",
+      alternates: {
+        canonical: "https://www.psservice.com.mx/EmpresaSocialmenteResponsable",
+        languages: {
+          en: "https://www.psservice.com.mx/EmpresaSocialmenteResponsable/en",
+          es: "https://www.psservice.com.mx/EmpresaSocialmenteResponsable/es",
+        },
+      },
     };
   }
   return {
     title: "Empresa Socialmente Responsable PS Services",
     description:
       "Comprometidos con la responsabilidad social empresarial en México, impulsamos prácticas sostenibles y contribuimos al desarrollo de nuestras comunidades",
+    alternates: {
+      canonical: "https://www.psservice.com.mx/EmpresaSocialmenteResponsable",
+      languages: {
+        en: "https://www.psservice.com.mx/EmpresaSocialmenteResponsable/en",
+        es: "https://www.psservice.com.mx/EmpresaSocialmenteResponsable/es",
+      },
+    },
   };
 }
 
