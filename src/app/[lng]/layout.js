@@ -37,11 +37,11 @@ export default async function RootLayout({ children, params: { lng = "es" } }) {
     <html lang={lng} dir={dir(lng)}>
       <head />
       <Script
-        strategy="lazyOnload"
+        strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=G-VL85Y4PMKP`}
       />
 
-      <Script strategy="lazyOnload" id="googleTag">
+      <Script strategy="afterInteractive" id="googleTag">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
