@@ -1,9 +1,3 @@
-export const metadata = {
-  title: "Implementación de Tecnología Médica PS Service",
-  description:
-    "Innovamos en la instalación de tecnología médica en México, ofreciendo soluciones avanzadas para el sector de la salud. Comprometidos con la calidad y la eficacia",
-};
-
 export async function generateMetadata({ params }) {
   const lng = params.lng;
   if (lng === "en") {
