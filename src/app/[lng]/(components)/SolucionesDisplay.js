@@ -1,6 +1,8 @@
 "use client";
 import useWindowSize from "../../components/hooks/useWindowSize";
-import SolucionSingle from "./SolucionSingle";
+import dynamic from "next/dynamic";
+const SolucionSingle = dynamic(() => import("./SolucionSingle"));
+
 export default function SolucionesDisplay({ Soluciones }) {
   const size = useWindowSize();
   const width = size?.width ?? 0;

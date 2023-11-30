@@ -1,4 +1,6 @@
-import HeroBgImage from "../../components/atoms/HeroBgImage";
+import dynamic from "next/dynamic";
+const HeroBgImage = dynamic(() => import("../../components/atoms/HeroBgImage"));
+
 import Link from "next/link";
 export default function Clientes({ t }) {
   return (

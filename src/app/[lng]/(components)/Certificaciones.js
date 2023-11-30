@@ -1,6 +1,6 @@
-import ISO from "../../components/SVG/Certificaciones/ISO";
-
-import CertificacionesSingle from "./CertificacionesSingle";
+import dynamic from "next/dynamic";
+const ISO = dynamic(() => import("../../components/SVG/Certificaciones/ISO"));
+const CertificacionesSingle = dynamic(() => import("./CertificacionesSingle"));
 export default function Certificaciones({ t }) {
   return (
     <div

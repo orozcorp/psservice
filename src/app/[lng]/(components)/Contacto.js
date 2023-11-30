@@ -1,4 +1,5 @@
-import ContactoForm from "./ContactoForm";
+import dynamic from "next/dynamic";
+const ContactoForm = dynamic(() => import("./ContactoForm"));
 import { AiFillPhone, AiOutlineMenu } from "react-icons/ai";
 import Link from "next/link";
 export default function Contacto({ t }) {

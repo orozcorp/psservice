@@ -1,30 +1,32 @@
 "use client";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import AC_Cisco from "../../components/SVG/Aliados/AC_Cisco";
-import AC_abb from "../../components/SVG/Aliados/AC_abb";
-import AC_Access from "../../components/SVG/Aliados/AC_Access";
-import AC_Daikin from "../../components/SVG/Aliados/AC_Daikin";
-import AC_XFusion from "../../components/SVG/Aliados/AC_XFusion";
-import AC_VMware from "../../components/SVG/Aliados/AC_VMware";
-import AC_Vertiv from "../../components/SVG/Aliados/AC_Vertiv";
-import AC_Uniflair from "../../components/SVG/Aliados/AC_Uniflair";
-import AC_Staco from "../../components/SVG/Aliados/AC_Staco";
-import AC_Scheider from "../../components/SVG/Aliados/AC_Scheider";
-import AC_Rittal from "../../components/SVG/Aliados/AC_Rittal";
-import AC_Pure from "../../components/SVG/Aliados/AC_Pure";
-import AC_PSS from "../../components/SVG/Aliados/AC_PSS";
-import AC_Net from "../../components/SVG/Aliados/AC_Net";
-import AC_Mesa from "../../components/SVG/Aliados/AC_Mesa";
-import AC_Kohler from "../../components/SVG/Aliados/AC_Kohler";
-import AC_Jonix from "../../components/SVG/Aliados/AC_Jonix";
-import AC_Huawei from "../../components/SVG/Aliados/AC_Huawei";
-import AC_HP from "../../components/SVG/Aliados/AC_HP";
-import AC_Generac from "../../components/SVG/Aliados/AC_Generac";
-import AC_Fortinet from "../../components/SVG/Aliados/AC_Fortinet";
-import AC_Dell from "../../components/SVG/Aliados/AC_Dell";
-import AC_Uptime from "../../components/SVG/Aliados/AC_Uptime";
-import AC_Oracle from "../../components/SVG/Aliados/AC_Oracle";
+import dynamic from "next/dynamic";
+const AC_Cisco = dynamic(() => import("./AliadosList"));
+const AC_abb = dynamic(() => import("./AliadosList"));
+const AC_Access = dynamic(() => import("./AliadosList"));
+const AC_Daikin = dynamic(() => import("./AliadosList"));
+const AC_XFusion = dynamic(() => import("./AliadosList"));
+const AC_VMware = dynamic(() => import("./AliadosList"));
+const AC_Vertiv = dynamic(() => import("./AliadosList"));
+const AC_Uniflair = dynamic(() => import("./AliadosList"));
+const AC_Staco = dynamic(() => import("./AliadosList"));
+const AC_Scheider = dynamic(() => import("./AliadosList"));
+const AC_Rittal = dynamic(() => import("./AliadosList"));
+const AC_Pure = dynamic(() => import("./AliadosList"));
+const AC_PSS = dynamic(() => import("./AliadosList"));
+const AC_Net = dynamic(() => import("./AliadosList"));
+const AC_Mesa = dynamic(() => import("./AliadosList"));
+const AC_Kohler = dynamic(() => import("./AliadosList"));
+const AC_Jonix = dynamic(() => import("./AliadosList"));
+const AC_Huawei = dynamic(() => import("./AliadosList"));
+const AC_HP = dynamic(() => import("./AliadosList"));
+const AC_Generac = dynamic(() => import("./AliadosList"));
+const AC_Fortinet = dynamic(() => import("./AliadosList"));
+const AC_Dell = dynamic(() => import("./AliadosList"));
+const AC_Uptime = dynamic(() => import("./AliadosList"));
+const AC_Oracle = dynamic(() => import("./AliadosList"));
+
 export default function AliadosList() {
   const { ref, inView } = useInView({
     triggerOnce: true, // Change this to false if you want to trigger again whenever it comes in view

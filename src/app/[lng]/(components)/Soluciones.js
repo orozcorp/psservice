@@ -1,5 +1,7 @@
-import Textura from "./Textura";
-import SolucionesDisplay from "./SolucionesDisplay";
+import dynamic from "next/dynamic";
+const Textura = dynamic(() => import("./Textura"));
+const SolucionesDisplay = dynamic(() => import("./SolucionesDisplay"));
+
 export default function Soluciones({ t }) {
   const Soluciones = [
     {

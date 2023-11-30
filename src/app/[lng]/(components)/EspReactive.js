@@ -1,9 +1,11 @@
 "use client";
 import { useState } from "react";
-import EspDataCenter from "./EspDataCenter";
-import EspSistemasElectricos from "./EspSistemasElectricos";
-import EspAire from "./EspAire";
-import EspMonitoreo from "./EspMonitoreo";
+import dynamic from "next/dynamic";
+
+const EspDataCenter = dynamic(() => import("./EspDataCenter"));
+const EspSistemasElectricos = dynamic(() => import("./EspSistemasElectricos"));
+const EspAire = dynamic(() => import("./EspAire"));
+const EspMonitoreo = dynamic(() => import("./EspMonitoreo"));
 
 export default function EspReactive({ objTrans }) {
   const { dataCenter, aireAcondicionado, sistemas, monitoreo, hero } = objTrans;

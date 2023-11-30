@@ -1,4 +1,5 @@
-import AliadosList from "./AliadosList";
+import dynamic from "next/dynamic";
+const AliadosList = dynamic(() => import("./AliadosList"));
 export default function Aliados({ t }) {
   return (
     <div

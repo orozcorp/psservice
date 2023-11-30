@@ -1,5 +1,5 @@
-import Textura from "./Textura";
-
+import dynamic from "next/dynamic";
+const Textura = dynamic(() => import("./Textura"));
 export default function SomosIngenieria({ t }) {
   return (
     <>

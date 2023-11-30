@@ -1,5 +1,5 @@
-import RSEImages from "./RSEImages";
-
+import dynamic from "next/dynamic";
+const RSEImages = dynamic(() => import("./RSEImages"));
 export default function Responsabilidad({ t }) {
   return (
     <div className="flex flex-col flex-nowrap w-full justify-center items-center mb-12">
