@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
     };
   }
   return {
-    title: "Empresa Socialmente Responsable PS Services",
+    title: "Empresa Socialmente Responsable PS Service",
     description:
       "Comprometidos con la responsabilidad social empresarial en México, impulsamos prácticas sostenibles y contribuimos al desarrollo de nuestras comunidades",
     alternates: {

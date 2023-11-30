@@ -2,7 +2,7 @@ export async function generateMetadata({ params }) {
   const lng = params.lng;
   if (lng === "en") {
     return {
-      title: "PS Services Mission Critical Systems Support",
+      title: "PS Service Mission Critical Systems Support",
       description:
         "We provide technical support and professional installation in Mexico, ensuring the optimal functioning of your mission-critical systems and equipment. ",
       keywords:
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
     };
   }
   return {
-    title: "Soporte de sistemas de mision crítica PS Services",
+    title: "Soporte de sistemas de mision crítica PS Service",
     description:
       "Brindamos soporte técnico e instalación profesional en México, asegurando el óptimo funcionamiento de tus sistemas y equipos de misión crítica",
     keywords:

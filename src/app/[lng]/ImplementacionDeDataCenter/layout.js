@@ -2,7 +2,7 @@ export async function generateMetadata({ params }) {
   const lng = params.lng;
   if (lng === "en") {
     return {
-      title: "Data Center PS Services Implementation",
+      title: "Data Center PS Service Implementation",
       description:
         "Experts in data center implementation in Mexico. We optimize efficiency and security to enhance your technological infrastructure. Check our services!",
       keywords:
@@ -17,7 +17,7 @@ export async function generateMetadata({ params }) {
     };
   }
   return {
-    title: "Implementación de Data Center PS Services",
+    title: "Implementación de Data Center PS Service",
     description:
       "Expertos en implementación de data centers en México. Optimizamos eficiencia y seguridad para potenciar tu infraestructura tecnológica. ¡Consulta nuestros servicios!",
     keywords:

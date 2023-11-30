@@ -2,7 +2,7 @@ export async function generateMetadata({ params }) {
   const lng = params.lng;
   if (lng === "en") {
     return {
-      title: "Manufacturing of cabinets and components PS Services",
+      title: "Manufacturing of cabinets and components PS Service",
       description:
         "We manufacture cabinets and components to measure in Mexico, with high quality materials and personalized design to meet your exact specifications.",
       keywords:
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
     };
   }
   return {
-    title: "Fabricacion de gabinetes y componentes PS Services",
+    title: "Fabricacion de gabinetes y componentes PS Service",
     description:
       "Fabricamos gabinetes y componentes a medida en México, con materiales de alta calidad y diseño personalizado para cumplir con tus especificaciones exactas.",
     keywords:

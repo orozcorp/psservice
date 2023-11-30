@@ -2,7 +2,7 @@ export async function generateMetadata({ params }) {
   const lng = params.lng;
   if (lng === "en") {
     return {
-      title: "Precision Air Conditioning PS Services",
+      title: "Precision Air Conditioning PS Service",
       description:
         "We offer precision air conditioning solutions in Mexico, ensuring optimal conditions for critical equipment and specialized spaces",
       keywords:
@@ -17,7 +17,7 @@ export async function generateMetadata({ params }) {
     };
   }
   return {
-    title: "Aire Acondicionado de Precision PS Services",
+    title: "Aire Acondicionado de Precision PS Service",
     description:
       "Ofrecemos soluciones de climatización de precisión en México, asegurando condiciones óptimas para equipos críticos y espacios especializados",
     keywords:

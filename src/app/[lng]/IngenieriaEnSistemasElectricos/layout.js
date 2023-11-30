@@ -2,7 +2,7 @@ export async function generateMetadata({ params }) {
   const lng = params.lng;
   if (lng === "en") {
     return {
-      title: "Electrical Systems Engineering PS Services",
+      title: "Electrical Systems Engineering PS Service",
       description:
         "Specialists with 25 years of experience in electrical systems in Mexico, guaranteeing safe and efficient installations. Comprehensive services from design to maintenance",
       keywords:
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
     };
   }
   return {
-    title: "Ingenieria en Sistemas Electricos PS Services",
+    title: "Ingenieria en Sistemas Electricos PS Service",
     description:
       "Especialistas con 25 años de experiencia en sistemas eléctricos en México, garantizando instalaciones seguras y eficientes. Servicios integrales desde el diseño hasta el mantenimiento",
     keywords:

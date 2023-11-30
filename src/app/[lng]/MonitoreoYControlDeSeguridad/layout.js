@@ -2,7 +2,7 @@ export async function generateMetadata({ params }) {
   const lng = params.lng;
   if (lng === "en") {
     return {
-      title: "PS Services monitoring and security",
+      title: "PS Service monitoring and security",
       description:
         "Advanced monitoring and security services in Mexico to protect your assets and operations. Cutting-edge technology and immediate response",
       keywords:
@@ -17,7 +17,7 @@ export async function generateMetadata({ params }) {
     };
   }
   return {
-    title: "Monitoreo y control de seguridad PS Services",
+    title: "Monitoreo y control de seguridad PS Service",
     description:
       "Servicios avanzados de monitoreo y seguridad en México para proteger tus activos y operaciones. Tecnología de vanguardia y respuesta inmediata",
     keywords:

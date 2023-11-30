@@ -2,7 +2,7 @@ export async function generateMetadata({ params }) {
   const lng = params.lng;
   if (lng === "en") {
     return {
-      title: "PS Services privacy notice",
+      title: "PS Service privacy notice",
       description:
         "At PS Service we take care of the privacy of our visitors, consult our privacy notice",
       alternates: {
@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
     };
   }
   return {
-    title: "PS Services, nuestro aviso de privacidad",
+    title: "PS Service, nuestro aviso de privacidad",
     description:
       "En PS Service cuidamos la privacidad de nuestros visitantes, consulta nuestro aviso de privacidad",
     alternates: {

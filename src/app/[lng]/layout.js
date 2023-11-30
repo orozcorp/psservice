@@ -19,13 +19,13 @@ export async function generateMetadata({ params }) {
   const lng = params.lng;
   if (lng === "en") {
     return {
-      title: "PS Services, engineering firm",
+      title: "PS Service, engineering firm",
       description:
         "We are a leading engineering firm in Mexico, specialized in the implementation of mission-critical systems, optimization of technological infrastructures and innovative solutions to boost your business. Committed to efficiency and safety",
     };
   }
   return {
-    title: "PS Services, firma de ingeniería",
+    title: "PS Service, firma de ingeniería",
     description:
       "Somos una firma líder de ingeniería en México, especializada en la implementación de sistemas de misión crítica, optimización de infraestructuras tecnológicas y soluciones innovadoras para impulsar tu negocio. Comprometidos con la eficiencia y la seguridad",
   };
