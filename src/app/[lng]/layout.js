@@ -2,9 +2,19 @@ import "../globals.css";
 import { dir } from "i18next";
 import { languages } from "../i18n/settings";
 import { ThemeProvider } from "../providers/theme-provider";
-import { Navbar } from "../components/Navbar";
 import { Oxygen } from "next/font/google";
-import { Footer } from "../components/Footer";
+
+import dynamic from "next/dynamic";
+const Navbar = dynamic(() =>
+  import("../components/Navbar").then((mod) => ({ default: mod.Navbar }))
+);
+const Footer = dynamic(
+  () => import("../components/Footer").then((mod) => ({ default: mod.Footer })),
+  {
+    ssr: false, // Load Footer client-side
+  }
+);
+
 import Script from "next/script";
 import NextAuthSessionProvider from "../providers/sessionProvider";
 const oxygen = Oxygen({
@@ -14,8 +24,6 @@ const oxygen = Oxygen({
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng: lng || "es" }));
 }
-
-//G-VL85Y4PMKP
 export async function generateMetadata({ params }) {
   const lng = params.lng;
   if (lng === "en") {
@@ -37,10 +45,12 @@ export default async function RootLayout({ children, params: { lng = "es" } }) {
     <html lang={lng} dir={dir(lng)}>
       <head />
       <Script
+        async
+        strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=G-VL85Y4PMKP`}
       />
 
-      <Script id="googleTag">
+      <Script id="googleTag" strategy="afterInteractive" async>
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
