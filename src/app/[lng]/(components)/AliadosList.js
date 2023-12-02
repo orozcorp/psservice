@@ -3,57 +3,128 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import dynamic from "next/dynamic";
 
-const AC_Cisco = dynamic(() => import("../../components/SVG/Aliados/AC_Cisco"));
-const AC_abb = dynamic(() => import("../../components/SVG/Aliados/AC_abb"));
-const AC_Access = dynamic(() =>
-  import("../../components/SVG/Aliados/AC_Access")
+const AC_Cisco = dynamic(
+  () => import("../../components/SVG/Aliados/AC_Cisco"),
+  {
+    loading: () => <div className="w-12 h-12 border" />,
+  }
 );
-const AC_Daikin = dynamic(() =>
-  import("../../components/SVG/Aliados/AC_Daikin")
+const AC_abb = dynamic(() => import("../../components/SVG/Aliados/AC_abb"), {
+  loading: () => <div className="w-12 h-12 border" />,
+});
+const AC_Access = dynamic(
+  () => import("../../components/SVG/Aliados/AC_Access"),
+  {
+    loading: () => <div className="w-12 h-12 border" />,
+  }
 );
-const AC_XFusion = dynamic(() =>
-  import("../../components/SVG/Aliados/AC_XFusion")
+const AC_Daikin = dynamic(
+  () => import("../../components/SVG/Aliados/AC_Daikin"),
+  {
+    loading: () => <div className="w-12 h-12 border" />,
+  }
 );
-const AC_VMware = dynamic(() =>
-  import("../../components/SVG/Aliados/AC_VMware")
+const AC_XFusion = dynamic(
+  () => import("../../components/SVG/Aliados/AC_XFusion"),
+  {
+    loading: () => <div className="w-12 h-12 border" />,
+  }
 );
-const AC_Vertiv = dynamic(() =>
-  import("../../components/SVG/Aliados/AC_Vertiv")
+const AC_VMware = dynamic(
+  () => import("../../components/SVG/Aliados/AC_VMware"),
+  {
+    loading: () => <div className="w-12 h-12 border" />,
+  }
 );
-const AC_Uniflair = dynamic(() =>
-  import("../../components/SVG/Aliados/AC_Uniflair")
+const AC_Vertiv = dynamic(
+  () => import("../../components/SVG/Aliados/AC_Vertiv"),
+  {
+    loading: () => <div className="w-12 h-12 border" />,
+  }
 );
-const AC_Staco = dynamic(() => import("../../components/SVG/Aliados/AC_Staco"));
-const AC_Scheider = dynamic(() =>
-  import("../../components/SVG/Aliados/AC_Scheider")
+const AC_Uniflair = dynamic(
+  () => import("../../components/SVG/Aliados/AC_Uniflair"),
+  {
+    loading: () => <div className="w-12 h-12 border" />,
+  }
 );
-const AC_Rittal = dynamic(() =>
-  import("../../components/SVG/Aliados/AC_Rittal")
+const AC_Staco = dynamic(
+  () => import("../../components/SVG/Aliados/AC_Staco"),
+  {
+    loading: () => <div className="w-12 h-12 border" />,
+  }
 );
-const AC_Pure = dynamic(() => import("../../components/SVG/Aliados/AC_Pure"));
-const AC_PSS = dynamic(() => import("../../components/SVG/Aliados/AC_PSS"));
-const AC_Net = dynamic(() => import("../../components/SVG/Aliados/AC_Net"));
-const AC_Mesa = dynamic(() => import("../../components/SVG/Aliados/AC_Mesa"));
-const AC_Kohler = dynamic(() =>
-  import("../../components/SVG/Aliados/AC_Kohler")
+const AC_Scheider = dynamic(
+  () => import("../../components/SVG/Aliados/AC_Scheider"),
+  {
+    loading: () => <div className="w-12 h-12 border" />,
+  }
 );
-const AC_Jonix = dynamic(() => import("../../components/SVG/Aliados/AC_Jonix"));
-const AC_Huawei = dynamic(() =>
-  import("../../components/SVG/Aliados/AC_Huawei")
+const AC_Rittal = dynamic(
+  () => import("../../components/SVG/Aliados/AC_Rittal"),
+  {
+    loading: () => <div className="w-12 h-12 border" />,
+  }
 );
-const AC_HP = dynamic(() => import("../../components/SVG/Aliados/AC_HP"));
-const AC_Generac = dynamic(() =>
-  import("../../components/SVG/Aliados/AC_Generac")
+const AC_Pure = dynamic(() => import("../../components/SVG/Aliados/AC_Pure"), {
+  loading: () => <div className="w-12 h-12 border" />,
+});
+const AC_PSS = dynamic(() => import("../../components/SVG/Aliados/AC_PSS"), {
+  loading: () => <div className="w-12 h-12 border" />,
+});
+const AC_Net = dynamic(() => import("../../components/SVG/Aliados/AC_Net"), {
+  loading: () => <div className="w-12 h-12 border" />,
+});
+const AC_Mesa = dynamic(() => import("../../components/SVG/Aliados/AC_Mesa"), {
+  loading: () => <div className="w-12 h-12 border" />,
+});
+const AC_Kohler = dynamic(
+  () => import("../../components/SVG/Aliados/AC_Kohler"),
+  {
+    loading: () => <div className="w-12 h-12 border" />,
+  }
 );
-const AC_Fortinet = dynamic(() =>
-  import("../../components/SVG/Aliados/AC_Fortinet")
+const AC_Jonix = dynamic(
+  () => import("../../components/SVG/Aliados/AC_Jonix"),
+  {
+    loading: () => <div className="w-12 h-12 border" />,
+  }
 );
-const AC_Dell = dynamic(() => import("../../components/SVG/Aliados/AC_Dell"));
-const AC_Uptime = dynamic(() =>
-  import("../../components/SVG/Aliados/AC_Uptime")
+const AC_Huawei = dynamic(
+  () => import("../../components/SVG/Aliados/AC_Huawei"),
+  {
+    loading: () => <div className="w-12 h-12 border" />,
+  }
 );
-const AC_Oracle = dynamic(() =>
-  import("../../components/SVG/Aliados/AC_Oracle")
+const AC_HP = dynamic(() => import("../../components/SVG/Aliados/AC_HP"), {
+  loading: () => <div className="w-12 h-12 border" />,
+});
+const AC_Generac = dynamic(
+  () => import("../../components/SVG/Aliados/AC_Generac"),
+  {
+    loading: () => <div className="w-12 h-12 border" />,
+  }
+);
+const AC_Fortinet = dynamic(
+  () => import("../../components/SVG/Aliados/AC_Fortinet"),
+  {
+    loading: () => <div className="w-12 h-12 border" />,
+  }
+);
+const AC_Dell = dynamic(() => import("../../components/SVG/Aliados/AC_Dell"), {
+  loading: () => <div className="w-12 h-12 border" />,
+});
+const AC_Uptime = dynamic(
+  () => import("../../components/SVG/Aliados/AC_Uptime"),
+  {
+    loading: () => <div className="w-12 h-12 border" />,
+  }
+);
+const AC_Oracle = dynamic(
+  () => import("../../components/SVG/Aliados/AC_Oracle"),
+  {
+    loading: () => <div className="w-12 h-12 border" />,
+  }
 );
 
 export default function AliadosList() {
