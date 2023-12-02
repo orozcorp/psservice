@@ -3,7 +3,7 @@ import { dir } from "i18next";
 import { languages } from "../i18n/settings";
 import { ThemeProvider } from "../providers/theme-provider";
 import { Oxygen } from "next/font/google";
-
+import { Suspense } from "react";
 import dynamic from "next/dynamic";
 const Navbar = dynamic(() =>
   import("../components/Navbar").then((mod) => ({ default: mod.Navbar }))
@@ -17,6 +17,7 @@ const Footer = dynamic(
 
 import Script from "next/script";
 import NextAuthSessionProvider from "../providers/sessionProvider";
+import LoadingHero from "./(components)/LoadingHero";
 const oxygen = Oxygen({
   subsets: ["latin"],
   weight: ["300", "400", "700"],
@@ -67,9 +68,13 @@ export default async function RootLayout({ children, params: { lng = "es" } }) {
             <main
               className={`${oxygen.className} relative flex flex-col flex-nowrap min-h-screen bg-[#F4F4F5] dark:bg-gradient-to-r dark:from-[#1E3F88] dark:to-[#0F2044]`}
             >
-              <Navbar lng={lng} />
+              <Suspense fallback={<LoadingHero />}>
+                <Navbar lng={lng} />
+              </Suspense>
               <div style={{ flex: 1 }}>{children}</div>
-              <Footer lng={lng} />
+              <Suspense fallback={<LoadingHero />}>
+                <Footer lng={lng} />
+              </Suspense>
             </main>
           </ThemeProvider>
         </NextAuthSessionProvider>

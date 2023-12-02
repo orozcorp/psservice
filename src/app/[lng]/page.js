@@ -1,15 +1,18 @@
 import { useTranslation } from "../i18n";
 import dynamic from "next/dynamic";
+import { Suspense } from "react";
+
 const Hero = dynamic(() => import("./(components)/Hero"));
-const SomosIngenieria = dynamic(() => import("./(components)/SomosIngenieria"));
-const Especializacion = dynamic(() => import("./(components)/Especializacion"));
-const Soluciones = dynamic(() => import("./(components)/Soluciones"));
-const Clientes = dynamic(() => import("./(components)/Clientes"));
-const Certificaciones = dynamic(() => import("./(components)/Certificaciones"));
-const Aliados = dynamic(() => import("./(components)/Aliados"));
-const Unete = dynamic(() => import("./(components)/Unete"));
-const Responsabilidad = dynamic(() => import("./(components)/Responsabilidad"));
-const Contacto = dynamic(() => import("./(components)/Contacto"));
+import SomosIngenieria from "./(components)/SomosIngenieria";
+import Especializacion from "./(components)/Especializacion";
+import Soluciones from "./(components)/Soluciones";
+import Clientes from "./(components)/Clientes";
+import Certificaciones from "./(components)/Certificaciones";
+import Aliados from "./(components)/Aliados";
+import Unete from "./(components)/Unete";
+import Responsabilidad from "./(components)/Responsabilidad";
+import Contacto from "./(components)/Contacto";
+import LoadingHero from "./(components)/LoadingHero";
 import WAClick from "./(components)/WAClick";
 import PowerLine from "../components/SVG/PowerLine";
 export default async function Page({ params: { lng } }) {
@@ -17,13 +20,25 @@ export default async function Page({ params: { lng } }) {
   return (
     <div className="w-full">
       <WAClick />
-      <Hero t={t} />
-      <SomosIngenieria t={t} />
+      <Suspense fallback={<LoadingHero />}>
+        <Hero t={t} />
+      </Suspense>
+      <Suspense fallback={<LoadingHero />}>
+        <SomosIngenieria t={t} />
+      </Suspense>
       <PowerLine />
-      <Especializacion t={t} />
-      <Soluciones t={t} />
-      <Clientes t={t} />
-      <Certificaciones t={t} />
+      <Suspense fallback={<LoadingHero />}>
+        <Especializacion t={t} />
+      </Suspense>
+      <Suspense fallback={<LoadingHero />}>
+        <Soluciones t={t} />
+      </Suspense>
+      <Suspense fallback={<LoadingHero />}>
+        <Clientes t={t} />
+      </Suspense>
+      <Suspense fallback={<LoadingHero />}>
+        <Certificaciones t={t} />
+      </Suspense>
       <Aliados t={t} />
       <Contacto t={t} />
       <Responsabilidad t={t} />

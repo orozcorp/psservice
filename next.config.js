@@ -4,6 +4,7 @@ const withVideos = require("next-videos");
 
 const dev = process.env.NODE_ENV !== "production";
 const nextConfig = {
+  productionBrowserSourceMaps: true,
   reactStrictMode: false,
   webpack: (config) => {
     config.resolve.alias["@"] = path.resolve(__dirname);
@@ -36,7 +37,7 @@ const nextConfig = {
     ],
     unoptimized: false,
   },
-
+  output: "standalone",
   async headers() {
     return [
       {
@@ -69,7 +70,7 @@ const nextConfig = {
     ];
   },
   swcMinify: true,
-  optimizeFonts: false,
+  optimizeFonts: true,
 };
 
 module.exports = withVideos(nextConfig);
