@@ -45,7 +45,7 @@ export default async function RootLayout({ children, params: { lng = "es" } }) {
   return (
     <html lang={lng} dir={dir(lng)}>
       <head />
-      {/* <Script
+      <Script
         async
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=G-VL85Y4PMKP`}
@@ -60,7 +60,7 @@ export default async function RootLayout({ children, params: { lng = "es" } }) {
           page_path: window.location.pathname,
           });
         `}
-      </Script> */}
+      </Script>
 
       <body>
         <NextAuthSessionProvider>
