@@ -26,7 +26,7 @@ export default function Especializacion({ t }) {
   };
   return (
     <div
-      className="relative flex flex-col flex-nowrap w-full justify-center items-center"
+      className="relative flex flex-col items-center justify-center w-full"
       id="Especializacion"
     >
       <div

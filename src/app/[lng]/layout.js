@@ -5,23 +5,26 @@ import { ThemeProvider } from "../providers/theme-provider";
 import { Oxygen } from "next/font/google";
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
+import Script from "next/script";
+import NextAuthSessionProvider from "../providers/sessionProvider";
+import LoadingHero from "./(components)/LoadingHero";
+
+// Dynamically import Navbar and Footer
 const Navbar = dynamic(() =>
   import("../components/Navbar").then((mod) => ({ default: mod.Navbar }))
 );
 const Footer = dynamic(
   () => import("../components/Footer").then((mod) => ({ default: mod.Footer })),
-  {
-    ssr: false, // Load Footer client-side
-  }
+  { ssr: false }
 );
 
-import Script from "next/script";
-import NextAuthSessionProvider from "../providers/sessionProvider";
-import LoadingHero from "./(components)/LoadingHero";
+// Oxygen font with preload optimization
 const oxygen = Oxygen({
   subsets: ["latin"],
   weight: ["300", "400", "700"],
+  display: "swap", // Add font-display: swap
 });
+
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng: lng || "es" }));
 }
@@ -45,28 +48,12 @@ export default async function RootLayout({ children, params: { lng = "es" } }) {
   return (
     <html lang={lng} dir={dir(lng)}>
       <head />
-      <Script
-        async
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-VL85Y4PMKP`}
-      />
-
-      <Script id="google" strategy="afterInteractive" async>
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-VL85Y4PMKP', {
-          page_path: window.location.pathname,
-          });
-        `}
-      </Script>
 
       <body>
         <NextAuthSessionProvider>
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
             <main
-              className={`${oxygen.className} relative flex flex-col flex-nowrap min-h-screen bg-[#F4F4F5] dark:bg-gradient-to-r dark:from-[#1E3F88] dark:to-[#0F2044]`}
+              className={`${oxygen.className} relative flex flex-col min-h-screen bg-[#F4F4F5] dark:bg-gradient-to-r dark:from-[#1E3F88] dark:to-[#0F2044]`}
             >
               <Suspense fallback={<LoadingHero />}>
                 <Navbar lng={lng} />
@@ -78,6 +65,22 @@ export default async function RootLayout({ children, params: { lng = "es" } }) {
             </main>
           </ThemeProvider>
         </NextAuthSessionProvider>
+        <Script
+          async
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-VL85Y4PMKP`}
+        />
+
+        <Script id="google" strategy="afterInteractive" async>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-VL85Y4PMKP', {
+          page_path: window.location.pathname,
+          });
+        `}
+        </Script>
       </body>
     </html>
   );
