@@ -24,7 +24,7 @@ export const NavbarBase = ({ t, lng, i18n }) => {
     setShowEspecialidadesDropdown(false);
   };
   const router = useRouter();
-  const langToChange = lng === "es" ? "es" : "en";
+  const langToChange = lng === "es" ? "en" : "es";
   const changeLanguage = async () => {
     const newPathname = pathname.replace(`/${lng}`, `/${langToChange}`);
     router.push(newPathname);
@@ -136,7 +136,7 @@ export const NavbarBase = ({ t, lng, i18n }) => {
                 {t("Bolsa")}
               </Link>
               <button onClick={changeLanguage} className="uppercase">
-                {langToChange}
+                {lng}
               </button>
               {session && (
                 <Link
