@@ -136,7 +136,7 @@ export const NavbarBase = ({ t, lng, i18n }) => {
                 {t("Bolsa")}
               </Link>
               <button onClick={changeLanguage} className="uppercase">
-                {lng}
+                {lng.toUpperCase()}
               </button>
               {session && (
                 <Link
