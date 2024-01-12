@@ -24,7 +24,7 @@ export const NavbarBase = ({ t, lng, i18n }) => {
     setShowEspecialidadesDropdown(false);
   };
   const router = useRouter();
-  const langToChange = lng === "es" ? "en" : "es";
+  const langToChange = lng === "es" ? "es" : "en";
   const changeLanguage = async () => {
     const newPathname = pathname.replace(`/${lng}`, `/${langToChange}`);
     router.push(newPathname);
