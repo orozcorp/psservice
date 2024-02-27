@@ -1,3 +1,5 @@
+"use client";
+import { sendGTMEvent } from "@next/third-parties/google";
 import HeroBgImage from "../../components/atoms/HeroBgImage";
 import PSLogo from "../../components/SVG/Logos/PSLogo";
 import Link from "next/link";
@@ -32,6 +34,7 @@ export default function Hero({ t }) {
             target="_blank"
             href="https://wa.me/522371267243?text=Hola%quisiera%20hablar%20con%20un%20experto"
             className="py-2 px-4 bg-[#5D001D] text-white rounded-lg"
+            onClick={() => sendGTMEvent({ event: "Whatsapp", value: "1" })}
           >
             {t("Experto")}
           </Link>

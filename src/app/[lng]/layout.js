@@ -8,8 +8,7 @@ import dynamic from "next/dynamic";
 import Script from "next/script";
 import NextAuthSessionProvider from "../providers/sessionProvider";
 import LoadingHero from "./(components)/LoadingHero";
-
-// Dynamically import Navbar and Footer
+import { GoogleTagManager } from "@next/third-parties/google";
 const Navbar = dynamic(() =>
   import("../components/Navbar").then((mod) => ({ default: mod.Navbar }))
 );
@@ -48,7 +47,7 @@ export default async function RootLayout({ children, params: { lng = "es" } }) {
   return (
     <html lang={lng} dir={dir(lng)}>
       <head />
-
+      <GoogleTagManager gtmId={"G-VL85Y4PMKP"} />
       <body>
         <NextAuthSessionProvider>
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>

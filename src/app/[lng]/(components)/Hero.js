@@ -1,3 +1,5 @@
+"use client";
+import { sendGTMEvent } from "@next/third-parties/google";
 import PSLogo from "../../components/SVG/Logos/PSLogo";
 import dynamic from "next/dynamic";
 import Link from "next/link";
@@ -15,7 +17,6 @@ export default function Hero({ t }) {
           videoMovil="https://psserviceimages.s3.us-east-2.amazonaws.com/mobile/Datacenter_light.mp4"
         />
       </div>
-
       <div className="relative z-10 flex flex-row flex-wrap justify-end items-center w-full my-8">
         <div className="flex justify-center items-center p-8 w-full lg:w-[24vw]">
           <PSLogo />
@@ -29,6 +30,7 @@ export default function Hero({ t }) {
             passHref
             target="_blank"
             className="py-2 px-4 bg-[#5D001D] text-white rounded-lg"
+            onClick={() => sendGTMEvent({ event: "Whatsapp", value: "1" })}
           >
             {t("Experto")}
           </Link>
