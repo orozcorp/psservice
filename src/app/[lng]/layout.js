@@ -8,7 +8,7 @@ import dynamic from "next/dynamic";
 import Script from "next/script";
 import NextAuthSessionProvider from "../providers/sessionProvider";
 import LoadingHero from "./(components)/LoadingHero";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 const Navbar = dynamic(() =>
   import("../components/Navbar").then((mod) => ({ default: mod.Navbar }))
 );
@@ -47,7 +47,7 @@ export default async function RootLayout({ children, params: { lng = "es" } }) {
   return (
     <html lang={lng} dir={dir(lng)}>
       <head />
-      <GoogleTagManager gtmId={"G-VL85Y4PMKP"} />
+      <GoogleTagManager gtmId={"GTM-WSZKMS27"} />
       <body>
         <NextAuthSessionProvider>
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
@@ -64,7 +64,8 @@ export default async function RootLayout({ children, params: { lng = "es" } }) {
             </main>
           </ThemeProvider>
         </NextAuthSessionProvider>
-        <Script
+        <GoogleAnalytics gaId={"G-VL85Y4PMKP"} />
+        {/* <Script
           async
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-VL85Y4PMKP`}
@@ -79,7 +80,7 @@ export default async function RootLayout({ children, params: { lng = "es" } }) {
           page_path: window.location.pathname,
           });
         `}
-        </Script>
+        </Script> */}
       </body>
     </html>
   );
