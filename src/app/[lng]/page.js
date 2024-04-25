@@ -1,5 +1,4 @@
 import { Suspense } from "react";
-import { useTranslation } from "../i18n";
 import dynamic from "next/dynamic";
 import LoadingHero from "./(components)/LoadingHero";
 import Responsabilidad from "./(components)/Responsabilidad";
@@ -26,23 +25,21 @@ const Certificaciones = loadable(() =>
 );
 const Aliados = loadable(() => import("./(components)/Aliados"));
 
-export default async function Page({ params: { lng } }) {
-  const { t } = await useTranslation(lng, "Landing");
-
+export default function Page() {
   return (
     <div className="w-full">
       <WAClick />
       <Suspense fallback={<LoadingHero />}>
-        <Hero t={t} />
-        <SomosIngenieria t={t} />
+        <Hero />
+        <SomosIngenieria />
         <PowerLine />
-        <Especializacion t={t} />
-        <Soluciones t={t} />
-        <Clientes t={t} />
-        <Certificaciones t={t} />
-        <Aliados t={t} />
-        <Contacto t={t} />
-        <Responsabilidad t={t} />
+        <Especializacion />
+        <Soluciones />
+        <Clientes />
+        <Certificaciones />
+        <Aliados />
+        <Contacto />
+        <Responsabilidad />
       </Suspense>
     </div>
   );

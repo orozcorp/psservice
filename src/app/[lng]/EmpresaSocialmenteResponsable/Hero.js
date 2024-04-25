@@ -1,7 +1,10 @@
+"use client";
+import { useTranslation } from "next-i18next";
 import HeroBgImage from "../../components/atoms/HeroBgImage";
 import PSLogo from "../../components/SVG/Logos/PSLogo";
-import Link from "next/link";
-export default function Hero({ t }) {
+
+export default function Hero() {
+  const { t } = useTranslation("RSE");
   return (
     <div
       className="relative flex justify-center lg:justify-end items-center min-h-[60vh] w-[100vw]"

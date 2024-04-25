@@ -1,5 +1,8 @@
+"use client";
+import { useTranslation } from "next-i18next";
 import ChangingImage from "../../components/atoms/ChangingImage";
-export default function Somos({ t }) {
+export default function Somos() {
+  const { t } = useTranslation("RSE");
   return (
     <>
       <div className="flex flex-col lg:flex-row flex-nowrap lg:flex-wrap w-full justify-center items-center my-8">

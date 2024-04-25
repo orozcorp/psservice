@@ -1,6 +1,9 @@
+"use client";
 import dynamic from "next/dynamic";
+import { useTranslation } from "next-i18next";
 const Textura = dynamic(() => import("./Textura"));
-export default function SomosIngenieria({ t }) {
+export default function SomosIngenieria() {
+  const { t } = useTranslation("Landing");
   return (
     <>
       <div className="relative">

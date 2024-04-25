@@ -1,7 +1,10 @@
+"use client";
+import { useTranslation } from "next-i18next";
 import Apoyo from "../../components/SVG/ESR/Apoyo";
 import Manejo from "../../components/SVG/ESR/Manejo";
 import Proteccion from "../../components/SVG/ESR/Proteccion";
-export default function Respetamos({ t }) {
+export default function Respetamos() {
+  const { t } = useTranslation("RSE");
   return (
     <div className="flex flex-row flex-wrap justify-center items-center lg:items-start min-h-[10vh]  w-[100vw] gap-2 ">
       <div className="flex flex-col flex-nowrap items-center w-full p-10 lg:p-0 mt-10 lg:w-[80%] text-[#002772] dark:text-white font-bold ">

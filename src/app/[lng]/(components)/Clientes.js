@@ -1,8 +1,11 @@
+"use client";
+import { useTranslation } from "next-i18next";
 import dynamic from "next/dynamic";
 const HeroBgImage = dynamic(() => import("../../components/atoms/HeroBgImage"));
 
 import Link from "next/link";
-export default function Clientes({ t }) {
+export default function Clientes() {
+  const { t } = useTranslation("Landing");
   return (
     <div className="relative flex justify-center items-center  w-[100vw]  my-8">
       {/* Background Image Wrapper */}

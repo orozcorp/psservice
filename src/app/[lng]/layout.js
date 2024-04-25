@@ -5,7 +5,6 @@ import { ThemeProvider } from "../providers/theme-provider";
 import { Oxygen } from "next/font/google";
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
-import Script from "next/script";
 import NextAuthSessionProvider from "../providers/sessionProvider";
 import LoadingHero from "./(components)/LoadingHero";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
@@ -65,22 +64,6 @@ export default async function RootLayout({ children, params: { lng = "es" } }) {
           </ThemeProvider>
         </NextAuthSessionProvider>
         <GoogleAnalytics gaId={"G-VL85Y4PMKP"} />
-        {/* <Script
-          async
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=G-VL85Y4PMKP`}
-        />
-
-        <Script id="google" strategy="afterInteractive" async>
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-VL85Y4PMKP', {
-          page_path: window.location.pathname,
-          });
-        `}
-        </Script> */}
       </body>
     </html>
   );

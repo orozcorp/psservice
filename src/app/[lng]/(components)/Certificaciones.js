@@ -1,7 +1,10 @@
+"use client";
+import { useTranslation } from "next-i18next";
 import dynamic from "next/dynamic";
 const ISO = dynamic(() => import("../../components/SVG/Certificaciones/ISO"));
 const CertificacionesSingle = dynamic(() => import("./CertificacionesSingle"));
-export default function Certificaciones({ t }) {
+export default function Certificaciones() {
+  const { t } = useTranslation("Landing");
   return (
     <div
       className="flex flex-col flex-nowrap w-full justify-center items-center"

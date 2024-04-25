@@ -1,7 +1,10 @@
+"use client";
+import { useTranslation } from "next-i18next";
 import ConocimientoSingle from "./ConocimientoSingle";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import Textura from "../(components)/Textura";
-export default function Conocimiento({ t, documentos, lng }) {
+export default function Conocimiento({ documentos, lng }) {
+  const { t } = useTranslation("RSE");
   return (
     <>
       <div className="relative flex justify-center items-center lg:items-start w-full lg:w-[95vw]  ">

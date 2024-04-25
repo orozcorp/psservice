@@ -1,8 +1,11 @@
+"use client";
+import { useTranslation } from "next-i18next";
 import dynamic from "next/dynamic";
 const ContactoForm = dynamic(() => import("./ContactoForm"));
 import { AiFillPhone, AiOutlineMenu } from "react-icons/ai";
 import Link from "next/link";
-export default function Contacto({ t }) {
+export default function Contacto() {
+  const { t } = useTranslation("Landing");
   return (
     <div className="flex flex-col flex-nowrap w-full justify-center items-center">
       <div

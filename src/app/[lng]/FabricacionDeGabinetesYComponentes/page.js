@@ -1,16 +1,17 @@
-import { useTranslation } from "../../i18n";
+"use client";
+import { useTranslation } from "next-i18next";
 import Hero from "./Hero";
 import Somos from "./Somos";
 import Soluciones from "./Soluciones";
 import Icon1 from "../../components/SVG/Fabricacion/Icon1";
 import Icon2 from "../../components/SVG/Fabricacion/Icon2";
 import Icon3 from "../../components/SVG/Fabricacion/Icon3";
-import Image from "next/image";
-import Contacta from "./Contacta";
+// import Image from "next/image";
+// import Contacta from "./Contacta";
 import Contacto from "../(components)/Contacto";
 import ImageChg from "../../components/atoms/ImageChg";
-export default async function Fabricacion({ params: { lng } }) {
-  const { t } = await useTranslation(lng, "Fabricacion");
+export default function Fabricacion() {
+  const { t } = useTranslation("Fabricacion");
   const solucionesData = [
     {
       id: 0,

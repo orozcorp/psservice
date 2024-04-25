@@ -1,8 +1,11 @@
+"use client";
+import { useTranslation } from "next-i18next";
 import dynamic from "next/dynamic";
 const Textura = dynamic(() => import("./Textura"));
 const SolucionesDisplay = dynamic(() => import("./SolucionesDisplay"));
 
-export default function Soluciones({ t }) {
+export default function Soluciones() {
+  const { t } = useTranslation("Landing");
   const Soluciones = [
     {
       id: 3,

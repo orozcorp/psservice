@@ -1,4 +1,5 @@
-import { useTranslation } from "../../i18n";
+"use client";
+import { useTranslation } from "next-i18next";
 import dynamic from "next/dynamic";
 const Hero = dynamic(() => import("./Hero"));
 const Somos = dynamic(() => import("./Somos"));
@@ -7,8 +8,8 @@ const Hero3 = dynamic(() => import("./Hero3"));
 const Conocimiento = dynamic(() => import("./Conocimiento"));
 const Contacto = dynamic(() => import("../(components)/Contacto"));
 
-export default async function DataCenter({ params: { lng } }) {
-  const { t } = await useTranslation(lng, "Aire");
+export default function DataCenter() {
+  const { t } = useTranslation("Aire");
   return (
     <div className="w-full">
       <Hero t={t} />

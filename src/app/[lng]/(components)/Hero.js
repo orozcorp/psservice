@@ -1,4 +1,5 @@
 "use client";
+import { useTranslation } from "next-i18next";
 import { sendGTMEvent } from "@next/third-parties/google";
 import PSLogo from "../../components/SVG/Logos/PSLogo";
 import dynamic from "next/dynamic";
@@ -6,7 +7,8 @@ import Link from "next/link";
 
 const HeroBgImage = dynamic(() => import("./HeroBgImage"));
 
-export default function Hero({ t }) {
+export default function Hero() {
+  const { t } = useTranslation("Landing");
   return (
     <div className="relative flex justify-center lg:justify-end items-center w-[100vw] z-1">
       <div className="absolute inset-0 z-10 overflow-hidden">

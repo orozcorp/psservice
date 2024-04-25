@@ -1,6 +1,9 @@
+"use client";
 import EspReactive from "./EspReactive";
 import Textura from "./Textura";
-export default function Especializacion({ t }) {
+import { useTranslation } from "next-i18next";
+export default function Especializacion() {
+  const { t } = useTranslation("Landing");
   const objTrans = {
     dataCenter: {
       title: t("Esp_datacenter") || "",

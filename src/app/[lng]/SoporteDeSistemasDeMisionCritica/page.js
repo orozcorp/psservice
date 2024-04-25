@@ -1,4 +1,5 @@
-import { useTranslation } from "../../i18n";
+"use client";
+import { useTranslation } from "next-i18next";
 import Hero from "./Hero";
 import Somos from "./Somos";
 import Soluciones from "./Soluciones";
@@ -6,12 +7,10 @@ import SolucionesPoints from "./SolucionesPoints";
 import Icon1 from "../../components/SVG/TecnologiaMed/Icon1";
 import Icon2 from "../../components/SVG/TecnologiaMed/Icon2";
 import Icon3 from "../../components/SVG/TecnologiaMed/Icon3";
-import Image from "next/image";
-import HeroBgImage from "../../components/atoms/HeroBgImage";
 import Contacto from "../(components)/Contacto";
 import ImageChg from "../../components/atoms/ImageChg";
-export default async function Fabricacion({ params: { lng } }) {
-  const { t } = await useTranslation(lng, "Soporte");
+export default function Fabricacion() {
+  const { t } = useTranslation("Soporte");
   const solucionesData = [
     {
       id: 0,

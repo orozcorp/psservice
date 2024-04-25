@@ -1,7 +1,10 @@
+"use client";
+import { useTranslation } from "next-i18next";
 import ISO from "../../components/SVG/Certificaciones/ISO";
 import HeroBgImage from "../../components/atoms/HeroBgImage";
 
-export default function Hero2({ t }) {
+export default function Hero2() {
+  const { t } = useTranslation("RSE");
   return (
     <div
       className="relative flex flex-col lg:flex-row flex-nowrap lg:flex-wrap  justify-start items-center min-h-[60vh] w-[100vw py-10 lg:py-0 "

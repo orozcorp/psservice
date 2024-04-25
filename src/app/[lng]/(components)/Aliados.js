@@ -1,6 +1,10 @@
+"use client";
+import { useTranslation } from "next-i18next";
 import dynamic from "next/dynamic";
 const AliadosList = dynamic(() => import("./AliadosList"));
-export default function Aliados({ t }) {
+
+export default function Aliados() {
+  const { t } = useTranslation("Landing");
   return (
     <div
       className="flex flex-col flex-nowrap w-full justify-center items-center "
@@ -15,7 +19,7 @@ export default function Aliados({ t }) {
             <h2 className="text-5xl lg:text-5xl font-bold">{t("Hero7")}</h2>
             <p className="text-xl lg:text-xl font-bold">{t("Hero7Sub")}</p>
           </div>
-          <div className="text-[#0A2473] flex-1 dark:text-[#FFFFFF] flex flex-col lg:flex-row flex-nowrap lg:flex-wrap justify-center items-center lg:justify-start text-center lg:text-left mt-4 px-4 lg:px-0 lg:mt-0 lg:text-left">
+          <div className="text-[#0A2473] flex-1 dark:text-[#FFFFFF] flex flex-col lg:flex-row flex-nowrap lg:flex-wrap justify-center items-center lg:justify-start text-center  mt-4 px-4 lg:px-0 lg:mt-0 lg:text-left">
             <div>
               <p className="text-xl font-bold">{t("Hero7Text")}</p>
             </div>

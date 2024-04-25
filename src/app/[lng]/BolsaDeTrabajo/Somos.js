@@ -1,5 +1,8 @@
+"use client";
+import { useTranslation } from "next-i18next";
 import Textura from "../(components)/Textura";
-export default function Somos({ t }) {
+export default function Somos() {
+  const { t } = useTranslation("Bolsa");
   return (
     <>
       <div className="relative flex flex-col flex-nowrap w-full justify-center items-center lg:items-end  my-12 ">

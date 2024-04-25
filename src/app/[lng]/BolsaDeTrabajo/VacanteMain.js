@@ -1,6 +1,9 @@
+"use client";
+import { useTranslation } from "next-i18next";
 import HeroBgImage from "../../components/atoms/HeroBgImage";
 import VacanteList from "./VacanteList";
-export default function VacanteMain({ t, vacantes }) {
+export default function VacanteMain({ vacantes }) {
+  const { t } = useTranslation("Bolsa");
   return (
     <>
       <div

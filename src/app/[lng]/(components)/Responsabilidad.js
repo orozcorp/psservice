@@ -1,6 +1,9 @@
+"use client";
+import { useTranslation } from "next-i18next";
 import dynamic from "next/dynamic";
 const RSEImages = dynamic(() => import("./RSEImages"));
-export default function Responsabilidad({ t }) {
+export default function Responsabilidad() {
+  const { t } = useTranslation("Landing");
   return (
     <div className="flex flex-col flex-nowrap w-full justify-center items-center mb-12">
       <div className="flex flex-row flex-wrap justify-center  lg:justify-start items-center py-20 w-[95vw]   gap-2 ">

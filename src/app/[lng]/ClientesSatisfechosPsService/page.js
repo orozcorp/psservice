@@ -1,12 +1,13 @@
-import { useTranslation } from "../../i18n";
+"use client";
+import { useTranslation } from "next-i18next";
 import dynamic from "next/dynamic";
 const Hero = dynamic(() => import("./Hero"));
 const Somos = dynamic(() => import("./Somos"));
 const Soluciones = dynamic(() => import("./Soluciones"));
 const Contacto = dynamic(() => import("../(components)/Contacto"));
 
-export default async function Fabricacion({ params: { lng } }) {
-  const { t } = await useTranslation(lng, "Clientes");
+export default function Fabricacion() {
+  const { t } = useTranslation("Clientes");
   const solucionesData = [
     {
       id: 0,
