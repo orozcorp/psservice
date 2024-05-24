@@ -8,7 +8,7 @@ import Contacta from "./Contacta";
 import Contacto from "../(components)/Contacto";
 import Hero3 from "./Hero3";
 export default function DataCenter() {
-  const { t } = useTranslation("Clientes");
+  const { t } = useTranslation("DataCenter");
   return (
     <div className="w-full">
       <Hero t={t} />
