@@ -8,8 +8,8 @@ export async function generateMetadata({ params }) {
       alternates: {
         canonical: "https://www.psservice.com.mx/ClientesSatisfechosPsService",
         languages: {
-          en: "https://www.psservice.com.mx/ClientesSatisfechosPsService/en",
-          es: "https://www.psservice.com.mx/ClientesSatisfechosPsService/es",
+          en: "https://www.psservice.com.mx/en/ClientesSatisfechosPsService",
+          es: "https://www.psservice.com.mx/es/ClientesSatisfechosPsService",
         },
       },
     };
@@ -21,8 +21,8 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: "https://www.psservice.com.mx/ClientesSatisfechosPsService",
       languages: {
-        en: "https://www.psservice.com.mx/ClientesSatisfechosPsService/en",
-        es: "https://www.psservice.com.mx/ClientesSatisfechosPsService/es",
+        en: "https://www.psservice.com.mx/en/ClientesSatisfechosPsService",
+        es: "https://www.psservice.com.mx/es/ClientesSatisfechosPsService",
       },
     },
   };
