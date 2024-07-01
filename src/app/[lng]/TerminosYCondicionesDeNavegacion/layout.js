@@ -9,8 +9,8 @@ export async function generateMetadata({ params }) {
         canonical:
           "https://www.psservice.com.mx/TerminosYCondicionesDeNavegacion",
         languages: {
-          en: "https://www.psservice.com.mx/TerminosYCondicionesDeNavegacion/en",
-          es: "https://www.psservice.com.mx/TerminosYCondicionesDeNavegacion/es",
+          en: "https://www.psservice.com.mx/en/TerminosYCondicionesDeNavegacion",
+          es: "https://www.psservice.com.mx/es/TerminosYCondicionesDeNavegacion",
         },
       },
     };
@@ -23,8 +23,8 @@ export async function generateMetadata({ params }) {
       canonical:
         "https://www.psservice.com.mx/TerminosYCondicionesDeNavegacion",
       languages: {
-        en: "https://www.psservice.com.mx/TerminosYCondicionesDeNavegacion/en",
-        es: "https://www.psservice.com.mx/TerminosYCondicionesDeNavegacion/es",
+          en: "https://www.psservice.com.mx/en/TerminosYCondicionesDeNavegacion",
+          es: "https://www.psservice.com.mx/es/TerminosYCondicionesDeNavegacion",
       },
     },
   };
