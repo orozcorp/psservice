@@ -10,8 +10,8 @@ export async function generateMetadata({ params }) {
       alternates: {
         canonical: "https://www.psservice.com.mx/AireAcondicionadosDePrecision",
         languages: {
-          en: "https://www.psservice.com.mx/AireAcondicionadosDePrecision/en",
-          es: "https://www.psservice.com.mx/AireAcondicionadosDePrecision/es",
+          en: "https://www.psservice.com.mx/en/AireAcondicionadosDePrecision",
+          es: "https://www.psservice.com.mx/es/AireAcondicionadosDePrecision",
         },
       },
     };
@@ -25,8 +25,8 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: "https://www.psservice.com.mx/AireAcondicionadosDePrecision",
       languages: {
-        en: "https://www.psservice.com.mx/AireAcondicionadosDePrecision/en",
-        es: "https://www.psservice.com.mx/AireAcondicionadosDePrecision/es",
+        en: "https://www.psservice.com.mx/en/AireAcondicionadosDePrecision",
+        es: "https://www.psservice.com.mx/es/AireAcondicionadosDePrecision",
       },
     },
   };
