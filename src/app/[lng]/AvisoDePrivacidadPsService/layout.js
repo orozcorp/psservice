@@ -8,8 +8,8 @@ export async function generateMetadata({ params }) {
       alternates: {
         canonical: "https://www.psservice.com.mx/AviosDePrivacidadPsService",
         languages: {
-          en: "https://www.psservice.com.mx/AviosDePrivacidadPsService/en",
-          es: "https://www.psservice.com.mx/AviosDePrivacidadPsService/es",
+          en: "https://www.psservice.com.mx/en/AviosDePrivacidadPsService",
+          es: "https://www.psservice.com.mx/es/AviosDePrivacidadPsService",
         },
       },
     };
@@ -21,8 +21,8 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: "https://www.psservice.com.mx/AviosDePrivacidadPsService",
       languages: {
-        en: "https://www.psservice.com.mx/AviosDePrivacidadPsService/en",
-        es: "https://www.psservice.com.mx/AviosDePrivacidadPsService/es",
+        en: "https://www.psservice.com.mx/en/AviosDePrivacidadPsService",
+        es: "https://www.psservice.com.mx/es/AviosDePrivacidadPsService",
       },
     },
   };
