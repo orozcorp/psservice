@@ -11,8 +11,8 @@ export async function generateMetadata({ params }) {
         canonical:
           "https://www.psservice.com.mx/FabricacionDeGabinetesYComponentes",
         languages: {
-          en: "https://www.psservice.com.mx/FabricacionDeGabinetesYComponentes/en",
-          es: "https://www.psservice.com.mx/FabricacionDeGabinetesYComponentes/es",
+          en: "https://www.psservice.com.mx/en/FabricacionDeGabinetesYComponentes",
+          es: "https://www.psservice.com.mx/es/FabricacionDeGabinetesYComponentes",
         },
       },
     };
@@ -27,8 +27,8 @@ export async function generateMetadata({ params }) {
       canonical:
         "https://www.psservice.com.mx/FabricacionDeGabinetesYComponentes",
       languages: {
-        en: "https://www.psservice.com.mx/FabricacionDeGabinetesYComponentes/en",
-        es: "https://www.psservice.com.mx/FabricacionDeGabinetesYComponentes/es",
+   en: "https://www.psservice.com.mx/en/FabricacionDeGabinetesYComponentes",
+          es: "https://www.psservice.com.mx/es/FabricacionDeGabinetesYComponentes",
       },
     },
   };
