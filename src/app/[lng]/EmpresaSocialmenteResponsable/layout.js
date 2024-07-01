@@ -8,8 +8,8 @@ export async function generateMetadata({ params }) {
       alternates: {
         canonical: "https://www.psservice.com.mx/EmpresaSocialmenteResponsable",
         languages: {
-          en: "https://www.psservice.com.mx/EmpresaSocialmenteResponsable/en",
-          es: "https://www.psservice.com.mx/EmpresaSocialmenteResponsable/es",
+          en: "https://www.psservice.com.mx/en/EmpresaSocialmenteResponsable",
+          es: "https://www.psservice.com.mx/es/EmpresaSocialmenteResponsable",
         },
       },
     };
@@ -21,8 +21,8 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: "https://www.psservice.com.mx/EmpresaSocialmenteResponsable",
       languages: {
-        en: "https://www.psservice.com.mx/EmpresaSocialmenteResponsable/en",
-        es: "https://www.psservice.com.mx/EmpresaSocialmenteResponsable/es",
+          en: "https://www.psservice.com.mx/en/EmpresaSocialmenteResponsable",
+          es: "https://www.psservice.com.mx/es/EmpresaSocialmenteResponsable",
       },
     },
   };
