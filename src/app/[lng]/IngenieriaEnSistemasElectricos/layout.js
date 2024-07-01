@@ -11,8 +11,8 @@ export async function generateMetadata({ params }) {
         canonical:
           "https://www.psservice.com.mx/IngenieriaEnSistemasElectricos",
         languages: {
-          en: "https://www.psservice.com.mx/IngenieriaEnSistemasElectricos/en",
-          es: "https://www.psservice.com.mx/IngenieriaEnSistemasElectricos/es",
+          en: "https://www.psservice.com.mx/en/IngenieriaEnSistemasElectricos",
+          es: "https://www.psservice.com.mx/es/IngenieriaEnSistemasElectricos",
         },
       },
     };
@@ -26,8 +26,8 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: "https://www.psservice.com.mx/IngenieriaEnSistemasElectricos",
       languages: {
-        en: "https://www.psservice.com.mx/IngenieriaEnSistemasElectricos/en",
-        es: "https://www.psservice.com.mx/IngenieriaEnSistemasElectricos/es",
+          en: "https://www.psservice.com.mx/en/IngenieriaEnSistemasElectricos",
+          es: "https://www.psservice.com.mx/es/IngenieriaEnSistemasElectricos",
       },
     },
   };
