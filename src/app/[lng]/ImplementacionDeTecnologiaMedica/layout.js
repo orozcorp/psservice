@@ -9,8 +9,8 @@ export async function generateMetadata({ params }) {
         canonical:
           "https://www.psservice.com.mx/ImplementacionDeTeconologiaMedica",
         languages: {
-          en: "https://www.psservice.com.mx/ImplementacionDeTeconologiaMedica/en",
-          es: "https://www.psservice.com.mx/ImplementacionDeTeconologiaMedica/es",
+          en: "https://www.psservice.com.mx/en/ImplementacionDeTeconologiaMedica",
+          es: "https://www.psservice.com.mx/es/ImplementacionDeTeconologiaMedica",
         },
       },
     };
@@ -23,8 +23,8 @@ export async function generateMetadata({ params }) {
       canonical:
         "https://www.psservice.com.mx/ImplementacionDeTeconologiaMedica",
       languages: {
-        en: "https://www.psservice.com.mx/ImplementacionDeTeconologiaMedica/en",
-        es: "https://www.psservice.com.mx/ImplementacionDeTeconologiaMedica/es",
+          en: "https://www.psservice.com.mx/en/ImplementacionDeTeconologiaMedica",
+          es: "https://www.psservice.com.mx/es/ImplementacionDeTeconologiaMedica",
       },
     },
   };
