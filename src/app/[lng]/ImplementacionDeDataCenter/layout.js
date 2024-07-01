@@ -10,8 +10,8 @@ export async function generateMetadata({ params }) {
       alternates: {
         canonical: "https://www.psservice.com.mx/ImplementacionDeDataCenter",
         languages: {
-          en: "https://www.psservice.com.mx/ImplementacionDeDataCenter/en",
-          es: "https://www.psservice.com.mx/ImplementacionDeDataCenter/es",
+          en: "https://www.psservice.com.mx/en/ImplementacionDeDataCenter",
+          es: "https://www.psservice.com.mx/es/ImplementacionDeDataCenter",
         },
       },
     };
@@ -25,8 +25,8 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: "https://www.psservice.com.mx/ImplementacionDeDataCenter",
       languages: {
-        en: "https://www.psservice.com.mx/ImplementacionDeDataCenter/en",
-        es: "https://www.psservice.com.mx/ImplementacionDeDataCenter/es",
+                en: "https://www.psservice.com.mx/en/ImplementacionDeDataCenter",
+          es: "https://www.psservice.com.mx/es/ImplementacionDeDataCenter",
       },
     },
   };
