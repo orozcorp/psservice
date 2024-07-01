@@ -10,8 +10,8 @@ export async function generateMetadata({ params }) {
       alternates: {
         canonical: "https://www.psservice.com.mx/MonitoreoYControlDeSeguridad",
         languages: {
-          en: "https://www.psservice.com.mx/MonitoreoYControlDeSeguridad/en",
-          es: "https://www.psservice.com.mx/MonitoreoYControlDeSeguridad/es",
+          en: "https://www.psservice.com.mx/en/MonitoreoYControlDeSeguridad",
+          es: "https://www.psservice.com.mx/es/MonitoreoYControlDeSeguridad",
         },
       },
     };
@@ -25,8 +25,8 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: "https://www.psservice.com.mx/MonitoreoYControlDeSeguridad",
       languages: {
-        en: "https://www.psservice.com.mx/MonitoreoYControlDeSeguridad/en",
-        es: "https://www.psservice.com.mx/MonitoreoYControlDeSeguridad/es",
+          en: "https://www.psservice.com.mx/en/MonitoreoYControlDeSeguridad",
+          es: "https://www.psservice.com.mx/es/MonitoreoYControlDeSeguridad",
       },
     },
   };
