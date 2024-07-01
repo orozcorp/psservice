@@ -8,8 +8,8 @@ export async function generateMetadata({ params }) {
       alternates: {
         canonical: "https://www.psservice.com.mx/BolsaDeTrabajo",
         languages: {
-          en: "https://www.psservice.com.mx/BolsaDeTrabajo/en",
-          es: "https://www.psservice.com.mx/BolsaDeTrabajo/es",
+          en: "https://www.psservice.com.mx/en/BolsaDeTrabajo",
+          es: "https://www.psservice.com.mx/es/BolsaDeTrabajo",
         },
       },
     };
@@ -21,8 +21,8 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: "https://www.psservice.com.mx/BolsaDeTrabajo",
       languages: {
-        en: "https://www.psservice.com.mx/BolsaDeTrabajo/en",
-        es: "https://www.psservice.com.mx/BolsaDeTrabajo/es",
+        en: "https://www.psservice.com.mx/en/BolsaDeTrabajo",
+        es: "https://www.psservice.com.mx/es/BolsaDeTrabajo",
       },
     },
   };
