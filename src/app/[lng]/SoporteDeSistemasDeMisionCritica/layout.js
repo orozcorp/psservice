@@ -11,8 +11,8 @@ export async function generateMetadata({ params }) {
         canonical:
           "https://www.psservice.com.mx/SoporteDeSistemasDeMisionCritica",
         languages: {
-          en: "https://www.psservice.com.mx/SoporteDeSistemasDeMisionCritica/en",
-          es: "https://www.psservice.com.mx/SoporteDeSistemasDeMisionCritica/es",
+          en: "https://www.psservice.com.mx/en/SoporteDeSistemasDeMisionCritica",
+          es: "https://www.psservice.com.mx/es/SoporteDeSistemasDeMisionCritica",
         },
       },
     };
@@ -27,8 +27,8 @@ export async function generateMetadata({ params }) {
       canonical:
         "https://www.psservice.com.mx/SoporteDeSistemasDeMisionCritica",
       languages: {
-        en: "https://www.psservice.com.mx/SoporteDeSistemasDeMisionCritica/en",
-        es: "https://www.psservice.com.mx/SoporteDeSistemasDeMisionCritica/es",
+          en: "https://www.psservice.com.mx/en/SoporteDeSistemasDeMisionCritica",
+          es: "https://www.psservice.com.mx/es/SoporteDeSistemasDeMisionCritica",
       },
     },
   };
