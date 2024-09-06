@@ -15,10 +15,10 @@ export default function BackgroundImage({
 }) {
   const size = useWindowSize();
   const width = size?.width ?? 0;
-  const [isClient, setIsClient] = useState(false);
   const isMovil = width < 1000;
   const finalImage = isMovil && imageMovil ? imageMovil : image;
   const { theme } = useTheme();
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
@@ -26,17 +26,18 @@ export default function BackgroundImage({
 
   if (!isClient) return null;
 
-  if (!theme || theme === "light")
-    return <HBgVideo video={video} videoMovil={videoMovil} isMovil={isMovil} />;
-
-  return (
+  return theme === "light" ? (
+    <HBgVideo video={video} videoMovil={videoMovil} isMovil={isMovil} />
+  ) : (
     <Image
       src={finalImage}
       alt="Background"
       fill
       priority
+      // placeholder="blur"
+      sizes="(max-width: 1000px) 100vw, 100vw"
       className="object-cover object-right z-40"
-      quality={100}
+      quality={75}
     />
   );
 }

@@ -9,7 +9,7 @@ export default function Soluciones({ bgImage, title, points }) {
         src={bgImage}
         alt="Background Image"
         fill
-        quality={100}
+        quality={50}
         className=" object-cover object-center z-0"
       />
       <div

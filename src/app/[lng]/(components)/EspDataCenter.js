@@ -25,7 +25,7 @@ export default function EspDataCenter({ title, text, active }) {
           src="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/DATACENTER/HeroV2.jpg"
           alt="Data Center"
           fill
-          quality={100}
+          quality={50}
           className="object-cover object-left"
         />
       </div>

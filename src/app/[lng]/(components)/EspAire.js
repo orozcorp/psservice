@@ -24,7 +24,7 @@ export default function EspAire({ title, text, active }) {
             src="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/especialidades_AC.jpg"
             alt="Background"
             fill
-            quality={100}
+            quality={50}
             className="object-cover object-right"
           />
         </div>

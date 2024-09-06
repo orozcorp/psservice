@@ -31,7 +31,7 @@ export default function HeroBgImage({
       fill
       priority
       className="object-cover object-center"
-      quality={100}
+      quality={50}
     />
   );
 }

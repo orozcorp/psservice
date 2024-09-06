@@ -13,7 +13,7 @@ export default function ImageChg({ img, imgMovil }) {
       alt="Background"
       fill
       className="object-cover object-center"
-      quality={100}
+      quality={50}
     />
   );
 }
