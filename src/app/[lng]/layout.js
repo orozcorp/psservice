@@ -63,7 +63,7 @@ export default async function RootLayout({ children, params: { lng = "es" } }) {
             </main>
           </ThemeProvider>
         </NextAuthSessionProvider>
-        <GoogleAnalytics gaId={"G-VL85Y4PMKP"} />
+       {/* <GoogleAnalytics gaId={"G-VL85Y4PMKP"} />*\}
       </body>
     </html>
   );
