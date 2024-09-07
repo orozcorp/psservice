@@ -25,13 +25,15 @@ export const FooterBase = async ({ t, lng }) => {
               <p className="my-8 text-xl" style={{ minHeight: "30px" }}>
                 {t("Contacto")}
               </p>
-              <p className="my-2" style={{ minHeight: "20px" }}>
+              <p
+                className="my-2 min-h-[20px] w-48"
+                style={{ minHeight: "20px" }}
+              >
                 {t("Frase")}
               </p>
               <p>(52) 55 5919 2181 atencion_clientes@psservice.com.mx</p>
             </div>
 
-            {/* Section 2 - Services Links */}
             <div className="flex flex-col flex-nowrap max-w-xs">
               <p className="my-8 text-xl" style={{ minHeight: "30px" }}>
                 {t("Servicios")}
@@ -75,7 +77,6 @@ export const FooterBase = async ({ t, lng }) => {
               </ul>
             </div>
 
-            {/* Section 3 - Resources Links */}
             <div className="flex flex-col flex-nowrap max-w-xs">
               <p className="my-8 text-xl" style={{ minHeight: "30px" }}>
                 {t("Recursos")}

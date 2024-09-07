@@ -7,11 +7,16 @@ export default function useWindowSize() {
   });
 
   useEffect(() => {
+    let timeoutId = null;
+
     function handleResize() {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }, 200); // Adjust the delay as needed
     }
 
     window.addEventListener("resize", handleResize);
@@ -19,6 +24,7 @@ export default function useWindowSize() {
 
     return () => {
       window.removeEventListener("resize", handleResize);
+      clearTimeout(timeoutId);
     };
   }, []);
 

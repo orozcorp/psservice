@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useTheme } from "next-themes";
 import dynamic from "next/dynamic";
 import useWindowSize from "../../components/hooks/useWindowSize";
@@ -14,11 +14,17 @@ export default function BackgroundImage({
   videoMovil,
 }) {
   const size = useWindowSize();
-  const width = size?.width ?? 0;
-  const isMovil = width < 1000;
-  const finalImage = isMovil && imageMovil ? imageMovil : image;
   const { theme } = useTheme();
   const [isClient, setIsClient] = useState(false);
+
+  // Determine if the screen is mobile
+  const isMovil = useMemo(() => size?.width < 1000, [size?.width]);
+
+  // Memoize the final image based on screen size
+  const finalImage = useMemo(
+    () => (isMovil && imageMovil ? imageMovil : image),
+    [isMovil, imageMovil, image]
+  );
 
   useEffect(() => {
     setIsClient(true);
@@ -34,10 +40,9 @@ export default function BackgroundImage({
       alt="Background"
       fill
       priority
-      // placeholder="blur"
       sizes="(max-width: 1000px) 100vw, 100vw"
       className="object-cover object-right z-40"
-      quality={75}
+      quality={35}
     />
   );
 }

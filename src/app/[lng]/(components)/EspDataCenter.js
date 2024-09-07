@@ -23,7 +23,7 @@ export default function EspDataCenter({ title, text, active }) {
       <div className="absolute inset-0 rounded overflow-hidden">
         <Image
           src="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/DATACENTER/HeroV2.jpg"
-          alt="Data Center"
+          alt="View of a data center's server racks"
           fill
           quality={50}
           className="object-cover object-left"

@@ -3,13 +3,13 @@ import { dir } from "i18next";
 import { languages } from "../i18n/settings";
 import { ThemeProvider } from "../providers/theme-provider";
 import { Oxygen } from "next/font/google";
-import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import NextAuthSessionProvider from "../providers/sessionProvider";
-import LoadingHero from "./(components)/LoadingHero";
-import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
-const Navbar = dynamic(() =>
-  import("../components/Navbar").then((mod) => ({ default: mod.Navbar }))
+import { GoogleTagManager } from "@next/third-parties/google";
+
+const Navbar = dynamic(
+  () => import("../components/Navbar").then((mod) => ({ default: mod.Navbar })),
+  { ssr: false }
 );
 const Footer = dynamic(
   () => import("../components/Footer").then((mod) => ({ default: mod.Footer })),
@@ -53,17 +53,14 @@ export default async function RootLayout({ children, params: { lng = "es" } }) {
             <main
               className={`${oxygen.className} relative flex flex-col min-h-screen bg-[#F4F4F5] dark:bg-gradient-to-r dark:from-[#1E3F88] dark:to-[#0F2044]`}
             >
-              <Suspense fallback={<LoadingHero />}>
-                <Navbar lng={lng} />
-              </Suspense>
+              <Navbar lng={lng} />
+
               <div style={{ flex: 1 }}>{children}</div>
-              <Suspense fallback={<LoadingHero />}>
-                <Footer lng={lng} />
-              </Suspense>
+
+              <Footer lng={lng} />
             </main>
           </ThemeProvider>
         </NextAuthSessionProvider>
-       {/* <GoogleAnalytics gaId={"G-VL85Y4PMKP"} />*\}
       </body>
     </html>
   );
