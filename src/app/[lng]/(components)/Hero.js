@@ -11,13 +11,11 @@ export default function Hero() {
   const { t } = useTranslation("Landing");
   return (
     <>
-      <div className="relative flex justify-center lg:justify-end items-center w-[100vw] z-0">
-        <div className="absolute inset-0 z-0 overflow-hidden h-[75vh] lg:h-full">
+      <div className="relative flex justify-center lg:justify-end items-center h-[75vh] z-0">
+        <div className="absolute inset-0 z-0 overflow-hidden h-[75vh]  lg:h-full">
           <HeroBgImage
             image="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/Hero.jpg"
             video="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/hero2.mp4"
-            imageMovil="https://psserviceimages.s3.us-east-2.amazonaws.com/mobile/datacenter_dark_mobile.jpg"
-            videoMovil="https://psserviceimages.s3.us-east-2.amazonaws.com/mobile/Datacenter_light.mp4"
           />
         </div>
         <div className="relative z-10 flex flex-wrap justify-end items-center w-full my-8">
