@@ -1,5 +1,5 @@
 "use client";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "../../components/hooks/useTranslation";
 import HeroBgImage from "../../components/atoms/HeroBgImage";
 import VacanteList from "./VacanteList";
 export default function VacanteMain({ vacantes }) {

@@ -1,5 +1,5 @@
 "use client";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "../../components/hooks/useTranslation";
 import dynamic from "next/dynamic";
 const ContactoForm = dynamic(() => import("./ContactoForm"));
 import { AiFillPhone, AiOutlineMenu } from "react-icons/ai";

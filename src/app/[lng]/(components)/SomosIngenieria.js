@@ -1,6 +1,6 @@
 "use client";
 import dynamic from "next/dynamic";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "../../components/hooks/useTranslation";
 const Textura = dynamic(() => import("./Textura"));
 export default function SomosIngenieria() {
   const { t } = useTranslation("Landing");

@@ -6,14 +6,12 @@ import { Oxygen } from "next/font/google";
 import dynamic from "next/dynamic";
 import NextAuthSessionProvider from "../providers/sessionProvider";
 import { GoogleTagManager } from "@next/third-parties/google";
-
-const Navbar = dynamic(
-  () => import("../components/Navbar").then((mod) => ({ default: mod.Navbar })),
-  { ssr: false }
+import QCProvider from "../providers/QCProvider";
+const Navbar = dynamic(() =>
+  import("./(navigationComponents)/Navbar/NavbarBase")
 );
-const Footer = dynamic(
-  () => import("../components/Footer").then((mod) => ({ default: mod.Footer })),
-  { ssr: false }
+const Footer = dynamic(() =>
+  import("./(navigationComponents)/Footer/FooterBase")
 );
 
 // Oxygen font with preload optimization
@@ -48,19 +46,21 @@ export default async function RootLayout({ children, params: { lng = "es" } }) {
       <head />
       <GoogleTagManager gtmId={"GTM-WSZKMS27"} />
       <body>
-        <NextAuthSessionProvider>
-          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-            <main
-              className={`${oxygen.className} relative flex flex-col min-h-screen bg-[#F4F4F5] dark:bg-gradient-to-r dark:from-[#1E3F88] dark:to-[#0F2044]`}
-            >
-              <Navbar lng={lng} />
+        <QCProvider>
+          <NextAuthSessionProvider>
+            <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+              <main
+                className={`${oxygen.className} relative flex flex-col min-h-screen bg-[#F4F4F5] dark:bg-gradient-to-r dark:from-[#1E3F88] dark:to-[#0F2044]`}
+              >
+                <Navbar />
 
-              <div style={{ flex: 1 }}>{children}</div>
+                <div className="flex-grow">{children}</div>
 
-              <Footer lng={lng} />
-            </main>
-          </ThemeProvider>
-        </NextAuthSessionProvider>
+                <Footer lng={lng} />
+              </main>
+            </ThemeProvider>
+          </NextAuthSessionProvider>
+        </QCProvider>
       </body>
     </html>
   );

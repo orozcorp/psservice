@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { ThemeSwitcher } from "../ThemeSwitcher";
+import { ThemeSwitcher } from "../../../components/ThemeSwitcher";
 import { useState } from "react";
 import { signOut } from "next-auth/react";
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";

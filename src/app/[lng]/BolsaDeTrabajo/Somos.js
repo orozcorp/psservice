@@ -1,5 +1,5 @@
 "use client";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "../../components/hooks/useTranslation";
 import Textura from "../(components)/Textura";
 export default function Somos() {
   const { t } = useTranslation("Bolsa");

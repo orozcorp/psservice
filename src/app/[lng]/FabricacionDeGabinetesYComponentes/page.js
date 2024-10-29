@@ -1,5 +1,5 @@
 "use client";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "../../components/hooks/useTranslation";
 import Hero from "./Hero";
 import Somos from "./Somos";
 import Soluciones from "./Soluciones";

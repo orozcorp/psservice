@@ -7,8 +7,7 @@ const nextConfig = {
   productionBrowserSourceMaps: true,
   reactStrictMode: false,
   webpack: (config) => {
-    config.resolve.alias["@"] = path.resolve(__dirname);
-    config.resolve.alias.canvas = false;
+    config.resolve.alias["@"] = path.join(__dirname, "src");
     return config;
   },
   images: {

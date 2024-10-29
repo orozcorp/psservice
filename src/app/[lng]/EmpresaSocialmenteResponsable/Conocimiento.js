@@ -1,5 +1,5 @@
 "use client";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "../../components/hooks/useTranslation";
 import ConocimientoSingle from "./ConocimientoSingle";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import Textura from "../(components)/Textura";

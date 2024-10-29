@@ -1,5 +1,5 @@
 "use client";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "../../components/hooks/useTranslation";
 import ChangingImage from "../../components/atoms/ChangingImage";
 export default function Somos() {
   const { t } = useTranslation("RSE");

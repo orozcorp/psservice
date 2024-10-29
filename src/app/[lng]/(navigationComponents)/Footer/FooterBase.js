@@ -1,9 +1,13 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import FooterLinks from "../FooterLinks";
-import FooterLinksId from "../FooterLinkId";
-
-export const FooterBase = async ({ t, lng }) => {
+import FooterLinks from "./FooterLinks";
+import FooterLinksId from "./FooterLinkId";
+import { useTranslation } from "../../../components/hooks/useTranslation";
+import { useParams } from "next/navigation";
+export default function FooterBase() {
+  const { lng } = useParams();
+  const { t } = useTranslation("Footer");
   return (
     <>
       <footer
@@ -119,4 +123,4 @@ export const FooterBase = async ({ t, lng }) => {
       </div>
     </>
   );
-};
+}

@@ -1,5 +1,5 @@
 "use client";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "../../components/hooks/useTranslation";
 import ISO from "../../components/SVG/Certificaciones/ISO";
 import HeroBgImage from "../../components/atoms/HeroBgImage";
 

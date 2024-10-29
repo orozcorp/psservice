@@ -1,7 +1,7 @@
 "use client";
 import EspReactive from "./EspReactive";
 import Textura from "./Textura";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "../../components/hooks/useTranslation";
 export default function Especializacion() {
   const { t } = useTranslation("Landing");
   const objTrans = {

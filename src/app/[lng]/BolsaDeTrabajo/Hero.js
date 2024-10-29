@@ -1,5 +1,5 @@
 "use client";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "../../components/hooks/useTranslation";
 import HeroBgImage from "../../components/atoms/HeroBgImage";
 import PSLogo from "../../components/SVG/Logos/PSLogo";
 export default function Hero() {

@@ -1,30 +1,16 @@
 "use client";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "../../components/hooks/useTranslation";
 import { sendGTMEvent } from "@next/third-parties/google";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import PSLogo from "../../components/SVG/Logos/PSLogo";
-import Head from "next/head";
 
 const HeroBgImage = dynamic(() => import("./HeroBgImage"));
 
 export default function Hero() {
   const { t } = useTranslation("Landing");
-
   return (
     <>
-      <Head>
-        <link
-          rel="preload"
-          href="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/Hero.jpg"
-          as="image"
-        />
-        <link
-          rel="preload"
-          href="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/hero2.mp4"
-          as="video"
-        />
-      </Head>
       <div className="relative flex justify-center lg:justify-end items-center w-[100vw] z-0">
         <div className="absolute inset-0 z-0 overflow-hidden h-[75vh] lg:h-full">
           <HeroBgImage
