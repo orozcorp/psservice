@@ -1,16 +1,15 @@
-// "use client";
+"use client";
 import Image from "next/image";
-// import { useTheme } from "next-themes";
-// import dynamic from "next/dynamic";
+import { useTheme } from "next-themes";
+import dynamic from "next/dynamic";
 
-// const HBgVideo = dynamic(() => import("./HBgVideo"));
+const HBgVideo = dynamic(() => import("./HBgVideo"));
 
 export default function BackgroundImage({ image, video }) {
-  // const { theme } = useTheme();
-  // return theme === "light" ? (
-  //   <HBgVideo video={video}/>
-  // ) : (
-  return (
+  const { theme } = useTheme();
+  return theme === "light" ? (
+    <HBgVideo video={video} />
+  ) : (
     <Image
       src={image}
       alt="Background"
