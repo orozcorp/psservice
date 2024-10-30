@@ -107,11 +107,14 @@ export default function FooterBase() {
                   href="BolsaDeTrabajo"
                   text={t("Bolsa")}
                 />
-                <FooterLinks
-                  lng={lng}
-                  href="https://psserviceimages.s3.us-east-2.amazonaws.com/SGI+.pdf"
-                  text={t("NuestraMision")}
-                />
+                <li className="my-3 lg:my-2">
+                  <Link
+                    target="_blank"
+                    href={`https://psserviceimages.s3.us-east-2.amazonaws.com/SGI+.pdf`}
+                  >
+                    {t("NuestraMision")}
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
