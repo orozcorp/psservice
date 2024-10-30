@@ -107,6 +107,11 @@ export default function FooterBase() {
                   href="BolsaDeTrabajo"
                   text={t("Bolsa")}
                 />
+                <FooterLinks
+                  lng={lng}
+                  href="https://psserviceimages.s3.us-east-2.amazonaws.com/SGI+.pdf"
+                  text={t("NuestraMision")}
+                />
               </ul>
             </div>
           </div>

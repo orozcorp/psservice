@@ -23,6 +23,7 @@ export async function getTranslation(lng, ns) {
       Sistemas: "Datacenter",
       Soporte: "Support and Installation",
       Terminos: "Terms and Conditions",
+      NuestraMision: "Our Mission",
     },
     Aire: {
       Conocimiento: "SERVICES",
@@ -486,6 +487,7 @@ export async function getTranslation(lng, ns) {
       Sistemas: "Datacenter",
       Soporte: "Soporte e Instalación",
       Terminos: "Términos y Condiciones",
+      NuestraMision: "Nuestra Misión",
     },
     Aire: {
       Conocimiento: "SERVICIOS",
