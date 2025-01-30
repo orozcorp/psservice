@@ -1,8 +1,11 @@
 "use client";
+import { memo } from "react";
 import dynamic from "next/dynamic";
 
-const BackgroundImage = dynamic(() => import("./HBgImage"));
+const BackgroundImage = dynamic(() => import("./HBgImage"), {
+  ssr: false,
+});
 
-export default function HeroBgImage({ image, video }) {
+export default memo(function HeroBgImage({ image, video }) {
   return <BackgroundImage image={image} video={video} />;
-}
+});

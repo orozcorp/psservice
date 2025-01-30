@@ -1,7 +1,8 @@
 "use client";
+import { memo } from "react";
 import VideoBg from "./VideoPlayer";
 
-export default function HBgVideo({ video }) {
+export default memo(function HBgVideo({ video }) {
   return (
     <div className="inset-0 flex items-center justify-center z-[-1] overflow-hidden">
       <VideoBg
@@ -10,4 +11,4 @@ export default function HBgVideo({ video }) {
       />
     </div>
   );
-}
+});
