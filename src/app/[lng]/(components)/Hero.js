@@ -4,6 +4,7 @@ import { sendGTMEvent } from "@next/third-parties/google";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import PSLogo from "../../components/SVG/Logos/PSLogo";
+import Image from "next/image";
 
 // Move constants outside component
 const WHATSAPP_URL =
@@ -22,9 +23,17 @@ export default function Hero() {
   return (
     <div className="relative flex justify-center lg:justify-end items-center h-[75vh] z-0">
       <div className="absolute inset-0 z-0 overflow-hidden h-[75vh] lg:h-full">
-        <HeroBgImage
+        {/* <HeroBgImage
           image="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/Hero.jpg"
           video="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/hero2.mp4"
+        /> */}
+        <Image
+          src="https://psserviceimages.s3.us-east-2.amazonaws.com/dark/LANDING/Hero.jpg"
+          alt="Background"
+          priority
+          fill
+          className="absolute inset-0 object-left h-full w-full object-cover scale-x-[-1] md:scale-x-[1]"
+          quality={35}
         />
       </div>
       <div className="relative z-10 flex flex-wrap justify-end items-center w-full my-8">

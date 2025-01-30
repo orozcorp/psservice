@@ -1,11 +1,16 @@
 "use client";
 
-import { memo } from "react";
+import { memo, useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
 const PowerLine = memo(() => {
-  const { theme } = useTheme();
-  const strokeColor = theme === "dark" ? "#fff" : "#3f3f3f";
+  const { theme, systemTheme } = useTheme();
+  const [strokeColor, setStrokeColor] = useState("#3f3f3f");
+
+  useEffect(() => {
+    const currentTheme = theme === "system" ? systemTheme : theme;
+    setStrokeColor(currentTheme === "dark" ? "#fff" : "#3f3f3f");
+  }, [theme, systemTheme]);
 
   return (
     <svg
