@@ -25,6 +25,8 @@ const CertificationCard = memo(({ endCount, prefix, titleKey, textKey, t }) => (
   </div>
 ));
 
+CertificationCard.displayName = "CertificationCard";
+
 const Certificaciones = () => {
   const { t } = useTranslation("Landing");
 
