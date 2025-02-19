@@ -38,7 +38,7 @@ export default function Hero() {
       </div>
       <div className="relative z-10 flex flex-wrap justify-end items-center w-full my-8">
         <div className="flex justify-start items-center p-8 w-full md:w-fit">
-          <PSLogo />
+          <PSLogo overrideLight="#FFFFFF" />
         </div>
         <div className="flex flex-col justify-start items-start w-[90vw] lg:w-[75vw] my-10">
           <h1 className="text-3xl lg:text-5xl text-[#002772] font-bold py-8 lg:py-16 max-w-2xl text-shadow uppercase">
