@@ -41,7 +41,7 @@ export default function Hero() {
           <PSLogo />
         </div>
         <div className="flex flex-col justify-start items-start w-[90vw] lg:w-[75vw] my-10">
-          <h1 className="text-3xl lg:text-5xl text-[#002772] dark:text-white font-bold py-8 lg:py-16 max-w-2xl text-shadow uppercase">
+          <h1 className="text-3xl lg:text-5xl text-[#002772] font-bold py-8 lg:py-16 max-w-2xl text-shadow uppercase">
             {t("Hero1")}
           </h1>
           <Link
